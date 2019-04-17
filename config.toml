@@ -1,0 +1,24 @@
+baseURL = "https://docs.gbstudio.dev/"
+languageCode = "en-us"
+title = "GB Studio"
+theme = "gbstudio"
+
+[[menu.main]]
+    name = "About"
+    title = "About"
+    url = "/about/"
+
+[[menu.main]]
+    name = "Docs"
+    title = "Docs"
+    url = "/docs/"
+
+[[menu.main]]
+    name = "Download"
+    title = "Download"
+    url = "/download/"
+
+[[menu.main]]
+    name = "GitHub"
+    title = "GitHub"
+    url = "https://github.com/chrismaltby/gb-studio"

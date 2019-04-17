@@ -1,0 +1,98 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-weight: 300;
+  color: #c92c61;
+  font-size: 2rem;
+}
+
+h2 {
+  font-weight: 300;
+  color: #c92c61;
+  font-size: 1.6rem;
+  margin: 2rem 0;
+}
+
+h3 {
+  font-weight: 300;
+  color: #c92c61;
+  font-size: 1.1rem;
+  font-weight: normal;
+  margin: 2rem 0;
+}
+
+p {
+  font-family: Georgia, serif;
+  color: #333;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+em {
+  color: #000;
+}
+
+ul {
+  font-family: Georgia, serif;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+ul ul {
+  list-style-type: disc;
+}
+
+li {
+  line-height: 2rem;
+}
+
+a {
+  color: #c92c61;
+}
+
+img {
+  max-width: 100%;
+  border: 0;
+}
+
+header {
+  background: #c92c61;
+}
+
+.Swatch {
+  display: inline-block;
+  clear: both;
+  background: #071821;
+  width: 20px;
+  height: 20px;
+  margin-right: 2px;
+  border-radius: 2px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.SwatchLabel {
+  display: inline-block;
+  font-family: monospace;
+  margin-bottom: 5px;
+  user-select: all;
+  -webkit-user-select: all;
+}
+
+.HelpSprite {
+  height: 48px;
+  image-rendering: pixelated;
+}

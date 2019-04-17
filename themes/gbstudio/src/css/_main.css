@@ -1,0 +1,8 @@
+main {
+  width: 100%;
+  max-width: 960px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0px auto;
+  flex: 1;
+}

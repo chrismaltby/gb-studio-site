@@ -1,0 +1,18 @@
+{{ partial "header.html" . }}
+	<main>
+		<article>
+			<h1>{{ .Title }}</h1>
+			<div>
+				{{ .Content }}
+			</div>
+			<div>
+				<ul id="tags">
+					{{ .Params.hello }}
+					{{ range .Params.tags }}
+					<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
+					{{ end }}
+				</ul>
+			</div>
+		</article>
+	</main>
+{{ partial "footer.html" . }}
