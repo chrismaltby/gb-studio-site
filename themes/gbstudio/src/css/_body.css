@@ -96,3 +96,10 @@ header {
   height: 48px;
   image-rendering: pixelated;
 }
+
+hr {
+  background: #eee;
+  height: 1px;
+  border: 0;
+  margin: 90px 0;
+}

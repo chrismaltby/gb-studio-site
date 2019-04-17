@@ -1,0 +1,29 @@
+{{ partial "header.html" . }}
+<main>
+  <h1>Printable Documentation</h1>
+  <br />
+  <br />
+  {{ with .Site.GetPage "/docs/installation" }}{{ partial "article.html" . }}{{ end }}
+  {{ with .Site.GetPage "/docs/getting-started" }}{{ partial "article.html" . }}{{ end }}
+  {{ with .Site.GetPage "/docs/keyboard-shortcuts" }}{{ partial "article.html" . }}{{ end }}
+  {{ with .Site.GetPage "/docs/saving-loading" }}{{ partial "article.html" . }}{{ end }}
+  {{ with .Site.GetPage "/docs/project-editor" }}{{ partial "article.html" . }}{{ end }}
+  {{ with .Site.GetPage "/docs/scenes" }}{{ partial "article.html" . }}{{ end }}
+  {{ with .Site.GetPage "/docs/player" }}{{ partial "article.html" . }}{{ end }}
+  {{ with .Site.GetPage "/docs/actors" }}{{ partial "article.html" . }}{{ end }}
+  {{ with .Site.GetPage "/docs/triggers" }}{{ partial "article.html" . }}{{ end }}
+  {{ with .Site.GetPage "/docs/scripting" }}{{ partial "article.html" . }}{{ end }}
+  {{ with .Site.GetPage "/docs/assets" }}{{ partial "article.html" . }}{{ end }}
+  {{ with .Site.GetPage "/docs/sprites" }}{{ partial "article.html" . }}{{ end }}
+  {{ with .Site.GetPage "/docs/backgrounds" }}{{ partial "article.html" . }}{{ end }}
+  {{ with .Site.GetPage "/docs/ui-elements" }}{{ partial "article.html" . }}{{ end }}
+  {{ with .Site.GetPage "/docs/music" }}{{ partial "article.html" . }}{{ end }}
+  {{ with .Site.GetPage "/docs/build" }}{{ partial "article.html" . }}{{ end }}
+  {{ with .Site.GetPage "/docs/build#play" }}{{ partial "article.html" . }}{{ end }}
+  {{ with .Site.GetPage "/docs/build#build-as-rom" }}{{ partial "article.html" . }}{{ end }}
+  {{ with .Site.GetPage "/docs/build#build-and-deploy-for-web" }}{{ partial "article.html" . }}{{ end }}
+</main>
+{{ partial "footer.html" . }}
+
+
+
