@@ -1,0 +1,10 @@
+@media print {
+  hr {
+    background: transparent;
+    margin: 0px;
+    page-break-after: always;
+  }
+  nav #hamburger {
+    display: none !important;
+  }
+}
