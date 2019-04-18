@@ -26,3 +26,7 @@ draft: false
   - [Play](/docs/build#play)
   - [Build as ROM](/docs/build#build-as-rom)
   - [Build and deploy for Web](/docs/build#build-and-deploy-for-web)
+
+or, if you prefer:
+
+[Single Page Printable Documentation](/printable/)
