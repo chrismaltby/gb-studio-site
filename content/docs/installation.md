@@ -21,6 +21,8 @@ For macOS unzip the downloaded file and move `GB Studio.app` to your _Applicatio
 For Debian-based Linux distros, download the .deb version and run the following commands (Tested on Ubuntu 18.10)
 
 ```
+> sudo apt-get update
+> sudo apt-get install build-essential
 > sudo dpkg -i gb-studio_1.0.0_amd64.deb
 > gb-studio
 ```
