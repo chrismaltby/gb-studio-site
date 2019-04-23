@@ -20,3 +20,13 @@ Clicking the _Export button_ and clicking _Export ROM_ will build your game and 
 Clicking the _Export button_ and clicking _Export Web_ will build your game and create a HTML5 web build in the folder `$PROJECT_ROOT/build/web`. You can upload this folder to any web server and navigate to the `index.html` file to play your game in a web browser. If you use a mobile or tablet web browser the game will also include touch controls.
 
 If you zip the `build/web` folder you can upload it to [Itch.io](https://itch.io) as a HTML game. In this case the recommended viewport size to use is `480px` x `432px`.
+
+## Troubleshooting
+
+On macOS if you're having trouble building or running your game you may also need to install Apple's Command Line Tools by opening `Applications/Terminal.app` and entering the following command.
+
+```
+xcode-select --install
+```
+
+On Windows you may need to whitelist the application in your Anti Virus software to perform a build.

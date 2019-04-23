@@ -16,6 +16,12 @@ The _Manual_ version is a zip containing the application files, you can unzip th
 
 For macOS unzip the downloaded file and move `GB Studio.app` to your _Applications_ folder. Double click to start.
 
+If you're having trouble building or running your game you may also need to install Apple's Command Line Tools by opening `Applications/Terminal.app` and entering the following command.
+
+```
+xcode-select --install
+```
+
 ## Ubuntu / Debian-based Linux
 
 For Debian-based Linux distros, download the .deb version and run the following commands (Tested on Ubuntu 18.10)
