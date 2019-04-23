@@ -16,6 +16,7 @@ draft: false
 
 * **Application Package**  
   [GB Studio-darwin-x64-1.0.0.zip](https://github.com/chrismaltby/gb-studio/releases/download/v1.0.0/GB.Studio-darwin-x64-1.0.0.zip)  
+
 ## Linux
 
 * **Ubuntu / Debian-based**  
