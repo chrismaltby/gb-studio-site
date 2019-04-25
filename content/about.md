@@ -4,6 +4,8 @@ date: 2018-01-28T14:14:44Z
 draft: false
 ---
 
+Hi, my name is [Chris Maltby](https://www.chrismaltby.com).
+
 GB Studio began as number of disconnected scripts and tools which were eventually
 used to create [Untitled GB Game](https://chrismaltby.itch.io/untitled-gb-game), a
 game built in one week for Bored Pixels 3, a pixel art game jam where the theme was "Game Boy".
