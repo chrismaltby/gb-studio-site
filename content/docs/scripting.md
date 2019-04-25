@@ -36,6 +36,9 @@ Clicking the down arrow next to an event name in a script shows a dropdown menu 
 - **Set Variable To Value**  
   Set the specified variable to a defined value.
 
+- **Set Variable To Random Value**  
+  Set the specified variable to a random value between 0 and the specified maxValue.
+
 - **Increment Variable By 1**  
   Increase the value of the specified value by one, up to a maximum of _255_. If the value was previously _false_ it will now be _1_ (and also _true_), if it was previously _true_ it will now be _2_.
 
@@ -64,6 +67,9 @@ Clicking the down arrow next to an event name in a script shows a dropdown menu 
 
 - **If Actor At Position**  
   Conditionally execute part of the script if the specified actor is at a certain position in the scene.
+
+- **If Actor Facing Direction**  
+  Conditionally execute part of the script if the specified actor is facing the specified direction.
 
 - **Loop Forever**  
   Execute part of the script in a loop forever. Remember to break out of the loop otherwise the player will become stuck at this point. You can use a _Stop Script_ or _Switch Scene_ event to stop the loop.
