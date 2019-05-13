@@ -14,9 +14,9 @@ Sprite PNGs must only contain the following four colors:
 <div><div class="Swatch" style="background:#e0f8cf;"></div><div class="SwatchLabel">#e0f8cf</div></div>
 <div><div class="Swatch" style="background:#65ff00;"></div><div class="SwatchLabel">#65ff00</div></div>
 
-The color `#65ff00` is used to represent a transparent background in game and will be invisible in the _World Editor_.
+The color `#65ff00` is used to represent a transparent background in game and will be invisible in-game and in the _World Editor_.
 
-Colors that are not one of these hex codes will be matched to the nearest color.
+Colors that are not one of the above hex codes will be matched to the nearest color. Unlike backgrounds, the color `#306850` can not be used in sprites.
 
 A sprite consists of one or more `16px` x `16px` frames laid out horizontally in file. A sprite with a single frame will be `16px` x `16px` while a sprite with three frames will be `48px` x `16px`.
 
