@@ -1,6 +1,8 @@
 ---
 title: "The Project Editor"
 draft: false
+next: "/docs/scenes"
+nextTitle: "Scenes"
 ---
 
 The default view for the _Project Editor_, as shown below, is the _Game World_. This is where you can create your game by combining scenes, adding actors and triggers then building scripting events to add interactions.
@@ -18,5 +20,3 @@ Using the _Project Navigator_ you can switch between the available views for you
 <img title="The Asset Viewer" src="/img/screenshots/asset-viewer.png" width="1258">
 
 See the documentation on [Assets](/docs/assets) for more information on how to add new assets and the different requirements needed.
-
-## Next: [Scenes](/docs/scenes)

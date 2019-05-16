@@ -1,6 +1,8 @@
 ---
 title: "Assets"
 draft: false
+next: "/docs/sprites"
+nextTitle: "Sprites"
 ---
 
 When your project was created an `assets` folder was also made within the project containing a number of subfolders for each asset type in your game.
@@ -10,5 +12,3 @@ GBStudio doesn't currently contain any ability to edit the graphics or music in 
 While you can create graphics in any application that can output PNG files it is recommended to use [Aseprite](https://www.aseprite.org/) or Photoshop to create your sprites and UI elements then to use [Tiled Map Editor](https://www.mapeditor.org/) to create your backgrounds. Each image asset type has a different set of requirements detailed over the new few sections of this documentation.
 
 For music you must create new tracks as MOD files with only four channels. You can create these files with [OpenMPT](https://openmpt.org/) or [MilkyTracker](https://milkytracker.titandemo.org/).
-
-## Next: [Sprites](/docs/sprites)

@@ -2,6 +2,8 @@
 title: "Keyboard Shortcuts"
 date: 2019-03-30T21:12:44Z
 draft: false
+next: "/docs/saving-loading"
+nextTitle: "Saving and Loading"
 ---
 
 ## Play Window
@@ -30,5 +32,3 @@ Much of the functionality of GB Studio is accessible through the menu bar and ma
 ## Setting the Player Starting Position
 
 You can reset the player starting position by clicking into any scene and pressing the **P** key.
-
-## Next: [Saving and Loading](/docs/saving-loading)

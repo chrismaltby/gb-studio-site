@@ -1,6 +1,8 @@
 ---
 title: "Saving and Loading"
 draft: false
+next: "/docs/project-editor"
+nextTitle: "The Project Editor"
 ---
 
 ## Saving
@@ -16,5 +18,3 @@ To load your project again, either use the _Open_ button on the _New Project_ wi
 The project folder layout and json file is designed to work well with version control systems such as [Git](https://git-scm.com/) with each change by the application taking place on a new line in the data file allowing history to be tracked easily. If you want to use version control on your project you can just create the repository at the project root folder.
 
 It's recommended to ignore the `build` folder from your repository using a `.gitignore` file or similar.
-
-## Next: [The Project Editor](/docs/project-editor)

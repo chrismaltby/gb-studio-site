@@ -2,6 +2,8 @@
 title: "Installation"
 date: 2018-01-28T14:14:44Z
 draft: false
+next: "/docs/getting-started"
+nextTitle: "Getting Started"
 ---
 
 Go to the [GB Studio website](/) and click the download button or choose your preferred version from the [downloads page](/download).
@@ -42,5 +44,3 @@ For RPM-based Linux distros, download the .rpm version and run the following com
 > sudo rpm --ignoreos -i gb-studio-1.0.0.x86_64.rpm
 > gb-studio
 ```
-
-## Next: [Getting Started](/docs/getting-started)

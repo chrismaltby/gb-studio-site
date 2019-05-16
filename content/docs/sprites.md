@@ -1,6 +1,8 @@
 ---
 title: "Sprites"
 draft: false
+next: "/docs/backgrounds"
+nextTitle: "Backgrounds"
 ---
 
 Sprites are the graphics used by playable or interactive characters in your scenes. Add sprites to your game by including PNG files in your project's `assets/sprites` folder.
@@ -39,5 +41,3 @@ To make sprites that have animated movement, or that can be used as a player cha
 As there are limits to how many sprites frames can be loaded into a single scene don't use animated sprites unless you know your NPCs will need animated movement.
 
 <img src="/img/sprites/player.png" class="HelpSprite" />
-
-## Next: [Backgrounds](/docs/backgrounds)

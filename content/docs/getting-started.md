@@ -2,6 +2,8 @@
 title: "Getting Started"
 date: 2018-01-28T14:14:44Z
 draft: false
+next: "/docs/keyboard-shortcuts"
+nextTitle: "Keyboard Shortcuts"
 ---
 
 When you first open GB Studio you will see the _New Project_ window.
@@ -17,5 +19,3 @@ Give your project a name to get started (don't worry, you can change this later)
 <img title="Getting Started" src="/img/screenshots/getting-started.png" width="1258">
 
 As soon as you see this screen you can click the _Play button_ in the top right which will just take a few seconds to run the project. After playing the sample project you can try clicking around the editor to see how the project is set up. Select one of the people or signposts and edit the their dialogue using the sidebar on the right then try running the project again, you've just made your very own version of the game! Don't worry if you break anything, you can always make a new project with the sample template later.
-
-## Next: [Keyboard Shortcuts](/docs/keyboard-shortcuts)

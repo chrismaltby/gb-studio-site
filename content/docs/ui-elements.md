@@ -1,6 +1,8 @@
 ---
 title: "UI Elements"
 draft: false
+next: "/docs/music"
+nextTitle: "Music"
 ---
 
 Your project contains a number of files in `assets/ui` with fixed file names that define parts of your game's user interface. Editing these files allows you to change the default font, set the window frame and modify the selection cursor.
@@ -39,5 +41,3 @@ With the exception of `emotes.png` which follows the standard sprite requirement
 <div><div class="Swatch" style="background:#306850;"></div><div class="SwatchLabel">#306850</div></div>
 <div><div class="Swatch" style="background:#86c06c;"></div><div class="SwatchLabel">#86c06c</div></div>
 <div><div class="Swatch" style="background:#e0f8cf;"></div><div class="SwatchLabel">#e0f8cf</div></div>
-
-## Next: [Music](/docs/music)

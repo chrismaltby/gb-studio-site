@@ -1,0 +1,62 @@
+Actor: Emote Bubble
+Actor: Hide
+Actor: Invoke Script
+Actor: Move Relative
+Actor: Move To
+Actor: Move To Using Variables
+Actor: Push Away From Player
+Actor: Set Animation Frame
+Actor: Set Animation Speed
+Actor: Set Direction
+Actor: Set Movement Speed
+Actor: Set Player Sprite Sheet
+Actor: Set Position
+Actor: Set Position Using Variables
+Actor: Set Relative Position
+Actor: Show
+Actor: Store Position In Variables
+Camera: Lock To Player
+Camera: Move To
+Camera: Shake
+Event Group
+Game Data: Clear
+Game Data: Load
+Game Data: Save
+If Actor At Position
+If Actor Facing Direction
+If Game Data Saved
+If Joypad Input Pressed
+If Variable Compare With Value
+If Variable Compare With Variable
+If Variable Is 'False'
+If Variable Is 'True'
+Joypad Input: Attach Script To Button
+Joypad Input: Pause Script Until Pressed
+Joypad Input: Remove Attached Script
+Loop Forever
+Music: Play Track
+Music: Stop
+Overlay: Hide
+Overlay: Move To
+Overlay: Show
+Scene: Empty Scene Stack
+Scene: Restore First From Stack
+Scene: Restore Previous From Stack
+Scene: Store Current On Stack
+Scene: Switch Scene
+Screen: Fade In
+Screen: Fade Out
+Script: Stop
+Sprites: Hide All
+Sprites: Show All
+Text: Display Dialogue
+Text: Display Multiple Choice
+Text: Set Animation Speed
+Variable: Decrement By 1
+Variable: Increment By 1
+Variable: Math Functions
+Variable: Reset All Variables To 'False'
+Variable: Set To 'False'
+Variable: Set To 'True'
+Variable: Set To Value
+Wait

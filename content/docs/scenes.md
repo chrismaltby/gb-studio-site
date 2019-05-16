@@ -1,6 +1,8 @@
 ---
 title: "Scenes"
 draft: false
+next: "/docs/player"
+nextTitle: "The Player"
 ---
 
 A scene is a single screen of your game, it can contain multiple [actors](/docs/actors) and [triggers](/docs/triggers). Your game will typically be made up of many scenes connected together with triggers using the _Switch Scene_ event.
@@ -16,5 +18,3 @@ When a scene has been added you can use the _Editor Sidebar_ to give the scene a
 ## Scripting
 
 A scene script can be used to have events run as soon as the scene is loaded. When the scene is selected click the _Add Event button_ in the _Editor Sidebar_ to open the event menu and start building the script. For more information see the documentation for [Scripting](/docs/scripting).
-
-## Next: [The Player](/docs/player)

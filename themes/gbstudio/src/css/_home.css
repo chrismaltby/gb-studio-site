@@ -57,11 +57,60 @@
   text-decoration: underline;
 }
 
+.homepage-social {
+  background-color: #f1f1f3;
+  padding: 30px 0px;
+  clear: both;
+  color: #24226b;
+}
+
+.homepage-social a {
+  color: #24226b;
+  font-weight: 600;
+}
+
+.homepage-social svg {
+  fill: #24226b;
+  vertical-align: middle;
+  margin-top: -2px;
+  flex-shrink: 0;
+  margin-right: 15px;
+  width: 30px;
+  height: 30px;
+}
+
+.homepage-social .container {
+  position: relative;
+  max-width: 960px;
+  max-height: 420px;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+}
+
+.homepage-keypoints .container {
+  position: relative;
+  max-width: 960px;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  margin: 0px auto;
+}
+
+.homepage-footer .container {
+  position: relative;
+  max-width: 960px;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  margin: 40px auto;
+}
+
 section.homepage-left,
 section.homepage-right {
   clear: both;
   display: flex;
-  margin: 0px -20px 20px;
+  margin: 20px -20px;
   /*font-size: 1.2em;*/
 }
 
@@ -71,8 +120,8 @@ section.homepage-right {
 
 section.homepage-left h2,
 section.homepage-right h2 {
-  font-size: 2em;
-  margin: 1em 0;
+  font-size: 2rem;
+  margin: 20px 0;
 }
 
 section.homepage-left div.homepage-center,
@@ -90,7 +139,7 @@ section.homepage-right div.homepage-center {
 
 div.homepage-center p {
   padding-right: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .homepage-content {
@@ -105,10 +154,19 @@ section.homepage-right img {
   max-width: 300px;
 }
 
-.Video {
-  max-width: none;
-  background-color: #F1F1F1;
+section.homepage-video {
+  background-color: #f1f1f3;
+  padding: 30px 0px;
+  clear: both;
+  color: #24226b;
   text-align: center;
+}
+
+.Video {
+  max-width: 920px;
+  background-color: #f1f1f1;
+  text-align: center;
+  margin: 0px auto;
 }
 
 .Content {
@@ -119,7 +177,9 @@ section.homepage-right img {
 .VideoContainer {
   position: relative;
   padding-bottom: 52.25%;
-  padding-top: 30px; height: 0; overflow: hidden;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
 }
 
 .VideoContainer iframe,
@@ -147,7 +207,8 @@ section.homepage-right img {
     position: static;
     max-width: none;
   }
-  .homepage-landing, .homepage-landing .container {
+  .homepage-landing,
+  .homepage-landing .container {
     max-height: none;
   }
 
@@ -175,6 +236,7 @@ section.homepage-right img {
   section.homepage-left,
   section.homepage-right {
     display: block;
+    margin-top: 0px;
     margin-bottom: 0px;
   }
 
@@ -186,5 +248,29 @@ section.homepage-right img {
 
   div.homepage-center p {
     padding-right: 0px;
+  }
+
+  .homepage-social .container {
+    display: block;
+    text-align: center;
+  }
+
+  .homepage-social .container div {
+    line-height: 1.4rem;
+  }
+
+  .homepage-social svg {
+    width: 60px;
+    height: 60px;
+    margin: 0px 10px;
+    margin-bottom: 20px;
+  }
+
+  section.homepage-keypoints .container {
+    margin: 20px 0;
+  }
+
+  section.homepage-video {
+    padding: 20px;
   }
 }

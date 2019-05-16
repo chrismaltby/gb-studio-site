@@ -1,6 +1,8 @@
 ---
 title: "Scripting Events"
 draft: false
+next: "/docs/assets"
+nextTitle: "Assets"
 ---
 
 Scripting events allow you to dynamically control parts of your game based on interactions from the player. Use them to connect scenes together, to give dialogue to your characters or to create cutscenes.
@@ -17,59 +19,110 @@ After clicking the _Add Event_ button a menu will appear to choose the event to 
 
 Clicking the down arrow next to an event name in a script shows a dropdown menu where you can copy an event to your clipboard. Clicking this on another event allows you to paste the clipboard event either before or after the selected one or to just paste the values from the first event into the second.
 
-## Common Events
+## Text Events
 
-- **Switch Scene**  
-  Transition to a new scene with player at a specified position and direction.
+- **Text: Display Dialogue**  
+  Show a dialogue box with up to three lines of text, 18 characters per line (16 on the third line), at the bottom of the game screen. This will likely be the most used script command for interacting with actors in your game.  
+  When text is shown the dialogue box will slide up from the bottom of the screen and will slide down after it has been shown, using the _+_ button you can create a dialogue sequence which will only close after the last message has been displayed.  
+  <img src="/img/events/display-dialogue.png" class="event-preview" />
+  <img src="/img/events/display-dialogue-preview.png" class="event-preview" />
 
-- **Display Text**  
-  Show a dialogue box with two lines of text, 18 characters per line, at the bottom of the game screen. This will likely be the most used script command for interacting with actors in your game.
+- **Text: Display Multiple Choice**  
+  Present two options to player allowing them to make a choice, will set the specified variable to _true_ if the first option is chosen and to _false_ if the second option is chosen.  
+  <img src="/img/events/display-multiple-choice.png" class="event-preview" />
+  <img src="/img/events/display-multiple-choice-preview.png" class="event-preview" />
+
+- **Text: Set Animation Speed**  
+  Set the speed that dialogue boxes appear and disappear and how fast text appears within the box.
+  <img src="/img/events/text-animation-speed.png" class="event-preview" />
+
+## Scene Events
+
+- **Scene: Switch Scene**  
+  Transition to a new scene with player at a specified position and direction. A connection line will be drawn between the source of the event and the destination scene with a <img src="/img/screenshots/destination-end.png" style="height:12px"/> icon appearing at the destination position. It's possible to drag this icon around and between scenes to modify the event.  
+  <img src="/img/events/switch-scene.png" class="event-preview" />
+  <img src="/img/events/switch-scene-preview.png" class="event-preview" />
+
+- **Scene: Store Current On Stack**
+  Store the current scene and player state on to the scene stack, this allows you to return to this exact location later using the _Scene Restore_ events. A common use of this event would be to include in a script just before a _Switch Scene_ event to open a menu scene, in the menu scene you could wait for the player to press a close button and then use the _Restore Previous From Stack_ event to return to where the player opened the menu.  
+  <img src="/img/events/scene-stack-push.png" class="event-preview" />
+
+* **Scene: Restore First From Stack**  
+  <img src="/img/events/scene-stack-pop.png" class="event-preview" />
+
+* **Scene: Restore Previous From Stack**  
+  <img src="/img/events/scene-stack-pop-all.png" class="event-preview" />
+
+- **Scene: Empty Scene Stack**  
+  <img src="/img/events/scene-stack-clear.png" class="event-preview" />
 
 ## Variable Events
 
 - **Set Variable To 'True'**  
-  Set the value of the specified variable to _true_.
+  Set the value of the specified variable to _true_.  
+  <img src="/img/events/variable-true.png" class="event-preview" />
 
 - **Reset Variable To 'False'**  
-  Set the value of the specified variable to _false_.
+  Set the value of the specified variable to _false_.  
+  <img src="/img/events/variable-false.png" class="event-preview" />
 
 - **Set Variable To Value**  
-  Set the specified variable to a defined value.
+  Set the specified variable to a defined value.  
+  <img src="/img/events/variable-value.png" class="event-preview" />
 
 - **Increment Variable By 1**  
-  Increase the value of the specified value by one, up to a maximum of _255_. If the value was previously _false_ it will now be _1_ (and also _true_), if it was previously _true_ it will now be _2_.
+  Increase the value of the specified value by one, up to a maximum of _255_. If the value was previously _false_ it will now be _1_ (and also _true_), if it was previously _true_ it will now be _2_.  
+  <img src="/img/events/variable-increment.png" class="event-preview" />
 
 - **Decrement Variable By 1**  
-  Decrease the value of the specified value by one, down to a minimum of _0_. If the value was previously _true_ it will now be _0_ (and also _false_).
+  Decrease the value of the specified value by one, down to a minimum of _0_. If the value was previously _true_ it will now be _0_ (and also _false_).  
+  <img src="/img/events/variable-decrement.png" class="event-preview" />
 
-- **Multiple Choice**  
-  Present two options to player allowing them to make a choice, will set the specified variable to _true_ if the first option is chosen and to _false_ if the second option is chosen.
+- **Variable Math Functions**  
+  Allows you to perform various maths functions on a variable to add/subtract/multiply/divide/modulus a value/variable/random number.  
+  <img src="/img/events/variable-math.png" class="event-preview" />
 
-- **Reset All Variables**  
-  Reset all variables used by your project back to _false_.
+* **Reset All Variables**  
+  Reset all variables used by your project back to _false_.  
+  <img src="/img/events/variable-reset-all.png" class="event-preview" />
 
 ## Control Flow Events
 
 - **If Variable Is 'True'**  
-  Conditionally execute part of the script if the specified variable is set to _true_.
+  Conditionally execute part of the script if the specified variable is set to _true_.  
+  <img src="/img/events/if-true.png" class="event-preview" />
 
 - **If Variable Is 'False'**  
-  Conditionally execute part of the script if the specified variable is _false_.
+  Conditionally execute part of the script if the specified variable is _false_.  
+  <img src="/img/events/if-false.png" class="event-preview" />
 
-- **If Variable Has Value**  
-  Conditionally execute part of the script if the specified variable matches a rule, such as "Equal To", "Greater Than" or "Less Than".
+- **If Variable Compare Value**  
+  Conditionally execute part of the script if the specified variable matches a rule, such as "Equal To", "Greater Than" or "Less Than" against a value.  
+  <img src="/img/events/if-variable-value.png" class="event-preview" />
 
-- **If Joypad Input Pressed**  
-  Conditionally execute part of the script if the specified joypad input is currently pressed. Will not wait for user input so use directly after a _Await Joypad Input_ event if waiting is required.
+- **If Variable Compare Variable**  
+  Conditionally execute part of the script if the specified variable matches a rule, such as "Equal To", "Greater Than" or "Less Than" against a second variable.  
+  <img src="/img/events/if-variable-variable.png" class="event-preview" />
 
-- **If Actor At Position**  
-  Conditionally execute part of the script if the specified actor is at a certain position in the scene.
+* **If Joypad Input Pressed**  
+  Conditionally execute part of the script if the specified joypad input is currently pressed. Will not wait for user input so use directly after a _Await Joypad Input_ event if waiting is required.  
+  <img src="/img/events/if-joypad-input.png" class="event-preview" />
+
+* **If Actor At Position**  
+  Conditionally execute part of the script if the specified actor is at a certain position in the scene.  
+  <img src="/img/events/if-actor-position.png" class="event-preview" />
+
+* **If Actor Facing Direction**  
+  Conditionally execute part of the script if the specified actor is facing a certain direction.  
+  <img src="/img/events/if-actor-direction.png" class="event-preview" />
 
 - **Loop Forever**  
-  Execute part of the script in a loop forever. Remember to break out of the loop otherwise the player will become stuck at this point. You can use a _Stop Script_ or _Switch Scene_ event to stop the loop.
+  Execute part of the script in a loop forever. Remember to break out of the loop otherwise the player will become stuck at this point. You can use a _Stop Script_ or _Switch Scene_ event to stop the loop.  
+  <img src="/img/events/loop.png" class="event-preview" />
 
 - **Stop Script**  
-  Stops the current script from running.
+  Stops the current script from running.  
+  <img src="/img/events/script-stop.png" class="event-preview" />
 
 ## Camera Events
 
@@ -91,7 +144,9 @@ Clicking the down arrow next to an event name in a script shows a dropdown menu 
 ## Actor Events
 
 - **Actor Set Direction**  
-  Set the facing direction of the specified actor.
+  Set the facing direction of the specified actor.  
+  <img src="/img/events/actor-set-direction.png" class="event-preview" />
+  <img src="/img/events/actor-set-direction-preview.png" class="event-preview" />
 
 - **Actor Set Position**  
   Set the position in the scene of the specified actor.
@@ -103,7 +158,9 @@ Clicking the down arrow next to an event name in a script shows a dropdown menu 
   Push an actor in the direction the player is currently facing. By default pushes by one tile, but can optionally slide until a collision occurs.
 
 - **Actor Emote Bubble**  
-  Display an emote bubble above the specified actor from one of _Shock_, _Question_, _Love_, _Pause_, _Anger_, _Sweat_, _Music_ and _Sleep_. You can change the graphics used for these bubbles by editing the [UI Elements](/docs/ui-elements#emotes-png) of your game.
+  Display an emote bubble above the specified actor from one of _Shock_, _Question_, _Love_, _Pause_, _Anger_, _Sweat_, _Music_ and _Sleep_. You can change the graphics used for these bubbles by editing the [UI Elements](/docs/ui-elements#emotes-png) of your game.  
+  <img src="/img/events/actor-emote.png" class="event-preview" />
+  <img src="/img/events/actor-emote-preview.png" class="event-preview" />
 
 - **Show Actor**  
   Unhide a previously hidden actor.
@@ -141,14 +198,15 @@ Clicking the down arrow next to an event name in a script shows a dropdown menu 
 ## Music Events
 
 - **Play Music**  
-  Plays a music file, optionally looping the file when finished.
+  Plays a music file, optionally looping the file when finished.  
+  <img src="/img/events/music-play.png" class="event-preview" />
 
 - **Stop Music**  
-  Stops any currently playing music.
+  Stops any currently playing music.  
+  <img src="/img/events/music-stop.png" class="event-preview" />
 
 ## Timing Events
 
 - **Wait**  
-  Pause script for up to 10 seconds.
-
-## Next: [Assets](/docs/assets)
+  Pause script for up to 10 seconds.  
+  <img src="/img/events/wait.png" class="event-preview" />

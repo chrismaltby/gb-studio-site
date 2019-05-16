@@ -1,6 +1,8 @@
 ---
 title: "Actors"
 draft: false
+next: "/docs/triggers"
+nextTitle: "Triggers"
 ---
 
 Actors are the characters and objects in your scene that you can interact with.
@@ -21,7 +23,7 @@ There are a few different movement types available to choose, the one you should
 
 - **Face Interaction** - The actor will start facing in the initial direction but when the player interacts with the actor it will turn to face the player before it's script plays. Useful for simple characters to make them more responsive to the player's actions.
 
-- **Random Direction** - The actor will start in the initial direction but will randomly change direction at set intervals. Useful to show characters who are looking around their surroundings.
+- **Random Rotation** - The actor will start in the initial direction but will randomly change direction at set intervals. Useful to show characters who are looking around their surroundings.
 
 - **Random Movement** - The actor will randomly change direction and move around the scene at set intervals. Useful for characters who are searching an area. Actors can block the player's movement so be careful not to use this movement type around tight spaces where the player might get stuck waiting for the actor to move out of the way.
 
@@ -34,5 +36,3 @@ Due to hardware limitations only **25 unique frames** of animation can be alloca
 ## Scripting
 
 When the actor is selected click the _Add Event button_ in the _Editor Sidebar_ to open the event menu and start building a script. For more information see the documentation for [Scripting](/docs/scripting).
-
-## Next: [Triggers](/docs/triggers)
