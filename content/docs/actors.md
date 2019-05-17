@@ -19,7 +19,11 @@ The _Editor Sidebar_ will switch to show the actor settings where you can give t
 
 There are a few different movement types available to choose, the one you should use will depend on how you want the actor to behave as the player is walking around the scene and interacting with it.
 
-- **Static** - The actor will only ever face in the initial direction (unless the direction is modified later using a script). If the player interacts with this actor it will not change direction. Useful for things like signposts or other stationary objects.
+- **Static** - The actor will display a single frame from the selected spritesheet.  
+  <span class="new">New in 1.1.0</span>  
+  If the sprite sheet contains more than one frame you will be given the option to choose which frame to display, this can be modified later using an _Actor: Set Animation Frame_ event. Sprite sheets with multiple frames also enable the ability to optionally animate the actor by cycling through each of the frames at a specified speed, the speed can also be modified with an _Actor: Set Animation Speed_ event.
+
+The actor will only ever face in the initial direction (unless the direction is modified later using a script). If the player interacts with this actor it will not change direction. Useful for things like signposts or other stationary objects.
 
 - **Face Interaction** - The actor will start facing in the initial direction but when the player interacts with the actor it will turn to face the player before it's script plays. Useful for simple characters to make them more responsive to the player's actions.
 

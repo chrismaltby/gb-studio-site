@@ -135,6 +135,7 @@ header {
   position: relative;
   top: -2px;
   display: inline-block;
+  line-height: 1.6;
 }
 
 hr {
