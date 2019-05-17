@@ -107,6 +107,15 @@ header {
   image-rendering: pixelated;
 }
 
+.InfoBox {
+  background: #eee;
+  padding: 10px;
+  margin: 10px 0;
+  max-width: 350px;
+  border-radius: 4px;
+  line-height: 1.6;
+}
+
 .event-preview {
   width: 100%;
   max-width: 301px;

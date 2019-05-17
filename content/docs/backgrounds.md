@@ -16,6 +16,12 @@ Background PNGs must only contain the following four colors:
 <div><div class="Swatch" style="background:#86c06c;"></div><div class="SwatchLabel">#86c06c</div></div>
 <div><div class="Swatch" style="background:#e0f8cf;"></div><div class="SwatchLabel">#e0f8cf</div></div>
 
+<div class="InfoBox">
+Download the GB Studio Palette Swatches for:<br />
+<a href="/assets/swatches/gb-studio-photoshop.aco">Adobe Photoshop</a><br />
+<a href="/assets/swatches/gb-studio-aseprite.aseprite">Aseprite</a>
+</div>
+
 Colors that are not one of the above hex codes will be matched to the nearest color. Unlike sprites, the color `#65ff00` can not be used in backgrounds.
 
 Backgrounds are divided into `8px`x `8px` tilesets so the total image size must be a multiple of `8px` in both width and height. A background has a minimum size of `160px` x `144px` (the screen size) and currently a background can be no larger than `256px` x `256px`.

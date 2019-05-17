@@ -41,3 +41,9 @@ With the exception of `emotes.png` which follows the standard sprite requirement
 <div><div class="Swatch" style="background:#306850;"></div><div class="SwatchLabel">#306850</div></div>
 <div><div class="Swatch" style="background:#86c06c;"></div><div class="SwatchLabel">#86c06c</div></div>
 <div><div class="Swatch" style="background:#e0f8cf;"></div><div class="SwatchLabel">#e0f8cf</div></div>
+
+<div class="InfoBox">
+Download the GB Studio Palette Swatches for:<br />
+<a href="/assets/swatches/gb-studio-photoshop.aco">Adobe Photoshop</a><br />
+<a href="/assets/swatches/gb-studio-aseprite.aseprite">Aseprite</a>
+</div>
