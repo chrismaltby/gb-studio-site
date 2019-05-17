@@ -120,8 +120,21 @@ header {
 .event-preview {
   width: 100%;
   max-width: 301px;
-  margin: 15px 0;
+  margin-top: 20px;
   margin-right: 20px;
+}
+
+.new {
+  color: #fff;
+  background: #c92c61;
+  font-size: 12px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  padding: 2px 5px;
+  border-radius: 20px;
+  position: relative;
+  top: -2px;
+  display: inline-block;
 }
 
 hr {
