@@ -51,10 +51,13 @@ draft: false
 - Event groups allowing you to better organise your scripts.
 - Notes fields to project, scenes, actors and triggers. [@thomas-alrek](https://github.com/thomas-alrek)
 - Splash page now has a list of recently opened projects.
-- Support for localisation of the app (now accepting pull requests for all languages).
-- Norwegian localisation. [@thomas-alrek](https://github.com/thomas-alrek)
 - Editor sidebar now resizable. [@thomas-alrek](https://github.com/thomas-alrek)
 - Support for 32-bit Windows.
+- Support for localisation of the app (now accepting pull requests for all languages).
+- Norwegian localisation. [@thomas-alrek](https://github.com/thomas-alrek)
+- Chinese localisation. [@InchouRyu](https://github.com/InchouRyu)
+- Brazilian Portuguese localisation [@junkajii](https://github.com/junkajii)
+- Portuguese localisation [@toxworks](https://github.com/toxworks)
 
 ### Changed
 
