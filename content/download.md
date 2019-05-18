@@ -63,7 +63,6 @@ draft: false
 - Editor sidebar now resizable. [@thomas-alrek](https://github.com/thomas-alrek)
 - Support for 32-bit Windows.
 - Support for localisation of the app (now accepting pull requests for all languages).
-- Norwegian localisation. [@thomas-alrek](https://github.com/thomas-alrek)
 - Chinese localisation. [@InchouRyu](https://github.com/InchouRyu)
 - Brazilian Portuguese localisation [@junkajii](https://github.com/junkajii)
 - Portuguese localisation [@toxworks](https://github.com/toxworks)
