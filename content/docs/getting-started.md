@@ -10,7 +10,7 @@ When you first open GB Studio you will see the _New Project_ window.
 
 <img title="New Project" src="/img/screenshots/new-project.png" width="812">
 
-If you have an existing project you can open it from here by clicking _Open_ and navigating to the `project.json` file.
+If you have an existing project you can open it from here by clicking _Open_ and navigating to the `.gbsproj` file.
 
 ## New Project
 
