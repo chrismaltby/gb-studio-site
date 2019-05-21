@@ -9,9 +9,15 @@
   HUGO_VERSION = "0.54.0" # if older, use format: 0.53 (no trailing zero)
   HUGO_ENV = "production"
   HUGO_ENABLEGITINFO = "true"
+
+[context.branch-deploy]
+  command = "hugo -b $DEPLOY_URL"
   
 [context.branch-deploy.environment]
   HUGO_VERSION = "0.54.0" # if older, use format: 0.53 (no trailing zero)
 
+[context.develop]
+  command = "hugo -b $DEPLOY_URL"
+  
 [context.develop.environment]
   BUILD_CONTEXT = "develop"
