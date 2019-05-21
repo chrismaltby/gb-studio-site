@@ -7,7 +7,7 @@
 	<title>{{ if .Title }}{{ .Title }} | {{end}}GB Studio</title>
 	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-	<link rel="stylesheet" href="{{ .Site.BaseURL }}dist/main.css">
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}/dist/main.css">
 	{{ if .RSSLink -}}<link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}">{{- end }}
 	{{ .Hugo.Generator }}
 	<meta property="og:image" content="https://www.gbstudio.dev/img/share.png">
