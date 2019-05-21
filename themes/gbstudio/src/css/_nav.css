@@ -102,7 +102,7 @@ nav ul li a:hover {
   background: #333333;
 }
 
-.build-develop li:nth-child(3) {
+.build-develop nav ul li:nth-child(3) {
   display: none;
 }
 
