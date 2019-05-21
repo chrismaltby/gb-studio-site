@@ -15,28 +15,28 @@ When done, add your MOD files to the `assets/music` folder of your project.
 
 Due to the limits of the Gameboy's hardware, there can only be 4 audio channels in a MOD file.
 
-The first two channels can make pulse waves with various widths. The third channel can make a variety of pre-set waveforms. The fourth channel generates different kinds of noise. These waveform variations are accessed through each channel's instrument parameter.
+The first two channels generate pulse waves. The pulse width can be changed by adjusting the channel's instrument parameter.
+The third channel generates a variety of pre-set waveforms. This channel's waveform is controlled by its instrument parameter.
+The fourth channel generates noise waveforms. This channel's waveform is also controlled by its instrument parameter.
 
-Channel # | Waveform | Note Range* | Inst. Range | Effects Allowed
---------- | --------- | --------- | --------- | --------- |
+Channel # | Waveform | Note Range* | Instrument Range | Effects Allowed
+---------- | ---------- | ---------- | ---------- | ----------
 Channel 1 | Pulse | C3 to B8 | 1-4 | All effects
 Channel 2 | Pulse | C3 to B8 | 1-4 | All effects
 Channel 3 | Wave | C3 to B8 | 8-15 | Only effects 0, E8 and EC
 Channel 4 | Noise | Only C5 | 16-31 | All except 0
 
-Any notes out of a channel's note range will be approximated to the closest in-range note. All notes in channel 4 are converted to C5.
-
-If a channel has notes, the instrument parameter and volume parameter should *at least* be set for the channel's first note.
-
-*This note range is for trackers that display notes between C1 and C8 such as OpenMPT. Other trackers that display notes between C0 and C7 such as MilkyTracker should read the range guidelines down an octave.
+*This note range is for trackers that display notes between C1 and C8 such as OpenMPT. Trackers that display notes between C0 and C7 such as MilkyTracker should use transpose these guidelines an octave down.
 
 ## Tempo
 
-GBT Player reads effect ``f`` as song speed. This does not translate to BPM and requires further experimentation.
+GBT Player reads effect ``f`` as song speed. ``f`` defines how many in-game frames should pass before the next tick of the MOD file is played.
 
-Effect ``f01`` is the slowest speed and effect ``f1f`` is the fastest speed. This effect can be set on any channel except channel 3. Songs without their speed set will still be readable.
+Effect ``f01`` is the fastest and plays 1 tick per frame. ``f1f`` is the slowest speed and plays 1 tick every 32 frames. This effect can be set on any channel except channel 3.
 
 ## General Tips
+
+* For newer composers, it's a good idea to test your music after creating a few patterns to identify differences between the hardware and your tracker.
 
 * To prevent notes that overlap when looping your song in-game, enter `00` as the note's volume on the tick it should stop playing.
 
