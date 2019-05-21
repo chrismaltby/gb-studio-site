@@ -1,7 +1,7 @@
-@import "_body";
-@import "_nav";
-@import "_main";
-@import "_footer";
-@import "_code";
-@import "_home";
-@import "_print";
+@import "./_body.css";
+@import "./_nav.css";
+@import "./_main.css";
+@import "./_footer.css";
+@import "./_code.css";
+@import "./_home.css";
+@import "./_print.css";

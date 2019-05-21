@@ -26,7 +26,7 @@ nav a {
 header .title:before {
   content: "";
   display: inline-block;
-  background: url(/img/icon.png);
+  background: url(../../static/img/icon.png);
   background-position: bottom left;
   background-size: contain;
   background-repeat: no-repeat;

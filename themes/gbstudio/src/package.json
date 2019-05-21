@@ -7,37 +7,14 @@
   "author": "budparr",
   "license": "MIT",
   "scripts": {
-    "build:production": "rm -rf ../static/dist && webpack -p",
-    "build": "webpack --progress --colors --watch",
-    "start": "npm run build"
+    "build": "parcel build js/main.js -d ../static/dist --public-url /dist/",
+    "start": "parcel js/main.js -d ../static/dist --public-url /dist/"
   },
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.0.0",
-    "babel-preset-env": "^1.7.0",
-    "css-loader": "^0.28.0",
-    "cssnano": "^3.10.0",
-    "extract-text-webpack-plugin": "^2.1.0",
-    "file-loader": "^0.11.1",
-    "glslify-loader": "^1.0.2",
-    "jquery": "^3.2.1",
-    "postcss": "^5.2.16",
-    "postcss-cssnext": "^2.10.0",
-    "postcss-import": "^9.1.0",
-    "postcss-loader": "^1.3.3",
-    "raw-loader": "^0.5.1",
-    "style-loader": "^0.16.1",
-    "tachyons": "^4.7.0",
-    "webpack": "^2.3.3"
-  },
-  "dependencies": {
-    "gl-buffer": "^2.1.1",
-    "gl-clear": "^1.0.0",
-    "gl-context": "^0.1.1",
-    "gl-mat4": "^1.0.1",
-    "gl-shader": "^4.2.1",
-    "glslify": "^6.1.0",
-    "right-now": "^1.0.0",
-    "smoothscroll-polyfill": "^0.4.0"
+    "caniuse-lite": "^1.0.30000697",
+    "parcel-bundler": "^1.12.3",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-import": "^12.0.1",
+    "tachyons": "^4.7.0"
   }
 }
