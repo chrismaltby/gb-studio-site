@@ -26,7 +26,7 @@ nav a {
 header .title:before {
   content: "";
   display: inline-block;
-  background: url(/img/icon.png);
+  background: url(../../static/img/icon.png);
   background-position: bottom left;
   background-size: contain;
   background-repeat: no-repeat;
@@ -50,20 +50,6 @@ nav .container {
   box-sizing: border-box;
   margin: 0px auto;
 }
-
-/* nav .title {
-  color: #24226b;
-  display: inline-block;
-  font-size: 40px;
-  line-height: 80px;
-  font-style: italic;
-  font-weight: bold;
-  margin: 0;
-  width: 30%;
-  padding-left: 0px;
-  box-sizing: border-box;
-  text-decoration: none;
-} */
 
 nav .nav_right {
   float: right;
@@ -102,6 +88,24 @@ nav ul li a:hover {
   background: #c92c61;
 }
 
+.build-develop nav {
+  background: #000;
+}
+
+.build-develop nav .title:after {
+  content: "Beta Docs";
+  font-size: 12px;
+  padding-left: 3px;
+}
+
+.build-develop nav ul li a:hover {
+  background: #333333;
+}
+
+.build-develop nav ul li:nth-child(3) {
+  display: none;
+}
+
 @media (max-width: 1100px) {
   nav ul li a {
     padding: 0px 20px;
@@ -121,10 +125,6 @@ nav ul li a:hover {
     width: 30px;
     height: 30px;
   }
-
-  /*  nav #menu_open ~ span ul {
-    display: none;
-  }*/
 
   nav #menu_open:checked ~ span .menufade {
     background-color: rgba(0, 0, 0, 0);

@@ -7,6 +7,10 @@
   text-align: center;
 }
 
+.build-develop .homepage-landing {
+  display: none;
+}
+
 .homepage-landing .container {
   position: relative;
   max-width: 960px;
