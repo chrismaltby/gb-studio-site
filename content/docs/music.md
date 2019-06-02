@@ -22,7 +22,7 @@ Due to the limits of the Gameboy's hardware, there can only be 4 channels in the
 | Channel 1 | Pulse | C3 to B8    | 1-4              | 0, B, C, D, E8, EC, F |
 | Channel 2 | Pulse | C3 to B8    | 1-4              | 0, B, C, D, E8, EC, F |
 | Channel 3 | Wave  | C3 to B8    | 8-15             | 0, E8 and EC          |
-| Channel 4 | Noise | Only C5     | 16-31            | B, C, D, E8, EC, F    |
+| Channel 4 | Noise | Only C5     | 16-31            | B, C, D, EC, F        |
 
 **This note range is for trackers that display notes between C1 and C8 such as OpenMPT. Trackers that display notes between C0 and C7 such as MilkyTracker should use transpose these guidelines an octave down (as in, C3 to B8 in MilkyTracker becomes C2 to B7).*
 
