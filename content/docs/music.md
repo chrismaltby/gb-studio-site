@@ -22,7 +22,7 @@ Due to the limits of the Gameboy's hardware, there can only be 4 channels in the
 | Channel 1 | Pulse | C3 to B8    | 1-4              | 0, B, C, D, E8, EC, F |
 | Channel 2 | Pulse | C3 to B8    | 1-4              | 0, B, C, D, E8, EC, F |
 | Channel 3 | Wave  | C3 to B8    | 8-15             | 0, E8 and EC          |
-| Channel 4 | Noise | Only C5     | 16-31            | B, C, D, EC, F        |
+| Channel 4 | Noise | Only C5     | 16-31            | B, C, D, EC, E8, F    |
 
 **This note range is for trackers that display notes between C1 and C8 such as OpenMPT. Trackers that display notes between C0 and C7 such as MilkyTracker should use transpose these guidelines an octave down (as in, C3 to B8 in MilkyTracker becomes C2 to B7).*
 
@@ -66,7 +66,7 @@ The noise channels gets the most instruments, but that's also because of how the
 ## General Tips
 
 - It's a good idea to test your music after creating a few patterns to identify any audible differences between GBT Player and your tracker. Things are not always 1:1.
-- Read the manusls and tutorials for [OpenMPT](https://wiki.openmpt.org/Tutorial:_Getting_Started) or [MilkyTracker](https://milkytracker.titandemo.org/docs/MilkyTracker.html).
+- Read the manuals and tutorials for [OpenMPT](https://wiki.openmpt.org/Tutorial:_Getting_Started) or [MilkyTracker](https://milkytracker.titandemo.org/docs/MilkyTracker.html).
 - If you're using OpenMPT, make sure to disable ProTracker 1/2 mode and Amiga frequency limits in the song settings! The latter is especially important to disable, as leaving it enabled will limit your pitch range from C4 to B6.
 - You might want to set the song BPM to 150 (either via song settings, or effects in OpenMPT). It will more closely match the conversion in terms of speed.
 - You should set the volume and the instrument for each new note.
