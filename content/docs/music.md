@@ -104,4 +104,6 @@ The noise channels gets the most instruments, but that's also because of how the
 Change the selected note, instrument, or effect, value using\
 `Crtl +`, `Crtl -` or `Crtl & Scroll wheel`\
 Change your curent instument using `CRTL & Arrow Up or Down`\
-Move between patterns with `CRTL & Arrow Left or Right`
+Move between patterns with `CRTL & Arrow Left or Right`\
+`F5` Play the song from here, `F6` Play the song from the begining.\
+*Note There are 4 play buttons, 2 for the song, and 2 that loop the pattern.
