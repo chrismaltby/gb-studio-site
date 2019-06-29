@@ -94,7 +94,7 @@ Channels 1 and 2 only have a quarter of the full volume range, and only volume c
 
 | EFFECT  |     NAME      | NOTES                                                        |
 | :-----: | :-----------: | :----------------------------------------------------------- |
-| **0xy** |   Arpeggio    | Plays 3 notes rapidly. x and y's values represent # of semitones above the original note. x is for the 2nd note, y is for the 3rd note. You should set the instrument when using this effect. |
+| **0xy** |   Arpeggio    | Plays 3 notes rapidly. x and y's values represent the number of semitones above the original note. x is for the 2nd note, y is for the 3rd note. You should set the instrument when using this effect. |
 | **Bxx** |     Jump      | Jump to specific pattern `xx`. Put this on the last heard note of a pattern. |
 | **Cxx** |    Volume     | Set the volume of a note to xx from `00` to `40`. A volume effect should be set on each new note since note volume is not reset in-game unlike most trackers' global volume setting. |
 | **Dxx** | Pattern break | Jumps to the next pattern early, where `xx` is the position (row) it should jump to in the next pattern. |
