@@ -9,7 +9,7 @@ GB Studio is internally using [GBT Player](https://github.com/AntonioND/gbt-play
 
 If you're unfamiliar with making tracker music, you can follow a video series like [Y_VE_Squared's OpenMPT tutorial](https://youtu.be/2jRh_XNMYE0), [Gruber's MilkyTracker tutorial](https://youtu.be/DRDlix-KT1E?list=PLur95ujyAigtzAa6Rw_VcIgdP4n45JvZh), [wasp amiga's ProTracker tutorial](https://youtu.be/S1yE2qL8UcY?list=PLVoRT-Mqwas9gvmCRtOusCQSKNQNf6lTc) and many others. These videos cover how to navigate a tracker program and are well-designed for tracker beginners.
 
-For Windows and Linux (WINE) users, [OpenMPT](https://openmpt.org/) has the fewest workarounds for creating .mod files for use in GBT Player. For OS X, [MilkyTracker](https://milkytracker.titandemo.org/), [8bitbubsy's ProTracker/Fasttracker Clones](https://16-bits.org/pt.php) and the browser-based [BassoonTracker](https://www.stef.be/bassoontracker/) all export .mod files and will work with GBT Player.
+For Windows and Linux (WINE) users, [OpenMPT](https://openmpt.org/) is the most functional of the trackers for loading and creating .mod files. Alternatively, [MilkyTracker](https://milkytracker.titandemo.org/), [8bitbubsy's ProTracker/FastTracker II Clones](https://16-bits.org/pt.php) and the browser-based [BassoonTracker](https://www.stef.be/bassoontracker/) work on all platforms and can be used to create .mod files for GBT Player.
 
 # Getting Started
 
