@@ -185,7 +185,7 @@ table th:first-child {
   border-left-width: 0;
 }
 table thead {
-  background-color: #e0e0e0;
+  background-color: #eeeeee;
   color: #000;
   text-align: left;
   vertical-align: bottom;
