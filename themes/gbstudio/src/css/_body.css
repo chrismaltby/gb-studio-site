@@ -53,6 +53,13 @@ em {
   color: #000;
 }
 
+ol {
+  font-family: Georgia, serif;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  padding-left: 20px;
+}
+
 ul {
   font-family: Georgia, serif;
   line-height: 1.6;
@@ -178,7 +185,7 @@ table th:first-child {
   border-left-width: 0;
 }
 table thead {
-  background-color: #e0e0e0;
+  background-color: #eeeeee;
   color: #000;
   text-align: left;
   vertical-align: bottom;

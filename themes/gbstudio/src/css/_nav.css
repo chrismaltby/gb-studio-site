@@ -127,12 +127,8 @@ nav ul li a:hover {
   }
 
   nav #menu_open:checked ~ span .menufade {
-    background-color: rgba(0, 0, 0, 0);
-    transition: background-color 0.3s linear;
-  }
-
-  nav #menu_open:checked ~ span .menufade {
     background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s linear;
     position: fixed;
     top: 0px;
     left: 0px;
