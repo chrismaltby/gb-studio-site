@@ -165,9 +165,7 @@ Pseudorandom Noise
 25. (19) "spaceship" - The same waveform but faster
 26. (1A) "ocean" - The same waveform but even faster
 27. (1B) "scratch" - You get the idea
-
 28. (1C) "glitch" - A fairly clean white-noise sample, unrelated to other instruments
-
 29. (1D) "volcano" - A pulse with rapidly changing pulse width
 30. (1E) "scream" - The same waveform but faster
 31. (1F) "static" - The same waveform but even faster
