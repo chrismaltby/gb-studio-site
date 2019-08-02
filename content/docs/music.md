@@ -120,33 +120,59 @@ ModPlug Tracker MOD
 ```
 
 
-
 # Instruments available
+
+The numbers on this list represent the base10 number that each of these instruments use in OpenMPT. Beside these numbers (in brackets) is the base16 equivalent of these numbers for MilkyTracker users.
 
 The pulse channels get 4 instruments (from 1 to 4): 
 
-- 25% pulse
-- 50% pulse (sometimes called a square wave)
-- 75% pulse (inverted 25% pulse)
-- 12.5% pulse
+1. 25% pulse
+2. 50% pulse (square wave)
+3. 75% pulse (inverted 25% pulse)
+4. 12.5% pulse
 
 Instruments 5 through 7 are intentionally left blank.
 
 The wave channel gets 8 instruments (from 8 to 15):
 
-- Buzzy (Source code calls this "random :P")
-- Ringy (useful for SFX)
-- Sync Saw
-- Ring Saw
-- Octave Pulse + Triangle
-- Sawtooth
-- Square
-- Sine
+8. Buzzy (Source code calls this "random :P")
+9. Ringy (useful for SFX)
+10. (A) Sync Saw
+11. (B) Ring Saw
+12. (C) Octave Pulse + Triangle
+13. (D) Sawtooth
+14. (E) Square
+15. (F) Sine
 
-The noise channels gets the most instruments, but that's partly because of how the noise works on the Gameboy:
+The noise channels get the most instruments, partly due to how the noise works on the Gameboy. Instruments 16 to 23 use Periodic (looped) Noise at various pitches while instruments 24 to 32 use Pseudorandom noise at various pitches.
 
-- 16 to 23 - Periodic (looped) noise at various pitches.
-- 24 to 32 - (Pseudo)random noise at various pitches.
+The nicknames and descriptions next to these instruments are not official for GBT Player, they are intended to help identify these noise instruments at a glance.
+
+Periodic Noise:
+
+16. (10) "stutter" - A square plus a pulse at random pulse widths
+17. (11) "rumble" - The same waveform but faster
+18. (12) "engine" - The same waveform but even faster
+19. (13) "low tone" - Sounds like D5
+20. (14) "undertone" - Sounds like E5 + 50cents
+21. (15) "middletone" - Sounds like B5 + 50cents
+22. (16) "overtone" - Sounds like D6 + 50cents
+23. (17) "high tone" - Sounds like D7
+
+Pseudorandom Noise
+
+24. (18) "earthquake" - A square with a thin pulse at random pulse widths
+25. (19) "spaceship" - The same waveform but faster
+26. (1A) "ocean" - The same waveform but even faster
+27. (1B) "scratch" - You get the idea
+
+28. (1C) "glitch" - A fairly clean white-noise sample, unrelated to other instruments
+
+29. (1D) "volcano" - A pulse with rapidly changing pulse width
+30. (1E) "scream" - The same waveform but faster
+31. (1F) "static" - The same waveform but even faster
+
+There are no GBT Player-readable instruments beyond 31.
 
 # Effects
 
