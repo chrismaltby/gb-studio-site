@@ -21,3 +21,9 @@
   
 [context.develop.environment]
   BUILD_CONTEXT = "develop"
+
+[[redirects]]
+  from = "/download"
+  to = "https://chrismaltby.itch.io/gb-studio"
+  status = 301
+  force = true
