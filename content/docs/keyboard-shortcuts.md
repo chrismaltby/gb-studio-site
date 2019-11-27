@@ -25,10 +25,18 @@ Much of the functionality of GB Studio is accessible through the menu bar and ma
 
 **Save Project** - Ctrl/Cmd + S  
 **Open Project** - Ctrl/Cmd + O  
-**Switch View Mode** - Ctrl/Cmd + 1-7  
+**Switch View Mode** - Ctrl/Cmd + 1-8  
 **Run Game** - Ctrl/Cmd + B  
 **Export ROM file** - Ctrl/Cmd + Shift + B
 
-## Setting the Player Starting Position
+## Game World
 
-You can reset the player starting position by clicking into any scene and pressing the **P** key.
+While editing the game world you can use the following keys to quickly manipulate your scenes.
+
+**Select Mode** - V  
+**Add Actor** - A  
+**Add Trigger** - T  
+**Add Scene** - S  
+**Eraser Mode** - E  
+**Collisions Mode** - C  
+**Set Player Start Position** - P (while hovering over desired location)
