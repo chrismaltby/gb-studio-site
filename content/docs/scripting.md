@@ -1,8 +1,8 @@
 ---
 title: "Scripting Events"
 draft: false
-next: "/docs/assets"
-nextTitle: "Assets"
+next: "/docs/custom-events"
+nextTitle: "Custom Events"
 ---
 
 Scripting events allow you to dynamically control parts of your game based on interactions from the player. Use them to connect scenes together, to give dialogue to your characters or to create cutscenes.

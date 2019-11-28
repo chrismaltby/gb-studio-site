@@ -17,6 +17,7 @@ draft: false
   - [Actors](/docs/actors)
   - [Triggers](/docs/triggers)
   - [Scripting Events](/docs/scripting)
+  - [Custom Events](/docs/custom-events)
 - [Assets](/docs/assets)
   - [Sprites](/docs/sprites)
   - [Backgrounds](/docs/backgrounds)
@@ -26,6 +27,7 @@ draft: false
   - [Play](/docs/build#play)
   - [Build as ROM](/docs/build#build-as-rom)
   - [Build and deploy for Web](/docs/build#build-and-deploy-for-web)
+- [Settings](/docs/settings)
 
 or, if you prefer:
 
