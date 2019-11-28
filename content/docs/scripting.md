@@ -19,6 +19,10 @@ After clicking the _Add Event_ button a menu will appear to choose the event to 
 
 Clicking the down arrow next to an event name in a script shows a dropdown menu where you can copy an event to your clipboard. Clicking this on another event allows you to paste the clipboard event either before or after the selected one or to just paste the values from the first event into the second.
 
+<span class="new">New in 1.2.0</span>
+
+You can also hold the _Alt_ key to turn all _Add Event_ buttons into _Paste Event_ buttons allowing you to easily paste events into control flow branches.
+
 ## Text Events
 
 - **Text: Display Dialogue**  
