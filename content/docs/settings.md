@@ -25,7 +25,7 @@ Using a custom color palette you can create a drastically different tone for you
 
 ## Controls
 
-The _Controls_ section allows you to override the default controls used when playing your game from a Web build and the _Play Window_.
+The _Controls_ section allows you to override the default controls used when playing your game from a web build and the _Play Window_.
 
 To edit the controls for a button click on the input box and while the input is highlighted type the key you wish to assign. To remove all the assigned keys click the input and then press the _Backspace_ key on your keyboard.
 
@@ -40,3 +40,5 @@ The _Cartridge Type_ section allows you to choose which Memory Bank Controller y
 If you don't know what these settings mean it's best to keep this as the default of MBC5+RAM+BATTERY which you can do by using the _Restore Default_ button.
 
 ## Custom HTML Header
+
+You can use the _Custom HTML Header_ section to add content to the HTML `<head>` when generating a web build of your game. You can use this to add any custom CSS or Javascript you want to the web build HTML page.
