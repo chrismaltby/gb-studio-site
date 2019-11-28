@@ -148,6 +148,10 @@ You can also hold the _Alt_ key to turn all _Add Event_ buttons into _Paste Even
   Stops the current script from running.  
   <img src="/img/events/script-stop.png" class="event-preview" />
 
+- **Disable Else** <span class="new">New in 1.2.0</span>  
+  If you don't require an _Else_ branch in any of your control flow events you can now disable it by selecting _Disable Else_ from the event dropdown menu. The same menu can be used to restore an _Else_ branch if needed at a later time.
+  <img src="/img/events/disable-else.png" class="event-preview" />
+
 ## Camera Events
 
 - **Camera: Move To**  
