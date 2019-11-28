@@ -73,6 +73,8 @@ You can also hold the _Alt_ key to turn all _Add Event_ buttons into _Paste Even
 
 ## Variable Events
 
+Your game has 512 variables that can be shared across all the scripts in your game. <span class="new">New in 1.2.0</span> Additionally every _Actor_, _Trigger_ and _Scene_ has 4 local variables that can only be accessed by that specific entity. Local variables are useful for keeping track of state specific to an entity such as how many times you have spoken to a character or if a treasure chest is open or closed.
+
 - **Variable: Set To 'True'**  
   Set the value of the specified variable to _true_.  
   <img src="/img/events/variable-true.png" class="event-preview" />
