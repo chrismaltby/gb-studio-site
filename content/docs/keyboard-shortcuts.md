@@ -19,6 +19,10 @@ When playing your game inside GB Studio use the following keyboard controls:
 **Start** - Enter  
 **Select** - Shift
 
+<span class="new">New in 1.2.0</span>
+
+You can also control the _Play Window_ using a supported gamepad. If your web browser has gamepad support you can also use it when running a web build.
+
 ## Navigating The Menus
 
 Much of the functionality of GB Studio is accessible through the menu bar and many of the menu items contain keyboard shortcut labels. Try clicking around on the menus to discover all of the shortcuts but the following are a few you should find useful:
