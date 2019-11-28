@@ -28,6 +28,10 @@ draft: false
   - [Build as ROM](/docs/build#build-as-rom)
   - [Build and deploy for Web](/docs/build#build-and-deploy-for-web)
 - [Settings](/docs/settings)
+  - [GB Color Options](/docs/settings#gb-color-options)
+  - [Controls](/docs/settings#controls)
+  - [Cartridge Type](/docs/settings#cartridge-type)
+  - [Custom HTML Header](/docs/settings#custom-html-header)
 
 or, if you prefer:
 
