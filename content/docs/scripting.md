@@ -37,19 +37,19 @@ Clicking the down arrow next to an event name in a script shows a dropdown menu 
   <img src="/img/events/display-multiple-choice.png" class="event-preview" />
   <img src="/img/events/display-multiple-choice-preview.png" class="event-preview" />
 
-- **Text: Set Animation Speed** <span class="new">New in 1.1.0</span>  
+- **Text: Set Animation Speed**  
   Set the speed that dialogue boxes appear and disappear and how fast text appears within the box.
   <img src="/img/events/text-animation-speed.png" class="event-preview" />
 
 ## Scene Events
 
-- **Scene: Switch Scene**  
+- **Scene: Change Scene**  
   Transition to a new scene with player at a specified position and direction. A connection line will be drawn between the source of the event and the destination scene with a <img src="/img/screenshots/destination-end.png" style="height:12px"/> icon appearing at the destination position. It's possible to drag this icon around and between scenes to modify the event.  
   <img src="/img/events/switch-scene.png" class="event-preview" />
   <img src="/img/events/switch-scene-preview.png" class="event-preview" />
 
 - **Scene: Store Current On Stack** <span class="new">New in 1.1.0</span>  
-  Store the current scene and player state on to the scene stack, this allows you to return to this exact location later using the _Scene Restore_ events. A common use of this event would be to include in a script just before a _Switch Scene_ event to open a menu scene, in the menu scene you could wait for the player to press a close button and then use the _Restore Previous From Stack_ event to return to where the player opened the menu.  
+  Store the current scene and player state on to the scene stack, this allows you to return to this exact location later using the _Scene Restore_ events. A common use of this event would be to include in a script just before a _Change Scene_ event to open a menu scene, in the menu scene you could wait for the player to press a close button and then use the _Restore Previous From Stack_ event to return to where the player opened the menu.  
   <img src="/img/events/scene-stack-push.png" class="event-preview" />
 
 - **Scene: Restore Previous From Stack** <span class="new">New in 1.1.0</span>  
@@ -86,7 +86,7 @@ Clicking the down arrow next to an event name in a script shows a dropdown menu 
   Decrease the value of the specified value by one, down to a minimum of _0_. If the value was previously _true_ it will now be _0_ (and also _false_).  
   <img src="/img/events/variable-decrement.png" class="event-preview" />
 
-- **Variable: Math Functions** <span class="new">New in 1.1.0</span>  
+- **Variable: Math Functions**  
   Allows you to perform various maths functions on a variable to add/subtract/multiply/divide/modulus a value/variable/random number.  
   _Note:_ Variables have max values of 255 and will wrap if increased above 255 or below 0.  
   <img src="/img/events/variable-math.png" class="event-preview" />
@@ -130,7 +130,7 @@ Clicking the down arrow next to an event name in a script shows a dropdown menu 
   <img src="/img/events/if-game-saved.png" class="event-preview" />
 
 - **Loop Forever**  
-  Execute part of the script in a loop forever. Remember to break out of the loop otherwise the player will become stuck at this point. You can use a _Stop Script_ or _Switch Scene_ event to stop the loop.  
+  Execute part of the script in a loop forever. Remember to break out of the loop otherwise the player will become stuck at this point. You can use a _Stop Script_ or _Change Scene_ event to stop the loop.  
   <img src="/img/events/loop.png" class="event-preview" />
 
 - **Event Group** <span class="new">New in 1.1.0</span>  
