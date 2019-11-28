@@ -48,19 +48,19 @@ Clicking the down arrow next to an event name in a script shows a dropdown menu 
   <img src="/img/events/switch-scene.png" class="event-preview" />
   <img src="/img/events/switch-scene-preview.png" class="event-preview" />
 
-- **Scene: Store Current On Stack** <span class="new">New in 1.1.0</span>  
+- **Scene: Store Current On Stack**  
   Store the current scene and player state on to the scene stack, this allows you to return to this exact location later using the _Scene Restore_ events. A common use of this event would be to include in a script just before a _Change Scene_ event to open a menu scene, in the menu scene you could wait for the player to press a close button and then use the _Restore Previous From Stack_ event to return to where the player opened the menu.  
   <img src="/img/events/scene-stack-push.png" class="event-preview" />
 
-- **Scene: Restore Previous From Stack** <span class="new">New in 1.1.0</span>  
+- **Scene: Restore Previous From Stack**  
   Transition to the last stored scene from the scene stack using the specified fade speed. The previous scene will then be removed from the stack so the next time this event is used it will transition to the scene before that.  
   <img src="/img/events/scene-stack-pop.png" class="event-preview" />
 
-- **Scene: Restore First From Stack** <span class="new">New in 1.1.0</span>  
+- **Scene: Restore First From Stack**  
   Transition the very first scene stored on the stack, for instance if you had multiple levels of menu scenes you could use this to imediately return to the game scene. This event will cause the scene stack to become empty.  
   <img src="/img/events/scene-stack-pop-all.png" class="event-preview" />
 
-- **Scene: Empty Scene Stack** <span class="new">New in 1.1.0</span>  
+- **Scene: Empty Scene Stack**  
   Clears the scene stack so that no previous scenes can be restored.  
   <img src="/img/events/scene-stack-clear.png" class="event-preview" />
 
@@ -109,7 +109,7 @@ Clicking the down arrow next to an event name in a script shows a dropdown menu 
   Conditionally execute part of the script if the specified variable matches a rule, such as "Equal To", "Greater Than" or "Less Than" against a value.  
   <img src="/img/events/if-variable-value.png" class="event-preview" />
 
-- **If Variable Compare With Variable** <span class="new">New in 1.1.0</span>  
+- **If Variable Compare With Variable**  
   Conditionally execute part of the script if the specified variable matches a rule, such as "Equal To", "Greater Than" or "Less Than" against a second variable.  
   <img src="/img/events/if-variable-variable.png" class="event-preview" />
 
@@ -121,11 +121,11 @@ Clicking the down arrow next to an event name in a script shows a dropdown menu 
   Conditionally execute part of the script if the specified actor is at a certain position in the scene.  
   <img src="/img/events/if-actor-position.png" class="event-preview" />
 
-- **If Actor Facing Direction** <span class="new">New in 1.1.0</span>  
+- **If Actor Facing Direction**  
   Conditionally execute part of the script if the specified actor is facing a certain direction.  
   <img src="/img/events/if-actor-direction.png" class="event-preview" />
 
-- **If Game Data Saved** <span class="new">New in 1.1.0</span>  
+- **If Game Data Saved**  
   Conditionally execute part of the script if there is a saved game available.  
   <img src="/img/events/if-game-saved.png" class="event-preview" />
 
@@ -133,7 +133,7 @@ Clicking the down arrow next to an event name in a script shows a dropdown menu 
   Execute part of the script in a loop forever. Remember to break out of the loop otherwise the player will become stuck at this point. You can use a _Stop Script_ or _Change Scene_ event to stop the loop.  
   <img src="/img/events/loop.png" class="event-preview" />
 
-- **Event Group** <span class="new">New in 1.1.0</span>  
+- **Event Group**  
   Provides no functionality but allows you to group a sequence of events together and give them a label (using the _Rename Event_ option on the event menu) and collapse the events into a single block.  
   <img src="/img/events/event-group.png" class="event-preview" />
 
@@ -176,11 +176,11 @@ Clicking the down arrow next to an event name in a script shows a dropdown menu 
   Set the position in the scene of the specified actor.  
   <img src="/img/events/actor-position.png" class="event-preview" />
 
-- **Actor: Set Position Using Variables** <span class="new">New in 1.1.0</span>  
+- **Actor: Set Position Using Variables**  
   Set the position in the scene of the specified actor from the values of two variables.  
   <img src="/img/events/actor-position-variables.png" class="event-preview" />
 
-- **Actor: Set Relative Position** <span class="new">New in 1.1.0</span>  
+- **Actor: Set Relative Position**  
   Set the position in the scene of the specified actor relative to their current position.  
   <img src="/img/events/actor-relative-position.png" class="event-preview" />
 
@@ -188,11 +188,11 @@ Clicking the down arrow next to an event name in a script shows a dropdown menu 
   Make the actor walk to a specified position in the scene. Actor will ignore all collisions along path so combine multiple of these events if you need to specify an exact path avoiding obstacles in the scene.  
   <img src="/img/events/actor-move-to.png" class="event-preview" />
 
-- **Actor: Move Relative** <span class="new">New in 1.1.0</span>  
+- **Actor: Move Relative**  
   Make the actor walk to a position relative to their current position.  
   <img src="/img/events/actor-relative-move.png" class="event-preview" />
 
-- **Actor: Move To Using Variables** <span class="new">New in 1.1.0</span>  
+- **Actor: Move To Using Variables**  
   Make the actor walk to a position from the values of two variables.  
   <img src="/img/events/actor-move-to-variables.png" class="event-preview" />
 
@@ -209,15 +209,15 @@ Clicking the down arrow next to an event name in a script shows a dropdown menu 
   <img src="/img/events/actor-emote.png" class="event-preview" />
   <img src="/img/events/actor-emote-preview.png" class="event-preview" />
 
-- **Actor: Set Animation Frame** <span class="new">New in 1.1.0</span>  
+- **Actor: Set Animation Frame**  
   Set the current animation frame of the specified actor.  
   <img src="/img/events/actor-set-frame.png" class="event-preview" />
 
-- **Actor: Set Animation Speed** <span class="new">New in 1.1.0</span>  
+- **Actor: Set Animation Speed**  
   Set the animation speed of the specified actor.  
   <img src="/img/events/actor-animation-speed.png" class="event-preview" />
 
-- **Actor: Set Movement Speed** <span class="new">New in 1.1.0</span>  
+- **Actor: Set Movement Speed**  
   Set the movement speed of the specified actor.  
   <img src="/img/events/actor-movement-speed.png" class="event-preview" />
 
@@ -225,7 +225,7 @@ Clicking the down arrow next to an event name in a script shows a dropdown menu 
   Change the player sprite sheet from the default defined in the _Project Editor_. Changes to the player sprite sheet will persist between scene transitions so make sure to change it back if the change was supposed to be temporary.  
   <img src="/img/events/actor-player-spritesheet.png" class="event-preview" />
 
-- **Actor: Invoke Script** <span class="new">New in 1.1.0</span>  
+- **Actor: Invoke Script**  
   Call the script on another actor in the scene as if the player had interacted with that actor.  
   <img src="/img/events/actor-invoke.png" class="event-preview" />
 
@@ -267,11 +267,11 @@ Clicking the down arrow next to an event name in a script shows a dropdown menu 
   Pauses the script until one of the specified joypad inputs are pressed.  
   <img src="/img/events/joypad-pause.png" class="event-preview" />
 
-- **Joypad Input: Attach Script To Button** <span class="new">New in 1.1.0</span>  
+- **Joypad Input: Attach Script To Button**  
   Execute the specified script any time a joypad input button is pressed. If you attach scripts to a direction button or the _A_ button the scripts will override the default game actions.  
   <img src="/img/events/joypad-attach.png" class="event-preview" />
 
-- **Joypad Input: Remove Attached Script** <span class="new">New in 1.1.0</span>  
+- **Joypad Input: Remove Attached Script**  
   Remove an attached script from a joypad input button restoring the default functionality of the button.  
   <img src="/img/events/joypad-attach.png" class="event-preview" />
 
@@ -293,14 +293,14 @@ Clicking the down arrow next to an event name in a script shows a dropdown menu 
 
 ## Game Data Events
 
-- **Game Data: Save** <span class="new">New in 1.1.0</span>  
+- **Game Data: Save**  
   Save the current game data.  
   <img src="/img/events/data-save.png" class="event-preview" />
 
-- **Game Data: Load** <span class="new">New in 1.1.0</span>  
+- **Game Data: Load**  
   Load the previously saved game data.  
   <img src="/img/events/data-load.png" class="event-preview" />
 
-- **Game Data: Clear** <span class="new">New in 1.1.0</span>  
+- **Game Data: Clear**  
   Remove any previously saved game data.  
   <img src="/img/events/data-clear.png" class="event-preview" />
