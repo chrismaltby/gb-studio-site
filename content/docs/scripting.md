@@ -26,15 +26,18 @@ You can also hold the _Alt_ key to turn all _Add Event_ buttons into _Paste Even
 ## Text Events
 
 - **Text: Display Dialogue**  
-  Show a dialogue box with up to three lines of text, 18 characters per line (16 on the third line), at the bottom of the game screen. This will likely be the most used script command for interacting with actors in your game.  
+  Show a dialogue box with up to three lines of text, 18 characters per line (and a total of 52 characters), at the bottom of the game screen. This will likely be the most used script command for interacting with actors in your game.  
   When text is shown the dialogue box will slide up from the bottom of the screen and will slide down after it has been shown.  
   <img src="/img/events/display-dialogue.png" class="event-preview" />
   <img src="/img/events/display-dialogue-preview.png" class="event-preview" />
-  <br /><br />
-  <span class="new">New in 1.1.0</span>
+  <br />
 
   - Using the _+_ button you can create a dialogue sequence which will only close after the last message has been displayed.
-  - You can display any of the first 100 variables in a text box by using the variable's identifier _$00$_ to _$99$_.
+
+  <span class="new">New in 1.2.0</span>
+
+  - You can display the value of any variables in a text box by using the variable's identifier shown in the variable selector (e.g. `$L0$` for local variable 0 and `$182$` for global variable 182).
+  - You can optionally display an avatar image on the left hand side of the dialogue box by clicking _Add Avatar_ and selecting an image to use. You are able to pick any sprite within your game that contains only a single frame (`16px` x `16px`). Setting an avatar will reduce the amount of characters per line available to 16 on all lines.
 
 - **Text: Display Multiple Choice**  
   Present two options to player allowing them to make a choice, will set the specified variable to _true_ if the first option is chosen and to _false_ if the second option is chosen.  
