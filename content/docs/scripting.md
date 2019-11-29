@@ -337,3 +337,13 @@ Your game has 512 variables that can be shared across all the scripts in your ga
 - **Game Data: Clear**  
   Remove any previously saved game data.  
   <img src="/img/events/data-clear.png" class="event-preview" />
+
+## Miscellaneous Events
+
+- **Comment** <span class="new">New in 1.2.0</span>  
+  Provides no functionality in game but allows you to leave notes within your scripts. The text you type automatically gets set in the event title so you can collapse the comment and still read its content.
+  <img src="/img/events/comment.png" class="event-preview" />  
+  You can also use the event dropdown menu to disable and reenable any event.  
+  Disabled events will be skipped when run in game.  
+  <img src="/img/events/event-disable-menu.png" class="event-preview" />
+  <img src="/img/events/event-disabled.png" class="event-preview" />
