@@ -185,6 +185,10 @@ Your game has 512 variables that can be shared across all the scripts in your ga
   <img src="/img/events/actor-set-direction.png" class="event-preview" />
   <img src="/img/events/actor-set-direction-preview.png" class="event-preview" />
 
+- **Actor: Set Direction Using Variable** <span class="new">New in 1.2.0</span>  
+  Set the facing direction of the specified actor from the value of a variable.  
+  <img src="/img/events/actor-direction-variables.png" class="event-preview" />
+
 - **Actor: Set Position**  
   Set the position in the scene of the specified actor.  
   <img src="/img/events/actor-position.png" class="event-preview" />
@@ -209,7 +213,7 @@ Your game has 512 variables that can be shared across all the scripts in your ga
   Make the actor walk to a position from the values of two variables.  
   <img src="/img/events/actor-move-to-variables.png" class="event-preview" />
 
-- **Actor: Store Position In Variables**
+- **Actor: Store Position In Variables**  
   Store the current position of an actor into two variables.  
   <img src="/img/events/actor-store-position.png" class="event-preview" />
 
