@@ -234,6 +234,10 @@ Your game has 512 variables that can be shared across all the scripts in your ga
   Set the current animation frame of the specified actor.  
   <img src="/img/events/actor-set-frame.png" class="event-preview" />
 
+- **Actor: Set Animation Frame Using Variable** <span class="new">New in 1.2.0</span>  
+  Set the current animation frame of the specified actor to the value of a variable.  
+  <img src="/img/events/actor-set-frame-variable.png" class="event-preview" />
+
 - **Actor: Set Animation Speed**  
   Set the animation speed of the specified actor.  
   <img src="/img/events/actor-animation-speed.png" class="event-preview" />
