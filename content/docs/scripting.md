@@ -209,9 +209,13 @@ Your game has 512 variables that can be shared across all the scripts in your ga
   Make the actor walk to a position from the values of two variables.  
   <img src="/img/events/actor-move-to-variables.png" class="event-preview" />
 
-- **Actor: Store Position In Variables** <span class="new">New in 1.1.0</span>  
+- **Actor: Store Position In Variables**
   Store the current position of an actor into two variables.  
   <img src="/img/events/actor-store-position.png" class="event-preview" />
+
+- **Actor: Store Direction In Variable** <span class="new">New in 1.2.0</span>  
+  Store the current direction of an actor into a variable.  
+  <img src="/img/events/actor-store-direction.png" class="event-preview" />
 
 - **Actor: Push Away From Player**  
   Push an actor in the direction the player is currently facing. By default pushes by one tile, but can optionally slide until a collision occurs.  
