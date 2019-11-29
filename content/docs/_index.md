@@ -23,6 +23,7 @@ draft: false
   - [Backgrounds](/docs/backgrounds)
   - [UI Elements](/docs/ui-elements)
   - [Music](/docs/music)
+  - [Sound Effects](/docs/sound-effects)
 - [Building Your Game](/docs/build)
   - [Play](/docs/build#play)
   - [Build as ROM](/docs/build#build-as-rom)

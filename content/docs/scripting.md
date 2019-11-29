@@ -298,6 +298,14 @@ Your game has 512 variables that can be shared across all the scripts in your ga
   Stops any currently playing music.  
   <img src="/img/events/music-stop.png" class="event-preview" />
 
+## Sound Events
+
+- **Sound: Play Effect** <span class="new">New in 1.2.0</span>  
+  Play a sound effect, choose from playing a beep with a given pitch, a tone with a given frequency or cymbal crash. Using [Custom Events](/docs/custom-events) you can combine multiple effects into a single reusable event to make jingles.  
+  <img src="/img/events/sound-tone.png" class="event-preview" />
+  <img src="/img/events/sound-beep.png" class="event-preview" />
+  <img src="/img/events/sound-crash.png" class="event-preview" />
+
 ## Timing Events
 
 - **Wait**  
