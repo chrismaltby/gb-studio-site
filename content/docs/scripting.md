@@ -32,10 +32,8 @@ You can also hold the _Alt_ key to turn all _Add Event_ buttons into _Paste Even
   <img src="/img/events/display-dialogue-preview.png" class="event-preview" />
   <br />
 
-  - Using the _+_ button you can create a dialogue sequence which will only close after the last message has been displayed.
-
-  <span class="new">New in 1.2.0</span>
-
+  - Using the _+_ button you can create a dialogue sequence which will only close after the last message has been displayed.  
+    <span class="new">New in 1.2.0</span>
   - You can display the value of any variables in a text box by using the variable's identifier shown in the variable selector (e.g. `$L0$` for local variable 0 and `$182$` for global variable 182).
   - You can optionally display an avatar image on the left hand side of the dialogue box by clicking _Add Avatar_ and selecting an image to use. You are able to pick any sprite within your game that contains only a single frame (`16px` x `16px`). Setting an avatar will reduce the amount of characters per line available to 16 on all lines.
 
@@ -44,7 +42,13 @@ You can also hold the _Alt_ key to turn all _Add Event_ buttons into _Paste Even
   <img src="/img/events/display-multiple-choice.png" class="event-preview" />
   <img src="/img/events/display-multiple-choice-preview.png" class="event-preview" />
 
-- **Text: Set Animation Speed**  
+- **Text: Display Menu** <span class="new">New in 1.2.0</span>  
+  Display a menu of multiple options and set the specified variable to the value of the chosen option. Each menu item has a maximum length of `6` characters.  
+  Multiple layouts are provided, `Menu` (shown below) displays as a single column on the right hand side of the game screen and `Dialogue` displays a full width dialogue box with two columns. You can optionally set the `B` button to close the menu setting the variable to `0` and can also make the last menu item return `0` when selected.  
+  <img src="/img/events/menu.png" class="event-preview" />
+  <img src="/img/events/menu-preview.png" class="event-preview" />
+
+* **Text: Set Animation Speed**  
   Set the speed that dialogue boxes appear and disappear and how fast text appears within the box.
   <img src="/img/events/text-animation-speed.png" class="event-preview" />
 
