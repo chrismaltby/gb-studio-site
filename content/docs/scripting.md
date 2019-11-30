@@ -154,6 +154,10 @@ Your game has 512 variables that can be shared across all the scripts in your ga
   Conditionally execute part of the script if there is a saved game available.  
   <img src="/img/events/if-game-saved.png" class="event-preview" />
 
+- **Switch** <span class="new">New in 1.2.0</span>  
+  Conditionally execute from multiple options depending on the value of the specified variable. First choose how many options you want to compare the variable against, then set the values to compare and what scripts to execute when the value is matched.  
+  <img src="/img/events/switch.png" class="event-preview" />
+
 - **Loop Forever**  
   Execute part of the script in a loop forever. Remember to break out of the loop otherwise the player will become stuck at this point. You can use a _Stop Script_ or _Change Scene_ event to stop the loop.  
   <img src="/img/events/loop.png" class="event-preview" />
