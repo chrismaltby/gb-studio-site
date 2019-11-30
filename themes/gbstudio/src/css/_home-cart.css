@@ -1,0 +1,128 @@
+.homepage-cart {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.homepage-cart .cart {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.homepage-cart .scene {
+  width: 256px;
+  height: 256px;
+  perspective: 1200px;
+  transform: scale(1);
+}
+
+.homepage-cart .cube {
+  width: 256px;
+  height: 256px;
+  position: relative;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage-cart .face {
+  width: 256px;
+  height: 256px;
+  position: absolute;
+  background-color: rgba(3, 121, 255, 0.2);
+  overflow: hidden;
+}
+
+.homepage-cart .face.front {
+  background-image: url(../../images/img.png);
+  background-size: cover;
+}
+
+.homepage-cart .gloss {
+  content: "";
+  display: block;
+  width: 256px;
+  height: 256px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: linear-gradient(
+    70deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.5) 35.1%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+}
+
+.homepage-cart .side {
+  width: 48px;
+  background-color: rgb(20, 63, 112);
+}
+
+.homepage-cart .bottom {
+  height: 48px;
+  background-color: rgb(20, 63, 112);
+  background-image: url(../../images/bottom.png);
+  background-size: cover;
+}
+
+.homepage-cart .front {
+  transform: rotateY(0deg) translateZ(24px);
+}
+
+.homepage-cart .bottom {
+  transform: rotateX(-90deg) translateZ(128px);
+}
+
+.homepage-cart__button {
+  display: block;
+  background: #c92c61;
+  color: #fff;
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  clear: both;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transform: scale(1);
+  transition: transform 0.1s ease-in-out;
+}
+
+@media (min-width: 700px) {
+  .homepage-cart .scene {
+    width: 320px;
+    height: 320px;
+  }
+  .homepage-cart .cube {
+    width: 320px;
+    height: 320px;
+  }
+  .homepage-cart .face {
+    width: 320px;
+    height: 320px;
+  }
+
+  .homepage-cart .bottom {
+    height: 64px;
+  }
+
+  .homepage-cart .gloss {
+    width: 320px;
+    height: 320px;
+  }
+
+  .homepage-cart .front {
+    transform: rotateY(0deg) translateZ(32px);
+  }
+
+  .homepage-cart .bottom {
+    transform: rotateX(-90deg) translateZ(160px);
+  }
+}

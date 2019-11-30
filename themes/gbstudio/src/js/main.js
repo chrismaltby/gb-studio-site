@@ -1,4 +1,26 @@
+import Swiper from "swiper";
+
 import styles from "./../css/main.css";
+import "./home-cart";
+
+var mySwiper = new Swiper(".js-swiper-container", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+  effect: "fade",
+  speed: 500,
+  fadeEffect: {
+    crossFade: true
+  },
+  autoplay: {
+    delay: 5000
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+    clickable: true
+  }
+});
 
 let OSName = "Unknown OS";
 if (navigator.appVersion.indexOf("Win") != -1) OSName = "Windows";
@@ -35,36 +57,36 @@ const downloadUrls = {
 if (downloadBtn) {
   switch (OSName) {
     case "Windows":
-      downloadBtn.innerHTML = "Download for Windows";
-      appScreenshot.src = "/img/screenshot_win.png";
-      if (
-        navigator.userAgent.indexOf("WOW64") != -1 ||
-        navigator.userAgent.indexOf("Win64") != -1
-      ) {
-        downloadBtn.innerHTML = "Download for Windows 64-bit";
-        downloadBtn.href = downloadUrls.windows;
-      } else {
-        downloadBtn.innerHTML = "Download for Windows 32-bit";
-        downloadBtn.href = downloadUrls.windows32;
-      }
+      // downloadBtn.innerHTML = "Download for Windows";
+      // appScreenshot.src = "/img/screenshot_win.png";
+      // if (
+      //   navigator.userAgent.indexOf("WOW64") != -1 ||
+      //   navigator.userAgent.indexOf("Win64") != -1
+      // ) {
+      //   downloadBtn.innerHTML = "Download for Windows 64-bit";
+      //   downloadBtn.href = downloadUrls.windows;
+      // } else {
+      //   downloadBtn.innerHTML = "Download for Windows 32-bit";
+      //   downloadBtn.href = downloadUrls.windows32;
+      // }
       break;
     case "MacOS":
-      downloadBtn.innerHTML = "Download for macOS";
-      downloadBtn.href = downloadUrls.mac;
-      appScreenshot.src = "/img/screenshot.png";
+      // downloadBtn.innerHTML = "Download for macOS";
+      // downloadBtn.href = downloadUrls.mac;
+      // appScreenshot.src = "/img/screenshot.png";
       break;
     case "Linux":
-      downloadBtn.innerHTML = "Download for Ubuntu";
-      downloadBtn.href = downloadUrls.deb;
-      const redhatDownloadBtn = document.createElement("a");
-      redhatDownloadBtn.className = "homepage-landing__button";
-      redhatDownloadBtn.innerHTML = "Download for Redhat";
-      redhatDownloadBtn.href = downloadUrls.rpm;
-      downloadBtn.parentNode.insertBefore(redhatDownloadBtn, downloadLink);
-      appScreenshot.src = "/img/screenshot.png";
+      // downloadBtn.innerHTML = "Download for Ubuntu";
+      // downloadBtn.href = downloadUrls.deb;
+      // const redhatDownloadBtn = document.createElement("a");
+      // redhatDownloadBtn.className = "homepage-landing__button";
+      // redhatDownloadBtn.innerHTML = "Download for Redhat";
+      // redhatDownloadBtn.href = downloadUrls.rpm;
+      // downloadBtn.parentNode.insertBefore(redhatDownloadBtn, downloadLink);
+      // appScreenshot.src = "/img/screenshot.png";
       break;
     default:
-      downloadBtn.innerHTML = "Download GB Studio";
-      appScreenshot.src = "/img/screenshot.png";
+    // downloadBtn.innerHTML = "Download GB Studio";
+    // appScreenshot.src = "/img/screenshot.png";
   }
 }
