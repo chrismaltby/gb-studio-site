@@ -353,6 +353,18 @@ Your game has 512 variables that can be shared across all the scripts in your ga
   Pause script for up to 10 seconds.  
   <img src="/img/events/wait.png" class="event-preview" />
 
+- **Timer: Set Timer Script** <span class="new">New in 1.2.0</span>  
+  Execute the specified script repeatedly after a time interval. The script will keep running in the background until a _Disable Timer Script_ event is called or the scene is changed using a _Change Scene_ event.
+  <img src="/img/events/timer-set.png" class="event-preview" />
+
+- **Timer: Restart Timer** <span class="new">New in 1.2.0</span>  
+  Reset the countdown timer back to zero. The script will call again after the time specified originally.  
+  <img src="/img/events/timer-restart.png" class="event-preview" />
+
+- **Timer: Disable Timer Script** <span class="new">New in 1.2.0</span>  
+  Remove the timer script so it will no longer be called.  
+  <img src="/img/events/timer-disable.png" class="event-preview" />
+
 ## Game Data Events
 
 - **Game Data: Save**  
