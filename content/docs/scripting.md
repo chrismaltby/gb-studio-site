@@ -166,8 +166,13 @@ Your game has 512 variables that can be shared across all the scripts in your ga
   Execute part of the script in a loop forever. Remember to break out of the loop otherwise the player will become stuck at this point. You can use a _Stop Script_ or _Change Scene_ event to stop the loop.  
   <img src="/img/events/loop.png" class="event-preview" />
 
+- **Label: Define / Label: Goto** <span class="new">New in 1.2.0</span>  
+  Define markers in your script using _Label: Define_ giving the label a name and jump to markers using _Label: Goto_.  
+  _Note:_ The name must be identical for the define/goto event pair to work. **Use with care!**
+  <img src="/img/events/label-goto.png" class="event-preview" />
+
 - **Event Group**  
-  Provides no functionality but allows you to group a sequence of events together and give them a label (using the _Rename Event_ option on the event menu) and collapse the events into a single block.  
+  Provides no in game functionality but allows you to group a sequence of events together and give them a label (using the _Rename Event_ option on the event menu) and collapse the events into a single block.  
   <img src="/img/events/event-group.png" class="event-preview" />
 
 - **Script: Stop**  
