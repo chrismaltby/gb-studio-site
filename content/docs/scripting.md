@@ -100,6 +100,18 @@ Your game has 512 variables that can be shared across all the scripts in your ga
   _Note:_ Variables have max values of 255 and will wrap if increased above 255 or below 0.  
   <img src="/img/events/variable-math.png" class="event-preview" />
 
+- **Variable: Set Flags** <span class="new">New in 1.2.0</span>  
+  Set the value of a variable by enabling individual bits of the 8-bit number. Allows 8 true/false values to be stored within a single variable. Setting the flags will replace the previous value of the variable.  
+  <img src="/img/events/variable-flags-set.png" class="event-preview" />
+
+- **Variable: Add Flags** <span class="new">New in 1.2.0</span>  
+  Set selected flags to true on a variable. All unselected flags will keep their previous value.
+  <img src="/img/events/variable-flags-add.png" class="event-preview" />
+
+- **Variable: Clear Flags** <span class="new">New in 1.2.0</span>  
+  Set selected flags to false on a variable. All unselected flags will keep their previous value.
+  <img src="/img/events/variable-flags-clear.png" class="event-preview" />
+
 - **Variable: Reset All Variables To 'False'**  
   Reset all variables used by your project back to _false_.  
   <img src="/img/events/variable-reset-all.png" class="event-preview" />
@@ -121,6 +133,10 @@ Your game has 512 variables that can be shared across all the scripts in your ga
 - **If Variable Compare With Variable**  
   Conditionally execute part of the script if the specified variable matches a rule, such as "Equal To", "Greater Than" or "Less Than" against a second variable.  
   <img src="/img/events/if-variable-variable.png" class="event-preview" />
+
+- **If Variable Has Flag** <span class="new">New in 1.2.0</span>  
+  Conditionally execute part of the script if the specified variable has the chosen flag set as true.  
+  <img src="/img/events/if-variable-flag.png" class="event-preview" />
 
 - **If Joypad Input Pressed**  
   Conditionally execute part of the script if the specified joypad input is currently pressed. Will not wait for user input so use directly after a _Joypad Input: Pause Script Until Pressed_ event if waiting is required. Event will only execute once, if you wish to run a script every time a button is pressed use _Joypad Input: Attach Script To Button_ instead.
