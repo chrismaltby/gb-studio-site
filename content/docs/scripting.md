@@ -279,6 +279,15 @@ Your game has 512 variables that can be shared across all the scripts in your ga
   Change the player sprite sheet from the default defined in the _Project Editor_. Changes to the player sprite sheet will persist between scene transitions so make sure to change it back if the change was supposed to be temporary.  
   <img src="/img/events/actor-player-spritesheet.png" class="event-preview" />
 
+- **Actor: Collisions Disable** <span class="new">New in 1.2.0</span>  
+  Prevent collisions from affecting the selected actor. If a scene actor is selected then the player will be able to walk through them, if the player is selected then you will be able to walk through all actors and collisions in the scene.  
+  _Note:_ While collisions are disabled it is still posible to interact with the actor.  
+  <img src="/img/events/actor-collisions-disable.png" class="event-preview" />
+
+- **Actor: Collisions Enable** <span class="new">New in 1.2.0</span>  
+  Reenable collisions on the selected actor.  
+  <img src="/img/events/actor-collisions-enable.png" class="event-preview" />
+
 - **Actor: Invoke Script**  
   Call the script on another actor in the scene as if the player had interacted with that actor.  
   <img src="/img/events/actor-invoke.png" class="event-preview" />
