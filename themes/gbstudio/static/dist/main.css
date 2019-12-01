@@ -1372,7 +1372,7 @@ pre {
 }
 
 .homepage-cart .face.front {
-  background-image: url(/dist/img.e0f31cdf.png);
+  background-image: url(/dist/cart-front.6ee53e9b.jpg);
   background-size: cover;
 }
 
@@ -1401,7 +1401,7 @@ pre {
 .homepage-cart .bottom {
   height: 48px;
   background-color: rgb(20, 63, 112);
-  background-image: url(/dist/bottom.b2421d12.png);
+  background-image: url(/dist/cart-bottom.8d5001b9.jpg);
   background-size: cover;
 }
 

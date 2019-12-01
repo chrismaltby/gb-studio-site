@@ -16,7 +16,7 @@ theme = "gbstudio"
 [[menu.main]]
     name = "Download"
     title = "Download"
-    url = "/download/"
+    url = "https://chrismaltby.itch.io/gb-studio"
 
 [[menu.main]]
     name = "GitHub"

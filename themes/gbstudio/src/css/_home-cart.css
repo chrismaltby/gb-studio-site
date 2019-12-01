@@ -40,7 +40,7 @@
 }
 
 .homepage-cart .face.front {
-  background-image: url(../../images/img.png);
+  background-image: url(../../static/img/cart-front.jpg);
   background-size: cover;
 }
 
@@ -69,7 +69,7 @@
 .homepage-cart .bottom {
   height: 48px;
   background-color: rgb(20, 63, 112);
-  background-image: url(../../images/bottom.png);
+  background-image: url(../../static/img/cart-bottom.jpg);
   background-size: cover;
 }
 

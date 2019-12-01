@@ -1,9 +1,9 @@
-const cart = document.querySelector(".cart");
-const cube = document.querySelector(".cube");
-const gloss = document.querySelector(".gloss");
+const cart = document.getElementById("cart");
+const cube = document.getElementById("cube");
+const gloss = document.getElementById("gloss");
 
-let scrollStart = 400;
-let scrollLength = 10;
+let scrollStart = 130;
+let scrollLength = 500;
 
 function clamp01(value) {
   return Math.max(0, Math.min(1, value));
@@ -18,8 +18,8 @@ function onScroll() {
 }
 
 function onResize() {
-  scrollStart = offsetTop(cart) - window.innerHeight / 2;
-  scrollLength = window.innerHeight;
+  scrollStart = offsetTop(cart) - window.innerHeight + 300;
+  scrollLength = window.innerHeight - 360;
 }
 
 function offsetTop(el) {

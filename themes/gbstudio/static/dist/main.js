@@ -9987,7 +9987,45 @@ if (typeof Swiper.use === 'undefined') {
 Swiper.use(components);
 var _default = Swiper;
 exports.default = _default;
-},{"dom7/dist/dom7.modular":"../node_modules/dom7/dist/dom7.modular.js","ssr-window":"../node_modules/ssr-window/dist/ssr-window.esm.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"dom7/dist/dom7.modular":"../node_modules/dom7/dist/dom7.modular.js","ssr-window":"../node_modules/ssr-window/dist/ssr-window.esm.js"}],"home-cart.js":[function(require,module,exports) {
+var cart = document.getElementById("cart");
+var cube = document.getElementById("cube");
+var gloss = document.getElementById("gloss");
+var scrollStart = 130;
+var scrollLength = 500;
+
+function clamp01(value) {
+  return Math.max(0, Math.min(1, value));
+}
+
+function onScroll() {
+  var t = clamp01((window.scrollY - scrollStart) / scrollLength);
+  var rotateX = 70 - 55 * t;
+  var offsetX = t * 350;
+  cube.style.transform = "translateZ(-2em) rotateX(" + rotateX + "deg)";
+  gloss.style.transform = "translateX(" + offsetX + "px)";
+}
+
+function onResize() {
+  scrollStart = offsetTop(cart) - window.innerHeight + 300;
+  scrollLength = window.innerHeight - 360;
+}
+
+function offsetTop(el) {
+  if (el.offsetParent) {
+    return el.offsetTop + offsetTop(el.offsetParent);
+  }
+
+  return el.offsetTop;
+}
+
+if (cart && gloss && cube) {
+  window.addEventListener("scroll", onScroll);
+  window.addEventListener("resize", onResize);
+  onScroll();
+  onResize();
+}
+},{}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -10104,7 +10142,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../../images/img.png":[["img.e0f31cdf.png","../../images/img.png"],"../../images/img.png"],"./../../images/bottom.png":[["bottom.b2421d12.png","../../images/bottom.png"],"../../images/bottom.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../css/_home-social.css":[function(require,module,exports) {
+},{"./../../static/img/cart-front.jpg":[["cart-front.6ee53e9b.jpg","../../static/img/cart-front.jpg"],"../../static/img/cart-front.jpg"],"./../../static/img/cart-bottom.jpg":[["cart-bottom.8d5001b9.jpg","../../static/img/cart-bottom.jpg"],"../../static/img/cart-bottom.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../css/_home-social.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -10149,129 +10187,94 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./_body.css":"../css/_body.css","./_swiper.css":"../css/_swiper.css","./components/_container.css":"../css/components/_container.css","./components/_button.css":"../css/components/_button.css","./_nav.css":"../css/_nav.css","./_main.css":"../css/_main.css","./_footer.css":"../css/_footer.css","./_code.css":"../css/_code.css","./_home.css":"../css/_home.css","./_tables.css":"../css/_tables.css","./_print.css":"../css/_print.css","_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"home-cart.js":[function(require,module,exports) {
-var cart = document.querySelector(".cart");
-var cube = document.querySelector(".cube");
-var gloss = document.querySelector(".gloss");
-var scrollStart = 400;
-var scrollLength = 10;
-
-function clamp01(value) {
-  return Math.max(0, Math.min(1, value));
-}
-
-function onScroll() {
-  var t = clamp01((window.scrollY - scrollStart) / scrollLength);
-  var rotateX = 70 - 55 * t;
-  var offsetX = t * 350;
-  cube.style.transform = "translateZ(-2em) rotateX(" + rotateX + "deg)";
-  gloss.style.transform = "translateX(" + offsetX + "px)";
-}
-
-function onResize() {
-  scrollStart = offsetTop(cart) - window.innerHeight / 2;
-  scrollLength = window.innerHeight;
-}
-
-function offsetTop(el) {
-  if (el.offsetParent) {
-    return el.offsetTop + offsetTop(el.offsetParent);
-  }
-
-  return el.offsetTop;
-}
-
-if (cart && gloss && cube) {
-  window.addEventListener("scroll", onScroll);
-  window.addEventListener("resize", onResize);
-  onScroll();
-  onResize();
-}
-},{}],"main.js":[function(require,module,exports) {
+},{"./_body.css":"../css/_body.css","./_swiper.css":"../css/_swiper.css","./components/_container.css":"../css/components/_container.css","./components/_button.css":"../css/components/_button.css","./_nav.css":"../css/_nav.css","./_main.css":"../css/_main.css","./_footer.css":"../css/_footer.css","./_code.css":"../css/_code.css","./_home.css":"../css/_home.css","./_tables.css":"../css/_tables.css","./_print.css":"../css/_print.css","_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"main.js":[function(require,module,exports) {
 "use strict";
 
 var _swiper = _interopRequireDefault(require("swiper"));
 
-var _main = _interopRequireDefault(require("./../css/main.css"));
-
 require("./home-cart");
+
+require("./../css/main.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var mySwiper = new _swiper.default(".js-swiper-container", {
-  // Optional parameters
-  direction: "horizontal",
-  loop: true,
-  effect: "fade",
-  speed: 500,
-  fadeEffect: {
-    crossFade: true
-  },
-  autoplay: {
-    delay: 5000
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    type: "bullets",
-    clickable: true
-  }
-});
 var OSName = "Unknown OS";
 if (navigator.appVersion.indexOf("Win") != -1) OSName = "Windows";
 if (navigator.appVersion.indexOf("Mac") != -1 && navigator.appVersion.indexOf("iPhone") == -1 && navigator.appVersion.indexOf("iPad") == -1) OSName = "MacOS";
 if (navigator.appVersion.indexOf("X11") != -1) OSName = "UNIX";
 if (navigator.appVersion.indexOf("Linux") != -1 && navigator.appVersion.indexOf("Android") == -1) OSName = "Linux";
-var downloadBtn = document.getElementById("download-btn");
-var downloadLink = document.getElementById("download-link");
-var appScreenshot = document.getElementById("app-screenshot");
-var downloadUrls = {
-  windows: "https://github.com/chrismaltby/gb-studio/releases/download/v1.1.0/GB.Studio-win32-x64-squirrel-1.1.0.zip",
-  windows32: "https://github.com/chrismaltby/gb-studio/releases/download/v1.1.0/GB.Studio-win32-ia32-squirrel-1.1.0.zip",
-  mac: "https://github.com/chrismaltby/gb-studio/releases/download/v1.1.0/GB.Studio-darwin-x64-1.1.0.zip",
-  deb: "https://github.com/chrismaltby/gb-studio/releases/download/v1.1.0/gb-studio_1.1.0_amd64.deb",
-  rpm: "https://github.com/chrismaltby/gb-studio/releases/download/v1.1.0/gb-studio-1.1.0.x86_64.rpm"
-};
+var mySwiper;
+var swiperEffect = "fade";
+var appScreenshot1 = document.getElementById("app-screenshot-1");
+var appScreenshot2 = document.getElementById("app-screenshot-2");
+var appScreenshot3 = document.getElementById("app-screenshot-3");
 
-if (downloadBtn) {
+if (appScreenshot1 && appScreenshot2 && appScreenshot3) {
   switch (OSName) {
     case "Windows":
-      // downloadBtn.innerHTML = "Download for Windows";
-      // appScreenshot.src = "/img/screenshot_win.png";
-      // if (
-      //   navigator.userAgent.indexOf("WOW64") != -1 ||
-      //   navigator.userAgent.indexOf("Win64") != -1
-      // ) {
-      //   downloadBtn.innerHTML = "Download for Windows 64-bit";
-      //   downloadBtn.href = downloadUrls.windows;
-      // } else {
-      //   downloadBtn.innerHTML = "Download for Windows 32-bit";
-      //   downloadBtn.href = downloadUrls.windows32;
-      // }
+      appScreenshot1.src = "/img/screenshot_win_1.png";
+      appScreenshot2.src = "/img/screenshot_win_2.png";
+      appScreenshot3.src = "/img/screenshot_win_3.png";
       break;
 
     case "MacOS":
-      // downloadBtn.innerHTML = "Download for macOS";
-      // downloadBtn.href = downloadUrls.mac;
-      // appScreenshot.src = "/img/screenshot.png";
+      appScreenshot1.src = "/img/screenshot_win_1.png";
+      appScreenshot2.src = "/img/screenshot_win_2.png";
+      appScreenshot3.src = "/img/screenshot_win_3.png";
       break;
 
     case "Linux":
-      // downloadBtn.innerHTML = "Download for Ubuntu";
-      // downloadBtn.href = downloadUrls.deb;
-      // const redhatDownloadBtn = document.createElement("a");
-      // redhatDownloadBtn.className = "homepage-landing__button";
-      // redhatDownloadBtn.innerHTML = "Download for Redhat";
-      // redhatDownloadBtn.href = downloadUrls.rpm;
-      // downloadBtn.parentNode.insertBefore(redhatDownloadBtn, downloadLink);
-      // appScreenshot.src = "/img/screenshot.png";
+      appScreenshot1.src = "/img/screenshot_mac_1.png";
+      appScreenshot2.src = "/img/screenshot_mac_2.png";
+      appScreenshot3.src = "/img/screenshot_mac_3.png";
       break;
 
-    default: // downloadBtn.innerHTML = "Download GB Studio";
-    // appScreenshot.src = "/img/screenshot.png";
+    default:
+      appScreenshot1.src = "/img/screenshot_mac_1.png";
+      appScreenshot2.src = "/img/screenshot_mac_2.png";
+      appScreenshot3.src = "/img/screenshot_mac_3.png";
+  }
 
+  initSwiper();
+  window.addEventListener("resize", function () {
+    initSwiper();
+  });
+}
+
+function initSwiper() {
+  var screenWidth = window.innerWidth > 0 ? window.innerWidth : screen.width;
+  var newEffect = screenWidth >= 1100 ? "fade" : "coverflow";
+
+  if (!mySwiper || swiperEffect !== newEffect) {
+    if (mySwiper) {
+      mySwiper.destroy(true, true);
+    }
+
+    swiperEffect = newEffect;
+    mySwiper = new _swiper.default(".js-swiper-container", {
+      direction: "horizontal",
+      loop: true,
+      effect: swiperEffect,
+      speed: 800,
+      fadeEffect: {
+        crossFade: true
+      },
+      coverflowEffect: {
+        rotate: 30,
+        slideShadows: false
+      },
+      autoplay: {
+        delay: 3200
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        clickable: true
+      }
+    });
   }
 }
-},{"swiper":"../node_modules/swiper/js/swiper.esm.bundle.js","./../css/main.css":"../css/main.css","./home-cart":"home-cart.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"swiper":"../node_modules/swiper/js/swiper.esm.bundle.js","./home-cart":"home-cart.js","./../css/main.css":"../css/main.css"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -10299,7 +10302,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49586" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54889" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
