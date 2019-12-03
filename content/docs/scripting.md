@@ -12,21 +12,21 @@ When either a scene, an actor or a trigger is selected in the _World Editor_, th
 When adding events to actors they will run when the player stands next to that actor and presses the interact button. Events on triggers run when the player stands on top of the trigger which is useful for creating doorways between scenes. Events on scenes run as soon as that scene is loaded which is useful for configuring the scene based on values of variables or to kick off a cutscene.
 
 ## Quick Navigation
-- ### [Text Events](#text-events)
-- ### [Scene Events](#scene-events)
-- ### [Variable Events](#variable-events)
-- ### [Control Flow Events](#control-flow-events)
-- ### [Camera Events](#camera-events)
-- ### [Screen Events](#screen-events)
-- ### [Actor Events](#actor-events)
-- ### [Sprite Events](#sprite-events)
-- ### [Overlay Events](#overlay-events)
-- ### [Input Events](#input-events)
-- ### [Music Events](#music-events)
-- ### [Sound Events](#sound-events)
-- ### [Timing Events](#timing-events)
-- ### [Game Data Events](#game-data-events)
-- ### [Miscellaneous Events](#miscellaneous-events)
+- ### [Text Events](#text-events-1)
+- ### [Scene Events](#scene-events-1)
+- ### [Variable Events](#variable-events-1)
+- ### [Control Flow Events](#control-flow-events-1)
+- ### [Camera Events](#camera-events-1)
+- ### [Screen Events](#screen-events-1)
+- ### [Actor Events](#actor-events-1)
+- ### [Sprite Events](#sprite-events-1)
+- ### [Overlay Events](#overlay-events-1)
+- ### [Input Events](#input-events-1)
+- ### [Music Events](#music-events-1)
+- ### [Sound Events](#sound-events-1)
+- ### [Timing Events](#timing-events-1)
+- ### [Game Data Events](#game-data-events-1)
+- ### [Miscellaneous Events](#miscellaneous-events-1)
 
 ## Add Events
 
