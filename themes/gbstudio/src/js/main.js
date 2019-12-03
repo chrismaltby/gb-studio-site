@@ -31,9 +31,9 @@ if (appScreenshot1 && appScreenshot2 && appScreenshot3) {
       appScreenshot3.src = "/img/screenshot_win_3.png";
       break;
     case "MacOS":
-      appScreenshot1.src = "/img/screenshot_win_1.png";
-      appScreenshot2.src = "/img/screenshot_win_2.png";
-      appScreenshot3.src = "/img/screenshot_win_3.png";
+      appScreenshot1.src = "/img/screenshot_mac_1.png";
+      appScreenshot2.src = "/img/screenshot_mac_2.png";
+      appScreenshot3.src = "/img/screenshot_mac_3.png";
       break;
     case "Linux":
       appScreenshot1.src = "/img/screenshot_mac_1.png";
