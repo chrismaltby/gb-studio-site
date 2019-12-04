@@ -5,64 +5,64 @@ next: "/docs/sound-effects"
 nextTitle: "Sound Effects"
 ---
 
-# Introduction
+# Einstieg
 
-GB Studio is internally using [GBT Player](https://github.com/AntonioND/gbt-player), a driver which takes .MOD files and converts them to a format the Gameboy can understand. You can use software such as [**OpenMPT**](https://openmpt.org/) (Windows, though it works great with Wine) or [**MilkyTracker**](https://milkytracker.titandemo.org/) (works natively across multiple systems) to create .MOD tracker music. Of course, you can use other software that can edit .mod files like [**BassoonTracker**](https://www.stef.be/bassoontracker/) (web based), [**ProTracker**](https://16-bits.org/pt.php), and more.
+Einstieg [GBT Player](https://github.com/AntonioND/gbt-player), ein Treiber welches .MOD Dateien akzeptiert und diese dann in ein Format konvertiert, mit welchem der Gameboy etwas anfangen kann. Du kannst Software verwenden wie beispielsweise [**OpenMPT**](https://openmpt.org/) (für Windows, obwohl es auch für Wine-Betriebssysteme klappt) oder [**MilkyTracker**](https://milkytracker.titandemo.org/) (funktioniert nativ für die verschiedensten Systeme) um .MOD Trackerdateien zu komponieren. Aber natürlich kannst du auch auf andere Software zurückgreifen, welche .MOD Dateien bearbeiten können wie [**BassoonTracker**](https://www.stef.be/bassoontracker/) (web-basierend), [**ProTracker**](https://16-bits.org/pt.php), und viele andere.
 
-# Getting Started
+# Erste Schritte
 
-1. Create a blank GB Studio project, find the file `assets/music/template.mod` and open it with your tracker of choice.
-   - **You must edit this file to get an accurate representation of the instruments you can use.**
-   - MilkyTracker users should save this file as an `.XM` file. Saving a .mod file in MilkyTracker will corrupt it. Export your song as a .mod file every time you want to test your song in-game.
-2. You can remove the example song, but you **MUST** keep the instruments/sounds/samples intact.
-3. Use the instrument list shown later in this document to pick the sounds you want. Changing the samples in your tracker will **not** affect how they sound in-game.
+1. Erstelle ein leeres GB Studio Project, finde die Datei `assets/music/template.mod` und öffne dies mit der Trackersoftware deiner Wahl.
+   - **Du musst genau diese Datei bearbeiten, denn nur in dieser sind alle Instrumente schon vorkonfiguriert.**
+   - MilkyTracker-Nutzer sollten die Datei als.XM Datei abspeichern. MilkyTracker korruptiert die Musikdatei falls diese als .MOD abgespeichert wird. Du musst die Trackerdatei (wenn du MilkyTracker verwendest) jedesmal als .MOD exportieren, wenn du diese im Spiel testen möchtest.
+2. Du kannst die Beispielmusik darin entfernen, jedoch **MUSST** du alle gespeicherten Instrumente und sonstige Einstellungen unberührt lassen.
+3. Nutze die weiter unten aufgeführte Instrumentenliste um dir die passenden Soundbeispiele durchzuschauen. Die Änderung der Soundbeispiele im Tracker hat **keine** Auswirkungen auf die Musikwiedergabe in GB Studio, denn die Soundbeispiele sind nur rekonstruiert damit du ungefähr abschätzen kannst, wie diese klingen werden.
 
-When done, please add your .mod files to the `assets/music` folder of your project. **Test your song in-game often to keep track of any audible in-game differences.** (NOT in the preview!)
+Falls fertig, solltest du die .MOD Dateien im `assets/music` Ordner deines Projektes abspeichern. **Teste deine Musikdateien regemäßig im Spiel um rechtzeitig auf musikalische Unterschiede reagieren zu können.** (Nicht in der Musikvorschau innerhalb des Editors!)
 
-We're still dealing with a tracker. I'll try to give you a quick rundown of how a tracker works:
+Wir haben es hier immernoch mit einem Tracker zu tun. Ich werde dir nun einen kurzen Überblick geben wie man mit so einem Tracker arbeitet:
 
 ```
 C-5 01 v64 ...
 --- -- --- ---
  |   |  |   |
- |   |  |   +-- Effect column (Volume changes, arpeggios, panning, etc.)
- |   |  +------ Volume value, this is irrelevant in .MOD. (Most examples here omit this
- |   |          and instead display three dots in its place)
+ |   |  |   +-- Effekt-Spalte (Lautstärkeregelung, Akkorde, Panning, usw.)
+ |   |  +------ Lautstärkewert, das ist aber unnötig für .MOD  omit this
+ |   |          (Die meisten Beispiele ignorieren diese Spalte und setzen stattdessen drei Punkte)
  |   +--------- Instrument
- +------------- Note and octave (A C note in the 5th octave. The dash can be a #, which signifies a sharp note e.g. C#, D#)
+ +------------- Musiknote und Oktave (Eine C-Note in der 5. Octave. Der Gedankenstrich könnte auch ein # sein, wie zum Beispiel: C#, D#)
 ```
 
-This is what comprises of a channel's row. Rows can be empty, or can only be partially filled (with just an effect, for example). There's 4 of those columns in total.
+So sieht eine typische Zeile im Tracker aus. Reihen können leer sein, oder nur teilweise befüllt (mit nur einem Effekt als Beispiel). Es gibt insgesamt vier dieser Spalten.
 
-Any part in this documentation where you see data that starts with `ModPlug Tracker MOD`, you can copy that entire block into OpenMPT as-is. Any data copied from OpenMPT looks like that when you paste it into any text application.
+Jedes Dokumentenbeispiel, welches mit `ModPlug Tracker MOD` beginnt, kann man so herauskopieren und direkt in OpenMPT hineinkopieren. Wenn du also Trackerspalten kopierst und diese in einem Text-Editor einfügst, dann sieht es auch genau so aus wie hier.
 
-# Important Limitations
+# Wichtige Einschränkungen
 
-There may be **ONLY** 4 channels in your .MOD file. Any less or more, and it will not convert properly.
+Es dürfen **NUR** 4 Musikkanäle in deiner .MOD Datei geben. Falls mehr oder weniger, wird die .MOD Datei nicht richtig konvertiert.
 
-**This is a limitation imposed by the Gameboy itself, which has 4 channels of polyphony at all times.**
+**Das ist eine ursprüngliche Einschränkung des originalen Gameboys, welches nur 4x mehrstimmige Kanäle gleichzeitig unterstützen konnte.**
 
-On top of that, you may only use certain instruments on certain channels. There's a table down here which documents where the instruments should go. This is also because the Gameboy assigns instruments based on the channel, this is hardwired into the very silicon of the chip and cannot be changed.
+Darüber hinaus kannst du nur spezielle Instrumente für bestimmte Kanäle verwenden. Darunter ist eine Tabelle aufgeführt, welche dir zeigt wo du welche Instrumente verwenden kannst. Der Grund ist auch, weil der Gameboy die Instrumenten-Vergabe auch mittels Kanäle löst. Dieses Verhalten ist fest im Silikon des Chips geschrieben und kann somit nicht geändert werden.
 
-| Channel #     | Sound type | Note Range<sup>1</sup> | Instruments | Effects               |
-| ------------- | ---------- | ---------------------- | ----------- | --------------------- |
-| Channel 1 & 2 | Pulses     | C3 to B8               | 1-4         | 0, B, C, D, E8, EC, F |
-| Channel 3     | Waveform   | C3 to B8               | 8-15        | 0, E8 and EC          |
-| Channel 4     | Noise      | Only C5                | 16-31       | B, C, D, E8, EC, F    |
+| Kanalnummer # | Soundtyp   | Notenskala1<sup>1</sup> | Instrumente | Effekte               |
+| ------------- | ---------- | ----------------------- | ----------- | --------------------- |
+| Kanal 1 & 2   | Puls       | C3 bis B8               | 1-4         | 0, B, C, D, E8, EC, F |
+| Kanal 3       | Wellenform | C3 bis B8               | 8-15        | 0, E8 und EC          |
+| Kanal 4       | Rauschen   | Nur C5                  | 16-31       | B, C, D, E8, EC, F    |
 
-*<sup>1</sup> This note range is for trackers that display its notes on a range from C1 to C8, like OpenMPT does. If you're using a tracker that can go as low as C0 (like MilkyTracker), then the note ranges are one octave (number) lower (for instance, C3 to B8 in MPT sounds the same as C2 to B7 in Milky).*
+_<sup>1</sup> Diese Notenskala ist für Tracker welche die Musiknoten im Bereich C1 bis C8 darstellen, beispielsweise OpenMPT. Falls du einen Tracker verwendest, welches noch tiefere Noten wie C0 darstellen kann (wie MilkyTracker), dann ist die Notenskala eine Oktave tiefer als in der Tabelle angegeben. (Somit ist die Skala von C3 bis B8 in OpenMPT genau dieselbe wie C2 bis B7 in Milky)._
 
-# Volume limitations
+# Lautstärke-Einschränkungen
 
-Channels 1, 2 and 4 only have a quarter of the volume range that trackers support. (which is from 0h to 40h). The supported volumes are as such:
+Kanäle 1, 2 und 4 unterstützen nur einen Viertel des gesamten Lautstärkebereichs welche Trackerprogramme angeben können. (also von 0h bis 40h). Die unterstützten Lautstärkewerte sind folgendes:
 
 `00, 04, 08, 0C, 10, 14, 18, 1C, 20, 24, 28, 2C, 30, 34, 38, 3C`
 
-Any other volumes will just get clamped to the nearest value supported. (e.g. C40, the default volume value, gets clamped down to C3C)
+Jeder andere, beliebige Lautstärkewert wird auf den nächstgültigen Wert gerundet. (z.B. C40, der Standardlautstärkewert, wird automatisch zu C3C abgerundet)
 
-**Volumes above C40 aren't supported, and they will behave abnormally once converted.**
+**Lautstärkewerte über C40 werden in keinster Weise unterstützt und werden fehlerbehaftet verarbeitet und konvertiert.**
 
-While in a tracker the volume resets on each new note, it will not upon conversion. Say you have this scenario:
+Obwohl im Tracker die Lautstärke bei jeder Note zurückgesetzt wird, ist dies bei der Konvertierung nicht der Fall. Mal angenommen wir hätten diesen Fallbeispiel:
 
 ```
 ModPlug Tracker MOD
@@ -75,9 +75,9 @@ ModPlug Tracker MOD
 |E-502......|
 ```
 
-In the tracker, the E-5 note will resume at full volume after the C00 effect. 
+Im Tracker wird die E-5 Musiknote in voller Lautstärke wiedergegeben obwohl zuvor ein C00 (auf dem Bild: C..) Effekt abgespielt wurde.
 
-In-game, you will not hear the E-5 note. This is because the C00 persists until another `Cxx` effect is set. Basically, you have to do the following:
+Im Spiel jedoch wirst du die E-5 Musiknote nicht hören könne. Grund dafür ist, dass die C00 auch weiterhin bestehen bleibt bis ein weiterer Cxx Effekt dieses überschreibt. Grundsätzlich musst du folgendes tun:
 
 ```
 ModPlug Tracker MOD
@@ -90,9 +90,9 @@ ModPlug Tracker MOD
 |E-502...C40|
 ```
 
-This applies to any instance of volume. If you have a note on C24 that gradually decreases to, say C18, you still need to reset each new note to C24 (or higher, or lower, depending on what you want to achieve).
+Das trifft bei jeder Lautstärkeeinstellung zu. Falls du eine Note mit C24 Lautstärke hast, welches almählich auf beispielsweise C18 reduziert wird, dann musst du immernoch bei jeder Note den Lautstärkewert angleichen. Die letzte Lautstärkeeinstellung gibt sprichwörtlich den Ton an.
 
-Meanwhile, Channel 3 only gets a quarter of **that**, with a volume range of `00, 10, 20, 40`. And beyond that, you'll have to input the instrument and note for the volume change to have any effect, unless it's a `C00` volume effect. For instance, again:
+Währenddessen hat es Kanal 3 noch schlimmer. Dieser hat eine beschränkte Lautstärkeneinstellung von **nur** `00, 10, 20, 40`. Zusätzlich musst du bei jeder Lautstärkenänderung auch noch Instrument und Musiknote angeben, die Ausnahme ist der `C00` Lautstärkewert. Hier ein Beispiel:
 
 ```
 ModPlug Tracker MOD
@@ -106,7 +106,7 @@ ModPlug Tracker MOD
 
 ```
 
-You will not hear any volume change from the C20 in-game, so what we have to do is add a note there to register the volume change.
+Das obige Beispiel hat eine ungültige Lautstärkeveränderung auf C20 und wird somit auch nicht mitkonvertiert.
 
 ```
 ModPlug Tracker MOD
@@ -119,24 +119,25 @@ ModPlug Tracker MOD
 |G-511...C40|
 ```
 
+Durch Angabe von Musiknote und Instrument ist diese Lautstärkeveränderung nun gültig!
 
-# Instruments available
+# Verfügbare Instrumente
 
-The numbers on this list represent the base10 number that each of these instruments use in OpenMPT. Beside these numbers (in brackets) is the base16 equivalent of these numbers for MilkyTracker users.
+Die Nummern auf dieser Liste repräsentieren die Basis10 Nummern, welches jedes dieser Instrumente im OpenMPT-Programm nutzen. Neben dieser Nummern (eingeklammert) steht noch die Basis16 Variante für MilkyTracker Nutzer.
 
-The pulse channels get 4 instruments (from 1 to 4): 
+Die Puls-Kanäle haben Zugriff auf 4 Instrumente (nummeriert von 1 bis 4):
 
-1. 25% pulse
-2. 50% pulse (square wave)
-3. 75% pulse (inverted 25% pulse)
-4. 12.5% pulse
+1. 25% Puls
+2. 50% Puls (auch genannt: Rechteck-Puls)
+3. 75% Puls (invertierter 25% Puls)
+4. 12.5% Puls
 
-Instruments 5 through 7 are intentionally left blank.
+Instrumente 5 bis 7 wurden absichtlich ausgelassen.
 
-The wave channel gets 8 instruments (from 8 to 15):
+Das Wellenform-Kanal hat Zugriff auf 8 Instrumente (nummeriert von 8 bis 15):
 
-8. Buzzy (Source code calls this "random :P")
-9. Ringy (useful for SFX)
+8. Buzzy (Quellencode nennt es “willkürlich :P”)
+9. Ringy (sehr nützlich for SFX)
 10. (A) Sync Saw
 11. (B) Ring Saw
 12. (C) Octave Pulse + Triangle
@@ -144,22 +145,22 @@ The wave channel gets 8 instruments (from 8 to 15):
 14. (E) Square
 15. (F) Sine
 
-The noise channels get the most instruments, partly due to how the noise works on the Gameboy. Instruments 16 to 23 use Periodic (looped) Noise at various pitches while instruments 24 to 32 use Pseudorandom noise at various pitches.
+Die meisten Instrumente kann der Rausch-Kanal verwenden, jedoch nur zum Teil wie das Rauschen im Gameboy ausgegeben wird. Instrumente 16 bis 23 verwenden ein periodisches (sich wiederholendes) Rauschen in verschiedenen Tonhöhen während Instrumente 24 bis 32 ein nahezu zufälliges Rauschen in verschiedenen Tohnhöhen verwenden.
 
-The nicknames and descriptions next to these instruments are not official for GBT Player, they are intended to help identify these noise instruments at a glance.
+Die Spitznamen und Beschreibungen neben den Instrumenten sind nicht als offizielle Bezeichnungen des GBT Players zu verstehen, sondern sollen lediglich dafür sorgen, dass man diese Rauschinstrumente leichter von einander unterscheiden kann.
 
-Periodic Noise:
+Periodisches Rauschen:
 
-16. (10) "stutter" - A square plus a pulse at random pulse widths
-17. (11) "rumble" - The same waveform but faster
-18. (12) "engine" - The same waveform but even faster
-19. (13) "low tone" - Sounds like D5
-20. (14) "undertone" - Sounds like E5 + 50cents
-21. (15) "middletone" - Sounds like B5 + 50cents
-22. (16) "overtone" - Sounds like D6 + 50cents
-23. (17) "high tone" - Sounds like D7
+16. (10) "zittern" - A square plus a pulse at random pulse widths
+17. (11) "knurren" - The same waveform but faster
+18. (12) "motorisch" - The same waveform but even faster
+19. (13) "Tiefton" - Sounds like D5
+20. (14) "Unterton" - Sounds like E5 + 50cents
+21. (15) "mittelmäßig" - Sounds like B5 + 50cents
+22. (16) "Hochton" - Sounds like D6 + 50cents
+23. (17) "schrill" - Sounds like D7
 
-Pseudorandom Noise
+Pseudo-zufälliges Rauschen:
 
 24. (18) "earthquake" - A square with a thin pulse at random pulse widths
 25. (19) "spaceship" - The same waveform but faster
@@ -174,14 +175,14 @@ There are no GBT Player-readable instruments beyond 31.
 
 # Effects
 
-| EFFECT  |     NAME      | NOTES                                                        |
-| :-----: | :-----------: | :----------------------------------------------------------- |
-| **0xy** |   Arpeggio    | Where `x` = 2nd note, `y` = 3rd note, in semitones. You should set the instrument when using this effect. |
-| **Bxx** |     Jump      | Jump to a specific position in the song, `xx`.               |
-| **Cxx** |    Volume     | Sets the volume to xx. See **volume limitations** for more info. |
-| **Dxx** | Pattern break | Jumps to the next pattern early, where `xx` is the row it should jump to in the next pattern. Using this on the last pattern will break the song by reading garbage data beyond the song. |
-| **E8x** |      Pan      | Set the panning to `x`. `0-3` = Left, `4-B` = Centre, `C-F` = Right |
-| **ECx** |   Note cut    | Cut the note after `x` ticks. `0 < x < speed-1`              |
+| EFFECT  |     NAME      | NOTES                                                                                                                                                                                                   |
+| :-----: | :-----------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **0xy** |   Arpeggio    | Where `x` = 2nd note, `y` = 3rd note, in semitones. You should set the instrument when using this effect.                                                                                               |
+| **Bxx** |     Jump      | Jump to a specific position in the song, `xx`.                                                                                                                                                          |
+| **Cxx** |    Volume     | Sets the volume to xx. See **volume limitations** for more info.                                                                                                                                        |
+| **Dxx** | Pattern break | Jumps to the next pattern early, where `xx` is the row it should jump to in the next pattern. Using this on the last pattern will break the song by reading garbage data beyond the song.               |
+| **E8x** |      Pan      | Set the panning to `x`. `0-3` = Left, `4-B` = Centre, `C-F` = Right                                                                                                                                     |
+| **ECx** |   Note cut    | Cut the note after `x` ticks. `0 < x < speed-1`                                                                                                                                                         |
 | **Fxx** |   Set speed   | Sets the song speed to `xx`. Valid values are `01` to `1F`. The value represents how many frames should the song wait before moving on to another row. Setting BPM speed has no effect upon conversion. |
 
 ## Speed Table
@@ -205,7 +206,7 @@ You might notice that the value of the F effect, when converted to decimal, is j
 
 Because of how GB Studio is set up, a 60hz F05 effect, which would result in 180 BPM in-game, is impossible here.
 
-*While not in GB Studio, GBT has a flag called `-speed` that will handle BPM differently, which would require F96 effects for every speed, as it won't handle any internal conversions to get the speed closer. This is the reason why F01 to F04 require F96 in both modes, there's no equivalent for it in tracker speed.*
+_While not in GB Studio, GBT has a flag called `-speed` that will handle BPM differently, which would require F96 effects for every speed, as it won't handle any internal conversions to get the speed closer. This is the reason why F01 to F04 require F96 in both modes, there's no equivalent for it in tracker speed._
 
 **1. Values marked with 1 require an additional F96 effect for the song to sound closer in speed when converted, or setting the song BPM to 150.** This F96 effect can be removed once you're done with your song, there won't be any difference as GBT ignores this -- It's only here to set the BPM to something closer to the in-game version.
 
@@ -242,18 +243,18 @@ You can also use this for tones and stuff, like short staccato notes or flutes t
 
 ### **2. One channel echoes**
 
-This works on most speeds. This is useful for when you need a melody on top of some sort of echoing ostinato, or phrase, or whatever. 
+This works on most speeds. This is useful for when you need a melody on top of some sort of echoing ostinato, or phrase, or whatever.
 
 To illustrate it, I'm going to try illustrating it like this, instead of a tracker layout:
 
 ```
-A _ B _ C _ E _ G _ E _ C _ B _ 
+A _ B _ C _ E _ G _ E _ C _ B _
 Without 1ch Echo
 
     +-----+ +-----+ +-----+
-A _ B a C b E c G e E g C e B c 
+A _ B a C b E c G e E g C e B c
 +-----+ +-----+ +-----+ +-----+
-     
+
 With 1ch Echo (lowercase notes are the echoes)
 ```
 
@@ -302,7 +303,7 @@ A: If you're using an `Fxx` effect with the value **higher than `F05`**, then yo
 
 **Q: Can I play back this voice clip/sound effect/whatever?**
 
-A: No, not on GBT. 
+A: No, not on GBT.
 
 LSDj and more advanced sound drivers available for the Gameboy do support playing back samples, but doing this requires a lot of data to be moved in a short amount of time (means only music can play at that time, really).
 
@@ -346,4 +347,4 @@ A: Not as of yet. The only way you can play sound effects is to play it as a mus
 - **Keep it simple!** Don't jump into this, trying to emulate what several artists have done with LSDj or whatever other tools, you'll just get stuck.
 - **Don't be afraid of failure.** I get this is kind of an unfitting tip, but it's important. Your first song won't be good, and that's okay. You'll fail, sure, but you'll also gain knowledge on what you might've done wrong, or how you want to go on about with your next endeavor.
 - **OpenMPT has a manual to help you get started.** [Here's a link](https://wiki.openmpt.org/Tutorial:_Getting_Started), give it a read if you're stuck (or just ask for help)
-- [**Give the GBT Player documentation a read.**](https://github.com/AntonioND/gbt-player) 
+- [**Give the GBT Player documentation a read.**](https://github.com/AntonioND/gbt-player)
