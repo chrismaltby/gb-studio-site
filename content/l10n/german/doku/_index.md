@@ -6,7 +6,7 @@ draft: false
 
 # Dokumentation
 
-- [Installation](installation)
+- [Einrichtung](einrichtung)
 - [Erste Schritte](erste-schritte)
   - [Tastaturkürzel](tastaturkuerzel)
 - [Speichern und Laden](speichern-laden)
