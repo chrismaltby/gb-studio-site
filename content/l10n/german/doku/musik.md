@@ -1,8 +1,8 @@
 ---
-title: "Music"
+title: "Musik"
 draft: false
-next: "/docs/sound-effects"
-nextTitle: "Sound Effects"
+next: "/doku/soundeffekte"
+nextTitle: "Soundeffekte"
 ---
 
 # Einstieg
@@ -125,12 +125,12 @@ Durch Angabe von Musiknote und Instrument ist diese Lautstärkeveränderung nun 
 
 Die Nummern auf dieser Liste repräsentieren die Basis10 Nummern, welches jedes dieser Instrumente im OpenMPT-Programm nutzen. Neben dieser Nummern (eingeklammert) steht noch die Basis16 Variante für MilkyTracker Nutzer.
 
-Die Puls-Kanäle haben Zugriff auf 4 Instrumente (nummeriert von 1 bis 4):
+Die Impuls-Kanäle haben Zugriff auf 4 Instrumente (nummeriert von 1 bis 4):
 
-1. 25% Puls
-2. 50% Puls (auch genannt: Rechteck-Puls)
-3. 75% Puls (invertierter 25% Puls)
-4. 12.5% Puls
+1. 25% Impuls
+2. 50% Impuls (auch genannt: Rechteck-Impuls)
+3. 75% Impuls (invertierter 25% Impuls)
+4. 12.5% PuImpulsls
 
 Instrumente 5 bis 7 wurden absichtlich ausgelassen.
 
@@ -151,76 +151,76 @@ Die Spitznamen und Beschreibungen neben den Instrumenten sind nicht als offiziel
 
 Periodisches Rauschen:
 
-16. (10) "zittern" - A square plus a pulse at random pulse widths
-17. (11) "knurren" - The same waveform but faster
-18. (12) "motorisch" - The same waveform but even faster
-19. (13) "Tiefton" - Sounds like D5
-20. (14) "Unterton" - Sounds like E5 + 50cents
-21. (15) "mittelmäßig" - Sounds like B5 + 50cents
-22. (16) "Hochton" - Sounds like D6 + 50cents
-23. (17) "schrill" - Sounds like D7
+16. (10) "zittern" - Ein Rechteck-Impuls mit zufälliger Pulsbreite
+17. (11) "knurren" - Derselbe Rechteck-Impuls jedoch schneller
+18. (12) "motorisch" - Derselbe Rechteck-Impuls jedoch noch schneller
+19. (13) "Tiefton" - Klingt wie D5
+20. (14) "Unterton" - Klingt wie E5 + halber zusätzlicher Erhöhung
+21. (15) "mittelmäßig" - Klingt wie B5 + halber zusätzlicher Erhöhung
+22. (16) "Hochton" - Klingt wie D6 + halber zusätzlicher Erhöhung
+23. (17) "schrill" - Klingt wie D7
 
 Pseudo-zufälliges Rauschen:
 
-24. (18) "earthquake" - A square with a thin pulse at random pulse widths
-25. (19) "spaceship" - The same waveform but faster
-26. (1A) "ocean" - The same waveform but even faster
-27. (1B) "scratch" - You get the idea
-28. (1C) "glitch" - A fairly clean white-noise sample, unrelated to other instruments
-29. (1D) "volcano" - A pulse with rapidly changing pulse width
-30. (1E) "scream" - The same waveform but faster
-31. (1F) "static" - The same waveform but even faster
+24. (18) "Erdbeben" - Ein dünner Rechteck-Impuls mit zufälliger Pulsbreite
+25. (19) "Raumschiff" - Derselbe Rechteck-Impuls jedoch schneller
+26. (1A) "Ozean" - Derselbe Rechteck-Impuls jedoch noch schneller
+27. (1B) "Kratzen" - Selbsterklärend
+28. (1C) "defektähnlich" - Ähnelt einer ziemlich sauberen Rauschstörung und unvergleichlich mit anderen Instrumenten
+29. (1D) "Vulkan" - Ein Impuls mit einer sich rasch ändernden Pulsbreite
+30. (1E) "Kreischen" - Dieselbe Wellenform jedoch schneller
+31. (1F) "statisch" - Dieselbe Wellenform jedoch noch schneller
 
-There are no GBT Player-readable instruments beyond 31.
+Es gibt kein Instrument über der 31, welche vom GBT Spieler gelesen und interpretiert werden kann.
 
-# Effects
+# Unterstützte Effekte
 
-| EFFECT  |     NAME      | NOTES                                                                                                                                                                                                   |
-| :-----: | :-----------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **0xy** |   Arpeggio    | Where `x` = 2nd note, `y` = 3rd note, in semitones. You should set the instrument when using this effect.                                                                                               |
-| **Bxx** |     Jump      | Jump to a specific position in the song, `xx`.                                                                                                                                                          |
-| **Cxx** |    Volume     | Sets the volume to xx. See **volume limitations** for more info.                                                                                                                                        |
-| **Dxx** | Pattern break | Jumps to the next pattern early, where `xx` is the row it should jump to in the next pattern. Using this on the last pattern will break the song by reading garbage data beyond the song.               |
-| **E8x** |      Pan      | Set the panning to `x`. `0-3` = Left, `4-B` = Centre, `C-F` = Right                                                                                                                                     |
-| **ECx** |   Note cut    | Cut the note after `x` ticks. `0 < x < speed-1`                                                                                                                                                         |
-| **Fxx** |   Set speed   | Sets the song speed to `xx`. Valid values are `01` to `1F`. The value represents how many frames should the song wait before moving on to another row. Setting BPM speed has no effect upon conversion. |
+| EFFEKT  |         NAME         | BEMERKUNG                                                                                                                                                                                                                                                                                  |
+| :-----: | :------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **0xy** |        Akkord        | Mit `x` 2. Musiknote und `y` 3. Musiknote als Halbtöne. Du solltest das Instrument bestimmen wenn du diesen Effekt verwendest.                                                                                                                                                             |
+| **Bxx** |        Sprung        | Springt zu einer bestimmten Stelle (Pattern) innerhalb des Musikstücks, die angegebene Zahl ist hierfür `xx`.                                                                                                                                                                              |
+| **Cxx** |      Lautstärke      | Stellt die Lautstärke um auf `xx`. Siehe **Lautstärke-Einschränkungen** für weitere Informationen.                                                                                                                                                                                         |
+| **Dxx** |   Pattern Abbruch    | Springt frühzeitig zum nächsten Musikabschnitt, womit `xx` die Reihe des nächsten Abschnitts ist, wohin das Musikstück springt. Wenn dieser Effekt am Ende eines Abschnitts eingesetzt wird, dann bricht die Musik sofort ab aufgrund von fehlerhafter Verwendung. Bitte darauf aufpassen! |
+| **E8x** |         Pan          | Setzt den Panning-Wert auf `x`. `0-3` = Links, `4-B` = Mittig, `C-F` = Rechts                                                                                                                                                                                                              |
+| **ECx** |     Notenkürzung     | Beendet den gespielten Musikton kurzeitig nach `x` Ticks. `0 < x < Abspielgeschwindigkeit-1`                                                                                                                                                                                               |
+| **Fxx** | Musiktempo festlegen | Setzt den Tempo auf `xx`. Unterstützte Werte sind `01` bis `1F`. Der Wert gibt an wieviele Frames eine spezifische Trackerreihe gespielt wird, ehe es die nächste Reihe spielt. Das Einstellen des BPM-Tempos hat keinerlei Auswirkung bei der Konvertierung.                              |
 
-## Speed Table
+## Musiktempo-Tabelle
 
-| Fxx Value (in tracker) | BPM (in tracker) | BPM (in game) |
-| ---------------------- | ---------------- | ------------- |
-| **F01<sup>1</sup>**    | 750 BPM          | 900 BPM       |
-| **F02<sup>1</sup>**    | 375 BPM          | 450 BPM       |
-| **F03<sup>1</sup>**    | 250 BPM          | 300 BPM       |
-| **F04<sup>1</sup>**    | 187.5 BPM        | 225 BPM       |
-| F05                    | 150 BPM          | 150 BPM       |
-| F06                    | 125 BPM          | 128.57 BPM    |
-| F07                    | 107.14 BPM       | 112.50 BPM    |
-| F08                    | 93.75 BPM        | 100 BPM       |
-| F09                    | 83.33 BPM        | 90 BPM        |
-| F0A                    | 75 BPM           | 81.82 BPM     |
+| Fxx Wert (im Tracker) | BPM (im Tracker) | BPM (im Spiel) |
+| --------------------- | ---------------- | -------------- |
+| **F01<sup>1</sup>**   | 750 BPM          | 900 BPM        |
+| **F02<sup>1</sup>**   | 375 BPM          | 450 BPM        |
+| **F03<sup>1</sup>**   | 250 BPM          | 300 BPM        |
+| **F04<sup>1</sup>**   | 187.5 BPM        | 225 BPM        |
+| F05                   | 150 BPM          | 150 BPM        |
+| F06                   | 125 BPM          | 128.57 BPM     |
+| F07                   | 107.14 BPM       | 112.50 BPM     |
+| F08                   | 93.75 BPM        | 100 BPM        |
+| F09                   | 83.33 BPM        | 90 BPM         |
+| F0A                   | 75 BPM           | 81.82 BPM      |
 
-This is not a full table, it's just the top few speeds. It's here to highlight some of the speed discrepancies, albeit small to not be very noticeable, with the exception of the values marked with 1.
+Die Tabelle ist nicht vollständig und zeigt bloß die schnellsten Tempo-Einstellungen. Hier wird veranschaulicht wie sehr sich das Musiktempo zwischen Spiel und Tracker unterscheiden können. Diese sind zwar zum Teil nicht allzu bemerkbar, aber vorallem bei F01 bis F04 sollte man hier aufpassen.
 
-You might notice that the value of the F effect, when converted to decimal, is just the speed divisor. For instance, F03 divides the BPM by 3 (`750 / 3 = 250`, or `900 / 3 = 300`).
+Du magst festgestellt haben, dass der Wert des F-Effekts bei Umwandlung in eine Dezimalzahl bloß ein Geschwindigkeitsteiler ist. Somit dividiert F03 die BPM um 3. (`750 / 3 = 250`, oder `900 / 3 = 300`)
 
-Because of how GB Studio is set up, a 60hz F05 effect, which would result in 180 BPM in-game, is impossible here.
+Durch die Tatsache wie GB Studio aufgebaut ist, ist ein 60Hertz F05 Effekt, welches im Spiel selbst als 180BPM abgespielt wird, unmöglich.
 
-_While not in GB Studio, GBT has a flag called `-speed` that will handle BPM differently, which would require F96 effects for every speed, as it won't handle any internal conversions to get the speed closer. This is the reason why F01 to F04 require F96 in both modes, there's no equivalent for it in tracker speed._
+_Zwar nicht direkt im Bezug auf GB Studio, hat der GBT Player einen Bitschalter namens `-speed` welches BPM anders verarbeitet, aber dadurch einen F96-Effekt für jedes Tempo vorschreibt. Grund dafür ist, weil es sonst keine interne Konvertierung tätigen kann, womit es das Geschwindigkeitstempo näher bestimmen könnte. Das ist auch der Grund wieso F01 bis F04 beides F96 in beiden Modis voraussetzt, es gibt keine andere Alternative als Tracker-Tempo._
 
-**1. Values marked with 1 require an additional F96 effect for the song to sound closer in speed when converted, or setting the song BPM to 150.** This F96 effect can be removed once you're done with your song, there won't be any difference as GBT ignores this -- It's only here to set the BPM to something closer to the in-game version.
+**1. Werte, welche durch eine 1 gekennzeichnet sind, setzen einen F96 Effekt voraus, um die Musiktöne insofern zu straffen damit man beispielsweise eine BPM von 150 nach Konvertierung erreichen kann.** Dieser F96-Effekt kann sorglos entfernt werden sobald man mit dem Musikstück fertig ist, da GBT es gar nicht mitkonvertiert. Seine Existenzberechtigung ist nur insofern begründet damit man die BPM so beschleunigt, damit das Tempo dem eigentlichen Spieltempo entspricht.
 
-# Tricks
+# Tipps und Tricks
 
-This section will cover some tricks you can use with GBT to make it sound better than it should
+Dieser Abschnitt spricht ein paar GBT Tricks an, damit eure Musikstücke noch besser klingen als sonst.
 
 ### **1. High Speed**
 
-By using F01 to F04, you can achieve much higher granularity when it comes to changing volumes and creating sounds of sorts. This means that with a high enough speed, you can create more varied bodies for sounds, with sort-of envelopes, or elaborate effects (like 1 channel echos, which I'll cover here in a moment).
+Wenn F01 bis F04 als Tempo verwendet wird, dann kannst du eine bessere Detailgenauigkeit erreichen wenn du mit Lautstärkeveränderungen arbeitest. Das heißt mit einem ausreichenden Tempo kannst du wohldefinierte Soundtiefen erstellen und beispielsweise auch ein Einkanal-Echo simulieren. (So etwas wird gleich vorgeführt.)
 
-This trick means you're going from drums that sound flimsy and primitive to something more impressive.
+Mit diesem Trick kannst du schlagzeugartige Töne simulieren, welche besser klingen als primitive Steinzeitbongos.
 
-Here's an example of a Snare Drum, at speed F02, that might sound good for you.
+Hier ist ein Beispiel einer kleinen Trommel bei einem Tempo von F02, was dich positiv ansprechen könnte.
 
 ```
 ModPlug Tracker MOD
@@ -232,119 +232,119 @@ ModPlug Tracker MOD
 |........C08
 |........C04
 |........C..
-(this is on the noise channel)
+(Im Rausch-Kanal 4)
 ```
 
-If this is longer than what you need, simply crop it starting from the bottom.
+Falls das Soundbeispiel für deinen Geschmack zu lang ist, dann kannst du es von unten aus kürzer stutzen.
 
-You can also use this for tones and stuff, like short staccato notes or flutes that fade in.
+Du kannst es auch für Musiktöne oder sonstiges verwenden, wie Stakkato und eingespielte Flötentöne.
 
-**If you do this, keep in mind the GB Sound hardware has an annoying bug that resets the phase of each waveform on a volume set, meaning you can get scratchy noise in a few emulators and also the real GB.**
+**Falls du es in deinen Musikstücken implementierst, dann solltest du beachten, dass die GB Sound Hardware einen komischen Bug hat. Die Rauschwelle des vierten Kanals könnte bei einer Lautstärkeänderung versehentlich zurückgesetzt werden, womit ein kratziger Ton in manchen Emulatoren oder sogar auf richtigen Gameboys verursacht werden könnte.**
 
-### **2. One channel echoes**
+### **2. Einkanal-Echos**
 
-This works on most speeds. This is useful for when you need a melody on top of some sort of echoing ostinato, or phrase, or whatever.
+Das funktioniert mit den meisten Tempo-Einstellungen. Dies ist nützlich wenn du eine Melodie über einem schallenden Ostinato erklingen möchtest... oder ähnliches.
 
-To illustrate it, I'm going to try illustrating it like this, instead of a tracker layout:
+Zur Veranschaulichung werde ich versuchen es so darzustellen ansteller eines Tracker-Layouts:
 
 ```
 A _ B _ C _ E _ G _ E _ C _ B _
-Without 1ch Echo
+Ohne Einkanal-Echo
 
     +-----+ +-----+ +-----+
 A _ B a C b E c G e E g C e B c
 +-----+ +-----+ +-----+ +-----+
 
-With 1ch Echo (lowercase notes are the echoes)
+Mit Einkanal-Echo (Kleingeschriebene Musiknoten sind das Echo)
 ```
 
-Notice how each lowercase letter takes the form of it's 3 step behind louder cousin? That's how the trick works. By having shorter notes that, on each step, has another quieter note that's way behind, you get a cool echoing effect.
+Schau wie jede kleingeschriebene Musiknote die Note annimmt wie sein großer Bruder drei Musiknoten dahinter? So funktioniert der Trick. Der coole Echo-Effekt wird erzeugt, wenn nach einer kleinen Weile der gleiche Ton mit einer leiseren Lautstärke wiederholt wird.
 
-I can't explain it very well via text, so I recommend you check out this video by **explod2a03** covering how this trick works with a better example and actual audio: https://www.youtube.com/watch?v=6GI9gngTn_Y
+Ich kann es schlecht in Prosa ausformulieren, daher empfehle ich euch das folgende Video von **explod2a03** welcher es in einem besseren Beispiel erklärt und zudem noch mit [Hörbeispiel](https://www.youtube.com/watch?v=6GI9gngTn_Y).
 
-The best way to do this in a tracker is to use a channel you're not using temporarily, copy your note sequence to it, delay it by 3 (or however many you need) rows, then right clicking on the selection and clicking "Amplify...", and setting the amplitude to something lower than 50%.
+Die beste Art dies im Tracker zu implementieren ist es einen Kanal zu nutzen, welcher zu der Zeit unbenutzt ist. Kopiere die Musiknotensequenz hinein und verzögere es um 3 Zeilen (oder wieviele du auch haben möchtest), danach rechtsklick auf die Auswahl und anschließend “Amplify…” auswählen. Zu guter Letzt setzt du die Amplitude auf einem Wert kleiner als 50% ein.
 
-After that, you should have both channels "alternate". Select the entirety of the channel with the echoes (from top to bottom), go to the channel you want to merge the echoes with, right click, go to "Paste special", then click "Mix paste" (This should have a shortcut, might want to learn it as it can be fairly useful).
+Daraufhin müsstest du zwei Kanäle haben, die sich "abwechseln". Selektiere den gesamten Echo-Kanal von oben bis unten, rechtsklicke dann den Kanal mit welchem du die Echos zusammenführen möchtest und wähle "Paste Special" aus. Danach auf "Mix Paste" (Es sollte einen Tastenkürzel existieren, welches du auswendig lernen kannst falls du vor hast diesen Einkanal-Echo öfters zu implementieren.
 
-### 3. Quick volume envelopes
+### 3. Schnelle Lautstärke-Hüllkurven
 
-Are you in a hurry? No problem, this simple trick will create linear envelopes:
+Bist du in Eile? Kein Problem, dieser simple Trick kreiert dir lineare Hüllkurven:
 
-1. Select two volume / C values of two separate notes (within the same channel), and everything in between
-2. Right click and hover over "Interpolate"
-3. Click on "Effect column"
-4. You're done!
+1. Wähle zwei Lautstärkewerte / C-Werter unterschiedlicher Musiknoten (im selben Kanal) und zudem noch alles dazwischen aus.
+2. Rechtsklick und mit der Maus über "Interpolate" auf "Effect column" gehen
+3. und auf "Effect column" klicken.
+4. Du hast es geschafft.
 
-You might wonder how's it going to sound in-game; well, it'll sound as close as possible. The volumes it can't play it'll just clamp it to the nearest ones it can play.
+Du magst dich wundern wie das nun im Spiel sich anhört; Nun ja, es wird fast genauso ausgegeben. Die Lautstärkewerte, welches es nicht abspielen kann, werden einfach passend gerundet.
 
-# Frequently Asked Questions
+# Häufig gestellte Fragen
 
-**Q: Can I use mp3s with this?**
+**F: Kann ich damit MP3-Dateien verwenden?**
 
-A: No.
+A: Nö.
 
-**Q: Can I use this .MOD file I found online?**
+**F: Ich habe diese .MOD Datei online gefunden. Kann ich diese benutzen?**
 
-A: Most likely, no. Your .MOD file has to be specifically formatted within what you get in `template.mod`, with the limitations mentioned above.
+A: Höchstwahrscheinlich nicht. Deine .MOD Datei muss gezielt auf die Einschränkungen hin abgestimmt sein und zudem muss die Datei selbst noch auf `template.mod` basieren, welches die Vorkonfigurationen (wie vorkonfigurierte Soundsamples und Kanaldefinitionen) besitzt.
 
-**Q: How do I stop a note from playing?**
+**F: Hilfe, wie stoppe ich die Wiedergabe von einem Musikton?**
 
-A: Either use another note entirely, or if you want to silence it, use a `C00` effect.
+A: Spiele entweder einen anderen Ton im selben Kanal ab oder wenn du den Musikton gänzlich verstummen lassen möchtest, nutze den `C00` Effekt.
 
-**Q: My song sounds all wrong upon building it! Why is that?**
+**F: Meine Musikdatei hört sich im Spiel voll komisch an obwohl es im Editor doch korrekt ausgegeben wurde! Wo liegt das Problem?**
 
-A: There's multiple reasons why that might be. **Please make sure your song is complying with everything above** (in particular, make sure you're only using the supported effects, are complying with the channel allocations, and aren't going over or under certain frequencies).
+A: Dafür existieren womöglich mehrere Gründe. **Bitte stelle sicher, dass die Musikdatei auch sämtliche oben beschriebene Einschränkungen beherzigt** (um es kurz zu fassen: nur unterstützte Effekte verwenden, Kanaleinschränkungen wie Lautstärke und Instrumentenwahl beherzigen, erlaubte Musiknotenskala beachten, usw).
 
-If you're using **MilkyTracker**, please be aware that it can break how a .mod file can sound. To get around this, save as `.XM`, its natively supported format, and when you're done with the song, export it as a .mod song and try it out in GB Studio.
+Falls du den **MilkyTracker** verwendest, so kann es sein, dass dieser die Klangwiedergabe einer .MOD Datei zerstören kann. Um dieses Problem zu umgehen solltest du es als `.XM` abspeichern, das von MilkyTracker nativ unterstützte Format. Bist du mit der Bearbeitung fertig, kannst du die `.XM` Datei anschließend als `.MOD` Datei exportieren und in GB Studio verwenden.
 
-**Q: My song speed is wrong! It's faster in-game than it is in the tracker!**
+**F: Mein Musiktempo is vollkommen falsch! Es ist im Spiel viel schneller als im Tracker!**
 
-A: If you're using an `Fxx` effect with the value **higher than `F05`**, then you will need to keep 50hz to 60hz conversions in mind. The .mod format was originally developed for European computers, which ran at 50hz, while the Gameboy runs at 60. **A way to mitigate this is to set your BPM to 150 instead of 125.** If you're using OpenMPT (which cannot set the BPM for whatever reasons), a `F96` effect in the song will do the trick (though use it as early as possible).
+A: Falls du mit `Fxx` Effekten zwischen **zwischen `F01` und `F05`** arbeitest, dann musst du die Umkonvertierung von 50Hertz auf 60Hertz beachten. Das .MOD Format war ursprünglich für europäische Computer gedacht, welche mit 50Hertz arbeiten während der Gameboy selbst mit 60Hertz arbeitet. **Eine Art um dies entgegenzuwirken ist es die BPM auf 150 zu setzen anstelle von 125.** Fallst du mit OpenMPT arbeitest (was aufgrund von Gründen die BPM nicht setzen), so existiert der `F96` Effekt um dir auszuhelfen. Nutze diesen Effekt aber so früh wie möglich im Song.
 
-**Q: Can I play back this voice clip/sound effect/whatever?**
+**F: Kann ich diese Sprachaufnahme hier irgendwie im Spiel verwenden?**
 
-A: No, not on GBT.
+A: Nein, nicht in GBT.
 
-LSDj and more advanced sound drivers available for the Gameboy do support playing back samples, but doing this requires a lot of data to be moved in a short amount of time (means only music can play at that time, really).
+LSDj und viele fortgeschrittene Musiktreiber des Gameboys können zwar solche Formen von Musik unterstützen, aber die bloße Wiedergabe erfordert eine enorme Last an Datenkalkulation und Manipulierung (das heißt zu der Zeit kann nur Musik gespielt werden während die gesamte Applikation eingefriert bleibt).
 
-**Q: Can I use a different tool to write my music?**
+**F: Kann ich auch ein anderes Programm nutzen um meine Musikdateien zu komponieren?**
 
-A: If the tool can natively export to .mod, try it! If not, then you'll need to transcribe what you've written to a tracker, that can save .mod files.
+A: Falls die Applikation auch nativ in .MOD exportieren kann, dann kannst du es gerne versuchen! Falls nein, dann musst du es anschließend in einem Tracker umschreiben, welches die Musikdatei als .MOD Datei abspeichern kann.
 
-**Q: Can I use MIDI files?**
+**F: Kann ich MIDI Dateien verwenden?**
 
-A: OpenMPT can open MIDI files, but you'll have to do the hard work of truncating it into just 4 channels, with limited tones. It's often easier to just input stuff manually because you have a lot more control over everything, and you have a better picture of everything going on if you do that.
+A: OpenMPT kann zwar MIDI Dateien öffnen, aber es erfordert eine Menge Mühen diese MIDI Kanäle in nur vier Kanäle hinein zu kürzen und dann noch auf die Einschränkungen zu achten. Es ist öfters einfacher die Töne von Hand einzugeben weil man dadurch eine bessere Kontrolle erhält was wo abgespielt wird. Es bleibt letztendlich dir überlassen, ob die Mühen sich auszahlen eine MIDI Datei zu transkribieren oder was eigenes auf die Beine zu stellen.
 
-**Q: This is kinda cumbersome. What alternatives do I have?**
+**F: Das klingt ja mega mühseelig. Gibt es für mich auch Alternativen?**
 
-A: As of the date of writing this, none that I know. It's possible that in the future people might make custom tailored trackers or tools for GB Studio, but until then, this is the only way we can make music for GB Studio games.
+A: Zum jetzigen Zeitpunkt dieses Beitrags, nicht das ich wüsste. In Zukunft ist es sicherlich möglich einfach Musik zu komponieren wenn speziell ausgerichtete Tracker und Hilfsmittel für GB Studio veröffentlicht werden. Bis zu diesem Zeitpunkt jedoch verbleibt uns nur die mühseelige Arbeit wie wir sie jetzt gerade kennen.
 
-You might want to start making a non-GB song with OpenMPT or your tracker of choice, as that'll better teach you what a tracker really does, at least in my opinion...
+Du kannst aber gerne mit einen nicht-GB Studio konformen Musikstück starten, um dich mit der Arbeit mit Trackern auseinanderzusetzen. Das zumindest gibt dir die nötige Voraussetzung um mit Trackern Musikstücke deiner Wahl anzufertigen. Mit und ohne Einschränkungen. So denke ich es zumindest…
 
-There's a link in the Tips section on how to get started with OpenMPT, I suggest giving it a read!
+Es gibt einen Hyperlink in der Tipps-und-Tricks Sektion was dich in OpenMPT einführt, ich schlage vor du ziehst dir das mal rein!
 
-**Q: I used a D00 effect on my last pattern to loop back to the first, but it's playing glitched in game after it loops once?**
+**Q: Ich habe einen D00 Effekt im letzten Musikabschnitt verwendet, um zum Musikbeginn zurückzuspulen, aber im Spiel glitched es nach dem ersten Durchspielen?**
 
-A: Use a `Bxx` effect. Using a D00 effect on the last frame will trip GBT into thinking there's more data beyond the song, making it read garbage data.
+A: Nutze stattdessen den `Bxx` Effekt. Die Verwendung des D00 Effekts im allerletzten Abschnitt lässt den GBT funktional stolpern weil es denkt es gäbe noch mehr nach dem Song. Es liest danach nur noch Schrott was es so in seinem Speicher-Cache findet.
 
-**Q: I'm using OpenMPT, and some notes appear as red and they sound way higher/lower than what they're supposed to sound!**
+**F: Ich nutze OpenMPT und manche Noten werden rot markiert und klingen tiefer/höher als sonst!**
 
-A: Go over to the "General" tab that's under the New File, Open and Save buttons. Click the big button next to the "Name" field that says "MOD (ProTracker), 4 channels". Once there, disable both **ProTracker 1/2 Mode (MOD)** and **Amiga Frequency Limits.** This is a thing because the format here is meant to be used with the Amiga line of computers (that's where it was made), which has frequency limits.
+A: Gehe zum “General” Reiter unter "New File, Open undSave" Schaltflächen. Betätige den großen Knopf neben dem Namensfeld mit der Option "MOD (ProTracker), 4 channels". Danach deaktiviere **ProTracker 1/2 Mode (MOD)** und **Amiga Frequency Limits.** Diese Änderung ist üblich da das Format eigentlich dafür verwendet wird um auch für Amiga Computer tauglich zu sein. Amiga hat nämlich Frequenzbegrenzungen die für uns gleichgültig sind.
 
-**Q: The song starts out with garbage noise.**
+**F: Die Musik beginnt mit schrottigem Rauschen.**
 
-A: If you're not using the first two channels, mute them with a `C00` effect.
+A: Falls du Kanal 1 und 2 nicht von Anfang an verwendest, dann bietet es sich an das du diese mit dem `C00` Effekt stummschaltest.
 
-**Q: Can I play sound effects?**
+**Q: Kann ich auch Soundeffekte abspielen während Musik läuft?**
 
-A: Not as of yet. The only way you can play sound effects is to play it as a music file, but that'll kill the current music and you'll have to restart it after the sound effect is done playing.
+A: Ab der Version 1.2 hast du nun die Möglichkeit Musik als auch Sounds gleichzeitig abspielen zu lassen. Je nach Art und Natur des Soundtyps musst du jedoch darauf achten welche der 4 Musikkanäle deine Musik in Anspruch nimmt, da die Kanäle von Musik und Sound sich gegenseitig stören können.
 
-## Tips
+## Allgemeine Hinweise
 
-- **Make sure you save frequently and also back-up your files.** This is important in anything that you do and it's worth mentioning here.
-- [**If you're stuck, please ask for help in the Discord server, in `#music-help`.**](https://discord.gg/v9xAJCJ) There's usually a few handful of people who are willing to help out at most times.
-- **Frequently try out your music in your game.** Things don't sound 1:1, and the built in preview just plays the .mod file rather than building the music and previewing that.
-- **Keep it simple!** Don't jump into this, trying to emulate what several artists have done with LSDj or whatever other tools, you'll just get stuck.
-- **Don't be afraid of failure.** I get this is kind of an unfitting tip, but it's important. Your first song won't be good, and that's okay. You'll fail, sure, but you'll also gain knowledge on what you might've done wrong, or how you want to go on about with your next endeavor.
-- **OpenMPT has a manual to help you get started.** [Here's a link](https://wiki.openmpt.org/Tutorial:_Getting_Started), give it a read if you're stuck (or just ask for help)
-- [**Give the GBT Player documentation a read.**](https://github.com/AntonioND/gbt-player)
+- **Stelle sicher, dass du regelmäßig speicherst und dir auch Sicherheitskopien erstellst. Sogenannte Autosaves erstellt OpenMPT von selbst.** Das Anlegen von Sicherheitskopien ist zwar in allen Arbeitsbereichen löblich aber hier ist es besonders wichtig und daher wichtig es hier nochmals zu erwähnen.
+- [**Falls du irgendwo stecken bleibst, dann zögere nicht im Discord Server unter dem Kanal `#music-help` jemanden um Hilfe zu bitten.**](https://discord.gg/v9xAJCJ) Üblicherweise geistern dort eine Menge Leuten rum, die dir eventuell aushelfen können.
+- **Probiere deine Musikdateien öfters im Spiel selbst aus.** Sie werden nicht 1:1 so klingen wie im Tracker und die eingebaute Musikvorschau im GB Studio Editor spielt direkt die .MOD Datei ab als diese Gameboy-tauglich zu kompilieren.
+- **Fange mit simplen Melodien an!** Springe nicht Hals über Kopf in Beethoven Rekonstruktionen hinein denn überverkomplizierte Erstanfänge schrecken einem ab und frustriert nur.
+- **Hab keine Angst vor Fehler! Verzichte auf Perfektion!** Ich krieg dauernd diese nichtssagenden Tipps aber es ist um so mehr von Relevanz als du glaubst. Dein erster Song wird nicht gut sein und das ist auch okay. Du wirst bei einer Implementierung versagen und vielleicht wirst du auch die Schuld an die vielen Einschränkungen schieben. Aber früher oder später jonglierst du an den Einschränkungen vorbei, findest neue fantastische Wege deine Musik im Tracker auszudrücken. Du entwickelst eine löbliche Begeisterung.
+- **OpenMPT hat eine Dokumentation (leider auf Englisch).** [Hier ist der Link](https://wiki.openmpt.org/Tutorial:_Getting_Started) falls du englisch verstehen kannst.
+- [**Hier ist die Dokumentation des GBT Players (leider auf Englisch).**](https://github.com/AntonioND/gbt-player)
