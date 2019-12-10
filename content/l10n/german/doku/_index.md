@@ -16,7 +16,7 @@ draft: false
   - [Der Spieler](/doku/spieler)
   - [Aktoren](/doku/aktoren)
   - [Auslöser](/doku/ausloeser)
-  - [Skript Ereignisse](/doku/skript-ereignisse)
+  - [Skript-Ereignisse](/doku/skript-ereignisse)
   - [Selbsterstellte Ereignisse](/doku/eigene-ereignisse)
 - [Ressourcen](/doku/ressourcen)
   - [Sprites](/doku/sprites)

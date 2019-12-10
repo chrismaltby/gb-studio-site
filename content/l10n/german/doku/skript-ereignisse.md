@@ -1,27 +1,27 @@
 ---
-title: "Scripting Events"
+title: "Skript-Ereignisse"
 draft: false
-next: "/docs/custom-events"
-nextTitle: "Custom Events"
+next: "/doku/eigene-ereignisse"
+nextTitle: "Selbsterstellte Ereignisse"
 ---
 
-Scripting events allow you to dynamically control parts of your game based on interactions from the player. Use them to connect scenes together, to give dialogue to your characters or to create cutscenes.
+Skript-Ereignisse erlauben es dir Bestandteile deines Spiels dynamisch durch Spielerinteraktion zu beeinflussen. Nutze diese Ereignisse um Szenen zu verbinden, Dialogue zu ermöglichen oder Zwischensequenzen zu erstellen.
 
-When either a scene, an actor or a trigger is selected in the _World Editor_, the _Editor Sidebar_ will contain an _Add Event_ button at the bottom right corner, click this to add new events. If any events have already been defined they will be listed here with the topmost event being the first that will be run.
+Falls Szene, Akteur oder Auslöser im _Welteditor_ ausgewählt wurde, so findet sich ein _Ereignis hinzufügen_ Knopf unten rechts in der _Seitenleiste_. Drücke auf diesen Knopf um Ereignisse hinzuzufügen. Falls an dieser Stelle schon Ereignisse aufgelistet sind, so werden diese Ereignisse von oben nach unten, eins nach dem anderen, ausgeführt.
 
-When adding events to actors they will run when the player stands next to that actor and presses the interact button. Events on triggers run when the player stands on top of the trigger which is useful for creating doorways between scenes. Events on scenes run as soon as that scene is loaded which is useful for configuring the scene based on values of variables or to kick off a cutscene.
+Falls Ereignisse einem Akteur hinzugefügt werden, dann werden diese Ereignisse typischerweise dann ausgeführt, wenn der Spielercharakter sich in nächster Nähe zu diesem Akteur befindet und den Interaktionsknopf drückt. Ereignisse auf Auslösern werden ausgeführt sobald der Spielercharakter sich direkt über einem Auslöser befindet. Dieses Verhalten ist nützlich wenn man einen Türauslöser basteln möchte, mit welchem sich der Spieler zwischen zwei Szenen hin und herbewegen möchte. Ereignisse in der Seitenleiste der Szene selbst werden ausgelöst sobald diese Szene durch den Spielercharakter betreten wird. Das ist nützlich wenn man bestimmte Einstellungen tätigen möchte sobald die Szene geladen wird. Beispiele sind Zwischensequenzen oder die Berechnung von Variablen.
 
-## Add Events
+## Ereignis hinzufügen
 
-After clicking the _Add Event_ button a menu will appear to choose the event to add. If you start typing you can filter this list or you can scroll through it to find what you're looking for. Click an event or press the _Enter_ key to add the highlighted event to your script.
+Nach dem Klicken auf dem _Ereignis hinzufügen_ Knopf wird ein Menü zum Auswählen des Ereignisses in der oberen Mitte des GBStudio Fensters geöffnet. Durch das Angeben von Suchbegriffen kann man die Ereignisliste nach passenden Einträgen filtern lassen. Alternativ kann man mit dem Mausrad durch die anzeigte Liste scrollen. Klicke das Event mit der Maus an oder drücke die _Enter_ Taste auf der Tastatur um das ausgewählte Ereignis deinem Skript hinzuzufügen.
 
-## Copy / Paste
+## Kopieren / Einfügen
 
-Clicking the down arrow next to an event name in a script shows a dropdown menu where you can copy an event to your clipboard. Clicking this on another event allows you to paste the clipboard event either before or after the selected one or to just paste the values from the first event into the second.
+Klicke auf den nach unten gerichteten Pfeil, welches sich rechts neben dem Ereignisnamen befindet, um eine DropDown-Liste anzuzeigen. Darin kann man das Ereignis auf die Zwischenablage hineinkopieren. Bei einem anderen Ereignis kann man dann das kopierte Ereignis hineinkopieren, entweder vor oder nach dem markierten Ereignis. Ebenfalls kann man auch nur die selbsteingestellten Werte eines Ereignisses kopieren und in ein identisches Ereignis hineinkopieren.
 
-<span class="new">New in 1.2.0</span>
+<span class="new">Neu in 1.2.0</span>
 
-You can also hold the _Alt_ key to turn all _Add Event_ buttons into _Paste Event_ buttons allowing you to easily paste events into control flow branches.
+Du kannst nun auch die _Alt_ Taste gedrückt halten um alle _Ereignis hinzufügen_ in _Ereignis einfügen_ Knöpfe zu verwandeln. Nun kannst du bequem Ereignisse direkt am untersten Ende deines Skriptes einfügen.
 
 ## Text Events
 
