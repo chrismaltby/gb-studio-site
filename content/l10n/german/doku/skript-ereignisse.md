@@ -23,104 +23,102 @@ Klicke auf den nach unten gerichteten Pfeil, welches sich rechts neben dem Ereig
 
 Du kannst nun auch die _Alt_ Taste gedrückt halten um alle _Ereignis hinzufügen_ in _Ereignis einfügen_ Knöpfe zu verwandeln. Nun kannst du bequem Ereignisse direkt am untersten Ende deines Skriptes einfügen.
 
-## Text Events
+## Text Ereignisse
 
-- **Text: Display Dialogue**  
-  Show a dialogue box with up to three lines of text, 18 characters per line (and a total of 52 characters), at the bottom of the game screen. This will likely be the most used script command for interacting with actors in your game.  
-  When text is shown the dialogue box will slide up from the bottom of the screen and will slide down after it has been shown.  
+- **Text: Dialog Anzeigen**
+  Zeigt eine Dialogbox mit bis zu drei Zeilen Text am unteren Ende des Spielbildschirms an. Es können bis zu 18 Zeichen pro Zeile ausgegeben werden (also insgesamt 52 Zeichen). Dieses Ereignis wird häufig verwendet um Interaktionen zwischen Aktoren zu ermöglichen. Beim Einblenden des Textes wird die Dialogbox von unten aus in den Spielbildschirm reingeschoben und anschließend nach unten hinausgeschoben.
   <img src="/img/events/display-dialogue.png" class="event-preview" />
   <img src="/img/events/display-dialogue-preview.png" class="event-preview" />
   <br />
 
-  - Using the _+_ button you can create a dialogue sequence which will only close after the last message has been displayed.  
-    <span class="new">New in 1.2.0</span>
-  - You can display the value of any variables in a text box by using the variable's identifier shown in the variable selector (e.g. `$L0$` for local variable 0 and `$182$` for global variable 182).
-  - You can optionally display an avatar image on the left hand side of the dialogue box by clicking _Add Avatar_ and selecting an image to use. You are able to pick any sprite within your game that contains only a single frame (`16px` x `16px`). Setting an avatar will reduce the amount of characters per line available to 16 on all lines.
+  - Durch den _+_ Knopf kannst du zusätzliche Dialogboxen mit je 3 Zeilen Text hinzufügen. Die Dialogbox bleibt in diesem Fall geöffnet bis die letzte Textpassage angezeigt wurde.
+    <span class="new">Neu in 1.2.0</span>
+  - Du kannst den Wert von Variablen in einer Dialogbox ausgeben in dem du die Kennung der Variable nutzt (Beispiel: `$L0$` für eine lokale Variable und `$182$` für die globale Variable 182).
+  - Du kannst optional auch ein Avatarbild an der linken Ecke der Dialogbox anzeigen lassen indem du auf _Avatar Hinzufügen_ klickst und das entsprechende Bild auswählst. Du kannst jedes Sprite im Spielverzeichnis dafür nutzen, welches ein einzelndes Frame beinhaltet (`16px` x `16px`). Das Setzen eines Avatars reduziert die Anzahl darstellbarer Zeichen auf 16 Zeichen auf allen 3 Zeilen.
 
-- **Text: Display Multiple Choice**  
-  Present two options to player allowing them to make a choice, will set the specified variable to _true_ if the first option is chosen and to _false_ if the second option is chosen.  
+- **Text: Mehrfachauswahl Anzeigen**
+  Zeigt zwei Optionen an, was es dem Spieler erlaubt eine Entscheidung zu fällen. Durch die Entscheidung wird eine ausgewählte Variable auf _Wahr_ setzen falls die erste Option gewählt wird. Die zweite Option setzt die Variable auf _Falsch_.
   <img src="/img/events/display-multiple-choice.png" class="event-preview" />
   <img src="/img/events/display-multiple-choice-preview.png" class="event-preview" />
 
-- **Text: Display Menu** <span class="new">New in 1.2.0</span>  
-  Display a menu of multiple options and set the specified variable to the value of the chosen option. Each menu item has a maximum length of `6` characters.  
-  Multiple layouts are provided, `Menu` (shown below) displays as a single column on the right hand side of the game screen and `Dialogue` displays a full width dialogue box with two columns. You can optionally set the `B` button to close the menu setting the variable to `0` and can also make the last menu item return `0` when selected.  
+- **Text: Menü Anzeigen** <span class="new">Neu in 1.2.0</span>
+  Zeigt ein Menü aus mehreren Optionen an welche eine ausgewählte Variable je nach Entscheidung einem bestimmten Wert zuordnet. Jede Option hat eine maximale Zeichenlänge von `6` Zeichen. Mehrere Anordnungsmöglichkeiten sind gegeben: `Menü` (siehe unten) zeigt einen einzelnen Menübereich an der rechten Bildschirmhälfte an und listet die Optionen von oben nach unten auf während `Dialog` die gesamte untere Bildschirmbreite beansprucht und die Optionen zweispaltig anzeigt. Du kannst optional auch einstellen, dass der `B` Knopf das Menü schließt und die Variable auf `0` setzt. Ebenfalls kannst du einstellen, dass die letzte Option des Menüs die Variable auf `B` setzt.
   <img src="/img/events/menu.png" class="event-preview" />
   <img src="/img/events/menu-preview.png" class="event-preview" />
 
-* **Text: Set Animation Speed**  
-  Set the speed that dialogue boxes appear and disappear and how fast text appears within the box.
+* **Text: Animationsgeschwindigkeit Festlegen**
+  Stelle das Tempo ein mit welcher die Dialogboxen geöffnet, die Texte angezeigt und die Dialogboxen anschließend wieder geschlossen werden.
   <img src="/img/events/text-animation-speed.png" class="event-preview" />
 
-## Scene Events
+## Szenen Ereignisse
 
-- **Scene: Change Scene**  
-  Transition to a new scene with player at a specified position and direction. A connection line will be drawn between the source of the event and the destination scene with a <img src="/img/screenshots/destination-end.png" style="height:12px"/> icon appearing at the destination position. It's possible to drag this icon around and between scenes to modify the event.  
+- **Szene: Szene Wechseln**
+  Wechselt die Szene und setzt den Spieler an eine definierte Position und Richtung. Eine Verbindungslinie wird zwischen der Szene wo dieses Ereignis einsetzt und der Szene welches im Ereignis ausgewählt wurde gezogen. Die Zielposition innerhalb der Zielszene wird mit einem <img src="/img/screenshots/destination-end.png" style="height:12px"/> Symbol versehen. Es ist möglich dieses Symbol nachträglich zu verschieben, ob in der Zielszene selbst oder über andere Szenen hinweg.
   <img src="/img/events/switch-scene.png" class="event-preview" />
   <img src="/img/events/switch-scene-preview.png" class="event-preview" />
 
-- **Scene: Store Current On Stack**  
-  Store the current scene and player state on to the scene stack, this allows you to return to this exact location later using the _Scene Restore_ events. A common use of this event would be to include in a script just before a _Change Scene_ event to open a menu scene, in the menu scene you could wait for the player to press a close button and then use the _Restore Previous From Stack_ event to return to where the player opened the menu.  
+- **Szene: Speicher Derzeitigen Szenenzustand Auf Stapel**
+  Lege die derzeitige Szene und Position des Spielers auf den Szenenstapel. Dadurch ist es später möglich mithilfe des _Szene Zurückgeben_ Ereignisses zur exakt selben Szene und Position zurückzukehren. Eine übliche Anwendung dieses Ereignisses setzt die anschließende Verwendung des _Szene Wechseln_ Ereignisses voraus um zu eine Szene zu wechseln, die als Menü dient. Innerhalb dieser Menü-Szene kann man dann mithilfe des _Szene Zurückgeben_ Ereignisses zur gespeicherten Szene des Szenenstapels zurückkehren und somit wird die Menü-Szene verlassen.
   <img src="/img/events/scene-stack-push.png" class="event-preview" />
 
-- **Scene: Restore Previous From Stack**  
-  Transition to the last stored scene from the scene stack using the specified fade speed. The previous scene will then be removed from the stack so the next time this event is used it will transition to the scene before that.  
+- **Szene: Gebe Vorherigen Szenenzustand Vom Stapel Zurück**
+  Wechselt zur letzten gespeicherten Szene im Szenenstapel mit einer ausgewählten Einblendegeschwindigkeit. Beim Wechsel wird die Szene vom Szenenstapel entfernt, daher wird das erneute Ausführen des Ereignisses die nächstletzte gespeicherte Szene im Szenenstapel zum Wechseln verwendet.
   <img src="/img/events/scene-stack-pop.png" class="event-preview" />
 
-- **Scene: Restore First From Stack**  
-  Transition the very first scene stored on the stack, for instance if you had multiple levels of menu scenes you could use this to imediately return to the game scene. This event will cause the scene stack to become empty.  
+- **Szene: Gebe Allerersten Szenenzustand Vom Stapel Zurück**
+  Wechselt zur Szene im Szenenstapel, welche als allererstes gespeichert wurde. Als Anwendungsbeispiel dient ein tief geschachteltes Menü-Szenensystem. Durch dieses Ereignis kann man direkt zur Spielszene zurückkehren ohne die vorherigen Menü-Szenen in Betracht zu ziehen. Zusätzlich wird der gesamte Szenenstapel geleert, daher kann man dieses Ereignis nicht zweimal aneinanderreihen.
   <img src="/img/events/scene-stack-pop-all.png" class="event-preview" />
 
-- **Scene: Empty Scene Stack**  
-  Clears the scene stack so that no previous scenes can be restored.  
+- **Szene: Leere Szenenstapel**
+  Entfernt alle gespeicherten Szenen im Szenenstapel. Somit ist es anschließend nicht mehr möglich in einer der zuvor gespeicherten Szenen zurückzukehren.
   <img src="/img/events/scene-stack-clear.png" class="event-preview" />
 
-## Variable Events
+## Variablen Ereignisse
 
-Your game has 512 variables that can be shared across all the scripts in your game. <span class="new">New in 1.2.0</span> Additionally every _Actor_, _Trigger_ and _Scene_ has 4 local variables that can only be accessed by that specific entity. Local variables are useful for keeping track of state specific to an entity such as how many times you have spoken to a character or if a treasure chest is open or closed.
+Dein Spiel hat einen Speicher von 512 voneinander unabhängige Variablen auf welche all deine Skripte Zugriff haben. <span class="new">Neu in 1.2.0</span> Ebenfalls besitzt jeder _Akteur_, _Auslöser_ und _Szene_ 4 lokale Variablen, auf welche nur die jeweilige Instanz Zugriff hat. Lokale Variablen sind nützlich um bestimmte Zustände der Instanz festzuhalten. Als Beispiele dient die Anzahl an Gesprächsinteraktionen mit einem Akteur oder ob eine Schatzkiste bereits durch den Spieler geöffnet wurde oder nicht.
 
-- **Variable: Set To 'True'**  
-  Set the value of the specified variable to _true_.  
+- **Variable: Auf 'Wahr' Setzen**
+  Setzt eine festgelegte Variable auf _Wahr_.
   <img src="/img/events/variable-true.png" class="event-preview" />
 
-- **Variable: Set To 'False'**  
-  Set the value of the specified variable to _false_.  
+- **Variable: Auf 'Falsch' Setzen**
+  Setzt eine festgelegte Variable auf _Falsch_.
   <img src="/img/events/variable-false.png" class="event-preview" />
 
-- **Variable: Set To Value**  
-  Set the specified variable to a defined value.  
+- **Variable: Auf Wert Setzen**
+  Setzt eine festgelegte Variable auf einen bestimmten Wert.
   <img src="/img/events/variable-value.png" class="event-preview" />
 
-- **Variable: Increment By 1**  
-  Increase the value of the specified value by one, up to a maximum of _255_. If the value was previously _false_ it will now be _1_ (and also _true_), if it was previously _true_ it will now be _2_.  
+- **Variabel: Inkrementieren Um 1**
+  Erhöht den derzeitigen Wert einer festgelegten Variable um 1 mit einem Maximalwert von _255_. Falls der Wert zuvor auf _Falsch_ war, so wird der Wert nun auf _1_ gesetzt (somit auch: _Wahr_). Falls der Wert zuvor auf _Wahr_ war, so wird der Wert nun auf _2_ gesetzt.
   <img src="/img/events/variable-increment.png" class="event-preview" />
 
-- **Variable: Decrement By 1**  
-  Decrease the value of the specified value by one, down to a minimum of _0_. If the value was previously _true_ it will now be _0_ (and also _false_).  
+- **Variabel: Dekrementieren Um 1**
+  Verringert den derzeitigen Wert einer festgelegten Variable um 1 mit einem Minimalwert von _0_. Falls der Wert zuvor auf _Wahr_ war, so wird der Wert nun auf _0_ gesetzt (somit auch: _Falsch_).
   <img src="/img/events/variable-decrement.png" class="event-preview" />
 
-- **Variable: Math Functions**  
-  Allows you to perform various maths functions on a variable to add/subtract/multiply/divide/modulus a value/variable/random number.  
-  _Note:_ Variables have max values of 255 and will wrap if increased above 255 or below 0.  
+- **Variable: Mathematische Funktionen**
+  Erlaubt die Verwendung von mathematischen Grundberechnungen einer festgelegten Variable um diesen mit Werten/Variablenwerten/Zufallswerten zu Addieren/Subtrahieren/Dividieren/Multiplizieren/Moduloberechnen.
+  _Hinweis:_ Variablen haben einen Maximalwert von 255 und brechen um falls der Wert höher ist als 255 oder niedriger ist als 0.
   <img src="/img/events/variable-math.png" class="event-preview" />
 
-- **Variable: Set Flags** <span class="new">New in 1.2.0</span>  
-  Set the value of a variable by enabling individual bits of the 8-bit number. Allows 8 true/false values to be stored within a single variable. Setting the flags will replace the previous value of the variable.  
+- **Variable: Bitschalter Setzen** <span class="new">Neu in 1.2.0</span>
+  Ermöglicht das Ansprechen individueller Bits einer Variablen welche aus 8Bits besteht. Somit kann man innerhalb dieser Bitschalter-Variable 8 voneinander unabhängige Wahr/Falsch Zustände festhalten. Dieses Ereignis überschreibt den vorherigen Variablenwert der festgelegten Variable.
   <img src="/img/events/variable-flags-set.png" class="event-preview" />
 
-- **Variable: Add Flags** <span class="new">New in 1.2.0</span>  
-  Set selected flags to true on a variable. All unselected flags will keep their previous value.
+- **Variable: Bitschalter Hinzufügen** <span class="new"eu in 1.2.0</span>
+  Setze die Zustände der ausgewählten Bitschalter innerhalb einer festgelegten Bitschalter-Variable auf _Wahr_. Alle nicht ausgewählten Bitschalter derselben Bitschalter-Variable behalten ihren vorherigen Zustand bei. Das heißt, dass Bitschalter, die nicht ausgewählt wurden, _nicht_ implizit auf Falsch gesetzt werden. Diese werden einfach ignoriert.
   <img src="/img/events/variable-flags-add.png" class="event-preview" />
 
-- **Variable: Clear Flags** <span class="new">New in 1.2.0</span>  
-  Set selected flags to false on a variable. All unselected flags will keep their previous value.
+- **Variable: Bitschalter Löschen** <span class="new">Neu in 1.2.0</span>
+  Setze die Zustände der ausgewählten Bitschalter innerhalb einer festgelegten Bitschalter-Variable auf _Falsch_. Alle nicht ausgewählten Bitschalter derselben Bitschalter-Variable behalten ihren vorherigen Zustand bei. Das heißt, dass Bitschalter, die nicht ausgewählt wurden, _nicht_ implizit auf Wahr gesetzt werden. Diese werden einfach ignoriert.
   <img src="/img/events/variable-flags-clear.png" class="event-preview" />
 
-- **Variable: Reset All Variables To 'False'**  
-  Reset all variables used by your project back to _false_.  
+- **Variable: Alle Variablen Auf 'Falsch' Zurücksetzen**
+  Setzt alle 512 im Spiel verwendete Variablen zurück auf den Wert _Falsch_ (somit auch: _0_).
   <img src="/img/events/variable-reset-all.png" class="event-preview" />
 
-## Control Flow Events
+## Kontrollfluss Ereignisse
 
 - **If Variable Is 'True'**  
   Conditionally execute part of the script if the specified variable is set to _true_.  
