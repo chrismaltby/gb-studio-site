@@ -14,7 +14,7 @@ draft: false
 - [Der Projekteditor](/doku/projekteditor)
   - [Szenen](/doku/szenen)
   - [Der Spieler](/doku/spieler)
-  - [Aktoren](/doku/aktoren)
+  - [Darsteller](/doku/darsteller)
   - [Auslöser](/doku/ausloeser)
   - [Skript-Ereignisse](/doku/skript-ereignisse)
   - [Selbsterstellte Ereignisse](/doku/eigene-ereignisse)
