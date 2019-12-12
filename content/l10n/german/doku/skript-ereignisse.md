@@ -7,21 +7,21 @@ nextTitle: "Selbsterstellte Ereignisse"
 
 Skript-Ereignisse erlauben es dir Bestandteile deines Spiels dynamisch durch Spielerinteraktion zu beeinflussen. Nutze diese Ereignisse um Szenen zu verbinden, Dialogue zu ermöglichen oder Zwischensequenzen zu erstellen.
 
-Falls Szene, Akteur oder Auslöser im _Welteditor_ ausgewählt wurde, so findet sich ein _Ereignis hinzufügen_ Knopf unten rechts in der _Seitenleiste_. Drücke auf diesen Knopf um Ereignisse hinzuzufügen. Falls an dieser Stelle schon Ereignisse aufgelistet sind, so werden diese Ereignisse von oben nach unten, eins nach dem anderen, ausgeführt.
+Falls Szene, Darsteller oder Auslöser im _Welteditor_ ausgewählt wurde, so findet sich ein _Ereignis hinzufügen_ Knopf unten rechts in der _Seitenleiste_. Drücke auf diesen Knopf um Ereignisse hinzuzufügen. Falls an dieser Stelle schon Ereignisse aufgelistet sind, so werden diese Ereignisse von oben nach unten, eins nach dem anderen, ausgeführt.
 
-Falls Ereignisse einem Akteur hinzugefügt werden, dann werden diese Ereignisse typischerweise dann ausgeführt, wenn der Spielercharakter sich in nächster Nähe zu diesem Akteur befindet und den Interaktionsknopf drückt. Ereignisse auf Auslösern werden ausgeführt sobald der Spielercharakter sich direkt über einem Auslöser befindet. Dieses Verhalten ist nützlich wenn man einen Türauslöser basteln möchte, mit welchem sich der Spieler zwischen zwei Szenen hin und herbewegen möchte. Ereignisse in der Seitenleiste der Szene selbst werden ausgelöst sobald diese Szene durch den Spielercharakter betreten wird. Das ist nützlich wenn man bestimmte Einstellungen tätigen möchte sobald die Szene geladen wird. Beispiele sind Zwischensequenzen oder die Berechnung von Variablen.
+Falls Ereignisse einem Darsteller hinzugefügt werden, dann werden diese Ereignisse typischerweise dann ausgeführt, sobald der Spielercharakter sich in nächster Nähe zu diesem Darsteller befindet und den Interaktionsknopf drückt. Ereignisse auf Auslösern werden ausgeführt sobald der Spielercharakter sich direkt über einem Auslöser befindet. Dieses Verhalten ist nützlich wenn man einen Türauslöser basteln möchte, mit welchem sich der Spieler zwischen zwei Szenen hin- und herbewegen möchte. Ereignisse in der Seitenleiste der Szene werden ausgelöst sobald der Spielercharakter sich in der Szene befindet. Das ist nützlich wenn man bestimmte Einstellungen tätigen möchte sobald die Szene geladen wird. Beispiele sind Zwischensequenzen oder die Vorberechnung von Variablen.
 
 ## Ereignis hinzufügen
 
-Nach dem Klicken auf dem _Ereignis hinzufügen_ Knopf wird ein Menü zum Auswählen des Ereignisses in der oberen Mitte des GBStudio Fensters geöffnet. Durch das Angeben von Suchbegriffen kann man die Ereignisliste nach passenden Einträgen filtern lassen. Alternativ kann man mit dem Mausrad durch die anzeigte Liste scrollen. Klicke das Event mit der Maus an oder drücke die _Enter_ Taste auf der Tastatur um das ausgewählte Ereignis deinem Skript hinzuzufügen.
+Nach dem Klicken auf dem _Ereignis hinzufügen_ Knopf wird ein Menü zum Auswählen des Ereignisses in der oberen Mitte des GBStudio Fensters geöffnet. Durch das Angeben von Suchbegriffen kann man die Ereignisliste nach passenden Einträgen filtern lassen. Alternativ kann man mit dem Mausrad durch die angezeigte Liste scrollen. Klicke das gewünschte Ereignis mit der Maus an oder drücke die _Enter_ Taste auf der Tastatur um das ausgewählte Ereignis deinem Skript hinzuzufügen.
 
 ## Kopieren / Einfügen
 
-Klicke auf den nach unten gerichteten Pfeil, welches sich rechts neben dem Ereignisnamen befindet, um eine DropDown-Liste anzuzeigen. Darin kann man das Ereignis auf die Zwischenablage hineinkopieren. Bei einem anderen Ereignis kann man dann das kopierte Ereignis hineinkopieren, entweder vor oder nach dem markierten Ereignis. Ebenfalls kann man auch nur die selbsteingestellten Werte eines Ereignisses kopieren und in ein identisches Ereignis hineinkopieren.
+Klicke auf den nach unten gerichteten Pfeil, welches sich rechts neben dem Ereignisnamen befindet, um eine DropDown-Liste anzuzeigen. Darin kann man das jeweilige Ereignis auf die Zwischenablage hineinkopieren. Bei einem anderen Ereignis kann man dann das kopierte Ereignis hineinkopieren, entweder vor oder nach dem markierten Ereignis. Ebenfalls kann man auch nur die vorher konfigurierten Werte eines Ereignisses kopieren und in ein identisches Ereignis hineinkopieren.
 
 <span class="new">Neu in 1.2.0</span>
 
-Du kannst nun auch die _Alt_ Taste gedrückt halten um alle _Ereignis hinzufügen_ in _Ereignis einfügen_ Knöpfe zu verwandeln. Nun kannst du bequem Ereignisse direkt am untersten Ende deines Skriptes einfügen.
+Du kannst nun auch die _Alt_ Taste gedrückt halten um alle _Ereignis hinzufügen_ Knöpfe in _Ereignis einfügen_ Knöpfe zu verwandeln. Nun kannst du bequem Ereignisse direkt am untersten Ende deines Skriptes einfügen.
 
 ## Text Ereignisse
 
@@ -75,7 +75,7 @@ Du kannst nun auch die _Alt_ Taste gedrückt halten um alle _Ereignis hinzufüge
 
 ## Variablen Ereignisse
 
-Dein Spiel hat einen Speicher von 512 voneinander unabhängige Variablen auf welche all deine Skripte Zugriff haben. <span class="new">Neu in 1.2.0</span> Ebenfalls besitzt jeder _Akteur_, _Auslöser_ und _Szene_ 4 lokale Variablen, auf welche nur die jeweilige Instanz Zugriff hat. Lokale Variablen sind nützlich um bestimmte Zustände der Instanz festzuhalten. Als Beispiele dient die Anzahl an Gesprächsinteraktionen mit einem Akteur oder ob eine Schatzkiste bereits durch den Spieler geöffnet wurde oder nicht.
+Dein Spiel hat einen Speicher von 512 voneinander unabhängige Variablen auf welche all deine Skripte Zugriff haben. <span class="new">Neu in 1.2.0</span> Ebenfalls besitzt jeder _Darsteller_, _Auslöser_ und _Szene_ 4 lokale Variablen, auf welche nur die jeweilige Instanz Zugriff hat. Lokale Variablen sind nützlich um bestimmte Zustände der Instanz festzuhalten. Als Beispiele dient die Anzahl an Gesprächsinteraktionen mit einem Darsteller oder ob eine Schatzkiste bereits durch den Spieler geöffnet wurde oder nicht.
 
 - **Variable: Auf 'Wahr' Setzen**
   Setzt eine festgelegte Variable auf _Wahr_.
@@ -120,65 +120,65 @@ Dein Spiel hat einen Speicher von 512 voneinander unabhängige Variablen auf wel
 
 ## Kontrollfluss Ereignisse
 
-- **If Variable Is 'True'**  
-  Conditionally execute part of the script if the specified variable is set to _true_.  
+- **Falls Variable 'Wahr' Ist**
+  Führt den zugehörigen Skript aus, falls eine festgelegte Variable auf _Wahr_ gesetzt wurde.
   <img src="/img/events/if-true.png" class="event-preview" />
 
-- **If Variable Is 'False'**  
-  Conditionally execute part of the script if the specified variable is _false_.  
+- **Falls Variable 'Falsch' Ist**
+  Führt den zugehörigen Skript aus, falls eine festgelegte Variable auf _Falsch_ gesetzt wurde.
   <img src="/img/events/if-false.png" class="event-preview" />
 
-- **If Variable Compare With Value**  
-  Conditionally execute part of the script if the specified variable matches a rule, such as "Equal To", "Greater Than" or "Less Than" against a value.  
+- **Falls Variable Mit Wert Verglichen**
+  Führt den zugehörigen Skript aus, falls der Wert einer festgelegten Variable "Größer", "Kleiner", "Gleich" ist als ein bestimmter Wert.
   <img src="/img/events/if-variable-value.png" class="event-preview" />
 
-- **If Variable Compare With Variable**  
-  Conditionally execute part of the script if the specified variable matches a rule, such as "Equal To", "Greater Than" or "Less Than" against a second variable.  
+- **Falls Variable Mit Variable Verglichen**
+  Führt den zugehörigen Skript aus, falls der Wert einer festgelegten Variable "Größer", "Kleiner", "Gleich" ist als eine andere Variable.
   <img src="/img/events/if-variable-variable.png" class="event-preview" />
 
-- **If Variable Has Flag** <span class="new">New in 1.2.0</span>  
-  Conditionally execute part of the script if the specified variable has the chosen flag set as true.  
+- **Falls Variable Mit Bitschalter** <span class="new">Neu in 1.2.0</span>
+  Führt den zugehörigen Skript aus, falls ein bestimmter Bitschalter einer festgelegten Variable auf _Wahr_ gesetzt wurde.
   <img src="/img/events/if-variable-flag.png" class="event-preview" />
 
-- **If Joypad Input Pressed**  
-  Conditionally execute part of the script if the specified joypad input is currently pressed. Will not wait for user input so use directly after a _Joypad Input: Pause Script Until Pressed_ event if waiting is required. Event will only execute once, if you wish to run a script every time a button is pressed use _Joypad Input: Attach Script To Button_ instead.
+- **Falls Joypad-Eingabe Gedrückt**
+  Führt den zugehörigen Skript aus, falls zum derzeitigen Zeitpunkt ein bestimmter Input registriert wird. Dieses Ereignis wartet nicht aktiv auf eine Benutzer-Eingabe, deshalb sollte man dieses Ereignis direkt nach dem _Joypad-Eingabe: Skript Pausieren Bis Gedrückt_ Ereignis anknüpfen, falls das unbestimmte Warten auf Benutzer-Eingabe gewünscht ist. Dieses Ereignis ist zudem eine einmalige Abfrage. Falls gewünscht ist, dass ein Skript nach jedem bestimmten Input ausgeführt werden soll, dann ist es besser das _Joypad-Eingabe: Binde Skript An Eingabe_ Ereignis zu verwenden.
   <img src="/img/events/if-joypad-input.png" class="event-preview" />
 
-- **If Actor At Position**  
-  Conditionally execute part of the script if the specified actor is at a certain position in the scene.  
+- **Falls Darsteller An Position**
+  Führt den zugehörigen Skript aus, falls ein festgelegter Darsteller sich an einer bestimmten Position innerhalb derselben Szene befindet.
   <img src="/img/events/if-actor-position.png" class="event-preview" />
 
-- **If Actor Facing Direction**  
-  Conditionally execute part of the script if the specified actor is facing a certain direction.  
+- **Falls Blickrichtung Des Darstellers**
+  Führt den zugehörigen Skript aus, falls ein festgelegter Darsteller in eine bestimmte Richtung blickt.
   <img src="/img/events/if-actor-direction.png" class="event-preview" />
 
-- **If Game Data Saved**  
-  Conditionally execute part of the script if there is a saved game available.  
+- **Falls Spieldaten Gespeichert**
+  Führt den zugehörigen Skript aus, falls ein gespeicherter Spielstand existiert.
   <img src="/img/events/if-game-saved.png" class="event-preview" />
 
-- **Switch** <span class="new">New in 1.2.0</span>  
-  Conditionally execute from multiple options depending on the value of the specified variable. First choose how many options you want to compare the variable against, then set the values to compare and what scripts to execute when the value is matched.  
+- **Switch** <span class="new">Neu in 1.2.0</span>
+  Führt den zugehörigen Skript aus, falls der Wert einer festgelegten Variable der gleiche ist wie eines der Werte innerhalb einer Reihe von Werten gleicht. Zuerst wird die Anzahl der zu vergleichenden Werte festgelegt, danach werden die unterschiedlichen Werte festgelegt. Zuletzt wird verglichen und bei Übereinstimmung entschieden welches Skript ausgeführt wird.
   <img src="/img/events/switch.png" class="event-preview" />
 
-- **Loop Forever**  
-  Execute part of the script in a loop forever. Remember to break out of the loop otherwise the player will become stuck at this point. You can use a _Stop Script_ or _Change Scene_ event to stop the loop.  
+- **Endlos-Schleife**
+  Führt den zugehörigen Skript in einer Endlos-Schleife aus. Um aus dieser Schleife herauszubrechen ist es notwendig von den Ereignissen _Skript: Anhalten_ und _Szene: Szene wechseln_ Gebrauch zu machen, sonst kann der Spieler das Spiel nicht fortsetzen.
   <img src="/img/events/loop.png" class="event-preview" />
 
-- **Label: Define / Label: Goto** <span class="new">New in 1.2.0</span>  
-  Define markers in your script using _Label: Define_ giving the label a name and jump to markers using _Label: Goto_.  
-  _Note:_ The name must be identical for the define/goto event pair to work. **Use with care!**
+- **Label: Label Definieren / Label: Springe Zu Label** <span class="new">Neu in 1.2.0</span>
+  Definiert Markierungen im Skript mithilfe von _Label: Label Definieren_ und versieht diese Markierung mit einem Labelnamen. Es ist anschließend möglich im selben Skript zur vorhin definierten Markierung mithilfe von _Label: Springe Zu Label_ zurückzuspringen.
+  _Hinweis:_ Der angegebene Labelname in beiden Ereignissen muss derselbe sein, damit das Zurückspringen funktioniert. **Mit Vorsicht zu genießen!**
   <img src="/img/events/label-goto.png" class="event-preview" />
 
-- **Event Group**  
-  Provides no in game functionality but allows you to group a sequence of events together and give them a label (using the _Rename Event_ option on the event menu) and collapse the events into a single block.  
+- **Ereignisgruppe**
+  Hat keinerlei Auswirkung auf das Spiel und dient zur Gruppierung einer Reihe von Ereignissen. Die Ereignisgruppe kann nach Belieben mithilfe der _Ereignis umbenennen_ Option benannt werden. Kann den innen liegenden Skript zusammenklappen.
   <img src="/img/events/event-group.png" class="event-preview" />
 
-- **Script: Stop**  
-  Stops the current script from running.  
+- **Skript: Anhalten**
+  Hält den derzeitig ausgeführten Skript an.
   <img src="/img/events/script-stop.png" class="event-preview" />
 
-- **Disable Else** <span class="new">New in 1.2.0</span>  
-  If you don't require an _Else_ branch in any of your control flow events you can now disable it by selecting _Disable Else_ from the event dropdown menu. The same menu can be used to restore an _Else_ branch if needed at a later time.
+- **Sonst-Zweig Deaktivieren** <span class="new">Neu in 1.2.0</span>
+  Falls keine Verwendung für den _Sonst_ Zweig besteht oder gleichfalls bei allen anderen Kontrollfluss-Ereignissen besteht, dann kann dieser Zweig durch das Ereignis-Dropdown Menü ausgeschaltet werden. Ebenfalls kann der Sonst_Zweig zu einem späteren Zeitpunkt wieder aktiviert werden.
   <img src="/img/events/disable-else.png" class="event-preview" />
 
 ## Camera Events
