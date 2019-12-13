@@ -181,134 +181,134 @@ Dein Spiel hat einen Speicher von 512 voneinander unabhängige Variablen auf wel
   Falls keine Verwendung für den _Sonst_ Zweig besteht oder gleichfalls bei allen anderen Kontrollfluss-Ereignissen besteht, dann kann dieser Zweig durch das Ereignis-Dropdown Menü ausgeschaltet werden. Ebenfalls kann der Sonst_Zweig zu einem späteren Zeitpunkt wieder aktiviert werden.
   <img src="/img/events/disable-else.png" class="event-preview" />
 
-## Camera Events
+## Kamera Ereignisse
 
-- **Camera: Move To**  
-  Move the camera to a specifed position in the scene.  
+- **Kamera: Bewegen Zu Position**
+  Bewegt die Kamera zu einer festgelegten Position innerhalb der Szene.
   <img src="/img/events/camera-move-to.png" class="event-preview" />
 
-- **Camera: Lock To Player**  
-  Move the camera back to focusing on the player, locking into position when the player moves.  
+- **Kamera: An Spieler Binden**
+  Bewegt die Kamera zurück zum Spielcharakter. Die Kamera bewegt sich nun mit dem Spielcharakter mit.
   <img src="/img/events/camera-lock-to-player.png" class="event-preview" />
 
-- **Camera: Shake**  
-  Shake camera effect for up to 10 seconds.  
+- **Kamera: Rütteln**
+  Rüttelt die Kamera in horizontaler Richtung für bis zu 10 Sekunden.
   <img src="/img/events/camera-shake.png" class="event-preview" />
 
-## Screen Events
+## Bildschirm Ereignisse
 
-- **Screen: Fade In**  
-  Fade the scene to a white screen.  
+- **Bildschirm: Einblenden**
+  Blendet den Bildschirm allmählich weiß.
   <img src="/img/events/screen-fade-in.png" class="event-preview" />
 
-- **Screen: Fade Out**  
-  Fade the scene in from a white screen.  
+- **Screen: Fade Out**
+  Blendet den Bildschirm von komplett weißem Hintergrund zurück zur ursprünglichen Bildschirmausgabe.
   <img src="/img/events/screen-fade-out.png" class="event-preview" />
 
-## Actor Events
+## Darsteller Ereignisse
 
-- **Actor: Set Direction**  
-  Set the facing direction of the specified actor.  
+- **Darsteller: Blickrichtung Festlegen**
+  Setzt die Blickrichtung des festgelegten Darstellers.
   <img src="/img/events/actor-set-direction.png" class="event-preview" />
   <img src="/img/events/actor-set-direction-preview.png" class="event-preview" />
 
-- **Actor: Set Direction Using Variable** <span class="new">New in 1.2.0</span>  
-  Set the facing direction of the specified actor from the value of a variable.  
+- **Darsteller: Blickrichtung Anhand Variable Festlegen** <span class="new">Neu in 1.2.0</span>
+  Setzt die Blickrichtung des festgelegten Darstellers mithilfe eines Variablenwertes.
   <img src="/img/events/actor-direction-variables.png" class="event-preview" />
 
-- **Actor: Set Position**  
-  Set the position in the scene of the specified actor.  
+- **Darsteller: Position Festlegen**
+  Setzt die Position des festgelegten Darstellers innerhalb einer Szene. Der Darsteller wird sofort zu der gesetzten Position teleportiert.
   <img src="/img/events/actor-position.png" class="event-preview" />
 
-- **Actor: Set Position Using Variables**  
-  Set the position in the scene of the specified actor from the values of two variables.  
+- **Darsteller: Position Anhand Variablen Festlegen**
+  Setzt die Position des festgelegten Darstellers innerhalb einer Szene mithilfe von Variablenwerten. Der Darsteller wird sofort zu der gesetzten Position teleportiert.
   <img src="/img/events/actor-position-variables.png" class="event-preview" />
 
-- **Actor: Set Relative Position**  
-  Set the position in the scene of the specified actor relative to their current position.  
+- **Darsteller: Relative Position Festlegen**
+  Setzt die Position des festgelegten Darstellers relativ zu der derzeitigen Position des Darstellers. Der Darsteller wird sofort zu der gesetzten Position teleportiert.
   <img src="/img/events/actor-relative-position.png" class="event-preview" />
 
-- **Actor: Move To**  
-  Make the actor walk to a specified position in the scene. Actor will ignore all collisions along path so combine multiple of these events if you need to specify an exact path avoiding obstacles in the scene.  
+- **Darsteller: Bewegen Zu Position**
+  Lässt den festgelegten Darsteller zu einer Position innerhalb der Szene laufen. Die durchlaufende Strecke ist wirkürrlich und nicht steuerbar, ebenso wird der Darsteller jegliche Kollisionshindernisse ignorieren. Falls erwünscht ist, dass der Darsteller eine bestimmte Strecke laufen soll, dann wäre es empfehlenswert mehrere dieser Ereignisse aneinanderzureihen und die Bewegungen schrittweise im Detail zu beschreiben.
   <img src="/img/events/actor-move-to.png" class="event-preview" />
 
-- **Actor: Move Relative**  
-  Make the actor walk to a position relative to their current position.  
+- **Darsteller: Relativ Bewegen**
+  Lässt den festgelegten Darsteller relativ zu seiner derzeitigen Position innerhalb der Szene laufen. Zuerst wird sich der Darsteller in horizontaler Richtung bewegen, anschließend in vertikaler Richtung.
   <img src="/img/events/actor-relative-move.png" class="event-preview" />
 
-- **Actor: Move To Using Variables**  
-  Make the actor walk to a position from the values of two variables.  
+- **Darsteller: Bewegen Zu Position Anhand Variablen**
+  Lässt den festgelegten Darsteller zu einer Position innerhalb der Szene mithilfe von Variablenwerten laufen.
   <img src="/img/events/actor-move-to-variables.png" class="event-preview" />
 
-- **Actor: Store Position In Variables**  
-  Store the current position of an actor into two variables.  
+- **Darsteller: Position In Variablen Speichern**
+  Speichert die derzeitige Position eines festgelegten Darstellers in zwei Variablen ab.
   <img src="/img/events/actor-store-position.png" class="event-preview" />
 
-- **Actor: Store Direction In Variable** <span class="new">New in 1.2.0</span>  
-  Store the current direction of an actor into a variable.  
+- **Darsteller: Blickrichtung In Variablen Speichern** <span class="new">Neu in 1.2.0</span>
+  Speichert die derzeitige Blickrichtung eines festgelegten Darstellers in eine Variable ab.
   <img src="/img/events/actor-store-direction.png" class="event-preview" />
 
-- **Actor: Push Away From Player**  
-  Push an actor in the direction the player is currently facing. By default pushes by one tile, but can optionally slide until a collision occurs.  
+- **Darsteller: Von Spieler Wegschieben**
+  Schiebt einen Darsteller in die derzeitige Blickrichtung des Spielers. Standardmäßig wird der Darsteller nur um eine Position geschoben, jedoch kann man optional auch einstellen, dass der Darsteller bis zur nächsten Kollision geschoben wird.
   <img src="/img/events/actor-push.png" class="event-preview" />
 
-- **Actor: Emote Bubble**  
-  Display an emote bubble above the specified actor from one of _Shock_, _Question_, _Love_, _Pause_, _Anger_, _Sweat_, _Music_ and _Sleep_. You can change the graphics used for these bubbles by editing the [UI Elements](/docs/ui-elements#emotes-png) of your game.  
+- **Darsteller: Emotions-Blase**
+  Zeigt eine kleine Emotions-Blase über einem festgelegten Darsteller an. Die Emotionsgesten sind: _Shock/Ausrufezeichen_, _Question/Fragezeichen_, _Love/Herz_, _Pause/Dreipunkt_, _Anger/Zorn_, _Sweat/Schweißperle_, _Music/Musiknote_ and _Sleep/Schlaf_. Die angezeigten Symbole können verändert werden, indem die Grafikdatei [UI Elemente](/doku/ui-elemente#emotes-png) innerhalb der Spiel-Ressourcen bearbeitet wird.
   <img src="/img/events/actor-emote.png" class="event-preview" />
   <img src="/img/events/actor-emote-preview.png" class="event-preview" />
 
-- **Actor: Set Animation Frame**  
-  Set the current animation frame of the specified actor.  
+- **Darsteller: Animationsframe Festlegen**
+  Setzt die derzeitig anzuzeigende Animationsframe eines festgelegten Darstellers.
   <img src="/img/events/actor-set-frame.png" class="event-preview" />
 
-- **Actor: Set Animation Frame Using Variable** <span class="new">New in 1.2.0</span>  
-  Set the current animation frame of the specified actor to the value of a variable.  
+- **Darsteller: Animationsframe Anhand Variable Festlegen** <span class="new">Neu in 1.2.0</span>
+  Setzt die derzeitig anzuzeigende Animationsframe eines festgelegten Darstellers mithilfe eines Variablenwertes.
   <img src="/img/events/actor-set-frame-variable.png" class="event-preview" />
 
-- **Actor: Set Animation Speed**  
-  Set the animation speed of the specified actor.  
+- **Darsteller: Animationsgeschwindigkeit Festlegen**
+  Setzt die Animationsgeschwindigkeit eines festgelegten Darstellers. Je höher der Wert, desto schneller die Geschwindigkeit.
   <img src="/img/events/actor-animation-speed.png" class="event-preview" />
 
-- **Actor: Set Movement Speed**  
-  Set the movement speed of the specified actor.  
+- **Darsteller: Bewegungsgeschwindigkeit Festlegen**
+  Setzt die Bewegungsgeschwindigkeit eines festgelegten Darstellers. Je höher der Wert, desto schneller die Geschwindigkeit.
   <img src="/img/events/actor-movement-speed.png" class="event-preview" />
 
-- **Actor: Set Player Sprite Sheet**  
-  Change the player sprite sheet from the default defined in the _Project Editor_. Changes to the player sprite sheet will persist between scene transitions so make sure to change it back if the change was supposed to be temporary.  
+- **Spieler: Setze Spieler Sprite-Sheet**
+  Verändert das Spieler Sprite-Sheet und somit auch das Aussehen. Diese Änderung überschreibt auch das im _Projekteditor_ voreingestellte Sprite-Sheet und besteht auch wenn der Spieler die Szene wechselt. Falls diese Änderung nur temporär sein sollte, dann muss daran gedacht werden, dass das Sprite-Sheet an einer geeigneten Stelle auch zurückgeändert werden muss.
   <img src="/img/events/actor-player-spritesheet.png" class="event-preview" />
 
-- **Actor: Collisions Disable** <span class="new">New in 1.2.0</span>  
-  Prevent collisions from affecting the selected actor. If a scene actor is selected then the player will be able to walk through them, if the player is selected then you will be able to walk through all actors and collisions in the scene.  
-  _Note:_ While collisions are disabled it is still posible to interact with the actor.  
+- **Darsteller: Kollisionen Ausschalten** <span class="new">Neu in 1.2.0</span>
+  Verhindert für einen festgelegten Darsteller jegliche Kollisionen. Falls ein Szenendarsteller dafür festgelegt wurde, so kann der Spielercharakter nun durch diesen Szenendarsteller laufen. Falls der Spielercharakter dafür festgelegt wurde, so kann dieser nun durch alle sonstigen Darsteller und sogar durch alle Szenenbegrenzungen laufen.
+  _Hinweis:_ Obwohl die Kollisionen für den festgelegten Darsteller ausgeschaltet wurden, so ist eine Interaktion mit diesem Darsteller immer noch möglich.
   <img src="/img/events/actor-collisions-disable.png" class="event-preview" />
 
-- **Actor: Collisions Enable** <span class="new">New in 1.2.0</span>  
-  Reenable collisions on the selected actor.  
+- **Darsteller: Kollisionen Einschalten** <span class="new">Neu in 1.2.0</span>
+  Schaltet für einen festgelegten Darsteller wieder Kollisionen ein falls dieser durch obiges Ereignis ausgeschalten wurde.
   <img src="/img/events/actor-collisions-enable.png" class="event-preview" />
 
-- **Actor: Invoke Script**  
-  Call the script on another actor in the scene as if the player had interacted with that actor.  
+- **Darsteller: Darsteller-Skript Aufrufen**
+  Ruft den Interaktionsskript eines festgelegten Darsteller auf, welches sich auf derselben Szene befindet wie der Spielcharakter. Es wird simuliert, dass der Spielercharakter mit dem festgelegten Darsteller interagiert.
   <img src="/img/events/actor-invoke.png" class="event-preview" />
 
-- **Actor: Hide**  
-  Hide an actor so it is no longer visible. Hidden actors will no longer cause collisions and will not be able to be interacted with. You can hide the player on a Scene Start Script to make menu and title screens.  
+- **Darsteller: Ausblenden**
+  Versteckt den Darsteller und somit ist dieser nun unsichtbar. Versteckte Darsteller können keine Kollisionen verursachen und der Spielercharakter kann nicht mehr mit ihnen interagieren. Es ist üblich den Spielercharakter innerhalb von Menüsystemen oder Zwischensequenzen auszublenden.
   <img src="/img/events/actor-hide.png" class="event-preview" />
 
-- **Actor: Show**  
-  Unhide a previously hidden actor.  
+- **Darsteller: Einblenden**
+  Zeigt einen versteckten Darsteller wieder an.
   <img src="/img/events/actor-show.png" class="event-preview" />
 
-## Sprite Events
+## Sprite Ereignisse
 
-- **Sprites: Hide All**  
-  Hide all sprites in scene. Can be useful to create cutscenes where the player should not be visible by adding to a scene's starting script.  
+- **Sprites: Alle Einblenden**
+  Versteckt alle definierten Darsteller innerhalb der derzeitigen Szene. Für Zwischensequenzen ist es praktisch alle Darsteller auf einem Schlag zu verstecken.
   <img src="/img/events/sprites-hide.png" class="event-preview" />
 
-- **Sprites: Show All**  
-  Show all sprites that were previously hidden.  
+- **Sprites: Show All**
+  Zeigt alle versteckten Darsteller wieder an.
   <img src="/img/events/sprites-show.png" class="event-preview" />
 
-## Overlay Events
+## Überlagerung Ereignisse
 
 - **Overlay: Show**  
   Show either a black or white window over the top of the current game screen. Can be used to obscure and then reveal parts of the scene background for example on the sample project logo screen.  
