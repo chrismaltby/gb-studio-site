@@ -7,7 +7,7 @@ nextTitle: "Selbsterstellte Ereignisse"
 
 Skript-Ereignisse erlauben es dir Bestandteile deines Spiels dynamisch durch Spielerinteraktion zu beeinflussen. Nutze diese Ereignisse um Szenen zu verbinden, Dialogue zu ermöglichen oder Zwischensequenzen zu erstellen.
 
-Falls Szene, Darsteller oder Auslöser im _Welteditor_ ausgewählt wurde, so findet sich ein _Ereignis hinzufügen_ Knopf unten rechts in der _Seitenleiste_. Drücke auf diesen Knopf um Ereignisse hinzuzufügen. Falls an dieser Stelle schon Ereignisse aufgelistet sind, so werden diese Ereignisse von oben nach unten, eins nach dem anderen, ausgeführt.
+Falls Szene, Darsteller oder Auslöser im _Welteditor_ ausgewählt wurde, so findet sich ein _Ereignis hinzufügen_ Knopf unten rechts in der _Editor Seitenleiste_. Drücke auf diesen Knopf um Ereignisse hinzuzufügen. Falls an dieser Stelle schon Ereignisse aufgelistet sind, so werden diese Ereignisse von oben nach unten, eins nach dem anderen, ausgeführt.
 
 Falls Ereignisse einem Darsteller hinzugefügt werden, dann werden diese Ereignisse typischerweise dann ausgeführt, sobald der Spielercharakter sich in nächster Nähe zu diesem Darsteller befindet und den Interaktionsknopf drückt. Ereignisse auf Auslösern werden ausgeführt sobald der Spielercharakter sich direkt über einem Auslöser befindet. Dieses Verhalten ist nützlich wenn man einen Türauslöser basteln möchte, mit welchem sich der Spieler zwischen zwei Szenen hin- und herbewegen möchte. Ereignisse in der Seitenleiste der Szene werden ausgelöst sobald der Spielercharakter sich in der Szene befindet. Das ist nützlich wenn man bestimmte Einstellungen tätigen möchte sobald die Szene geladen wird. Beispiele sind Zwischensequenzen oder die Vorberechnung von Variablen.
 
