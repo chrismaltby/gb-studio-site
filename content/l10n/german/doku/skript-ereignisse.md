@@ -300,11 +300,11 @@ Dein Spiel hat einen Speicher von 512 voneinander unabhängige Variablen auf wel
 
 ## Sprite Ereignisse
 
-- **Sprites: Alle Einblenden**  
+- **Sprites: Alle Ausblenden**  
   Versteckt alle definierten Darsteller innerhalb der derzeitigen Szene. Für Zwischensequenzen ist es praktisch alle Darsteller auf einem Schlag zu verstecken.  
   <img src="/img/events/sprites-hide.png" class="event-preview" />
 
-- **Sprites: Show All**  
+- **Sprites: Alle Einblenden**  
   Zeigt alle versteckten Darsteller wieder an.  
   <img src="/img/events/sprites-show.png" class="event-preview" />
 
