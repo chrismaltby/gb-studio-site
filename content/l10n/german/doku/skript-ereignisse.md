@@ -344,7 +344,7 @@ Dein Spiel hat einen Speicher von 512 voneinander unabhängige Variablen auf wel
   <img src="/img/events/music-play.png" class="event-preview" />
 
 - **Musik: Anhalten**  
-  Stops any currently playing music.  
+  Hält den derzeitig spielenden Musiktitel an. Dieses Ereignis merkt sich nicht die Stelle, an welcher die Musik angehalten wurde.  
   <img src="/img/events/music-stop.png" class="event-preview" />
 
 ## Sound Ereignisse
