@@ -1,21 +1,21 @@
 ---
-title: "Actors"
+title: "Darsteller"
 draft: false
-next: "/docs/triggers"
-nextTitle: "Triggers"
+next: "/doku/ausloeser"
+nextTitle: "Auslöser"
 ---
 
-Actors are the characters and objects in your scene that you can interact with.
+Darsteller sind Charaktere und Objekte innerhalb der Szene mit denen der Spielcharakter interagieren kann.
 
-## Adding an Actor
+## Darsteller hinzufügen
 
-To add an actor to a scene click the _**+** button_ in the _Editor Tools_ and select _Actor_ from the menu (alternatively press the **A** key), then click on the scene and position where you wish to place the actor.
+Um einen Darsteller zur Szene hinzuzufügen, klickt man auf den _**+** Knopf_ in der oberen linken Ecke der _Editor Werkzeugleiste_ und dann auf _Darsteller_ (alternativ auch mit der **A** Taste). Danach kann man den Darsteller in einer beliebigen Szene an einer beliebigen Position platzieren.
 
 <img src="/img/screenshots/add-actor.gif" style="width:300px"/>
 
-The _Editor Sidebar_ will switch to show the actor settings where you can give the actor a name for easier navigation later, reposition the actor (which you can also do with drag and drop), set the [sprite sheet](/docs/sprites), initial direction, the movement type and create a script that will play when the player interacts with the actor.
+Die _Editor Seitenleiste_ wechselt anschließend zu den Darsteller Einstellungen wo man unter anderem den Darstellernamen angeben, die Darstellerposition festlegen (alternativ auch via Drag & Drop möglich), das Aussehen des Darstellers durch Angabe eines [Sprite-Sheet](/doku/sprites) einstellen, die Blickrichtung des Darstellers angeben, die Bewegungsgeschwindigkeit bestimmen und ein Ereignisskript entwerfen kann. Letzteres wird immer dann ausgeführt wenn der Spielcharakter mit diesem Darsteller interagiert.
 
-## Movement Type
+## Bewegungsart
 
 There are a few different movement types available to choose, the one you should use will depend on how you want the actor to behave as the player is walking around the scene and interacting with it.
 
