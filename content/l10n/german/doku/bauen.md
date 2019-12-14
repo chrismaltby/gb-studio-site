@@ -7,7 +7,7 @@ nextTitle: "Einstellungen"
 
 ## Spielen
 
-Clicking the _Play button_ in the top right of the _Project Editor_ window will start a build of your game and once complete will open a new window where you can play your game. See [Keyboard Shortcuts](/docs/keyboard-shortcuts) for details on how to play your game in the _Play Window_.
+Durch Klicken des _Start_ Knopfs in der oberen rechten Ecke im _Projekteditor_ wird der Bauprozess des Spiels gestartet und nach Abschluss wird ein separates Fenster geöffnet wo das Spiel dann gespielt werden kann. Über [Tastaturkürzel](/doku/tastaturkuerzel) findet man Informationen zur Tastenbelegung und sonstige Hinweise wie das Spiel im _Spielfenster_ gespielt werden kann.
 
 ## Baustation
 
