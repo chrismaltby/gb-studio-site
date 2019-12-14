@@ -1,20 +1,20 @@
 ---
-title: "Triggers"
+title: "Auslöser"
 draft: false
-next: "/docs/scripting"
-nextTitle: "Scripting Events"
+next: "/doku/skript-ereignisse"
+nextTitle: "Skript Ereignisse"
 ---
 
-Triggers are areas in a scene that, when the player walks over them, will cause a script to play. They are useful for creating doorways between scenes and to start cutscenes when the player moves to a specific position.
+Auslöser sind festgelegte Bereiche innerhalb einer Szene. Sobald ein Spielcharakter diese Bereiche betritt, wird ein bestimmter Skript ausgeführt. Auslöser sind nützlich um Türen zu bauen, welche beim Betreten die Szene wechselt. Ebenso können Zwischensequenzen gestartet werden, sobald der Spieler einen bestimmten Bereich betritt.
 
-## Adding a Trigger
+## Einen Auslöser Hinzufügen
 
-To add a trigger to a scene click the _**+** button_ button in the _Editor Tools_ and select _Trigger_ from the menu (alternatively press the **T** key), then click and drag across the scene where you wish to place the trigger setting the desired width and height.
+Um einen Auslöser zur jeweiligen Szene hinzuzufügen, klickt man auf den _**+** button_ Knopf unter _Editorwerkzeuge_ und wählt die Option _Auslöser_ vom Menü aus (alternativ auch mit der **T** Taste). Danach kann der Auslöser beliebig auf der Szene platziert werden. Ebenso ist es dann möglich die Größe des Auslöserbereichs durch Ziehen und Loslassen der Ecken des Auslöserbereiches anzupassen.
 
 <img src="/img/screenshots/add-trigger.gif" style="width:300px"/>
 
-The _Editor Sidebar_ will switch to show the trigger settings where you can give the trigger a name for easier navigation later, reposition and scale the trigger and create the script that will play when the player walks on the trigger.
+In der _Seitenleiste_ kann der Auslöser dann konfiguriert werden wie Name, Positions- und Größenangabe und am Wichtigsten: Der auszuführende Skript falls der Auslöserbereich durch den Spielcharakter betreten wird.
 
-## Scripting
+## Skript Ereignisse
 
-When the trigger is selected click the _Add Event button_ in the _Editor Sidebar_ to open the event menu and start building the script. For more information see the documentation for [Scripting](/docs/scripting).
+Wenn der Auslöser ausgewählt ist, dann kann mit dem _Ereignis Hinzufügen_ Knopf in der _Seitenleiste_ Ereignisse erstellt werden. Weitere Informationen gibt es unter [Skript Ereignisse](/doku/skript-ereignisse).
