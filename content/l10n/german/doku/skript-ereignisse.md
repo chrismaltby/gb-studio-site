@@ -106,7 +106,7 @@ Dein Spiel hat einen Speicher von 512 voneinander unabhängige Variablen auf wel
   Ermöglicht das Ansprechen individueller Bits einer Variablen welche aus 8Bits besteht. Somit kann man innerhalb dieser Bitschalter-Variable 8 voneinander unabhängige Wahr/Falsch Zustände festhalten. Dieses Ereignis überschreibt den vorherigen Variablenwert der festgelegten Variable.  
   <img src="/img/events/variable-flags-set.png" class="event-preview" />
 
-- **Variable: Bitschalter Hinzufügen** <span class="new"eu in 1.2.0</span>  
+- **Variable: Bitschalter Hinzufügen** <span class="new">Neu in 1.2.0</span>  
   Setze die Zustände der ausgewählten Bitschalter innerhalb einer festgelegten Bitschalter-Variable auf _Wahr_. Alle nicht ausgewählten Bitschalter derselben Bitschalter-Variable behalten ihren vorherigen Zustand bei. Das heißt, dass Bitschalter, die nicht ausgewählt wurden, _nicht_ implizit auf Falsch gesetzt werden. Diese werden einfach ignoriert.  
   <img src="/img/events/variable-flags-add.png" class="event-preview" />
 
