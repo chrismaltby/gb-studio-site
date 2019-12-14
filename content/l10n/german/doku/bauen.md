@@ -1,34 +1,34 @@
 ---
-title: "Building Your Game"
+title: "Baue Dein Spiel"
 draft: false
-next: "/doku/settings"
-nextTitle: "Settings"
+next: "/doku/einstellungen"
+nextTitle: "Einstellungen"
 ---
 
-## Play
+## Spielen
 
 Clicking the _Play button_ in the top right of the _Project Editor_ window will start a build of your game and once complete will open a new window where you can play your game. See [Keyboard Shortcuts](/docs/keyboard-shortcuts) for details on how to play your game in the _Play Window_.
 
-## Build Terminal
+## Baustation
 
-Clicking the _Project Navigator_ and selecting _Build & Run_ will take you to the _Build Terminal_ where you can see a log of the project build. You also get to this screen by clicking the _Play_ button while a build is taking place. This screen will show you if there's any errors in your build to help you correct them.
+Man kommt in die Baustation indem man in der oberen _Projektnavigation_ auf _Ansicht_ geht und auf _Bauen und Ausführen_ klickt. Dort kann man das Protokoll des Projekt-Bauprozesses finden. Zu dieser Oberfläche gelangt man auch wenn man auf den _Start_ Knopf drückt während der Bauprozess noch im Gange ist. Diese Oberfläche listet auch aufgetretene Fehler während des Bauprozesses auf und gibt die nötigen Hinweise um diese zu beheben.
 
-## Build as ROM
+## Als ROM bauen
 
-Clicking the _Export button_ and clicking _Export ROM_ will build your game and create a ROM file in your project's build folder as `$PROJECT_ROOT/build/rom/game.gb`. You can play this ROM file in any compatible emulator such as [OpenEMU](https://openemu.org/) or [KiGB](http://kigb.emuunlim.com/downloads.htm).
+Durch Klicken des _Exportieren Als..._ Knopfs in der oberen rechten Ecke des Editors und anschließendes Auswählen der _ROM exportieren_ Option kann das Spiel gebaut werden. Diese Option erstellt eine ROM Datei innerhalb des Projektordners in einem Build-Unterverzeichnis unter `$PROJEKT_STAMMVERZEICHNIS/build/rom/game.gb`. Man kann diese ROM Datei dann mit jedem kompatiblen Emulator wie beispielsweise [OpenEMU](https://openemu.org/) oder [KiGB](http://kigb.emuunlim.com/downloads.htm) öffnen und spielen.
 
-## Build and deploy for Web
+## Bauen und für das Web nutzen
 
-Clicking the _Export button_ and clicking _Export Web_ will build your game and create a HTML5 web build in the folder `$PROJECT_ROOT/build/web`. You can upload this folder to any web server and navigate to the `index.html` file to play your game in a web browser. If you use a mobile or tablet web browser the game will also include touch controls.
+Durch Klicken des _Exportieren Als..._ Knopfs in der oberen rechten Ecke des Editors und anschließendes Auswählen der _Web exportieren_ Option kann eine HTML5 web build Version des Spiels gebaut werden. Den erstellten Ordner findet man dann unter `$PROJEKT_STAMMVERZEICHNIS/build/web`. Man kann diesen Ordner dann anschließend auf jedem Webserver hochladen, auf die `index.html` Seite navigieren und das Spiel von dort aus starten. Falls die Seite durch ein Smartphone oder Tablet aufgerufen wird, dann wird auch eine Touchscreen-Steuerung bereitgestellt.
 
-If you zip the `build/web` folder you can upload it to [Itch.io](https://itch.io) as a HTML game. In this case the recommended viewport size to use is `480px` x `432px`.
+Falls man den `build/web` Ordner als ZIP-Datei verpackt, dann kann diese Datei direkt auf [Itch.io](https://itch.io) hochgeladen werden um das gebaute Spiel als HTML-Spieleanwendung zu veröffentlichen. In diesem Fall ist es empfohlen die Größe des Ansichtsfensters auf `480px` x `432px` zu setzen.
 
-## Troubleshooting
+## Fehlerbehebung
 
-On macOS if you're having trouble building or running your game you may also need to install Apple's Command Line Tools by opening `Applications/Terminal.app` and entering the following command.
+Falls auf einem macOS Betriebssystem Schwierigkeiten bestehen das Spiel über den GB Studio Editor zu spielen oder zu bauen, dann müssen die Command Line Tools von Apple noch installiert werden. Dazu öffnet man `Applications/Terminal.app` und gibt den folgenden Befehl ein:
 
 ```
 xcode-select --install
 ```
 
-On Windows you may need to whitelist the application in your Anti Virus software to perform a build.
+Für das Windows Betriebssystem sollte man nach Bedarf die GB Studio Anwendung zur Whitelist des Antivirenprogramms hinzufügen damit der Bauprozess ohne Probleme ausgeführt werden kann.
