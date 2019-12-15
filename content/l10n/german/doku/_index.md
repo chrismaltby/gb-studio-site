@@ -17,7 +17,7 @@ draft: false
   - [Darsteller](/doku/darsteller)
   - [Auslöser](/doku/ausloeser)
   - [Skript-Ereignisse](/doku/skript-ereignisse)
-  - [Selbsterstellte Ereignisse](/doku/eigene-ereignisse)
+  - [Eigene Ereignisse](/doku/eigene-ereignisse)
 - [Ressourcen](/doku/ressourcen)
   - [Sprites](/doku/sprites)
   - [Hintergründe](/doku/hintergruende)

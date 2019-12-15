@@ -2,7 +2,7 @@
 title: "Skript-Ereignisse"
 draft: false
 next: "/doku/eigene-ereignisse"
-nextTitle: "Selbsterstellte Ereignisse"
+nextTitle: "Eigene Ereignisse"
 ---
 
 Skript-Ereignisse erlauben es dir Bestandteile deines Spiels dynamisch durch Spielerinteraktion zu beeinflussen. Nutze diese Ereignisse um Szenen zu verbinden, Dialogue zu ermöglichen oder Zwischensequenzen zu erstellen.
