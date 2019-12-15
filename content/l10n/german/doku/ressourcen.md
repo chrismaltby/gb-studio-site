@@ -1,14 +1,14 @@
 ---
-title: "Assets"
+title: "Ressourcen"
 draft: false
-next: "/docs/sprites"
+next: "/doku/sprites"
 nextTitle: "Sprites"
 ---
 
-When your project was created an `assets` folder was also made within the project containing a number of subfolders for each asset type in your game.
+Beim Erstellen des Projekts wird gleichzeitig auch ein `assets` Ordner erstellt mit mehreren Unterverzeichnissen für jeden Ressourcentyp des Spiels.
 
-GBStudio doesn't currently contain any ability to edit the graphics or music in your game directly, you instead can use your favourite existing applications and save files into these folders where they will instantly appear ready to use in your project. If you edit a sprite or background PNG file and save using an external image editor the change will be seen in your _Project Window_ as soon as you switch back it.
+Derzeit ist es nicht möglich über GB Studio Grafik- oder Musikdateien zu erstellen oder zu bearbeiten, daher kann man bestehende Software und Applikationen zur Hand nehmen und die erstellten Ressourcen dann in den passenden Unterverzeichnissen ablegen. Diese werden dann, sofern sie allen Anforderungen entsprechen, sofort im Editor erkannt und angezeigt. Falls ein Sprite-Sheet oder Hintergrundbild mit einem externen Bildbearbeitungsprogramm geöffnet, bearbeitet und dann gespeichert wird, dann werden diese Änderungen sofort im _Projektfenster_ erkannt.
 
-While you can create graphics in any application that can output PNG files it is recommended to use [Aseprite](https://www.aseprite.org/) or Photoshop to create your sprites and UI elements then to use [Tiled Map Editor](https://www.mapeditor.org/) to create your backgrounds. Each image asset type has a different set of requirements detailed over the new few sections of this documentation.
+Obwohl es möglich ist mit jeder Art von Grafikprogramm die Bilddateien zu erstellen, so ist es dennoch empfohlen [Aseprite](https://www.aseprite.org/) oder Photoshop zu verwenden um Sprites und UI Elemente zu erstellen. Für Hintergründe bietet sich im ähnlichen Sinne auch der [Tiled Map Editor](https://www.mapeditor.org/) an. Für jeden Ressourcentyp gibt es unterschiedliche Voraussetzungen welche in den entsprechenden Abschnitten der Dokumentation näher beschrieben werden.
 
-For music you must create new tracks as MOD files with only four channels. You can create these files with [OpenMPT](https://openmpt.org/) or [MilkyTracker](https://milkytracker.titandemo.org/).
+Für Musik muss man neue Musikdateien im MOD Format mit nur vier Kanälen erstellen. Diese Musikdateien können mit Musiktrackersoftware wie [OpenMPT](https://openmpt.org/) oder [MilkyTracker](https://milkytracker.titandemo.org/) erstellt werden.
