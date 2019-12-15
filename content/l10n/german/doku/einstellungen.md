@@ -15,13 +15,13 @@ GB Studio hat eine begrenzte Unterstützung von Gameboy Color Funktionalitäten 
 
 - **Mit beutzerdefinierter Palette exportieren** - Erlaubt die Überschreibung der voreingestellten Farbpalette mit einer benutzerdefinierten Palette. Durch Klick auf eines der vier Farben können die Farbwerte für Rot, Grün und Blau eingegeben werden. Ebenso ist es möglich einen hexadezimalen Farbcode einzugeben und mithilfe des _Hex umwandeln_ Knopfs zur nächstmöglichen Farbe umzuwandeln.
 
-<img title="Color Palette" src="/img/screenshots/color-palette.png" width="513">
+<img title="Farbpalette" src="/img/screenshots/color-palette.png" width="513">
 
-<img title="Color Palette Edit" src="/img/screenshots/color-palette-edit.png" width="513">
+<img title="Farbpalette bearbeiten" src="/img/screenshots/color-palette-edit.png" width="513">
 
 Durch die Nutzung einer eigenen Farbpalette kann man dem Spiel eine komplett andere Atmosphäre geben! Versuche herum zu experimentieren um den besten Effekt zu erzielen. Mithilfe des _Standard wiederherstellen_ Knopfs kann die ursprüngliche Farbpalette wiederhergestellt werden.
 
-<img title="Color Game" src="/img/screenshots/color-game.png" width="592">
+<img title="farbiges Spiel" src="/img/screenshots/color-game.png" width="592">
 
 ## Steuerung
 
@@ -33,7 +33,7 @@ Um die voreingestellte Tastenbelegung wiederherzustellen, gibt es den _Standard 
 
 _Hinweis:_ Die Tastenbelegung unterscheidet zwischen Groß- und Kleinbuchstaben, daher ist es beispielweise bei der Taste _W_ ratsam, sowohl "W" als auch "w" auf die gleiche Steuerungsmöglichkeit zu registrieren.
 
-<img title="Controls" src="/img/screenshots/controls.png" width="507">
+<img title="Steuerung" src="/img/screenshots/controls.png" width="507">
 
 ## Modultyp
 
