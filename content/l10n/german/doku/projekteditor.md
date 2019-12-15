@@ -1,22 +1,22 @@
 ---
-title: "The Project Editor"
+title: "Der Projekteditor"
 draft: false
-next: "/docs/scenes"
-nextTitle: "Scenes"
+next: "/doku/szenen"
+nextTitle: "Szenen"
 ---
 
-The default view for the _Project Editor_, as shown below, is the _Game World_. This is where you can create your game by combining scenes, adding actors and triggers then building scripting events to add interactions.
+Die Standardansicht des _Projekteditors_ ist wie unten dargestellt die _Spielwelt_. Dort können Szenen erstellt, Darsteller gesetzt und Auslöser gelegt werden um die Spielwelt zu füllen. Skriptereignisse können hinzugefügt werden um Interaktionen zwischen Spielcharakter und Spielwelt zu ermöglichen.
 
-<img title="The Project Editor" src="/img/screenshots/project-editor.png" width="1258">
+<img title="Der Projekteditor" src="/img/screenshots/project-editor.png" width="1258">
 
-Use the _Editor Tools_ to switch between Select, Add, Erase and Collision Drawing modes.
+Die _Editor Werkzeugleiste_ in der oberen linken Ecke wird verwendet um zwischen verschiedenen Modi zu wechseln: Auswählen, Hinzufügen, Radierer und Kollisionen.
 
-In the _Select mode_ clicking scenes, actors or triggers causes the _Editor Sidebar_ to show editable fields specific to whatever was selected. Clicking in the background between scenes switches the sidebar back to the _Project Editor_ where you can set the project name and choose the starting scene and position.
+Im Auswahl-Modus wird die _Editor Seitenleiste_ in der rechten Bildschirmhälfte angezeigt sobald eine Szene, ein Darsteller oder ein Auslöser ausgewählt wurde. Darin finden sich Informationen wie Name, Position und sonstige Eigenschaften. Wenn die leere Großfläche im Editor angeklickt wird, dann wechselt die Seitenleiste wieder zurück zum _Projekteditor_ in welchem man den Projektnamen, die Startszene und die Startposition setzen kann. Ebenso findet man hier auch die [Eigenen Ereignisse](/doku/eigene-ereignisse).
 
-## The Asset Viewer
+## Die Ressourcengallerie
 
-Using the _Project Navigator_ you can switch between the available views for your project. If you select _Sprites_, _Backgrounds_, _UI Elements_ or _Music_ you will be taken to the asset viewer where you can search and preview the assets available in your game.
+Mithilfe der _Projektnavigation_ in der oberen Taskleiste unter _Ansicht_ kann zwischen mehreren Ressourcenansichten gewechselt werden. Beim Auswählen von _Sprites_, _Hintergründe_, _UI Elemente_ oder _Musik_ wird eine Ressourcengallerie angezeigt, wo man die Ressourcen des Spielverzeichnisses betrachten kann.
 
-<img title="The Asset Viewer" src="/img/screenshots/asset-viewer.png" width="1258">
+<img title="Die Ressourcengallerie" src="/img/screenshots/asset-viewer.png" width="1258">
 
-See the documentation on [Assets](/docs/assets) for more information on how to add new assets and the different requirements needed.
+Unter [Ressourcen](/doku/ressourcen) findet man weitere Informationen wie man Ressourcen dem Spiel beifügen kann und welche Voraussetzungen erforderlich sind.
