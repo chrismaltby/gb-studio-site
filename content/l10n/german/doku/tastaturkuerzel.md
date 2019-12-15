@@ -1,46 +1,46 @@
 ---
-title: "Keyboard Shortcuts"
+title: "Tastaturkürzel"
 date: 2019-03-30T21:12:44Z
 draft: false
-next: "/docs/saving-loading"
-nextTitle: "Saving and Loading"
+next: "/doku/speichern-laden"
+nextTitle: "Speichern und Laden"
 ---
 
-## Play Window
+## Spielfenster
 
-When playing your game inside GB Studio use the following keyboard controls:
+Die folgende voreingestellte Tastenbelegung gilt für die Steuerung des Spiels innerhalb von GB Studio:
 
-**Up** - Up Arrow / W  
-**Down** - Down Arrow / S  
-**Left** - Left Arrow / A  
-**Right** - Right Arrow / D  
+**Oben** - Pfeiltaste Oben / W  
+**Unten** - Pfeiltaste Unten / S  
+**Links** - Pfeiltaste Links / A  
+**Rechts** - Pfeiltaste Rechts / D  
 **A** - Alt / Z / J  
-**B** - Ctrl / K / X  
-**Start** - Enter  
-**Select** - Shift
+**B** - Strg / K / X  
+**Start** - Eingabetaste  
+**Select** - Umschalttaste
 
-<span class="new">New in 1.2.0</span>
+<span class="new">Neu in 1.2.0</span>
 
-You can also control the _Play Window_ using a supported gamepad. If your web browser has gamepad support you can also use it when running a web build.
+Man kann das _Spielfenster_ auch mit einem unterstützten Gamepad bedienen. Falls der Webbrowser Gamepads unterstützt, dann kann auch der Web Build durch ein Gamepad bedient werden.
 
-## Navigating The Menus
+## Menü-Navigation
 
-Much of the functionality of GB Studio is accessible through the menu bar and many of the menu items contain keyboard shortcut labels. Try clicking around on the menus to discover all of the shortcuts but the following are a few you should find useful:
+Die meisten Funktionen des GB Studios ist erreichbar über die Menüleiste mit vielen Menüpunkten von denen ein paar mit Tastaturkürzel versehen sind. Zwar kann man sich durch die Menüs durchklicken um diese Kürzel kennenzulernen aber dennoch findet man im Folgenden ein paar nützliche Kürzel aufgelistet:
 
-**Save Project** - Ctrl/Cmd + S  
-**Open Project** - Ctrl/Cmd + O  
-**Switch View Mode** - Ctrl/Cmd + 1-8  
-**Run Game** - Ctrl/Cmd + B  
-**Export ROM file** - Ctrl/Cmd + Shift + B
+**Projekt speichern** - Strg/Cmd + S  
+**Projekt öffnen** - Strg/Cmd + O  
+**Ansicht ändern** - Strg/Cmd + 1-8  
+**Spiel ausführen/bauen** - Strg/Cmd + B  
+**ROM exportieren** - Strg/Cmd + Umschalttaste + B
 
-## Game World
+## Spielwelt
 
-While editing the game world you can use the following keys to quickly manipulate your scenes.
+Man kann folgende Tasten nutzen um in der Spielwelt zügig Szenen zu bearbeiten. Die verschiedenen Modi findet man in der _Editor Werkzeugleiste_ in der oberen linken Ecke.
 
-**Select Mode** - V  
-**Add Actor** - A  
-**Add Trigger** - T  
-**Add Scene** - S  
-**Eraser Mode** - E  
-**Collisions Mode** - C  
-**Set Player Start Position** - P (while hovering over desired location)
+**Modus: Auswählen** - V  
+**Modus: Darsteller Hinzufügen** - A  
+**Modus: Auslöser Hinzufügen** - T  
+**Modus: Szene Hinzufügen** - S  
+**Modus: Radierer** - E  
+**Modus: Kollisionen** - C  
+**Startposition Festlegen** - P (während die Maus über die gewünschte Position schwebt)

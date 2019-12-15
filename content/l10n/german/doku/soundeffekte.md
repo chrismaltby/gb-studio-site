@@ -1,18 +1,18 @@
 ---
-title: "Sound Effects"
+title: "Soundeffekte"
 draft: false
-next: "/docs/build"
-nextTitle: "Building Your Game"
+next: "/doku/bauen"
+nextTitle: "Baue Dein Spiel"
 ---
 
-<span class="new">New in 1.2.0</span>
+<span class="new">Neu in 1.2.0</span>
 
-Sound effects can be added to your game using the [Sound: Play Effect](/docs/scripting#sound-events) event in your _Actor_, _Trigger_ or _Scene_ scripts.
+Soundeffekte können mithilfe des [Sound: Effekt Abspielen](/doku/skript-ereignisse#sound-ereignisse) Ereignisses dem _Darsteller-_, _Auslöser-_ und _Szenenskript_ hinzugefügt werden.
 
-You can choose from playing a beep with a given pitch, a tone with a given frequency or cymbal crash.
+Es können zwischen Pieptönen in verschiedenen Tonlagen, Musiktönen in verschiedenen Frequenzen oder einem Beckenschlag-artigen Ton gewählt werden.
 
 <img src="/img/events/sound-beep.png" class="event-preview" />
 
-Using [Custom Events](/docs/custom-events) you can combine multiple effects into a single reusable event to make jingles.
+Mithilfe von [Eigenen Ereignissen](/doku/eigene-ereignisse) können verschiedene dieser Ereignisse aneinandergereiht werden um einen melodischen Soundeffekt zu kreieren und merfach aufrufbar zu machen.
 
 <img src="/img/screenshots/custom-event-jingle.png" class="event-preview" />
