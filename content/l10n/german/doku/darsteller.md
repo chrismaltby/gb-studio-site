@@ -17,33 +17,33 @@ Die _Editor Seitenleiste_ wechselt anschließend zu den Darsteller Einstellungen
 
 ## Bewegungsart
 
-There are a few different movement types available to choose, the one you should use will depend on how you want the actor to behave as the player is walking around the scene and interacting with it.
+Es gibt verschiedene auswählbare Bewegungsarten in Bezug auf das Verhalten des Darstellers wenn dieser mit dem Spielcharakter interagiert oder das Bewegungsverhalten des Darstellers innerhalb der Szene.
 
-- **Static** - The actor will display a single frame from the selected spritesheet.  
-  If the sprite sheet contains more than one frame you will be given the option to choose which frame to display, this can be modified later using an _Actor: Set Animation Frame_ event. Sprite sheets with multiple frames also enable the ability to optionally animate the actor by cycling through each of the frames at a specified speed, the speed can also be modified with an _Actor: Set Animation Speed_ event.\
+- **Statisch** - Der Darsteller wird nur als ein einzelnes Frame eines festgelegten Sprite-Sheets dargestellt.  
+  Falls das Sprite-Sheet mehrere Frames beinhaltet, dann erscheint eine Option mit welcher man das Frame auswählen kann das dargestellet werden soll. Ebenfalls ist es möglich den dargestellten Frame mithilfe des _Darsteller: Animationsframe Festlegen_ Ereignisses nachträglich zu verändern. Zusätzlich ist es möglich den Darsteller zyklisch in einem festgelegten Tepo animieren zu lassen. Dieses Tempo lässt sich durch das _Darsteller: Animationsframe Festlegen_ Ereignis einstellen.\
   \
-  The actor will only ever face in the initial direction (unless the direction is modified later using a script). If the player interacts with this actor it will not change direction. Useful for things like signposts or other stationary objects.
+  Der Darsteller wird auch bei Spielerinteraktion immer in dieselbe voreingestellte Blickrichtung schauen (außer natürlich man ändert dies nachträglich mit einem Ereignis). Dieses Verhalten ist nützlich, wenn der Darsteller stationär wirken soll wie beispielsweise Wegweiser, Schatztruhen, Blumen, usw.
 
-- **Face Interaction** - The actor will start facing in the initial direction but when the player interacts with the actor it will turn to face the player before it's script plays. Useful for simple characters to make them more responsive to the player's actions.
+- **Gesichtsinteraktion** - Der Darsteller wird anfangs in die voreingestellte Blickrichtung schauen, jedoch wird der Darsteller bei einer Interaktion durch den Spielercharakter in dessen Richtung schauen ehe der Darstellerskript ausgeführt wird. Dieses Verhalten ist für simple Charaktere erwünschenswert um diese lebhaft und ansprechbar wirken zu lassen.
 
-- **Random Rotation** - The actor will start in the initial direction but will randomly change direction at set intervals. Useful to show characters who are looking around their surroundings.
+- **Zufällige Drehung** - Der Darsteller wird anfangs in die voreingestellte Blickrichtung schauen, jedoch wird der Darsteller daraufhin in bestimmten Zeitintervallen die Blickrichtung ändern. Dieses Verhalten ist nützlich um den Darsteller so wirken zu lassen, als würde dieser sich in seinem Umfeld umschauen.
 
-- **Random Movement** - The actor will randomly change direction and move around the scene at set intervals. Useful for characters who are searching an area. Actors can block the player's movement so be careful not to use this movement type around tight spaces where the player might get stuck waiting for the actor to move out of the way.
+- **Zufällige Bewegung** - Der Darsteller wird in bestimmten Zeitintervallen sich in eine zufällige Richtung bewegen und auch in dieser Richtung schauen. Dieses Verhalten ist nützlich um den Darsteller so wirken zu lassen, als würde dieser nach etwas suchen. Jedoch kann dieses Verhalten dafür sorgen, dass der Darsteller Wege versperrt und im schlimmsten Fall den Spielercharakter in bestimmten Bereichen "einsperrt". Somit sollte man darauf achten diese Bewegungsart nicht in engen Szenen mit wenig Bewegungsfreiraum zu verwenden.
 
-_Note_ If the actor uses a static sprite sheet (i.e. containing only a single frame of animation) then the only movement type available will be static and the inputs for choosing the movement type and initial direction won't appear.
+_Hinweis:_ Fall der Darsteller einen statischen Sprite-Sheet verwendet (also ein Sprite-Sheet mit einem einzigen Frame á la `16px` x `16px`) dann wird automatisch die Bewegungsart statisch verwendet und die Einstellung für die anfängliche Blickrichtung wird ausgeblendet.
 
-## Frame Limits
+## Frame Einschränkungen
 
-Due to hardware limitations only **25 unique frames** of animation can be allocated to actors in each scene. Where possible use static or non animated sprite sheets to decrease the number of frames used. Another way to reduce the frame count is to reuse the same sprite for multiple actors in the scene, reusing the same sprite sheet will not count towards the scene frame total.
+Aufgrund von Hardware Einschränkungen können pro Szene nur bis zu **25 unterschiedliche Frames** für alle Darsteller zugewiesen werden. Falls nötig sollten Darsteller entweder als statisch eingestellt werden oder gänzlich auf Frameanimationen verzichten um die Anzahl verwendeter Frames zu minimieren. Eine weitere Möglichkeit um die Anzahl verwendeter Frames effizient zu halten ist es mehreren Darsteller den gleichen Sprite-Sheet zuzuteilen. Ein bereits verwendetes Sprite-Sheet in der gleichen Szene wiederzuverwenden zählt nicht zu dieser Frame Einschränkung dazu.
 
-## Scripting
+## Skript Ereignisse
 
-Actors can have two scripts attached to them, _On Interact_ and _On Init_, you can toggle between which script is being edited by using the tabs in the _Editor Sidebar_ while the actor is selected.
+Darsteller besitzen zwei unterschiedliche Skriptarten, _On Interact/Interaktion_ und _On Init/Szenenstart_, welche auf unterschiedlicher Weise ausgelöst werden. Diese zwei Skripte können hin- und hergeschalten werden indem man in der _Editor Seitenleiste_ die jeweilige Skriptart anklickt während der Darsteller ausgewählt wurde.
 
-The _On Interact_ script will be run any time a player stands next to the actor and presses the _A_ button.
+Der _On Interact/Interaktion_ Skript wird immer dann ausgeführt wenn der Spielercharakter den Darsteller aus nächster Nähe mithilfe des _A_ Knopfs anspricht.
 
-The _On Init_ script can be used to have events run as soon as the scene is loaded, they will execute before any events in the scene's _On Init_ script.
+Der _On Init/Szenenstart_ Skript wird immer dann ausgeführt sobald die Szene geladen wird. Dieser Skript hat Vorrang gegenüber dem Szenenstartskript der Szene.
 
-When the actor is selected click the _Add Event button_ in the _Editor Sidebar_ to open the event menu and start building a script.
+Falls der Darsteller ausgewählt ist, kann man durch den _Ereignis hinzufügen_ Knopf in der _Editor Seitenleiste_ ein Ereignismenü öffnen und das jeweilige Skript zusammenstellen.
 
-For more information see the documentation for [Scripting](/docs/scripting).
+Weitere Informationen findet man in der Dokumentation für [Skript Ereignisse](/doku/skript-ereignisse).
