@@ -1,21 +1,21 @@
 ---
-title: "Getting Started"
+title: "Erste Schritte"
 date: 2018-01-28T14:14:44Z
 draft: false
-next: "/docs/keyboard-shortcuts"
-nextTitle: "Keyboard Shortcuts"
+next: "/doku/tastaturkuerzel"
+nextTitle: "Tastaturkürzel"
 ---
 
-When you first open GB Studio you will see the _New Project_ window.
+Das _Neues Projekt_ Fenster öffnet sich sobald GB Studio gestartet wird.
 
-<img title="New Project" src="/img/screenshots/new-project.png" width="812">
+<img title="Neues Projekt" src="/img/screenshots/new-project.png" width="812">
 
-If you have an existing project you can open it from here by clicking _Open_ and navigating to the `.gbsproj` file.
+Falls bereits bestehende Projekte existieren, dann kann man diese Projekte öffnen indem man auf _Öffnen_ klickt und die `.gbsproj` Datei im Dateiverzeichnis auswählt.
 
-## New Project
+## Neues Projekt
 
-Give your project a name to get started (don't worry, you can change this later) and choose a project template. If you're new to GB Studio then I would recommend using the _Sample Project_ template which contains a few example scenes and scripts already set up so you can get a small idea of what's possible. Click _Create Project_ and you'll be taken to the _Project Editor_.
+Der erste Schritt für ein neues Projekt ist die Vergabe eines Projektnamens (dies kann an späterer Stelle noch geändert werden) und das Auswählen einer Projektvorlage. Für Neueinsteiger ist es ratsam die _Beispielprojekt_ Vorlage zu verwenden, da diese über anfängliche Ressourcen, Skriptbeispiele und ein paar fertige Szenenhintergründe verfügt. Das gibt einem den nötigen Vorgeschmack was mit GB Studio denn möglich ist. Klicke auf _Erstellen_ und das Projekt wird erstellt und man wechselt in den _Projekteditor_.
 
-<img title="Getting Started" src="/img/screenshots/getting-started.png" width="1258">
+<img title="Erste Schritte" src="/img/screenshots/getting-started.png" width="1258">
 
-As soon as you see this screen you can click the _Play button_ in the top right which will just take a few seconds to run the project. After playing the sample project you can try clicking around the editor to see how the project is set up. Select one of the people or signposts and edit the their dialogue using the sidebar on the right then try running the project again, you've just made your very own version of the game! Don't worry if you break anything, you can always make a new project with the sample template later.
+Sobald man das Editorfenster sieht, kann man in der oberen rechten Ecke auf den _Start_ Knopf drücken und in wenigen Sekunden wird das Projekt gebaut. Nachdem man sich mit dem Beispielprojekt vertraut gemacht hat, kann man sich im Editor umschauen und versuchen zu verstehen wie das Projekt angelegt wurde. Durch das Wählen von eines der Darsteller und das Ändern des auszugebenen Interaktionstexts kann man eine eigene Version des Projektes schaffen. Die Editor Seitenleiste auf der rechten Seite gibt genügend Kontext sobald ein Darsteller ausgewählt wurde und die aufgelisteten Ereignisse zeigen, was passiert, wenn der Spielercharakter sich mit diesem Darsteller unterhält. Es kann nichts schiefgehen denn es ist immer möglich ein neues Projekt mit der Vorlage des ursprünglichen Beispielprojekts anzulegen.
