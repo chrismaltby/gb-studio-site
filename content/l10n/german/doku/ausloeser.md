@@ -9,7 +9,7 @@ Auslöser sind festgelegte Bereiche innerhalb einer Szene. Sobald ein Spielchara
 
 ## Einen Auslöser hinzufügen
 
-Um einen Auslöser zur jeweiligen Szene hinzuzufügen, klickt man auf den _**+** button_ Knopf unter _Editorwerkzeuge_ und wählt die Option _Auslöser_ vom Menü aus (alternativ auch mit der **T** Taste). Danach kann der Auslöser beliebig auf der Szene platziert werden. Ebenso ist es dann möglich die Größe des Auslöserbereichs durch Ziehen und Loslassen der Ecken des Auslöserbereiches anzupassen.
+Um einen Auslöser zur jeweiligen Szene hinzuzufügen, klickt man auf den _**+** button_ Knopf unter _Editor Werkzeugleiste_ und wählt die Option _Auslöser_ vom Menü aus (alternativ auch mit der **T** Taste). Danach kann der Auslöser beliebig auf der Szene platziert werden. Ebenso ist es dann möglich die Größe des Auslöserbereichs durch Ziehen und Loslassen der Ecken des Auslöserbereiches anzupassen.
 
 <img src="/img/screenshots/add-trigger.gif" style="width:300px"/>
 
