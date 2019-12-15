@@ -350,7 +350,7 @@ Dein Spiel hat einen Speicher von 512 voneinander unabhängige Variablen auf wel
 ## Sound Ereignisse
 
 - **Sound: Effekt Abspielen** <span class="new">Neu in 1.2.0</span>  
-  Spielt einen Soundeffekt ab. Es können zwischen Pieptönen in verschiedenen Tonlagen, Musiktönen in verschiedenen Frequenzen oder einem Beckenschlag-artigen Ton gewählt werden. Mithilfe von [Selbsterstellen Ereignissen](/doku/eigene-ereignisse) können verschiedene dieser Ereignisse aneinandergereiht werden um einen melodischen Soundeffekt zu kreieren und merfach aufrufbar zu machen.  
+  Spielt einen Soundeffekt ab. Es können zwischen Pieptönen in verschiedenen Tonlagen, Musiktönen in verschiedenen Frequenzen oder einem Beckenschlag-artigen Ton gewählt werden. Mithilfe von [Eigenen Ereignissen](/doku/eigene-ereignisse) können verschiedene dieser Ereignisse aneinandergereiht werden um einen melodischen Soundeffekt zu kreieren und merfach aufrufbar zu machen.  
   <img src="/img/events/sound-tone.png" class="event-preview" />
   <img src="/img/events/sound-beep.png" class="event-preview" />
   <img src="/img/events/sound-crash.png" class="event-preview" />
