@@ -1,20 +1,20 @@
 ---
-title: "The Player"
+title: "Der Spieler"
 draft: false
-next: "/docs/actors"
-nextTitle: "Actors"
+next: "/doku/sprites"
+nextTitle: "Sprites"
 ---
 
-## Start Position
+## Startposition
 
-The player starting position is indicated in the game world view by the <img src="/img/screenshots/player-start.png" style="height:12px"/> icon.
+Die Startposition des Spielercharakters ist in der Spielwelt als <img src="/img/screenshots/player-start.png" style="height:12px"/> Symbol angegeben.
 
-Clicking in the background between scenes switches the sidebar back to the Project Editor where you'll have options to set the player starting scene, position, direction and [sprite sheet](/docs/sprites).
+Durch das Drücken auf die graue Großfläche zwischen den Szenen, wechselt die Seitenleiste zum Projekteditor. Darin kann man die Startposition des Spielercharakters und die Blickrichtung festlegen. Zusätzlich kann man das [Sprite-Sheet](/docs/sprites) für den Spielercharakter wählen.
 
-You can also change the player start position by dragging the <img src="/img/screenshots/player-start.png" style="height:12px"/> icon and can even drag between scenes.
+Man kann auch die Startposition des Spielercharakters direkt anpassen indem man das <img src="/img/screenshots/player-start.png" style="height:12px"/> Symbol anklickt und es dann zur gewünschten Szene und Position zieht.
 
-## Scripting
+## Skript Ereignisse
 
-Most actor script events can also be applied to the player. In addition you can use _Set Player Sprite Sheet_ event to change the graphics used for the player character mid-game. Changing the sprite sheet will persist between scenes so remember to switch the sprite back if it was supposed to be temporary.
+Die meisten Darstellerereignisse können auch auf den Spielercharakter angewendet werden. Darüber hinaus existiert ein _Spieler: Setze Spieler Sprite-Sheet_ Ereignis um das Aussehen des Spielers nachträglich zu ändern. Dieser Wechsel bleibt auch nach einem Szenenwechsel bestehen, daher sollte man daran denken das Aussehen wieder durch das gleiche Ereignis zurückzuändern falls das erwünscht sein sollte.
 
-When switching between scenes the player will always become visible at the scene start location regardless of previous visibility options. if you want the player to be hidden on a scene e.g when showing a title screen or cutscene add a _Player Hide_ event to the scene's _On Init_ script.
+Bei einem Szenenwechsel wird der Spielercharakter immer an seiner gesetzten Position zu Beginn der Szene dargestellt, obgleich er in der vorherigen Szene sichtbar war oder nicht. Falls erwünscht ist, dass der Spielercharakter zu Beginn der Szene nicht dargestellt werden sollte (beispielsweise um das Titelmenü anzuzeigen oder eine Zwischensequenz einzuläuten), dann empfielt es sich den Spielercharakter mittels _Darsteller: Ausblenden_ Ereignis im Szenenstartskript (also der _On Init_ Skript) auszublenden.
