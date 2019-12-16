@@ -25,7 +25,7 @@ Man kann das _Spielfenster_ auch mit einem unterstützten Gamepad bedienen. Fall
 
 ## Menü-Navigation
 
-Die meisten Funktionen des GB Studios ist erreichbar über die Menüleiste mit vielen Menüpunkten von denen ein paar mit Tastaturkürzel versehen sind. Zwar kann man sich durch die Menüs durchklicken um diese Kürzel kennenzulernen aber dennoch findet man im Folgenden ein paar nützliche Kürzel aufgelistet:
+Die meisten Funktionen des GB Studios sind über die Menüleiste erreichbar, mit vielen Menüpunkten von denen ein paar mit Tastaturkürzel versehen sind. Zwar kann man sich durch die Menüs durchklicken um diese Kürzel kennenzulernen aber dennoch findet man im Folgenden ein paar nützliche Kürzel aufgelistet:
 
 **Projekt speichern** - Strg/Cmd + S  
 **Projekt öffnen** - Strg/Cmd + O  
