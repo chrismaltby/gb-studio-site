@@ -1,24 +1,24 @@
 ---
-title: "Scenes"
+title: "Szenen"
 draft: false
-next: "/docs/player"
-nextTitle: "The Player"
+next: "/doku/spieler"
+nextTitle: "Der Spieler"
 ---
 
-A scene is a single screen of your game, it can contain multiple [actors](/docs/actors) and [triggers](/docs/triggers). Your game will typically be made up of many scenes connected together with triggers using the _Change Scene_ event.
+Eine Szene ist eine einzelne Kulisse des Spiels, auf welches man mehrere [Darsteller](/doku/darsteller) und [Auslöser](/doku/ausloeser) platzieren kann. Ein Spiel besteht typischerweise aus mehreren Szenen, die miteinander über das _Szene: Szene Wechseln_ Ereignis verbunden sind.
 
-## Adding a Scene
+## Eine Szene hinzufügen
 
-To add a scene to a scene click the _**+** button_ in the _Editor Tools_ and select _Scene_ from the menu (alternatively press the **S** key), then click on any empty space in the _Project Viewport_ where you wish to place the scene.
+Eine Szene kann dem Spiel hinzuzufügt werden, indem man auf dem _**+** Knopf_ in der oberen rechten _Editor Werkzeugleiste_ drückt und danach _Szene_ auswählt (alternativ auch mit der **S** Taste). Anschließend kann man auf eine leere Stelle innerhalb des _Projektfensters_ klicken und die neue Szene wird daraufhin dort platziert.
 
 <img src="/img/screenshots/add-scene.gif" style="width:300px"/>
 
-When a scene has been added you can use the _Editor Sidebar_ to give the scene a name and to choose which background image from your project's assets that you want to use. See the documentation for [Backgrounds](/docs/backgrounds) for more information on adding background images.
+Sobald die Szene hinzugefügt wurde, wird die _Editor Seitenleiste_ für die jeweilige Szene geöffnet. Darin können Szeneneinstellungen angepasst werden wie die Auswahl eines Hintergrundbildes oder das Umbenennen des Szenennamens. Weitere Informationen findet man in der Dokumentation für [Hintergründe](/doku/hintergruende).
 
-## Scripting
+## Skript Ereignisse
 
-A scene _On Init_ script can be used to have events run as soon as the scene is loaded. When the scene is selected click the _Add Event button_ in the _Editor Sidebar_ to open the event menu and start building the script.
+Der _On Init/Szenenstart_ Skript kann verwendet werden um Ereignisse auszuführen sobald die Szene geladen wird. Falls die Szene ausgewählt ist, kann durch Klicken des _Ereignis hinzufügen_ Knopfs in der _Editor Seitenleiste_ das Ereignismenü geöffnet und ein Skript zusammengestellt werden.
 
-If any actors in the scene also have _On Init_ scripts they will be executed first.
+Falls Darsteller innerhalb der Szene ebenfalls über einen _On Init/Szenenstart_ Skript verfügen, dann werde diese Ereignisse zuerst ausgeführt.
 
-For more information see the documentation for [Scripting](/docs/scripting).
+Weitere Informationen findet man in der Dokumentation für [Skript Ereignisse](/doku/skript-ereignisse).
