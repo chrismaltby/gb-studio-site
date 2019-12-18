@@ -1,32 +1,32 @@
 ---
-title: "Installation"
+title: "Einrichtung"
 date: 2018-01-28T14:14:44Z
 draft: false
-next: "/docs/getting-started"
-nextTitle: "Getting Started"
+next: "doku/erste-schritte"
+nextTitle: "Erste Schritte"
 ---
 
-Download your preferred version from the [Itch.io download page](https://chrismaltby.itch.io/gb-studio) or the [older releases page](/downloads/older-versions).
+Downloade die aktuelle Version der Software über die [Itch.io Downloadseite](https://chrismaltby.itch.io/gb-studio) oder eine ältere Version über die [Downloadseite für ältere Releases](/downloads/older-versions).
 
 ## Windows
 
-Two versions of GB Studio are available for Windows. The _Squirrel Installer_ version just requires you to unzip, double click and then wait a few seconds while the application installs to your C:\ drive. Once installed a shortcut will be added to your desktop automatically and the application will start. The application will be installed to `%LocalAppData%\gb_studio`, if you need to install to a different location use the _Manual_ version.
+Zwei Versionen des GB Studios sind für Windows Betriebssysteme verfügbar. Die _Squirrel Installer_ Version benötigt nur das Entpacken der archivierten Datei und einen Doppelklick der Anwendung um GB Studio auf das C:\ Laufweg zu installieren. Im Anschluss wird automatisch eine Desktopverknüpfung erstellt und GB Studio öffnet sich ebenfalls. Der genaue Verzeichnispfad der Installation findet sich in `%LocalAppData%\gb_studio`. Falls ein anderer Verzeichnispfad für die Installation erwünscht ist, dann empfielt sich die _Manual_ Version.
 
-The _Manual_ version is a zip containing the application files, you can unzip this to any location. Once unzipped double click `gb-studio.exe` to start.
+Die _Manual_ Version ist eine archivierte Datei mit allen benötigten Anwendungsdateien. Diese Datei kann überall entpackt werden. Die ausführbare Datei `gb-studio.exe` dient zum Starten der GB Studio Anwendung.
 
 ## macOS
 
-For macOS unzip the downloaded file and move `GB Studio.app` to your _Applications_ folder. Double click to start.
+Für macOS Betriebssysteme entpackt man lediglich die archivierte Datei und verschiebt die `GB Studio.app` Datei in den _Applications_ Ordner. Ein Doppelklick startet die GB Studio Anwendung.
 
-If you're having trouble building or running your game you may also need to install Apple's Command Line Tools by opening `Applications/Terminal.app` and entering the following command.
+Falls auf einem macOS Betriebssystem Schwierigkeiten bestehen das Spiel über den GB Studio Editor zu spielen oder zu bauen, dann müssen die Command Line Tools von Apple noch installiert werden. Dazu öffnet man `Applications/Terminal.app` und gibt den folgenden Befehl ein:
 
 ```
 xcode-select --install
 ```
 
-## Ubuntu / Debian-based Linux
+## Ubuntu / Debian-basierte Linux
 
-For Debian-based Linux distros, download the .deb version and run the following commands (Tested on Ubuntu 18.10)
+Für Debian-basierte Linux Distributionen muss die .deb Version heruntergeladen und folgende Befehle ausgeführt werden (getestet auf Ubunt 18.10):
 
 ```
 > sudo apt-get update
@@ -35,9 +35,9 @@ For Debian-based Linux distros, download the .deb version and run the following 
 > gb-studio
 ```
 
-## Fedora / RPM-based Linux
+## Fedora / RPM-basierte Linux
 
-For RPM-based Linux distros, download the .rpm version and run the following commands (Tested on Fedora 29)
+Für RPM-basierte Linux Distributionen muss die .rpm Version heruntergeladen und folgende Befehle ausgeführt werden (getestet auf Fedore 29):
 
 ```
 > sudo yum install libXScrnSaver make lsb
