@@ -34,7 +34,7 @@ Diese Bilddatei wird verwendet um die Emotionsblasen über den Darstellern zu ze
 
 <img src="/img/ui/emotes.png" class="HelpSprite" style="width:384px; height:auto;"/>
 
-## Requirements
+## Voraussetzungen
 
 Mit Ausnahme der `emotes.png` Bilddatei, welches den üblichen Sprite-Voraussetzungen unterliegt, dürfen die restlichen Bilddateien nur die folgenden vier Farben beinhalten:
 

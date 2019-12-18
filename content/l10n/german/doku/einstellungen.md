@@ -13,7 +13,7 @@ GB Studio hat eine begrenzte Unterstützung von Gameboy Color Funktionalitäten 
 
 - **Use Double Speed Mode (Improves CPU Performance)** - Erlaubt es der Spiel-Engine Gebrauch von der erhöhten CPU Leistung des Gameboy Colors zu machen. Dies bewirkt, dass Musikstörungen bei erhöhtem Leistungsaufwand vermieden werden und der Spielablauf trotz aufwendinger Skripte flüssiger wirkt.
 
-- **Mit beutzerdefinierter Palette exportieren** - Erlaubt die Überschreibung der voreingestellten Farbpalette mit einer benutzerdefinierten Palette. Durch Klick auf eines der vier Farben können die Farbwerte für Rot, Grün und Blau eingegeben werden. Ebenso ist es möglich einen hexadezimalen Farbcode einzugeben und mithilfe des _Hex umwandeln_ Knopfs zur nächstmöglichen Farbe umzuwandeln.
+- **Mit benutzerdefinierter Palette exportieren** - Erlaubt die Überschreibung der voreingestellten Farbpalette mit einer benutzerdefinierten Palette. Durch Klick auf eines der vier Farben können die Farbwerte für Rot, Grün und Blau eingegeben werden. Ebenso ist es möglich einen hexadezimalen Farbcode einzugeben und mithilfe des _Hex umwandeln_ Knopfs zur nächstmöglichen Farbe umzuwandeln.
 
 <img title="Farbpalette" src="/img/screenshots/color-palette.png" width="513">
 

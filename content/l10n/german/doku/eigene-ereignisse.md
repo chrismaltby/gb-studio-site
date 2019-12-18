@@ -7,7 +7,7 @@ nextTitle: "Ressourcen"
 
 <span class="new">Neu in 1.2.0</span>
 
-Mithilfe von _Eigenen Ereignissen_ kann man Prozeduren (also eine Reihe von Ereignissen) für das Projekt wiederverwenden. Alle Szenen- und Darstellerskripte haben Zugriff auf diese _Eigenen Ereignisse_ und somit kann man diese Prozeduren zentral an einer Stelle bearbeiten und dadurch einfacher pflegen.
+Mithilfe von _Eigenen Ereignissen_ kann man Prozeduren (also eine Reihe von Ereignissen) für das Projekt zusammenstellen und diese als eigenständige Ereignisse wiederverwenden. Alle Szenen- und Darstellerskripte haben Zugriff auf diese _Eigenen Ereignisse_ und somit kann man diese Prozeduren zentral an einer Stelle bearbeiten und dadurch einfacher pflegen.
 
 Durch das Klicken auf den Hintergrund des Editors (also die leere Großfläche zwischen den Szenen) wechselt die Seitenleiste zurück zu den _Projekteditor_ Einstellungen. Darin finden sich alle _Eigenen Ereignisse_ und darunter ein _Eigenes Ereignis hinzufügen_ Knopf.
 
@@ -17,7 +17,7 @@ Nachdem das _Eigene Ereignis_ einen Namen erhalten hat, kann man mit der Erstell
 
 Immer wenn ein Ereignis hinzugefügt wird, welches eine festgelegte _Variable_ benötigt, so wird eine Variablenreferenz zu der Liste an Parametern des _Eigenen Ereignisses_ hinzugefügt. Die Variablenreferenzen können noch nach Belieben umbenannt werden damit die Übersicht nicht verloren geht. Ereignisse mit einem festgelegten _Darsteller_ sind standardmäßig auf den Spielercharakter gerichtet aber man kann auch eine Darstellerreferenz angeben und diese dann als Parameter behandeln. Die Liste an Parametern können bis zu 10 verschiedene Variablenreferenzen und bis zu 10 verschiedene Darstellerreferenzen in sich tragen.
 
-Als Beispiel sorgt das darunter angezeigte _Eigene Ereignis_ dafür, dass `Darsteller A` sich im Kreis dreht.
+Als Beispiel sorgt das darunter liegende _Eigene Ereignis_ dafür, dass `Darsteller A` sich im Kreis dreht.
 
 <img src="/img/screenshots/custom-event-dance.png" class="event-preview" />
 

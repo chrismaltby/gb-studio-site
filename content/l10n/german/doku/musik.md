@@ -7,7 +7,7 @@ nextTitle: "Soundeffekte"
 
 # Einstieg
 
-Einstieg [GBT Player](https://github.com/AntonioND/gbt-player), ein Treiber welches .MOD Dateien akzeptiert und diese dann in ein Format konvertiert, mit welchem der Gameboy etwas anfangen kann. Du kannst Software verwenden wie beispielsweise [**OpenMPT**](https://openmpt.org/) (für Windows, obwohl es auch für Wine-Betriebssysteme klappt) oder [**MilkyTracker**](https://milkytracker.titandemo.org/) (funktioniert nativ für die verschiedensten Systeme) um .MOD Trackerdateien zu komponieren. Aber natürlich kannst du auch auf andere Software zurückgreifen, welche .MOD Dateien bearbeiten können wie [**BassoonTracker**](https://www.stef.be/bassoontracker/) (web-basierend), [**ProTracker**](https://16-bits.org/pt.php), und viele andere.
+[GBT Player](https://github.com/AntonioND/gbt-player) ist ein Treiber welches .MOD Dateien akzeptiert und diese dann in ein Format konvertiert, mit welchem der Gameboy etwas anfangen kann. Du kannst Software verwenden wie beispielsweise [**OpenMPT**](https://openmpt.org/) (für Windows, obwohl es auch für Wine-Betriebssysteme klappt) oder [**MilkyTracker**](https://milkytracker.titandemo.org/) (funktioniert nativ für die verschiedensten Systeme) um .MOD Trackerdateien zu komponieren. Aber natürlich kannst du auch auf andere Software zurückgreifen, welche .MOD Dateien bearbeiten können wie [**BassoonTracker**](https://www.stef.be/bassoontracker/) (web-basierend), [**ProTracker**](https://16-bits.org/pt.php), und viele andere.
 
 # Erste Schritte
 
