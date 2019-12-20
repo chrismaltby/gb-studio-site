@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "GB Studio"
 theme = "gbstudio"
 
+[markup.goldmark.renderer]
+    unsafe= true
+
 [[menu.main]]
     name = "About"
     title = "About"
