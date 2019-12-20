@@ -29,7 +29,7 @@ draft: false
 - [Baue Dein Spiel](bauen)
   - [Spielen](bauen#spielen)
   - [Als ROM bauen](bauen#als-rom-bauen)
-  - [Bauen und für das Web nutzen](build#bauen-fuer-web)
+  - [Bauen und für das Web nutzen](bauen#bauen-und-fr-das-web-nutzen)
 - [Einstellungen](einstellungen)
   - [GB Farboptionen](einstellungen#gb-farboptionen)
   - [Steuerung](einstellungen#steuerung)
