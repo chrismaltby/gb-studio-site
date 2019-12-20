@@ -1,11 +1,11 @@
 ---
 title: "Szenen"
 draft: false
-next: "/doku/spieler"
+next: "/docs/spieler"
 nextTitle: "Der Spieler"
 ---
 
-Eine Szene ist eine einzelne Kulisse des Spiels, auf welches man mehrere [Darsteller](/doku/darsteller) und [Auslöser](/doku/ausloeser) platzieren kann. Ein Spiel besteht typischerweise aus mehreren Szenen, die miteinander über das _Szene: Szene Wechseln_ Ereignis verbunden sind.
+Eine Szene ist eine einzelne Kulisse des Spiels, auf welches man mehrere [Darsteller](/docs/darsteller) und [Auslöser](/docs/ausloeser) platzieren kann. Ein Spiel besteht typischerweise aus mehreren Szenen, die miteinander über das _Szene: Szene Wechseln_ Ereignis verbunden sind.
 
 ## Eine Szene hinzufügen
 
@@ -13,7 +13,7 @@ Eine Szene kann dem Spiel hinzuzufügt werden, indem man auf dem _**+** Knopf_ i
 
 <img src="/img/screenshots/add-scene.gif" style="width:300px"/>
 
-Sobald die Szene hinzugefügt wurde, wird die _Editor Seitenleiste_ für die jeweilige Szene geöffnet. Darin können Szeneneinstellungen angepasst werden wie die Auswahl eines Hintergrundbildes oder das Umbenennen des Szenennamens. Weitere Informationen findet man in der Dokumentation für [Hintergründe](/doku/hintergruende).
+Sobald die Szene hinzugefügt wurde, wird die _Editor Seitenleiste_ für die jeweilige Szene geöffnet. Darin können Szeneneinstellungen angepasst werden wie die Auswahl eines Hintergrundbildes oder das Umbenennen des Szenennamens. Weitere Informationen findet man in der Dokumentation für [Hintergründe](/docs/hintergruende).
 
 ## Skript Ereignisse
 
@@ -21,4 +21,4 @@ Der _On Init/Szenenstart_ Skript kann verwendet werden um Ereignisse auszuführe
 
 Falls Darsteller innerhalb der Szene ebenfalls über einen _On Init/Szenenstart_ Skript verfügen, dann werde diese Ereignisse zuerst ausgeführt.
 
-Weitere Informationen findet man in der Dokumentation für [Skript Ereignisse](/doku/skript-ereignisse).
+Weitere Informationen findet man in der Dokumentation für [Skript Ereignisse](/docs/skript-ereignisse).

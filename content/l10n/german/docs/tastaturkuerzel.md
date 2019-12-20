@@ -2,7 +2,7 @@
 title: "Tastaturkürzel"
 date: 2019-03-30T21:12:44Z
 draft: false
-next: "/doku/speichern-laden"
+next: "/docs/speichern-laden"
 nextTitle: "Speichern und Laden"
 ---
 

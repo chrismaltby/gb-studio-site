@@ -22,3 +22,33 @@ theme = "gbstudio"
     name = "GitHub"
     title = "GitHub"
     url = "https://github.com/chrismaltby/gb-studio"
+
+[languages]
+  [languages.en]
+    contentDir = "content"
+    languageName = "English"
+    weight = 10
+  [languages.de]
+    contentDir = "content/l10n/german"
+    languageName = "German"
+    weight = 20
+
+[[languages.de.menu.main]]
+    name = "About"
+    title = "About"
+    url = "/about/"
+
+[[languages.de.menu.main]]
+    name = "Docs"
+    title = "Docs"
+    url = "/docs/"
+
+[[languages.de.menu.main]]
+    name = "Download"
+    title = "Download"
+    url = "https://chrismaltby.itch.io/gb-studio"
+
+[[languages.de.menu.main]]
+    name = "GitHub"
+    title = "GitHub"
+    url = "https://github.com/chrismaltby/gb-studio"

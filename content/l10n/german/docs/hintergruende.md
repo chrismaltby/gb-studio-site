@@ -1,7 +1,7 @@
 ---
 title: "Hintergründe"
 draft: false
-next: "/doku/ui-elemente"
+next: "/docs/ui-elemente"
 nextTitle: "UI Elemente"
 ---
 

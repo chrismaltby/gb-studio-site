@@ -1,7 +1,7 @@
 ---
 title: "UI Elemente"
 draft: false
-next: "/doku/musik"
+next: "/docs/musik"
 nextTitle: "Musik"
 ---
 

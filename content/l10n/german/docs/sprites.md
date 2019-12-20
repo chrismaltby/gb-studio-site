@@ -1,7 +1,7 @@
 ---
 title: "Sprites"
 draft: false
-next: "/doku/hintergruende"
+next: "/docs/hintergruende"
 nextTitle: "Hintergründe"
 ---
 

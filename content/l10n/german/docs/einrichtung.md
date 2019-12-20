@@ -2,7 +2,7 @@
 title: "Einrichtung"
 date: 2018-01-28T14:14:44Z
 draft: false
-next: "doku/erste-schritte"
+next: "/docs/erste-schritte"
 nextTitle: "Erste Schritte"
 ---
 

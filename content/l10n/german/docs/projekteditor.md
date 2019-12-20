@@ -1,7 +1,7 @@
 ---
 title: "Der Projekteditor"
 draft: false
-next: "/doku/szenen"
+next: "/docs/szenen"
 nextTitle: "Szenen"
 ---
 
@@ -11,7 +11,7 @@ Die Standardansicht des _Projekteditors_ ist wie unten dargestellt die _Spielwel
 
 Die _Editor Werkzeugleiste_ in der oberen linken Ecke wird verwendet um zwischen verschiedenen Modi zu wechseln: Auswählen, Hinzufügen, Radierer und Kollisionen.
 
-Im Auswahl-Modus wird die _Editor Seitenleiste_ in der rechten Bildschirmhälfte angezeigt sobald eine Szene, ein Darsteller oder ein Auslöser ausgewählt wurde. Darin finden sich Informationen wie Name, Position und sonstige Eigenschaften. Wenn die leere Großfläche im Editor angeklickt wird, dann wechselt die Seitenleiste wieder zurück zum _Projekteditor_ in welchem man den Projektnamen, die Startszene und die Startposition setzen kann. Ebenso findet man hier auch die [Eigenen Ereignisse](/doku/eigene-ereignisse).
+Im Auswahl-Modus wird die _Editor Seitenleiste_ in der rechten Bildschirmhälfte angezeigt sobald eine Szene, ein Darsteller oder ein Auslöser ausgewählt wurde. Darin finden sich Informationen wie Name, Position und sonstige Eigenschaften. Wenn die leere Großfläche im Editor angeklickt wird, dann wechselt die Seitenleiste wieder zurück zum _Projekteditor_ in welchem man den Projektnamen, die Startszene und die Startposition setzen kann. Ebenso findet man hier auch die [Eigenen Ereignisse](/docs/eigene-ereignisse).
 
 ## Die Ressourcengallerie
 
@@ -19,4 +19,4 @@ Mithilfe der _Projektnavigation_ in der oberen Taskleiste unter _Ansicht_ kann z
 
 <img title="Die Ressourcengallerie" src="/img/screenshots/asset-viewer.png" width="1258">
 
-Unter [Ressourcen](/doku/ressourcen) findet man weitere Informationen wie man Ressourcen dem Spiel beifügen kann und welche Voraussetzungen erforderlich sind.
+Unter [Ressourcen](/docs/ressourcen) findet man weitere Informationen wie man Ressourcen dem Spiel beifügen kann und welche Voraussetzungen erforderlich sind.

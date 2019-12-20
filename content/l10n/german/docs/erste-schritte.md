@@ -2,7 +2,7 @@
 title: "Erste Schritte"
 date: 2018-01-28T14:14:44Z
 draft: false
-next: "/doku/tastaturkuerzel"
+next: "/docs/tastaturkuerzel"
 nextTitle: "Tastaturkürzel"
 ---
 

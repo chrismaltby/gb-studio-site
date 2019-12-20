@@ -1,7 +1,7 @@
 ---
 title: "Speichern und Laden"
 draft: false
-next: "/doku/projekteditor"
+next: "/docs/projekteditor"
 nextTitle: "Der Projekteditor"
 ---
 

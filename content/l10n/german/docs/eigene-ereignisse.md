@@ -1,7 +1,7 @@
 ---
 title: "Eigene Ereignisse"
 draft: false
-next: "/doku/ressourcen"
+next: "/docs/ressourcen"
 nextTitle: "Ressourcen"
 ---
 

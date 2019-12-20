@@ -1,7 +1,7 @@
 ---
 title: "Darsteller"
 draft: false
-next: "/doku/ausloeser"
+next: "/docs/ausloeser"
 nextTitle: "Auslöser"
 ---
 
@@ -13,7 +13,7 @@ Um einen Darsteller zur Szene hinzuzufügen, klickt man auf den _**+** Knopf_ in
 
 <img src="/img/screenshots/add-actor.gif" style="width:300px"/>
 
-Die _Editor Seitenleiste_ wechselt anschließend zu den Darsteller Einstellungen wo man unter anderem den Darstellernamen angeben, die Darstellerposition festlegen (alternativ auch via Drag & Drop möglich), das Aussehen des Darstellers durch Angabe eines [Sprite-Sheet](/doku/sprites) einstellen, die Blickrichtung des Darstellers angeben, die Bewegungsgeschwindigkeit bestimmen und ein Ereignisskript entwerfen kann. Letzteres wird immer dann ausgeführt wenn der Spielcharakter mit diesem Darsteller interagiert.
+Die _Editor Seitenleiste_ wechselt anschließend zu den Darsteller Einstellungen wo man unter anderem den Darstellernamen angeben, die Darstellerposition festlegen (alternativ auch via Drag & Drop möglich), das Aussehen des Darstellers durch Angabe eines [Sprite-Sheet](/docs/sprites) einstellen, die Blickrichtung des Darstellers angeben, die Bewegungsgeschwindigkeit bestimmen und ein Ereignisskript entwerfen kann. Letzteres wird immer dann ausgeführt wenn der Spielcharakter mit diesem Darsteller interagiert.
 
 ## Bewegungsart
 
@@ -46,4 +46,4 @@ Der _On Init/Szenenstart_ Skript wird immer dann ausgeführt sobald die Szene ge
 
 Falls der Darsteller ausgewählt ist, kann man durch den _Ereignis hinzufügen_ Knopf in der _Editor Seitenleiste_ ein Ereignismenü öffnen und das jeweilige Skript zusammenstellen.
 
-Weitere Informationen findet man in der Dokumentation für [Skript Ereignisse](/doku/skript-ereignisse).
+Weitere Informationen findet man in der Dokumentation für [Skript Ereignisse](/docs/skript-ereignisse).

@@ -1,13 +1,13 @@
 ---
 title: "Baue Dein Spiel"
 draft: false
-next: "/doku/einstellungen"
+next: "/docs/einstellungen"
 nextTitle: "Einstellungen"
 ---
 
 ## Spielen
 
-Durch Klicken des _Start_ Knopfs in der oberen rechten Ecke im _Projekteditor_ wird der Bauprozess des Spiels gestartet und nach Abschluss wird ein separates Fenster geöffnet wo das Spiel dann gespielt werden kann. Über [Tastaturkürzel](/doku/tastaturkuerzel) findet man Informationen zur Tastenbelegung und sonstige Hinweise wie das Spiel im _Spielfenster_ gespielt werden kann.
+Durch Klicken des _Start_ Knopfs in der oberen rechten Ecke im _Projekteditor_ wird der Bauprozess des Spiels gestartet und nach Abschluss wird ein separates Fenster geöffnet wo das Spiel dann gespielt werden kann. Über [Tastaturkürzel](/docs/tastaturkuerzel) findet man Informationen zur Tastenbelegung und sonstige Hinweise wie das Spiel im _Spielfenster_ gespielt werden kann.
 
 ## Baustation
 

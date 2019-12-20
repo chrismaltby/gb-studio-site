@@ -1,7 +1,7 @@
 ---
 title: "Der Spieler"
 draft: false
-next: "/doku/sprites"
+next: "/docs/sprites"
 nextTitle: "Sprites"
 ---
 
@@ -9,7 +9,7 @@ nextTitle: "Sprites"
 
 Die Startposition des Spielercharakters ist in der Spielwelt als <img src="/img/screenshots/player-start.png" style="height:12px"/> Symbol angegeben.
 
-Durch das Drücken auf die graue Großfläche zwischen den Szenen, wechselt die Seitenleiste zum Projekteditor. Darin kann man die Startposition des Spielercharakters und die Blickrichtung festlegen. Zusätzlich kann man das [Sprite-Sheet](/doku/sprites) für den Spielercharakter wählen.
+Durch das Drücken auf die graue Großfläche zwischen den Szenen, wechselt die Seitenleiste zum Projekteditor. Darin kann man die Startposition des Spielercharakters und die Blickrichtung festlegen. Zusätzlich kann man das [Sprite-Sheet](/docs/sprites) für den Spielercharakter wählen.
 
 Man kann auch die Startposition des Spielercharakters direkt anpassen indem man das <img src="/img/screenshots/player-start.png" style="height:12px"/> Symbol anklickt und es dann zur gewünschten Szene und Position zieht.
 

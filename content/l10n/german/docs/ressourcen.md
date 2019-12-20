@@ -1,7 +1,7 @@
 ---
 title: "Ressourcen"
 draft: false
-next: "/doku/sprites"
+next: "/docs/sprites"
 nextTitle: "Sprites"
 ---
 

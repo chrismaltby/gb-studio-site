@@ -1,13 +1,13 @@
 {{ partial "header.html" . }}
 <main>
   <article>
-    <h1><a href="/docs">Docs</a> / {{ .Title }}</h1>
+    <h1><a href="{{ "/docs" | relLangURL}}">Docs</a> / {{ .Title }}</h1>
     <div>
       {{ .Content }}
     </div>
     {{ if .Params.nextTitle }}
     <div class="next-page">
-      Next: <a href="{{ .Params.next | urlize }}">{{ .Params.nextTitle }}</a>
+      Next: <a href="{{ .Params.next | urlize | relLangURL }}">{{ .Params.nextTitle }}</a>
     </div>
     {{ end }}
   </article>

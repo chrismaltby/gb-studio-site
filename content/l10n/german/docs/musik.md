@@ -1,7 +1,7 @@
 ---
 title: "Musik"
 draft: false
-next: "/doku/soundeffekte"
+next: "/docs/soundeffekte"
 nextTitle: "Soundeffekte"
 ---
 
