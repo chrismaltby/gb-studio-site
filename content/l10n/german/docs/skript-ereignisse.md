@@ -253,7 +253,7 @@ Dein Spiel hat einen Speicher von 512 voneinander unabhängige Variablen auf wel
   <img src="/img/events/actor-push.png" class="event-preview" />
 
 - **Darsteller: Emotions-Blase**  
-  Zeigt eine kleine Emotions-Blase über einem festgelegten Darsteller an. Die Emotionsgesten sind: _Shock/Ausrufezeichen_, _Question/Fragezeichen_, _Love/Herz_, _Pause/Dreipunkt_, _Anger/Zorn_, _Sweat/Schweißperle_, _Music/Musiknote_ and _Sleep/Schlaf_. Die angezeigten Symbole können verändert werden, indem die Grafikdatei [UI Elemente](/docs/ui-elemente#emotes-png) innerhalb der Spiel-Ressourcen bearbeitet wird.  
+  Zeigt eine kleine Emotions-Blase über einem festgelegten Darsteller an. Die Emotionsgesten sind: _Shock/Ausrufezeichen_, _Question/Fragezeichen_, _Love/Herz_, _Pause/Dreipunkt_, _Anger/Zorn_, _Sweat/Schweißperle_, _Music/Musiknote_ and _Sleep/Schlaf_. Die angezeigten Symbole können verändert werden, indem die Grafikdatei [UI Elemente](/de/docs/ui-elemente#emotes-png) innerhalb der Spiel-Ressourcen bearbeitet wird.  
   <img src="/img/events/actor-emote.png" class="event-preview" />
   <img src="/img/events/actor-emote-preview.png" class="event-preview" />
 
@@ -350,7 +350,7 @@ Dein Spiel hat einen Speicher von 512 voneinander unabhängige Variablen auf wel
 ## Sound Ereignisse
 
 - **Sound: Effekt Abspielen** <span class="new">Neu in 1.2.0</span>  
-  Spielt einen Soundeffekt ab. Es können zwischen Pieptönen in verschiedenen Tonlagen, Musiktönen in verschiedenen Frequenzen oder einem Beckenschlag-artigen Ton gewählt werden. Mithilfe von [Eigenen Ereignissen](/docs/eigene-ereignisse) können verschiedene dieser Ereignisse aneinandergereiht werden um einen melodischen Soundeffekt zu kreieren und merfach aufrufbar zu machen.  
+  Spielt einen Soundeffekt ab. Es können zwischen Pieptönen in verschiedenen Tonlagen, Musiktönen in verschiedenen Frequenzen oder einem Beckenschlag-artigen Ton gewählt werden. Mithilfe von [Eigenen Ereignissen](/de/docs/eigene-ereignisse) können verschiedene dieser Ereignisse aneinandergereiht werden um einen melodischen Soundeffekt zu kreieren und merfach aufrufbar zu machen.  
   <img src="/img/events/sound-tone.png" class="event-preview" />
   <img src="/img/events/sound-beep.png" class="event-preview" />
   <img src="/img/events/sound-crash.png" class="event-preview" />

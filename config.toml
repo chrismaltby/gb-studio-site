@@ -26,6 +26,10 @@ theme = "gbstudio"
     title = "GitHub"
     url = "https://github.com/chrismaltby/gb-studio"
 
+[params]
+    docs = "Docs"
+    next = "Next"
+
 [languages]
   [languages.en]
     contentDir = "content"
@@ -35,11 +39,9 @@ theme = "gbstudio"
     contentDir = "content/l10n/german"
     languageName = "German"
     weight = 20
-
-[[languages.de.menu.main]]
-    name = "About"
-    title = "About"
-    url = "/about/"
+    [languages.de.params]
+      docs = "Dokumentation"
+      next = "Nächster"
 
 [[languages.de.menu.main]]
     name = "Docs"

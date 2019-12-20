@@ -17,4 +17,4 @@ In der _Editor Seitenleiste_ kann der Auslöser dann konfiguriert werden wie Nam
 
 ## Skript Ereignisse
 
-Wenn der Auslöser ausgewählt ist, dann kann mit dem _Ereignis Hinzufügen_ Knopf in der _Editor Seitenleiste_ Ereignisse erstellt werden. Weitere Informationen gibt es unter [Skript Ereignisse](/docs/skript-ereignisse).
+Wenn der Auslöser ausgewählt ist, dann kann mit dem _Ereignis Hinzufügen_ Knopf in der _Editor Seitenleiste_ Ereignisse erstellt werden. Weitere Informationen gibt es unter [Skript Ereignisse](/de/docs/skript-ereignisse).
