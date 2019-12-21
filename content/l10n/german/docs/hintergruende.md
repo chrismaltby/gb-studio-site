@@ -3,6 +3,8 @@ title: "Hintergründe"
 draft: false
 next: "/docs/ui-elemente"
 nextTitle: "UI Elemente"
+aliases:
+    - /de/docs/backgrounds
 ---
 
 Jede Szene benötigt ein Hintergrundbild welches das Aussehen der Szene bestimmt. Man kann Hintergründe dem Spiel hinzufügen indem man Bilderdateien im PNG Format im `assets/backgrounds` Ordner des Projekts einfügt.

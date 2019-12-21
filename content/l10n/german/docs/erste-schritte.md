@@ -4,6 +4,8 @@ date: 2018-01-28T14:14:44Z
 draft: false
 next: "/docs/tastaturkuerzel"
 nextTitle: "Tastaturkürzel"
+aliases:
+    - /de/docs/getting-started
 ---
 
 Das _Neues Projekt_ Fenster öffnet sich sobald GB Studio gestartet wird.

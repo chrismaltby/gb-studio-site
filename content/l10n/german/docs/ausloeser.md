@@ -3,6 +3,8 @@ title: "Auslöser"
 draft: false
 next: "/docs/skript-ereignisse"
 nextTitle: "Skript Ereignisse"
+aliases:
+    - /de/docs/triggers
 ---
 
 Auslöser sind festgelegte Bereiche innerhalb einer Szene. Sobald ein Spielcharakter diese Bereiche betritt, wird ein bestimmter Skript ausgeführt. Auslöser sind nützlich um Türen zu bauen, welche beim Betreten die Szene wechselt. Ebenso können Zwischensequenzen gestartet werden, sobald der Spieler einen bestimmten Bereich betritt.

@@ -3,6 +3,8 @@ title: "Baue Dein Spiel"
 draft: false
 next: "/docs/einstellungen"
 nextTitle: "Einstellungen"
+aliases:
+    - /de/docs/build
 ---
 
 ## Spielen

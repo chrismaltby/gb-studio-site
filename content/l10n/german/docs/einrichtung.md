@@ -4,6 +4,8 @@ date: 2018-01-28T14:14:44Z
 draft: false
 next: "/docs/erste-schritte"
 nextTitle: "Erste Schritte"
+aliases:
+    - /de/docs/installation
 ---
 
 Downloade die aktuelle Version der Software über die [Itch.io Downloadseite](https://chrismaltby.itch.io/gb-studio) oder eine ältere Version über die [Downloadseite für ältere Releases](/downloads/older-versions).

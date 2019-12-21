@@ -3,6 +3,8 @@ title: "Der Spieler"
 draft: false
 next: "/docs/sprites"
 nextTitle: "Sprites"
+aliases:
+    - /de/docs/player
 ---
 
 ## Startposition

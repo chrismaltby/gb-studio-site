@@ -3,6 +3,8 @@ title: "Speichern und Laden"
 draft: false
 next: "/docs/projekteditor"
 nextTitle: "Der Projekteditor"
+aliases:
+    - /de/docs/saving-loading
 ---
 
 ## Speichern

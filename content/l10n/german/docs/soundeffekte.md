@@ -3,6 +3,8 @@ title: "Soundeffekte"
 draft: false
 next: "/docs/bauen"
 nextTitle: "Baue Dein Spiel"
+aliases:
+    - /de/docs/sound-effects
 ---
 
 <span class="new">Neu in 1.2.0</span>

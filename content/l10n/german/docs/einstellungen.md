@@ -1,6 +1,8 @@
 ---
 title: "Einstellungen"
 draft: false
+aliases:
+    - /de/docs/settings
 ---
 
 <span class="new">Neu in 1.2.0</span>

@@ -3,6 +3,8 @@ title: "Darsteller"
 draft: false
 next: "/docs/ausloeser"
 nextTitle: "Auslöser"
+aliases:
+    - /de/docs/actors
 ---
 
 Darsteller sind Charaktere und Objekte innerhalb der Szene mit denen der Spielcharakter interagieren kann.

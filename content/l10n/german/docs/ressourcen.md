@@ -3,6 +3,8 @@ title: "Ressourcen"
 draft: false
 next: "/docs/sprites"
 nextTitle: "Sprites"
+aliases:
+    - /de/docs/assets
 ---
 
 Beim Erstellen des Projekts wird gleichzeitig auch ein `assets` Ordner erstellt mit mehreren Unterverzeichnissen für jeden Ressourcentyp des Spiels.

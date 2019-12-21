@@ -3,6 +3,8 @@ title: "Musik"
 draft: false
 next: "/docs/soundeffekte"
 nextTitle: "Soundeffekte"
+aliases:
+    - /de/docs/music
 ---
 
 # Einstieg

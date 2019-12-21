@@ -3,6 +3,8 @@ title: "Sprites"
 draft: false
 next: "/docs/hintergruende"
 nextTitle: "Hintergründe"
+aliases:
+    - /de/docs/sprites
 ---
 
 Sprites sind Grafikdaten welche das Aussehen von spielbaren und interaktiven Charakteren sowie Objekten bestimmen. Um Sprites dem Spiel hinzuzufügen, müssen die passenden PNG Bilddateien in das `assets/sprites` Unterverzeichnis abgelegt werden.

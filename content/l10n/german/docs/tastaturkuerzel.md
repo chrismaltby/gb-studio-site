@@ -4,6 +4,8 @@ date: 2019-03-30T21:12:44Z
 draft: false
 next: "/docs/speichern-laden"
 nextTitle: "Speichern und Laden"
+aliases:
+    - /de/docs/keyboard-shortcuts
 ---
 
 ## Spielfenster

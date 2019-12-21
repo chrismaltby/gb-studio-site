@@ -3,6 +3,8 @@ title: "Eigene Ereignisse"
 draft: false
 next: "/docs/ressourcen"
 nextTitle: "Ressourcen"
+aliases:
+    - /de/docs/custom-events
 ---
 
 <span class="new">Neu in 1.2.0</span>

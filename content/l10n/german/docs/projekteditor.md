@@ -3,6 +3,8 @@ title: "Der Projekteditor"
 draft: false
 next: "/docs/szenen"
 nextTitle: "Szenen"
+aliases:
+    - /de/docs/project-editor
 ---
 
 Die Standardansicht des _Projekteditors_ ist wie unten dargestellt die _Spielwelt_. Dort können Szenen erstellt, Darsteller gesetzt und Auslöser gelegt werden um die Spielwelt zu füllen. Skriptereignisse können hinzugefügt werden um Interaktionen zwischen Spielcharakter und Spielwelt zu ermöglichen.

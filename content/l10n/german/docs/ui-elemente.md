@@ -3,6 +3,8 @@ title: "UI Elemente"
 draft: false
 next: "/docs/musik"
 nextTitle: "Musik"
+aliases:
+    - /de/docs/ui-elements
 ---
 
 Das Spielprojekt besitzt eine Reihe von Bilddateien im Unterverzeichnis `assets/ui` mit fest vorgeschriebenen Dateinamen. Diese Bilddateien sind essentiell für die Definierung der Oberflächengestaltung des Spiels. Durch die Bearbeitung dieser Bilddateien kann man unter anderem die ausgegebene Schriftart, das Design der Textbox und das Aussehen des UI Zeigers bearbeiten.

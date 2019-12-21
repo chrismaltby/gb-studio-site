@@ -3,6 +3,8 @@ title: "Szenen"
 draft: false
 next: "/docs/spieler"
 nextTitle: "Der Spieler"
+aliases:
+    - /de/docs/scenes
 ---
 
 Eine Szene ist eine einzelne Kulisse des Spiels, auf welches man mehrere [Darsteller](/de/docs/darsteller) und [Auslöser](/de/docs/ausloeser) platzieren kann. Ein Spiel besteht typischerweise aus mehreren Szenen, die miteinander über das _Szene: Szene Wechseln_ Ereignis verbunden sind.

@@ -3,6 +3,8 @@ title: "Skript-Ereignisse"
 draft: false
 next: "/docs/eigene-ereignisse"
 nextTitle: "Eigene Ereignisse"
+aliases:
+    - /de/docs/scripting
 ---
 
 Skript-Ereignisse erlauben es dir Bestandteile deines Spiels dynamisch durch Spielerinteraktion zu beeinflussen. Nutze diese Ereignisse um Szenen zu verbinden, Dialogue zu ermöglichen oder Zwischensequenzen zu erstellen.
