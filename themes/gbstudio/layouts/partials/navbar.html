@@ -1,6 +1,6 @@
 <nav>
   <div class="container">
-    <a class="title" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+    <a class="title" href="{{ "/" | absLangURL }}">{{ .Site.Title }}</a>
     <div class="nav_right">
       <label id="hamburger" for="menu_open">
         <svg
@@ -17,7 +17,7 @@
         <label class="menufade" for="menu_open"></label>
         <ul>
           {{ range .Site.Menus.main }}
-          <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+          <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
           {{ end }}
         </ul>
       </span>
