@@ -42,6 +42,13 @@ theme = "gbstudio"
     [languages.de.params]
       docs = "Dokumentation"
       next = "Nächster"
+  [languages.es]
+    contentDir = "content/l10n/spanish"
+    languageName = "Spanish"
+    weight = 20
+    [languages.es.params]
+      docs = "Documentation"
+      next = "Next"
 
 [[languages.de.menu.main]]
     name = "Docs"
@@ -54,6 +61,21 @@ theme = "gbstudio"
     url = "https://chrismaltby.itch.io/gb-studio"
 
 [[languages.de.menu.main]]
+    name = "GitHub"
+    title = "GitHub"
+    url = "https://github.com/chrismaltby/gb-studio"
+
+[[languages.es.menu.main]]
+    name = "Docs"
+    title = "Docs"
+    url = "/docs/"
+
+[[languages.es.menu.main]]
+    name = "Download"
+    title = "Download"
+    url = "https://chrismaltby.itch.io/gb-studio"
+
+[[languages.es.menu.main]]
     name = "GitHub"
     title = "GitHub"
     url = "https://github.com/chrismaltby/gb-studio"

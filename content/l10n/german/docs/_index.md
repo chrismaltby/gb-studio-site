@@ -6,7 +6,7 @@ draft: false
 
 # Dokumentation
 
-[en](/docs) | de
+[en](/docs) | de | [es](/es/docs)
 
 - [Einrichtung](einrichtung)
 - [Erste Schritte](erste-schritte)
