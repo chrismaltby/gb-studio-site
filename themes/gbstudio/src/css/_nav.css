@@ -1,6 +1,5 @@
 nav {
   max-height: 80px;
-  background: #c92c61;
   color: #ffffff;
   overflow: hidden;
   text-align: center;
@@ -86,6 +85,7 @@ nav ul li a {
 nav ul li a:hover {
   background: rgba(157, 168, 185, 0.8);
   background: #c92c61;
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .build-develop nav {
@@ -140,7 +140,7 @@ nav ul li a:hover {
   nav #menu_open ~ span ul {
     right: -300px;
     opacity: 0;
-    position: absolute;
+    position: fixed;
     display: block;
     z-index: 1000;
     top: 0px;

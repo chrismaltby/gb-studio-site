@@ -20,10 +20,9 @@ The _Editor Sidebar_ will switch to show the actor settings where you can give t
 There are a few different movement types available to choose, the one you should use will depend on how you want the actor to behave as the player is walking around the scene and interacting with it.
 
 - **Static** - The actor will display a single frame from the selected spritesheet.  
-  <span class="new">New in 1.1.0</span>  
-  If the sprite sheet contains more than one frame you will be given the option to choose which frame to display, this can be modified later using an _Actor: Set Animation Frame_ event. Sprite sheets with multiple frames also enable the ability to optionally animate the actor by cycling through each of the frames at a specified speed, the speed can also be modified with an _Actor: Set Animation Speed_ event.
-
-The actor will only ever face in the initial direction (unless the direction is modified later using a script). If the player interacts with this actor it will not change direction. Useful for things like signposts or other stationary objects.
+  If the sprite sheet contains more than one frame you will be given the option to choose which frame to display, this can be modified later using an _Actor: Set Animation Frame_ event. Sprite sheets with multiple frames also enable the ability to optionally animate the actor by cycling through each of the frames at a specified speed, the speed can also be modified with an _Actor: Set Animation Speed_ event.\
+  \
+  The actor will only ever face in the initial direction (unless the direction is modified later using a script). If the player interacts with this actor it will not change direction. Useful for things like signposts or other stationary objects.
 
 - **Face Interaction** - The actor will start facing in the initial direction but when the player interacts with the actor it will turn to face the player before it's script plays. Useful for simple characters to make them more responsive to the player's actions.
 
@@ -39,4 +38,12 @@ Due to hardware limitations only **25 unique frames** of animation can be alloca
 
 ## Scripting
 
-When the actor is selected click the _Add Event button_ in the _Editor Sidebar_ to open the event menu and start building a script. For more information see the documentation for [Scripting](/docs/scripting).
+Actors can have two scripts attached to them, _On Interact_ and _On Init_, you can toggle between which script is being edited by using the tabs in the _Editor Sidebar_ while the actor is selected.
+
+The _On Interact_ script will be run any time a player stands next to the actor and presses the _A_ button.
+
+The _On Init_ script can be used to have events run as soon as the scene is loaded, they will execute before any events in the scene's _On Init_ script.
+
+When the actor is selected click the _Add Event button_ in the _Editor Sidebar_ to open the event menu and start building a script.
+
+For more information see the documentation for [Scripting](/docs/scripting).

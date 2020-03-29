@@ -1,6 +1,8 @@
 ---
 title: "Building Your Game"
 draft: false
+next: "/docs/settings"
+nextTitle: "Settings"
 ---
 
 ## Play
