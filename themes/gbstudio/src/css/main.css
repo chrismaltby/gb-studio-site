@@ -1,4 +1,10 @@
 @import "./_body.css";
+@import "./_swiper.css";
+
+/* Components */
+@import "./components/_container.css";
+@import "./components/_button.css";
+
 @import "./_nav.css";
 @import "./_main.css";
 @import "./_footer.css";

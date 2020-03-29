@@ -1,8 +1,8 @@
 ---
 title: "Music"
 draft: false
-next: "/docs/build"
-nextTitle: "Building Your Game"
+next: "/docs/sound-effects"
+nextTitle: "Sound Effects"
 ---
 
 # Introduction

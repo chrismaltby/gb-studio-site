@@ -1,0 +1,13 @@
+.container {
+  position: relative;
+  max-width: 960px;
+  margin: 0px auto;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0px 20px;
+}
+
+@media (min-width: 1100px) {
+  .container {
+  }
+}

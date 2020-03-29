@@ -6,7 +6,7 @@ next: "/docs/getting-started"
 nextTitle: "Getting Started"
 ---
 
-Go to the [GB Studio website](/) and click the download button or choose your preferred version from the [downloads page](/download).
+Download your preferred version from the [Itch.io download page](https://chrismaltby.itch.io/gb-studio) or the [older releases page](/downloads/older-versions).
 
 ## Windows
 

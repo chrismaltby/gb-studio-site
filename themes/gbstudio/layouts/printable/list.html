@@ -13,13 +13,16 @@
   {{ with .Site.GetPage "/docs/actors" }}{{ partial "article.html" . }}{{ end }}
   {{ with .Site.GetPage "/docs/triggers" }}{{ partial "article.html" . }}{{ end }}
   {{ with .Site.GetPage "/docs/scripting" }}{{ partial "article.html" . }}{{ end }}
+  {{ with .Site.GetPage "/docs/custom-events" }}{{ partial "article.html" . }}{{ end }}
   {{ with .Site.GetPage "/docs/assets" }}{{ partial "article.html" . }}{{ end }}
   {{ with .Site.GetPage "/docs/sprites" }}{{ partial "article.html" . }}{{ end }}
   {{ with .Site.GetPage "/docs/backgrounds" }}{{ partial "article.html" . }}{{ end }}
   {{ with .Site.GetPage "/docs/ui-elements" }}{{ partial "article.html" . }}{{ end }}
   {{ with .Site.GetPage "/docs/music" }}{{ partial "article.html" . }}{{ end }}
+  {{ with .Site.GetPage "/docs/sound-effects" }}{{ partial "article.html" . }}{{ end }}
   {{ with .Site.GetPage "/docs/build" }}{{ partial "article.html" . }}{{ end }}
   {{ with .Site.GetPage "/docs/build#play" }}{{ partial "article.html" . }}{{ end }}
   {{ with .Site.GetPage "/docs/build#build-as-rom" }}{{ partial "article.html" . }}{{ end }}
   {{ with .Site.GetPage "/docs/build#build-and-deploy-for-web" }}{{ partial "article.html" . }}{{ end }}
+  {{ with .Site.GetPage "/docs/settings" }}{{ partial "article.html" . }}{{ end }}
 </main>

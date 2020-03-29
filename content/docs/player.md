@@ -17,4 +17,4 @@ You can also change the player start position by dragging the <img src="/img/scr
 
 Most actor script events can also be applied to the player. In addition you can use _Set Player Sprite Sheet_ event to change the graphics used for the player character mid-game. Changing the sprite sheet will persist between scenes so remember to switch the sprite back if it was supposed to be temporary.
 
-When switching between scenes the player will always become visible at the scene start location regardless of previous visibility options. if you want the player to be hidden on a scene e.g when showing a title screen or cutscene add a _Player Hide_ event to the scene's start script.
+When switching between scenes the player will always become visible at the scene start location regardless of previous visibility options. if you want the player to be hidden on a scene e.g when showing a title screen or cutscene add a _Player Hide_ event to the scene's _On Init_ script.

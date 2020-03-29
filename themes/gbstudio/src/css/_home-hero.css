@@ -1,0 +1,132 @@
+.homepage-hero {
+  background-color: #c92c61;
+  overflow: hidden;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.build-develop .homepage-hero {
+  display: none;
+}
+
+.homepage-hero .container {
+  position: relative;
+  max-width: 960px;
+  margin: 0px auto;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.homepage-hero__content {
+  /* padding: 0 20px; */
+}
+
+.homepage-hero__content h2 {
+  color: #fff;
+  font-size: 2rem;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.homepage-hero__content h3 {
+  color: #fff;
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.homepage-hero__button {
+  display: block;
+  background: #fff;
+  color: #c92c61;
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  clear: both;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transform: scale(1);
+  transition: transform 0.1s ease-in-out;
+}
+
+.homepage-hero__image {
+  margin-top: 40px;
+  /* margin-bottom: 40px; */
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+.swiper-wrapper {
+  padding-bottom: 30px;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 20px;
+}
+
+@media (min-width: 1100px) {
+  .swiper-wrapper {
+    padding-bottom: 0px;
+  }
+
+  .homepage-hero {
+    margin-bottom: 0px;
+    /* max-height: 420px; */
+  }
+
+  .homepage-hero__content {
+    padding: 0;
+    position: absolute;
+    max-width: 440px;
+    top: 0;
+    bottom: 0;
+  }
+
+  .homepage-hero__image {
+    margin-top: 0;
+  }
+
+  .homepage-hero .container {
+    /* max-height: 420px; */
+    padding: 0px 20px;
+  }
+
+  .homepage-hero .swiper-container {
+    width: 100%;
+    max-width: 820px;
+    transform: translate(394px, 0);
+  }
+
+  .homepage-hero .swiper-container {
+    width: 100%;
+    max-width: 820px;
+    transform: translate(394px, 0);
+  }
+
+  .homepage-hero__content {
+    position: absolute;
+    max-width: 440px;
+    top: 0px;
+    bottom: 0px;
+    color: #fff;
+  }
+
+  .homepage-hero__content h2 {
+    color: #fff;
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  .homepage-hero__button {
+    float: left;
+  }
+
+  .homepage-hero__button:hover {
+    transform: scale(1.2);
+  }
+}

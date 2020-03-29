@@ -6,6 +6,8 @@ draft: false
 
 # Documentation
 
+en | [de](/de/docs) | [es](/es/docs)
+
 - [Installation](installation)
 - [Getting Started](getting-started)
   - [Keyboard Shortcuts](keyboard-shortcuts)
@@ -17,15 +19,22 @@ draft: false
   - [Actors](/docs/actors)
   - [Triggers](/docs/triggers)
   - [Scripting Events](/docs/scripting)
+  - [Custom Events](/docs/custom-events)
 - [Assets](/docs/assets)
   - [Sprites](/docs/sprites)
   - [Backgrounds](/docs/backgrounds)
   - [UI Elements](/docs/ui-elements)
   - [Music](/docs/music)
+  - [Sound Effects](/docs/sound-effects)
 - [Building Your Game](/docs/build)
   - [Play](/docs/build#play)
   - [Build as ROM](/docs/build#build-as-rom)
   - [Build and deploy for Web](/docs/build#build-and-deploy-for-web)
+- [Settings](/docs/settings)
+  - [GB Color Options](/docs/settings#gb-color-options)
+  - [Controls](/docs/settings#controls)
+  - [Cartridge Type](/docs/settings#cartridge-type)
+  - [Custom HTML Header](/docs/settings#custom-html-header)
 
 or, if you prefer:
 

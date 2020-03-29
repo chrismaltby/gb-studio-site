@@ -1,0 +1,37 @@
+section.homepage-video {
+  background-color: #f1f1f3;
+  padding: 40px 0px;
+  clear: both;
+  color: #24226b;
+  text-align: center;
+}
+
+.Video {
+  max-width: 920px;
+  background-color: #f1f1f1;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.Content {
+  max-width: 746px;
+  margin: 0px auto;
+}
+
+.VideoContainer {
+  position: relative;
+  padding-bottom: 52.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.VideoContainer iframe,
+.VideoContainer object,
+.VideoContainer embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

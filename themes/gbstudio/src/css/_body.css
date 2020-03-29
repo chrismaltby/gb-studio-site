@@ -4,11 +4,6 @@ body {
 }
 
 body {
-  /* background: #000; */
-  /* opacity: 0.1; */
-}
-
-body {
   margin: 0px;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
     Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -211,3 +206,19 @@ table-horizontal th {
 table-horizontal tbody > tr:last-child > td {
   border-bottom-width: 0;
 } */
+
+@media (min-width: 1100px) {
+  body {
+    border-top: 80px solid #c92c61;
+  }
+
+  header {
+    background: #c92c61c0;
+    position: fixed;
+    backdrop-filter: blur(20px);
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}

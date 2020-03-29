@@ -1,4 +1,6 @@
-import styles from "./../css/main.css";
+import Swiper from "swiper";
+import "./home-cart";
+import "./../css/main.css";
 
 let OSName = "Unknown OS";
 if (navigator.appVersion.indexOf("Win") != -1) OSName = "Windows";
@@ -15,56 +17,69 @@ if (
 )
   OSName = "Linux";
 
-const downloadBtn = document.getElementById("download-btn");
-const downloadLink = document.getElementById("download-link");
-const appScreenshot = document.getElementById("app-screenshot");
+let mySwiper;
+let swiperEffect = "fade";
+const appScreenshot1 = document.getElementById("app-screenshot-1");
+const appScreenshot2 = document.getElementById("app-screenshot-2");
+const appScreenshot3 = document.getElementById("app-screenshot-3");
 
-const downloadUrls = {
-  windows:
-    "https://github.com/chrismaltby/gb-studio/releases/download/v1.1.0/GB.Studio-win32-x64-squirrel-1.1.0.zip",
-  windows32:
-    "https://github.com/chrismaltby/gb-studio/releases/download/v1.1.0/GB.Studio-win32-ia32-squirrel-1.1.0.zip",
-  mac:
-    "https://github.com/chrismaltby/gb-studio/releases/download/v1.1.0/GB.Studio-darwin-x64-1.1.0.zip",
-  deb:
-    "https://github.com/chrismaltby/gb-studio/releases/download/v1.1.0/gb-studio_1.1.0_amd64.deb",
-  rpm:
-    "https://github.com/chrismaltby/gb-studio/releases/download/v1.1.0/gb-studio-1.1.0.x86_64.rpm"
-};
-
-if (downloadBtn) {
+if (appScreenshot1 && appScreenshot2 && appScreenshot3) {
   switch (OSName) {
     case "Windows":
-      downloadBtn.innerHTML = "Download for Windows";
-      appScreenshot.src = "/img/screenshot_win.png";
-      if (
-        navigator.userAgent.indexOf("WOW64") != -1 ||
-        navigator.userAgent.indexOf("Win64") != -1
-      ) {
-        downloadBtn.innerHTML = "Download for Windows 64-bit";
-        downloadBtn.href = downloadUrls.windows;
-      } else {
-        downloadBtn.innerHTML = "Download for Windows 32-bit";
-        downloadBtn.href = downloadUrls.windows32;
-      }
+      appScreenshot1.src = "/img/screenshot_win_1.png";
+      appScreenshot2.src = "/img/screenshot_win_2.png";
+      appScreenshot3.src = "/img/screenshot_win_3.png";
       break;
     case "MacOS":
-      downloadBtn.innerHTML = "Download for macOS";
-      downloadBtn.href = downloadUrls.mac;
-      appScreenshot.src = "/img/screenshot.png";
+      appScreenshot1.src = "/img/screenshot_mac_1.png";
+      appScreenshot2.src = "/img/screenshot_mac_2.png";
+      appScreenshot3.src = "/img/screenshot_mac_3.png";
       break;
     case "Linux":
-      downloadBtn.innerHTML = "Download for Ubuntu";
-      downloadBtn.href = downloadUrls.deb;
-      const redhatDownloadBtn = document.createElement("a");
-      redhatDownloadBtn.className = "homepage-landing__button";
-      redhatDownloadBtn.innerHTML = "Download for Redhat";
-      redhatDownloadBtn.href = downloadUrls.rpm;
-      downloadBtn.parentNode.insertBefore(redhatDownloadBtn, downloadLink);
-      appScreenshot.src = "/img/screenshot.png";
+      appScreenshot1.src = "/img/screenshot_mac_1.png";
+      appScreenshot2.src = "/img/screenshot_mac_2.png";
+      appScreenshot3.src = "/img/screenshot_mac_3.png";
       break;
     default:
-      downloadBtn.innerHTML = "Download GB Studio";
-      appScreenshot.src = "/img/screenshot.png";
+      appScreenshot1.src = "/img/screenshot_mac_1.png";
+      appScreenshot2.src = "/img/screenshot_mac_2.png";
+      appScreenshot3.src = "/img/screenshot_mac_3.png";
+  }
+
+  initSwiper();
+  window.addEventListener("resize", () => {
+    initSwiper();
+  })
+}
+
+function initSwiper() {
+  const screenWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+  const newEffect = screenWidth >= 1100 ? "fade" : "coverflow";
+  if (!mySwiper || swiperEffect !== newEffect) {
+    if (mySwiper) {
+      mySwiper.destroy(true, true);
+    }
+    swiperEffect = newEffect;
+    mySwiper = new Swiper(".js-swiper-container", {
+      direction: "horizontal",
+      loop: true,
+      effect: swiperEffect,
+      speed: 800,
+      fadeEffect: {
+        crossFade: true
+      },
+      coverflowEffect: {
+        rotate: 30,
+        slideShadows: false,
+      },
+      autoplay: {
+        delay: 3200
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        clickable: true
+      }
+    });
   }
 }
