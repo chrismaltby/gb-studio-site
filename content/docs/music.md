@@ -55,33 +55,28 @@ Using default settings on OpenMPT and MilkyTracker, C3 to B8 in OpenMPT sounds t
 *<sup>2</sup> Effects B, D, and F can be also used on Channel 3 if the same row isn't being used to set a note/instrument.*
 
 # Volume Limitations
-*All numbers listed here are in base-10 unless otherwise noted.*
 
 Currently, volume can only be adjusted by using the `Cxx` effect for each channel.
 
-While most mod-trackers allow 64+ individual settings for volume, the Gameboy only allows 16 individual settings for most Channels. GBT Player fixes this by reading and flooring the numbers in a `Cxx` volume effect to multiples of 4. As a result, these are all of the unique volume settings for Channels 1, 2 and 4:
+The Gameboy has 16 unique volume settings for Channels 1, 2 and 4. GBT Player will floor (round-down) the values in a `Cxx` volume effect to multiples of 4.
 
-### In base 10:
-`00, 04, 08, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60`
-### In hexadecimal:
+## Unique Volume Settings for Channels 1, 2 and 4:
 `00, 04, 08, 0C, 10, 14, 18, 1C, 20, 24, 28, 2C, 30, 34, 38, 3C`
 
-Any number that's not a multiple of 4 *can* be entered in the `Cxx` effect, but it will be rounded-down to one of the above numbers.
+Any number that's not a multiple of 4 will be rounded-down to one of the above numbers.
 
-### Examples:
-- Entering `C01`, `C02` and `C03` will sound the same as entering `C00`.
-- Entering `C64` (base 10) will sound the same as entering `C60` (base 10).
+**Example:** Entering `C01`, `C02` and `C03` will sound the same as entering `C00`.
 
-### Channel 3's Volume-Rounding Exception:
+**Example:** Entering `C40` will sound the same as entering `C3C`.
 
-Unlike the other channels, GBT Player **rounds** the `Cxx` effects on Channel 3 to the following values:
+Channel 3 is the exception to this with only 4 unique volume settings.
 
-### In base 10:
-`00, 16, 32, 64`
-### In hexadecimal:
+## Unique Volume Settings for Channel 3:
 `00, 10, 20, 40`
 
-Entering `C48` (base 10) will round the volume up to `C64` (base 10).
+GBT Player will round `Cxx` effects on Channel 3 to the nearest number listed above.
+
+**Example:** Entering `C30` will round the volume up to `C40`.
 
 # Volume Persistence
 
@@ -310,63 +305,53 @@ You might wonder how's it going to sound in-game; well, it'll sound as close as 
 
 **Q: Can I use mp3/wav files?**
 
-A: No. In rare circumstances, you could convert a .wav file to .midi, quantizing the result, and convert that .midi to .MOD. It will sound much better to write the song you want using a tracker, or to use community-made GBT-compatible music.
+A: No, but you can use .midi files. If you're looking for an easy way to add music to your game, you can ask the #collaborations channel of the GB Studio Discord or browse the GB Studio Community Assets]().
 
-**Q: Can I use this .MOD file I found online?**
+This has limited success, and there are easier options to get music in your game, such as the 
 
-A: It won't sound as intended. Some .MOD files don't tune all their instrument samples the same way, and this will be exposed as only the raw notes are imported to GBT Player. If you're lucky, it can be done. Any `===` notes need to be replaced with the `EC1` effect. All instrument restrictions should apply, and Channel 4 most likely will need to be moved to another channel or removed alltogether.
+**Q: How do I convert a .midi file to .mod?**
+
+A: OpenMPT can open MIDI files and save the result to .mod Some resources on how to do this include a [video tutorial](https://www.youtube.com/watch?v=4AxZqK9_jKE) as well as Kazy's write-up article pinned in the #music-help section of the GB Studio discord.
+
+**Q: Can I use this .mod file I found online?**
+
+A: It won't sound as intended, but it can be made to sound good-enough with some adjustments. Any `===` notes need to be replaced with the `EC1` effect. All instrument restrictions should apply, and no melodic instruments should be using Channel 4. You may also need to transpose the notes of a channel to account for differently-tuned samples, which you can learn more about in your tracker's documentation.
 
 **Q: How do I stop a note from playing?**
 
-A: Either use another note entirely, or if you want to silence it, use a `C00` effect.
+A: `EC1` will mute a channel's note, `C00` will mute the channel until it recieves another `Cxx` effect.
 
-**Q: My song sounds all wrong upon building it! Why is that?**
+**Q: What do I do if my song sounds completely giltched-out?**
 
-A: There's multiple reasons why that might be. **Please make sure your song is complying with everything above** (in particular, make sure you're only using the supported effects, are complying with the channel allocations, and aren't going over or under certain frequencies).
+A: It's probably corrupted. It can likely be saved by using OpenMPT and saving it as a different filetype. If you're using **MilkyTracker**, don't press "Save" on a .mod file, always work in a .xm file instead.
 
-If you're using **MilkyTracker**, please be aware that it can break how a .mod file can sound. To get around this, save as `.XM`, its natively supported format, and when you're done with the song, export it as a .mod song and try it out in GB Studio.
+**Q: Why is my song speed is faster in-game than it is in the tracker?**
 
-**Q: My song speed is wrong! It's faster in-game than it is in the tracker!**
+A: If you're using an `Fxx` effect with a value lower than `F05`, add `F96` to the first row of your song. This will not impact your in-game playback speed.
 
-A: If you're using an `Fxx` effect with the value **higher than `F05`**, then you will need to keep 50hz to 60hz conversions in mind. The .mod format was originally developed for European computers, which ran at 50hz, while the Gameboy runs at 60. **A way to mitigate this is to set your BPM to 150 instead of 125.** If you're using OpenMPT (which cannot set the BPM for whatever reasons), a `F96` effect in the song will do the trick (though use it as early as possible).
+**Q: Can I play back voice clips/sound effects?**
 
-**Q: Can I play back this voice clip/sound effect/whatever?**
-
-A: No, not on GBT. 
-
-LSDj and more advanced sound drivers available for the Gameboy do support playing back samples, but doing this requires a lot of data to be moved in a short amount of time (means only music can play at that time, really).
+A: Not on GBT Player. Pokemon Yellow's method is unique, and LSDj does not leave much processing power for games to be played while it's running.
 
 **Q: Can I use a different tool to write my music?**
 
-A: If the tool can natively export to .mod, try it! If not, then you'll need to transcribe what you've written to a tracker, that can save .mod files.
+A: If the tool can natively export to .mod, try it!
 
-**Q: Can I use MIDI files?**
+**Q: Why is my song playing glitched sounds when it tries to loop?**
 
-A: OpenMPT can open MIDI files. Some resources on how to do this include a [video tutorial](https://www.youtube.com/watch?v=4AxZqK9_jKE) as well as Kazy's write-up article pinned in the #music-help section of the GB Studio discord.
+A: `D00` is a problematic effect, try using `Bxx` instead. If you're already using `Bxx`, make sure the `xx` number does not go above the number of pattern-slots in your song. A song's first pattern is always in slot 00.
 
-**Q: This is kinda cumbersome. What alternatives do I have?**
-
-A: As of the date of writing this, none that I know. It's possible that in the future people might make custom tailored trackers or tools for GB Studio, but until then, this is the only way we can make music for GB Studio games.
-
-You might want to start making a non-GB song with OpenMPT or your tracker of choice, as that'll better teach you what a tracker really does, at least in my opinion...
-
-There's a link in the Tips section on how to get started with OpenMPT, I suggest giving it a read!
-
-**Q: I used a D00 effect on my last pattern to loop back to the first, but it's playing glitched in game after it loops once?**
-
-A: Use a `Bxx` effect. Using a D00 effect on the last frame will trip GBT into thinking there's more data beyond the song, making it read garbage data.
-
-**Q: I'm using OpenMPT, and some notes appear as red and they sound way higher/lower than what they're supposed to sound!**
+**Q: Why do some notes in OpenMPT appear red and sound higher/lower than they're supposed to sound?**
 
 A: Go over to the "General" tab that's under the New File, Open and Save buttons. Click the big button next to the "Name" field that says "MOD (ProTracker), 4 channels". Once there, disable both **ProTracker 1/2 Mode (MOD)** and **Amiga Frequency Limits.** This is a thing because the format here is meant to be used with the Amiga line of computers (that's where it was made), which has frequency limits.
 
-**Q: The song starts out with garbage noise.**
+**Q: Why does my song start out with garbage noise?**
 
-A: If you're not using the first two channels, mute them with a `C00` effect.
+A: If your song doesn't start using the first two channels, add a note to their first row with a `C00` effect on each.
 
 **Q: Can I play sound effects?**
 
-A: Yes, with limitations. You can use the `Sound: Play Effect` script to play a limited sound effect without interrupting the song played by GBT Player. You can also make a sound effect .MOD file to be played one at a time. As of GB Studio 1.2.1, there is currently no way to mute a song's channel as the sound effect script plays.
+A: Yes, with limitations. View the next page of the documentation for more information. Playing sound effects will not interrupt the song being played by GBT Player.
 
 ## Tips
 
