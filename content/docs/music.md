@@ -305,7 +305,7 @@ You might wonder how's it going to sound in-game; well, it'll sound as close as 
 
 **Q: Can I use mp3/wav files?**
 
-A: No, but you can use .midi files. If you're looking for an easy way to add music to your game, you can ask the #collaborations channel of the GB Studio Discord or browse the GB Studio Community Assets]().
+A: No, but you can use .midi files. If you're looking for an easy way to add music to your game, you can ask the #collaborations channel of the GB Studio Discord or browse the [GB Studio Community Assets.](https://github.com/DeerTears/GB-Studio-Community-Assets)
 
 This has limited success, and there are easier options to get music in your game, such as the 
 
