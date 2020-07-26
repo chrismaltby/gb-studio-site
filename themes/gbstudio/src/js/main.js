@@ -73,7 +73,7 @@ function initSwiper() {
         slideShadows: false,
       },
       autoplay: {
-        delay: 3200
+        delay: 8000
       },
       pagination: {
         el: ".swiper-pagination",
