@@ -67,7 +67,6 @@ section.homepage-pocket .container {
 
   #pocket-device {
     margin-top: 0px;
-    width: 50%;
     max-width: 460px;
     transform: translateX(-74px);
   }

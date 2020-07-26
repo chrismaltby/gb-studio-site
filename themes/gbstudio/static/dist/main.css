@@ -1798,7 +1798,6 @@ section.homepage-pocket .container {
 
   #pocket-device {
     margin-top: 0px;
-    width: 50%;
     max-width: 460px;
     -webkit-transform: translateX(-74px);
             transform: translateX(-74px);
