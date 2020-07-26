@@ -37,11 +37,29 @@ footer a:hover svg {
   fill: #acb4c1;
 }
 
+footer .copyright-thirdparty {
+  display: block;
+  margin-top: 20px;
+  color: #8686a2;
+}
+
 @media (max-width: 700px) {
   footer .container {
     display: block;
   }
   footer .copyright {
+    display: inline-block;
     margin-bottom: 20px;
+  }
+  footer .copyright-thirdparty {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 20px;    
+  }
+  footer .dash {
+    display: none;
+  }
+  footer a.press-kit {
+    display: block;
   }
 }
