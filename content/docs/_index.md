@@ -6,6 +6,8 @@ draft: false
 
 # Documentation
 
+en | [de](/de/docs) | [es](/es/docs)
+
 - [Installation](installation)
 - [Getting Started](getting-started)
   - [Keyboard Shortcuts](keyboard-shortcuts)

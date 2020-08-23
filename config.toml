@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "GB Studio"
 theme = "gbstudio"
 
+[markup.goldmark.renderer]
+    unsafe= true
+
 [[menu.main]]
     name = "About"
     title = "About"
@@ -19,6 +22,60 @@ theme = "gbstudio"
     url = "https://chrismaltby.itch.io/gb-studio"
 
 [[menu.main]]
+    name = "GitHub"
+    title = "GitHub"
+    url = "https://github.com/chrismaltby/gb-studio"
+
+[params]
+    docs = "Docs"
+    next = "Next"
+
+[languages]
+  [languages.en]
+    contentDir = "content"
+    languageName = "English"
+    weight = 10
+  [languages.de]
+    contentDir = "content/l10n/german"
+    languageName = "German"
+    weight = 20
+    [languages.de.params]
+      docs = "Dokumentation"
+      next = "Nächster"
+  [languages.es]
+    contentDir = "content/l10n/spanish"
+    languageName = "Spanish"
+    weight = 20
+    [languages.es.params]
+      docs = "Documentation"
+      next = "Next"
+
+[[languages.de.menu.main]]
+    name = "Docs"
+    title = "Docs"
+    url = "/docs/"
+
+[[languages.de.menu.main]]
+    name = "Download"
+    title = "Download"
+    url = "https://chrismaltby.itch.io/gb-studio"
+
+[[languages.de.menu.main]]
+    name = "GitHub"
+    title = "GitHub"
+    url = "https://github.com/chrismaltby/gb-studio"
+
+[[languages.es.menu.main]]
+    name = "Docs"
+    title = "Docs"
+    url = "/docs/"
+
+[[languages.es.menu.main]]
+    name = "Download"
+    title = "Download"
+    url = "https://chrismaltby.itch.io/gb-studio"
+
+[[languages.es.menu.main]]
     name = "GitHub"
     title = "GitHub"
     url = "https://github.com/chrismaltby/gb-studio"
