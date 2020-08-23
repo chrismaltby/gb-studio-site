@@ -1,0 +1,51 @@
+.homepage-beta {
+  background-color: #000000;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  min-height: calc(100% - 320px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.homepage-beta .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.homepage-beta h2 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.homepage-beta .logo {
+  max-height: 30vh;
+}
+
+.homepage-beta a {
+  color: #fff;
+}
+
+.homepage-beta a {
+  color: #fff;
+}
+
+.homepage-beta .homepage-beta__button {
+  display: block;
+  background: #fff;
+  color: #000;
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  clear: both;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transform: scale(1);
+  transition: transform 0.1s ease-in-out;
+}

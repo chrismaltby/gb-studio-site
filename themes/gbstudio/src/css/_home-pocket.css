@@ -1,0 +1,141 @@
+section.homepage-pocket {
+  background-color: #9be197;
+  padding: 20px 0px;
+  clear: both;
+  color: #333;
+  height: 700px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+section.homepage-pocket .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.homepage-pocket__copy {
+  width: 100%;
+}
+
+.homepage-pocket__copy h2 {
+  color: #000;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.homepage-pocket__copy h3 {
+  color: #000;
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.homepage-pocket__copy a {
+  color: #000;
+  font-size: 1.5rem;
+}
+
+#pocket-device {
+  margin-top: 40px;
+  max-width: 350px;
+  transform: translateX(-15%);
+}
+
+@media (min-width: 700px) {
+  section.homepage-pocket {
+    height: 400px;
+    padding: 40px 0px;
+  }
+
+  section.homepage-pocket .container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+
+  .homepage-pocket__copy {
+    width: 50%;
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+  }
+
+  #pocket-device {
+    margin-top: 0px;
+    max-width: 320px;
+    transform: translateX(-54px);
+  }
+
+  .homepage-pocket__copy h2 {
+    color: #000;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  .homepage-pocket__copy h3 {
+    color: #000;
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  .homepage-pocket__copy a {
+    color: #000;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  section.homepage-pocket {
+    height: 400px;
+    padding: 40px 0px;
+  }
+
+  section.homepage-pocket .container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+
+  .homepage-pocket__copy {
+    width: 50%;
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+  }
+
+  #pocket-device {
+    margin-top: 0px;
+    max-width: 460px;
+    transform: translateX(-74px);
+  }
+
+  .homepage-pocket__copy h2 {
+    color: #000;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  .homepage-pocket__copy h3 {
+    color: #000;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  .homepage-pocket__copy a {
+    color: #000;
+    font-size: 2rem;
+  }
+}

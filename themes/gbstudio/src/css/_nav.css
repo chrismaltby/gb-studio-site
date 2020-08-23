@@ -106,6 +106,10 @@ nav ul li a:hover {
   display: none;
 }
 
+.build-develop header .title:before {
+  background-image: url(../../static/img/icon_beta.png);
+}
+
 @media (max-width: 1100px) {
   nav ul li a {
     padding: 0px 20px;
