@@ -9,7 +9,7 @@ nextTitle: "Actors"
 
 La posición inicial del jugador se indica en el Montaje de Escenas con el siguiente icono: <img src="/img/screenshots/player-start.png" style="height:12px"/>.
 
-Haciendo click en el espacio entre escenas, la barra lateral vuelve al Project Editor donde tendrás opciones para configurar la escena donde comienza el jugador, su posición, la dirección donde mira y la [spritesheet](/ docs/sprites).
+Haciendo click en el espacio entre escenas, la barra lateral vuelve al Project Editor donde tendrás opciones para configurar la escena donde comienza el jugador, su posición, la dirección donde mira y la [spritesheet](/docs/sprites).
 
 También puedes cambiar la posición inicial del jugador arrastrando el icono <img src="/img/screenshots/player-start.png" style="height:12px"/> incluso entre escenas.
 
