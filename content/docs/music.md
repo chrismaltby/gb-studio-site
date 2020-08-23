@@ -5,9 +5,30 @@ next: "/docs/sound-effects"
 nextTitle: "Sound Effects"
 ---
 
-# Introduction
+Music can be played in your game using the [Music: Play](https://www.gbstudio.dev/docs/scripting/#music-events) event in your *Actor*, *Trigger*, or *Scene* scripts.
 
-GB Studio is internally using [GBT Player](https://github.com/AntonioND/gbt-player), a driver which takes .MOD files and converts them to a format the Gameboy can understand. You can use software such as [**OpenMPT**](https://openmpt.org/) (Windows, though it works great with Wine) or [**MilkyTracker**](https://milkytracker.titandemo.org/) (works natively across multiple systems) to create .MOD tracker music. Of course, you can use other software that can edit .mod files like [**BassoonTracker**](https://www.stef.be/bassoontracker/) (web based), [**ProTracker**](https://16-bits.org/pt.php), and more.
+<img src="/img/events/music-play.png" class="event-preview" />
+
+Only one song can play at a time, and playing a new song while another song is playing will automatically stop the old song. [Music: Stop](https://www.gbstudio.dev/docs/scripting/#music-events) is best used for silence.
+
+<img src="/img/events/music-stop.png" class="event-preview" />
+
+# Requirements
+
+Add music to your game by including .mod files in your project's `assets/music` folder. GB Studio uses [GBT Player](https://github.com/AntonioND/gbt-player) which is a driver that takes .mod files and converts them to instructions for the Gameboy. GBT Player interprets .mod files differently than the Amiga computers that the .mod format was originally designed for, so every .mod file that GBT Player reads should be composed/arranged to be used with GBT Player.
+
+As an alternative to composing, there is a way to import .midi files to OpenMPT for playback in GBT Player. More information can be found under **Frequently Asked Questions**. You can also browse the [GB Studio Community Assets](https://github.com/DeerTears/GB-Studio-Community-Assets) to find free, GBT-compatible music under the MIT licence.
+
+To compose GBT-compatible .mod files, you can use software such as [**OpenMPT**](https://openmpt.org/) (for Windows or Linux using Wine), [**MilkyTracker**](https://milkytracker.titandemo.org/) (for Windows, Mac and Linux), [**ProTracker**](https://16-bits.org/pt.php), and [**BassoonTracker**](https://www.stef.be/bassoontracker/) (browser-based) to name a few. Any software that loads and exports .mod files can write files that are compatible with GBT Player.
+
+# Resources
+
+It is reccomended you read through your tracker's documentation to learn about your tracker.
+[OpenMPT's Documentation](https://wiki.openmpt.org/Tutorial:_Getting_Started)
+[MilkyTracker's Documentation](https://milkytracker.org/docs/MilkyTracker.html#shortcuts)
+[BassoonTracker's Documentation](https://www.stef.be/bassoontracker/docs/#about)
+
+Lastly, the [GB Studio Discord](https://discord.gg/v9xAJCJ) also has a dedicated #music-help channel and a #tutorials channel in case you get stuck.
 
 # Getting Started
 
