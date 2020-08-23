@@ -2,7 +2,7 @@
 title: "Edytor projektu"
 draft: false
 next: "/docs/scenes"
-nextTitle: "S"
+nextTitle: "Sceny"
 ---
 
 Domyślny wygląd _Edytora projektu_ z wyświetlonym trybem _Świat gry_ został przedstawiony poniżej. W tym miejscu można dodawać nowe sceny, nowych aktorów, rozruch, oraz budowanie skryptów dla zdarzeń, z którymi gracz będzie miał możliwość wchodzić w interakcje podczas gry.

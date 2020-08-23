@@ -12,7 +12,7 @@ Aktorami w programie nazywa się postacie jak i obiekty, które mogą być nanie
 Aby dodać aktora na scenę, to należy nacisnąć przycisk _**+**_ na pasku _narzędzi_, a następnie wybrać pozycję _aktor_ (lub przy pomocy skróty z klawiatury, nacisnąć klawisz **A**). Po tym, wystarczy wskazać scenę i miejsce dla aktora.
 <img src="/img/screenshots/add-actor.gif" style="width:300px"/>
 
-_Boczny pasek_ programu wyświetla ustawienia dla wybranego obiektu. Jeżeli aktor zostanie zaznaczony to _boczny pasek_ programy wyświetli ustawienia dla wybranego aktora. Przy pomocy ustawień można aktorowi nadać nazwę, zmienić jego położenie (co również można osiągnąć przy pomocy przeciągnięcia i upuszczenia), wybrać grafikę z arkusza [obiektów] (/ docs / sprites), początkowy kierunek, rodzaj ruchu oraz skrypt - odtwarzane polecenia, gdy gracz wejdzie w interakcję z wybranym zdarzeniem.
+_Boczny pasek_ programu wyświetla ustawienia dla wybranego obiektu. Jeżeli aktor zostanie zaznaczony to _boczny pasek_ programy wyświetli ustawienia dla wybranego aktora. Przy pomocy ustawień można aktorowi nadać nazwę, zmienić jego położenie (co również można osiągnąć przy pomocy przeciągnięcia i upuszczenia), wybrać grafikę z arkusza [obiektów](/docs/sprites), początkowy kierunek, rodzaj ruchu oraz skrypt - odtwarzane polecenia, gdy gracz wejdzie w interakcję z wybranym zdarzeniem.
 
 ## Rodzaj ruchu
 

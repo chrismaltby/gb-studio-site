@@ -49,6 +49,13 @@ theme = "gbstudio"
     [languages.es.params]
       docs = "Documentation"
       next = "Next"
+  [languages.pl]
+    contentDir = "content/l10n/polish"
+    languageName = "Polish"
+    weight = 20
+    [languages.pl.params]
+      docs = "Dokumentacja"
+      next = "Następnej"      
 
 [[languages.de.menu.main]]
     name = "Docs"

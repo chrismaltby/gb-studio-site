@@ -7,7 +7,7 @@ nextTitle: "Aktorzy"
 
 ## Pozycja startowa gracza
 
-Pozycja startowa gracza jest widoczna w trybie _Świat gry_ za pomocą ikony <img src = "/ img / screenshots / player-start.png" style = "height: 12px" />. 
+Pozycja startowa gracza jest widoczna w trybie _Świat gry_ za pomocą ikony <img src="/img/screenshots/player-start.png" style="height:12px" />. 
 
 Kliknięcie tła między scenami spowoduje wyświetlenie w _bocznym pasku_ informacji o projekcie, gdzie będzie możliwość ustawienia pozycji startowej gracza, obrót jak i grafikę gracza, którą można wybrać z arkusza dostępnych [obiektów](/docs/sprites).
 

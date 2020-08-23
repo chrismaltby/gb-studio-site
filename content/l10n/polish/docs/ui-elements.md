@@ -17,7 +17,7 @@ Edytuj ten plik, aby zmienić czcionkę gry podczas rozmowy z aktorami w grze.
 
 ## frame.png
 
-Silnik gry używa [9-plasterkowego skalowania / 9-slice scaling] (https://en.wikipedia.org/wiki/9-slice_scaling) poniższego obrazu, aby utworzyć ramkę dla pola tekstowego. Edycja tego obrazu pozwoli na zmianę ramki tekstu lub ustawić jednolity kolor dla tekstu.
+Silnik gry używa [9-plasterkowego skalowania / 9-slice scaling](https://en.wikipedia.org/wiki/9-slice_scaling) poniższego obrazu, aby utworzyć ramkę dla pola tekstowego. Edycja tego obrazu pozwoli na zmianę ramki tekstu lub ustawić jednolity kolor dla tekstu.
 
 <img src="/img/ui/frame.png" class="HelpSprite" style="width:72px; height:auto;"/>
 

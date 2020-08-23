@@ -15,4 +15,4 @@ https://github.com/chrismaltby/gb-studio/issues
 
 ## Pomoc
 
-Najlepszym miejscem do uzyskania pomocy, gdy GB Studio nie działa, jest albo [kanał Discord] (https://discord.gg/bxerKnc), albo na Reddit [/r/GBStudio](https://www.reddit.com/r/gbstudio).
+Najlepszym miejscem do uzyskania pomocy, gdy GB Studio nie działa, jest albo [kanał Discord](https://discord.gg/bxerKnc), albo na Reddit [/r/GBStudio](https://www.reddit.com/r/gbstudio).

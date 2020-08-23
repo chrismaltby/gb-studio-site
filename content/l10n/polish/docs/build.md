@@ -15,13 +15,13 @@ W _nawigatorze projektu_ przejdź do menu _zbuduj i uruchom_, spowoduje to wyśw
 
 ## Eksportuj jako ROM
 
-Kliknięcie w przycisk _eksportuj jako ROM_ i program rozpocznie proces utworzenia pliku ROM w folderze projektu `$ PROJECT_ROOT / build / rom / game.gb`. Plik ROM jest to plik gry, którą można otworzyć na dowolnym emulatorze obsługującym konsolę Nintendo Gam Boy, takim jak [OpenEMU] (https://openemu.org/) lub [KiGB] (http://kigb.emuunlim.com/downloads.htm). 
+Kliknięcie w przycisk _eksportuj jako ROM_ i program rozpocznie proces utworzenia pliku ROM w folderze projektu `$ PROJECT_ROOT / build / rom / game.gb`. Plik ROM jest to plik gry, którą można otworzyć na dowolnym emulatorze obsługującym konsolę Nintendo Gam Boy, takim jak [OpenEMU](https://openemu.org/) lub [KiGB](http://kigb.emuunlim.com/downloads.htm). 
 
 ## Eksportuj jako wersja Web
 
 Możesz przesłać ten folder na dowolny serwer sieciowy i przejść do pliku `index.html`, aby zagrać w grę w przeglądarce internetowej. Jeśli korzystasz z przeglądarki internetowej na telefonie komórkowym lub tablecie, gra będzie również zawierać dotykowe elementy sterujące.
 
-Jeśli spakujesz folder `build / web`, możesz przesłać go do [Itch.io] (https://itch.io) jako gra HTML. W takim przypadku zalecany rozmiar okienka ekranu to `480px` x `432px`.
+Jeśli spakujesz folder `build / web`, możesz przesłać go do [Itch.io](https://itch.io) jako gra HTML. W takim przypadku zalecany rozmiar okienka ekranu to `480px` x `432px`.
 
 ## Rozwiązywanie problemów
 

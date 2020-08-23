@@ -7,7 +7,7 @@ nextTitle: "Dźwięk"
 
 # Wprowadzenie
 
-GB Studio wewnętrznie korzysta z [GBT Player] (https://github.com/AntonioND/gbt-player), sterownika, który pobiera pliki .MOD i konwertuje je na format zrozumiały dla Gameboy. Można użyć takiego oprogramowania jak [**OpenMPT**](https://openmpt.org/) (głównie dla systemu Windows, ale działa równie dobrze przy pomocy Wine na innych systemach) lub [**MilkyTracker**](https://milkytracker.titandemo.org/)(działa natywnie na wielu systemach), w celu utworzenia muzyki trackera .MOD. Oczywiście można korzystać z innego oprogramowania, które jest w stanie edytować pliki .MOD, takie jak [**BassoonTracker**](https://www.stef.be/bassoontracker/) (program przeglądarkowy), [**ProTracker**](https://16-bits.org/pt.php), oraz wiele innych.
+GB Studio wewnętrznie korzysta z [GBT Player](https://github.com/AntonioND/gbt-player), sterownika, który pobiera pliki .MOD i konwertuje je na format zrozumiały dla Gameboy. Można użyć takiego oprogramowania jak [**OpenMPT**](https://openmpt.org/) (głównie dla systemu Windows, ale działa równie dobrze przy pomocy Wine na innych systemach) lub [**MilkyTracker**](https://milkytracker.titandemo.org/)(działa natywnie na wielu systemach), w celu utworzenia muzyki trackera .MOD. Oczywiście można korzystać z innego oprogramowania, które jest w stanie edytować pliki .MOD, takie jak [**BassoonTracker**](https://www.stef.be/bassoontracker/) (program przeglądarkowy), [**ProTracker**](https://16-bits.org/pt.php), oraz wiele innych.
 
 # Rozpoczęcie pracy, pierwsze kroki
 
@@ -341,9 +341,9 @@ A: Jeszcze nie. Jedynym sposobem, w jaki możesz odtwarzać efekty dźwiękowe, 
 ## Porady
 
 - **Pamiętaj, aby często zapisywać, a także tworzyć kopie zapasowe plików.** Jest to ważne we wszystkim, co robisz i warto o tym wspomnieć.
-- [**jeśli utkniesz, poproś o pomoc na serwerze Discord, w `# music-help`. **] (https://discord.gg/v9xAJCJ) Zwykle jest kilka osób, które chętnie pomogą w większości przypadków.
+- [**jeśli utkniesz, poproś o pomoc na serwerze Discord, w `# music-help`. **](https://discord.gg/v9xAJCJ) Zwykle jest kilka osób, które chętnie pomogą w większości przypadków.
 - **Często wypróbuj swoją muzykę w swojej grze. ** Rzeczy nie brzmią 1: 1, a wbudowany podgląd po prostu odtwarza plik .mod zamiast budować muzykę i wyświetlać jej podgląd.
 - **Trzymaj się prostoty!** Nie wskakuj do tego, próbując naśladować to, co zrobiło kilku artystów z LSDj lub jakimkolwiek innym narzędziem, po prostu utkniesz.
 - **Nie bój się porażki. ** Rozumiem, że to rodzaj nieodpowiedniej wskazówki, ale to ważne. Twoja pierwsza piosenka nie będzie dobra i to jest w porządku. Oczywiście, nie uda ci się, ale zdobędziesz także wiedzę na temat tego, co mogłeś zrobić źle lub jak chcesz kontynuować swoją przygodę.
-- **OpenMPT ma instrukcję, która pomoże Ci zacząć. ** [Oto link] (https://wiki.openmpt.org/Tutorial:_Getting_Started), przeczytaj, jeśli utkniesz (lub po prostu poproś o pomoc)
-- [**Rzuć okiem, albo przeczytaj dokumentację odtwarzacza GBT. **] (https://github.com/AntonioND/gbt-player)
+- **OpenMPT ma instrukcję, która pomoże Ci zacząć. ** [Oto link](https://wiki.openmpt.org/Tutorial:_Getting_Started), przeczytaj, jeśli utkniesz (lub po prostu poproś o pomoc)
+- [**Rzuć okiem, albo przeczytaj dokumentację odtwarzacza GBT. **](https://github.com/AntonioND/gbt-player)
