@@ -9,10 +9,6 @@ Music can be played in your game using the [Music: Play](https://www.gbstudio.de
 
 <img src="/img/events/music-play.png" class="event-preview" />
 
-Only one song can play at a time, and playing a new song while another song is playing will automatically stop the old song. [Music: Stop](https://www.gbstudio.dev/docs/scripting/#music-events) is best used for silence.
-
-<img src="/img/events/music-stop.png" class="event-preview" />
-
 # Requirements
 
 Add music to your game by including .mod files in your project's `assets/music` folder. GB Studio uses [GBT Player](https://github.com/AntonioND/gbt-player) which is a driver that takes .mod files and converts them to instructions for the Gameboy. GBT Player interprets .mod files differently than the Amiga computers that the .mod format was originally designed for, so every .mod file that GBT Player reads should be composed/arranged to be used with GBT Player.
