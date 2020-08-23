@@ -1,18 +1,18 @@
 ---
-title: "DŸwiêk"
+title: "DÅºwiÄ™k"
 draft: false
 next: "/docs/build"
-nextTitle: "Buduj swoj¹ grê"
+nextTitle: "Buduj swojÄ… grÄ™"
 ---
 
-<span class="new">Nowoœæ od wer. 1.2.0</span>
+<span class="new">NowoÅ›Ä‡ od wer. 1.2.0</span>
 
-Efekty dŸwiêkowe mog¹ zostaæ dodane do gry przy pomocy polecenia [DŸwiêk: odegraj efekt] (/ docs / scripting # sound-events) w skryptach dla _aktora_, _rozruchu_ lub _sceny_.
+Efekty dÅºwiÄ™kowe mogÄ… zostaÄ‡ dodane do gry przy pomocy polecenia [DÅºwiÄ™k: odegraj efekt] (/ docs / scripting # sound-events) w skryptach dla _aktora_, _rozruchu_ lub _sceny_.
 
-Mo¿liwe jest wybranie odtworzenie dŸwiêku o okreœlonej wysokoœci, tonu o okreœlonej czêstotliwoœci lub dŸwiêku awarii (trzask).
+MoÅ¼liwe jest wybranie odtworzenie dÅºwiÄ™ku o okreÅ›lonej wysokoÅ›ci, tonu o okreÅ›lonej czÄ™stotliwoÅ›ci lub dÅºwiÄ™ku awarii (trzask).
 
 <img src="/img/events/sound-beep.png" class="event-preview" />
 
-Korzystaj¹c z opcji [W³asne zdarzenie] (/ docs / custom-events), mo¿na ³¹czyæ wiele efektów w jedno zdarzenie wielokrotnego u¿ytku, aby tworzyæ zaawansowany dŸwiêk.
+KorzystajÄ…c z opcji [WÅ‚asne zdarzenie] (/ docs / custom-events), moÅ¼na Å‚Ä…czyÄ‡ wiele efektÃ³w w jedno zdarzenie wielokrotnego uÅ¼ytku, aby tworzyÄ‡ zaawansowany dÅºwiÄ™k.
 
 <img src="/img/screenshots/custom-event-jingle.png" class="event-preview" />

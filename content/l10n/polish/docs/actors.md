@@ -5,45 +5,45 @@ next: "/docs/triggers"
 nextTitle: "Rozruchy"
 ---
 
-Aktorami w programie nazywa siê postacie jak i obiekty, które mog¹ byæ naniesione na scenê i z którymi gracz mo¿e wchodziæ w interakcje.
+Aktorami w programie nazywa siÄ™ postacie jak i obiekty, ktÃ³re mogÄ… byÄ‡ naniesione na scenÄ™ i z ktÃ³rymi gracz moÅ¼e wchodziÄ‡ w interakcje.
 
 ## Dodanie aktora
 
-Aby dodaæ aktora na scenê, to nale¿y nacisn¹æ przycisk _**+**_ na pasku _narzêdzi_, a nastêpnie wybraæ pozycjê _aktor_ (lub przy pomocy skróty z klawiatury, nacisn¹æ klawisz **A**). Po tym, wystarczy wskazaæ scenê i miejsce dla aktora.
+Aby dodaÄ‡ aktora na scenÄ™, to naleÅ¼y nacisnÄ…Ä‡ przycisk _**+**_ na pasku _narzÄ™dzi_, a nastÄ™pnie wybraÄ‡ pozycjÄ™ _aktor_ (lub przy pomocy skrÃ³ty z klawiatury, nacisnÄ…Ä‡ klawisz **A**). Po tym, wystarczy wskazaÄ‡ scenÄ™ i miejsce dla aktora.
 <img src="/img/screenshots/add-actor.gif" style="width:300px"/>
 
-_Boczny pasek_ programu wyœwietla ustawienia dla wybranego obiektu. Je¿eli aktor zostanie zaznaczony to _boczny pasek_ programy wyœwietli ustawienia dla wybranego aktora. Przy pomocy ustawieñ mo¿na aktorowi nadaæ nazwê, zmieniæ jego po³o¿enie (co równie¿ mo¿na osi¹gn¹æ przy pomocy przeci¹gniêcia i upuszczenia), wybraæ grafikê z arkusza [obiektów] (/ docs / sprites), pocz¹tkowy kierunek, rodzaj ruchu oraz skrypt - odtwarzane polecenia, gdy gracz wejdzie w interakcjê z wybranym zdarzeniem.
+_Boczny pasek_ programu wyÅ›wietla ustawienia dla wybranego obiektu. JeÅ¼eli aktor zostanie zaznaczony to _boczny pasek_ programy wyÅ›wietli ustawienia dla wybranego aktora. Przy pomocy ustawieÅ„ moÅ¼na aktorowi nadaÄ‡ nazwÄ™, zmieniÄ‡ jego poÅ‚oÅ¼enie (co rÃ³wnieÅ¼ moÅ¼na osiÄ…gnÄ…Ä‡ przy pomocy przeciÄ…gniÄ™cia i upuszczenia), wybraÄ‡ grafikÄ™ z arkusza [obiektÃ³w] (/ docs / sprites), poczÄ…tkowy kierunek, rodzaj ruchu oraz skrypt - odtwarzane polecenia, gdy gracz wejdzie w interakcjÄ™ z wybranym zdarzeniem.
 
 ## Rodzaj ruchu
 
-Istnieje kilka ró¿nych rodzajów ruchów do wyboru. Rodzaj ruchu nale¿y wybraæ w zale¿noœci od tego jak dane zdarzenie (aktor) ma siê zachowywaæ, gdy gracz chodzi po scenie i wchodzi w interakcjê z zdarzeniem.
+Istnieje kilka rÃ³Å¼nych rodzajÃ³w ruchÃ³w do wyboru. Rodzaj ruchu naleÅ¼y wybraÄ‡ w zaleÅ¼noÅ›ci od tego jak dane zdarzenie (aktor) ma siÄ™ zachowywaÄ‡, gdy gracz chodzi po scenie i wchodzi w interakcjÄ™ z zdarzeniem.
 
-- **Brak** - Zdarzenie (aktor) wyœwietli pojedyncz¹ klatkê z arkusza graficznego.  
-  Je¿eli arkusz obiektów zawiera wiêcej ni¿ jedn¹ klatkê, to u¿ytkownik bêdzie mia³ mo¿liwoœæ wyboru, któr¹ klatkê program ma wyœwietliæ. Istnieje mo¿liwoœæ póŸniejszej modyfikacji za pomoc¹ polecenia _Aktor: klatka animacji_. Arkusz obiektów z wieloma klatkami umo¿liwia tak¿e animacjê aktora poprzez cykliczne odtwarzanie ka¿dej klatki z okreœlon¹ prêdkoœci¹, któr¹ mo¿na modyfikowaæ za pomoc¹ polecenia _Aktor: szybkoœæ animacji_.\
+- **Brak** - Zdarzenie (aktor) wyÅ›wietli pojedynczÄ… klatkÄ™ z arkusza graficznego.  
+  JeÅ¼eli arkusz obiektÃ³w zawiera wiÄ™cej niÅ¼ jednÄ… klatkÄ™, to uÅ¼ytkownik bÄ™dzie miaÅ‚ moÅ¼liwoÅ›Ä‡ wyboru, ktÃ³rÄ… klatkÄ™ program ma wyÅ›wietliÄ‡. Istnieje moÅ¼liwoÅ›Ä‡ pÃ³Åºniejszej modyfikacji za pomocÄ… polecenia _Aktor: klatka animacji_. Arkusz obiektÃ³w z wieloma klatkami umoÅ¼liwia takÅ¼e animacjÄ™ aktora poprzez cykliczne odtwarzanie kaÅ¼dej klatki z okreÅ›lonÄ… prÄ™dkoÅ›ciÄ…, ktÃ³rÄ… moÅ¼na modyfikowaÄ‡ za pomocÄ… polecenia _Aktor: szybkoÅ›Ä‡ animacji_.\
   \
-  Zdarzenie bêdzie zwrócone tylko w pocz¹tkowym, ustalonym kierunku (chyba, ¿e kierunek zostanie póŸniej zmodyfikowany za pomoc¹ skryptu). Je¿eli gracz wejdzie w interakcjê z tym zdarzeniem, to ono nie zmieni kierunku. Opcja ta jest przydatna dla np. Tabliczek albo innych nieruchomych przedmiotów.
+  Zdarzenie bÄ™dzie zwrÃ³cone tylko w poczÄ…tkowym, ustalonym kierunku (chyba, Å¼e kierunek zostanie pÃ³Åºniej zmodyfikowany za pomocÄ… skryptu). JeÅ¼eli gracz wejdzie w interakcjÄ™ z tym zdarzeniem, to ono nie zmieni kierunku. Opcja ta jest przydatna dla np. Tabliczek albo innych nieruchomych przedmiotÃ³w.
 
-- **Obrót twarz¹** - Zdarzenie jest ustawione w pocz¹tkowym kierunku, natomiast w momencie gdy gracz wejdzie w interakcjê z aktorem, zdarzenie obróci siê w stronê gracza, przed odtworzeniem skryptu. Funkcja ta sprawdza siê dla prostych postaci (np. NPC), które maj¹ byæ bardziej wra¿liwe na dzia³ania gracza. 
+- **ObrÃ³t twarzÄ…** - Zdarzenie jest ustawione w poczÄ…tkowym kierunku, natomiast w momencie gdy gracz wejdzie w interakcjÄ™ z aktorem, zdarzenie obrÃ³ci siÄ™ w stronÄ™ gracza, przed odtworzeniem skryptu. Funkcja ta sprawdza siÄ™ dla prostych postaci (np. NPC), ktÃ³re majÄ… byÄ‡ bardziej wraÅ¼liwe na dziaÅ‚ania gracza. 
 
-- **Losowy obrót** - Zdarzenie jest ustawione w pocz¹tkowym kierunku, ale w ustalonych odstêpach czasu zdarzenie owy kierunek zmienia wykonuj¹c obrót (oczywiœcie w losowym kierunku). Funkcja ta sprawdza siê postaci, które rozgl¹daj¹ siê po otoczeniu.
+- **Losowy obrÃ³t** - Zdarzenie jest ustawione w poczÄ…tkowym kierunku, ale w ustalonych odstÄ™pach czasu zdarzenie owy kierunek zmienia wykonujÄ…c obrÃ³t (oczywiÅ›cie w losowym kierunku). Funkcja ta sprawdza siÄ™ postaci, ktÃ³re rozglÄ…dajÄ… siÄ™ po otoczeniu.
 
-- **Losowy krok** - Zdarzenie losowo zmienia kierunek i porusza siê po scenie w ustalonych odstêpach czasu. Funkcja ta jest przydatna dla postaci, które przeszukuj¹ dany obszar. Uwaga: aktorzy, którzy posiadaj¹ _losowy krok_ s¹ w stanie zablokowaæ ruch gracza, zatem nie zaleca siê stosowania tego rodzaju ruchu w ciasnych miejscach, gdzie gracz mo¿e utkn¹æ, czekaj¹c, a¿ aktor zejdzie z drogi.
+- **Losowy krok** - Zdarzenie losowo zmienia kierunek i porusza siÄ™ po scenie w ustalonych odstÄ™pach czasu. Funkcja ta jest przydatna dla postaci, ktÃ³re przeszukujÄ… dany obszar. Uwaga: aktorzy, ktÃ³rzy posiadajÄ… _losowy krok_ sÄ… w stanie zablokowaÄ‡ ruch gracza, zatem nie zaleca siÄ™ stosowania tego rodzaju ruchu w ciasnych miejscach, gdzie gracz moÅ¼e utknÄ…Ä‡, czekajÄ…c, aÅ¼ aktor zejdzie z drogi.
 
-_Uwaga_ Je¿eli dla zdarzenie zastosowano brak ruchu (czyli z arkusza obiektów bêdzie u¿ywa³o tylko jedn¹ klatkê animacji), wówczas jedynym dostêpnym rodzajem ruchu bêdzie jedna statyczna klatka i nie zostan¹ wyœwietlone ustawienia do wyboru rodzaju ruchu i kierunku pocz¹tkowego. 
+_Uwaga_ JeÅ¼eli dla zdarzenie zastosowano brak ruchu (czyli z arkusza obiektÃ³w bÄ™dzie uÅ¼ywaÅ‚o tylko jednÄ… klatkÄ™ animacji), wÃ³wczas jedynym dostÄ™pnym rodzajem ruchu bÄ™dzie jedna statyczna klatka i nie zostanÄ… wyÅ›wietlone ustawienia do wyboru rodzaju ruchu i kierunku poczÄ…tkowego. 
 
 ## Limit klatek
 
-Ze wzglêdu na ograniczenia sprzêtowe, aktorom w ka¿dej scenie mo¿na przypisaæ **tylko 25 unikatowych klatek** animacji. Gdzie tylko jest mo¿liwe, zaleca siê stosowanie braku ruchu lub nie animowanych obiektów, aby zmniejszyæ liczbê u¿ywanych klatek. Innym sposobem na zmniejszenie liczby klatek jest ponowne u¿ycie tego samego obiektu dla wielu aktorów na scenie. Ponowne u¿ycie tej samej grafiki z arkusza obiektów nie bêdzie wliczane do ca³kowitej liczby klatek sceny.
+Ze wzglÄ™du na ograniczenia sprzÄ™towe, aktorom w kaÅ¼dej scenie moÅ¼na przypisaÄ‡ **tylko 25 unikatowych klatek** animacji. Gdzie tylko jest moÅ¼liwe, zaleca siÄ™ stosowanie braku ruchu lub nie animowanych obiektÃ³w, aby zmniejszyÄ‡ liczbÄ™ uÅ¼ywanych klatek. Innym sposobem na zmniejszenie liczby klatek jest ponowne uÅ¼ycie tego samego obiektu dla wielu aktorÃ³w na scenie. Ponowne uÅ¼ycie tej samej grafiki z arkusza obiektÃ³w nie bÄ™dzie wliczane do caÅ‚kowitej liczby klatek sceny.
 
 ## Skryptowanie
 
-Dla ka¿dego aktora istnieje mo¿liwoœæ zdefiniowania dwóch skryptów do wykonania: 
-_Skrypt (naciœniêcie przycisku)_ oraz _Skrypt (auto start)_. Program umo¿liwia prze³¹czenie miêdzy skryptami przy pomocy zak³adki. Kiedy aktor jest zaznaczony i na bocznym pasku zostanie wyœwietlone ustawienia aktora, to wystarczy zaznaczyæ jedn¹ z dostêpnych zak³adek skryptu (_skrypt (naciœniêcie przycisku)_ lub _skrypt (auto start)_).
+Dla kaÅ¼dego aktora istnieje moÅ¼liwoÅ›Ä‡ zdefiniowania dwÃ³ch skryptÃ³w do wykonania: 
+_Skrypt (naciÅ›niÄ™cie przycisku)_ oraz _Skrypt (auto start)_. Program umoÅ¼liwia przeÅ‚Ä…czenie miÄ™dzy skryptami przy pomocy zakÅ‚adki. Kiedy aktor jest zaznaczony i na bocznym pasku zostanie wyÅ›wietlone ustawienia aktora, to wystarczy zaznaczyÄ‡ jednÄ… z dostÄ™pnych zakÅ‚adek skryptu (_skrypt (naciÅ›niÄ™cie przycisku)_ lub _skrypt (auto start)_).
 
-Skrypt typu _Skrypt (naciœniêcie przycisku)_ zostanie uruchomiony w momencie, gdy gracz bêdzie obok danego zdarzenia i zostanie naciœniêty przycisk _A_.
+Skrypt typu _Skrypt (naciÅ›niÄ™cie przycisku)_ zostanie uruchomiony w momencie, gdy gracz bÄ™dzie obok danego zdarzenia i zostanie naciÅ›niÄ™ty przycisk _A_.
 
-Skrypt typu _Skrypt (auto start)_ zostanie uruchomiony automatycznie jak tylko scena zostanie wczytana. Skrypty _skrypt (auto start)_ aktorów posiadaj¹ pierwszeñstwo ni¿eli skrypty _skrypt (auto start)_ sceny.
+Skrypt typu _Skrypt (auto start)_ zostanie uruchomiony automatycznie jak tylko scena zostanie wczytana. Skrypty _skrypt (auto start)_ aktorÃ³w posiadajÄ… pierwszeÅ„stwo niÅ¼eli skrypty _skrypt (auto start)_ sceny.
 
-Kiedy zdarzenie jest zaznaczone to na _bocznym pasku_ zostaj¹ wyœwietlone ustawienia dla tego zdarzenia. Wystarczy wybraæ przycisk _Dodaj polecenie_, aby otworzyæ menu z dostêpn¹ list¹ poleceñ, za pomoc¹ których mo¿na stworzyæ w³asny skrypt dla zdarzenia.
+Kiedy zdarzenie jest zaznaczone to na _bocznym pasku_ zostajÄ… wyÅ›wietlone ustawienia dla tego zdarzenia. Wystarczy wybraÄ‡ przycisk _Dodaj polecenie_, aby otworzyÄ‡ menu z dostÄ™pnÄ… listÄ… poleceÅ„, za pomocÄ… ktÃ³rych moÅ¼na stworzyÄ‡ wÅ‚asny skrypt dla zdarzenia.
 
-Wiêcej informacji na temat skryptowania mo¿na znaleŸæ w temacie [Skryptowanie (polecenia zdarzenia)](/docs/scripting).
+WiÄ™cej informacji na temat skryptowania moÅ¼na znaleÅºÄ‡ w temacie [Skryptowanie (polecenia zdarzenia)](/docs/scripting).

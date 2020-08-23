@@ -1,15 +1,15 @@
 ---
-title: "T³a"
+title: "TÅ‚a"
 draft: false
 next: "/docs/ui-elements"
 nextTitle: "Elementy interfejsu"
 ---
 
-Ka¿da scena wymaga obrazu t³a, który okreœla jej wygl¹d. Mo¿na dodaæ t³o do gry, poprzez umieszczenie pliku t³a (PNG) do folderu projektu `assets/backgrounds`.
+KaÅ¼da scena wymaga obrazu tÅ‚a, ktÃ³ry okreÅ›la jej wyglÄ…d. MoÅ¼na dodaÄ‡ tÅ‚o do gry, poprzez umieszczenie pliku tÅ‚a (PNG) do folderu projektu `assets/backgrounds`.
 
 ## Wymagania
 
-Pliki t³a, musz¹ byæ w formacie PNG oraz musz¹ zawieraæ nastêpuj¹ce cztery kolory:
+Pliki tÅ‚a, muszÄ… byÄ‡ w formacie PNG oraz muszÄ… zawieraÄ‡ nastÄ™pujÄ…ce cztery kolory:
 
 <div><div class="Swatch" style="background:#071821;"></div><div class="SwatchLabel">#071821</div></div>
 <div><div class="Swatch" style="background:#306850;"></div><div class="SwatchLabel">#306850</div></div>
@@ -17,13 +17,13 @@ Pliki t³a, musz¹ byæ w formacie PNG oraz musz¹ zawieraæ nastêpuj¹ce cztery kolor
 <div><div class="Swatch" style="background:#e0f8cf;"></div><div class="SwatchLabel">#e0f8cf</div></div>
 
 <div class="InfoBox">
-Pobierz paletê kolorów GB Studio dla:<br />
+Pobierz paletÄ™ kolorÃ³w GB Studio dla:<br />
 <a href="/assets/swatches/gb-studio-photoshop.aco">Adobe Photoshop</a><br />
 <a href="/assets/swatches/gb-studio-aseprite.aseprite">Aseprite</a>
 </div>
 
-Kolory, które nie s¹ jednym z powy¿szych kodów szesnastkowych, zostan¹ dopasowane do najbli¿szego koloru. W przeciwieñstwie do obiektów, koloru `# 65ff00` nie mo¿na u¿ywaæ na tle.
+Kolory, ktÃ³re nie sÄ… jednym z powyÅ¼szych kodÃ³w szesnastkowych, zostanÄ… dopasowane do najbliÅ¼szego koloru. W przeciwieÅ„stwie do obiektÃ³w, koloru `# 65ff00` nie moÅ¼na uÅ¼ywaÄ‡ na tle.
 
-T³a s¹ podzielone na zestawy kafelków `8px` x `8px`, wiêc ca³kowity rozmiar obrazu musi byæ wielokrotnoœci¹ `8px` zarówno pod wzglêdem szerokoœci, jak i wysokoœci. T³o ma minimalny rozmiar `160px` x `144px` (rozmiar ekranu), a obecnie t³o nie mo¿e byæ wiêksze ni¿ `256px` x `256px`.
+TÅ‚a sÄ… podzielone na zestawy kafelkÃ³w `8px` x `8px`, wiÄ™c caÅ‚kowity rozmiar obrazu musi byÄ‡ wielokrotnoÅ›ciÄ… `8px` zarÃ³wno pod wzglÄ™dem szerokoÅ›ci, jak i wysokoÅ›ci. TÅ‚o ma minimalny rozmiar `160px` x `144px` (rozmiar ekranu), a obecnie tÅ‚o nie moÅ¼e byÄ‡ wiÄ™ksze niÅ¼ `256px` x `256px`.
 
-Obraz mo¿e zawieraæ jednoczeœnie nie wiêcej ni¿ ** 192 ** unikalnych kafelków `8px` x `8px` ze wzglêdu na ograniczenia pamiêci. Oznacza to, ¿e nawet przy u¿yciu najmniejszego mo¿liwego rozmiaru t³a musisz powtórzyæ oko³o po³owy swoich p³ytek. Tam, gdzie to mo¿liwe, powtarzaj kafelki miêdzy obrazami, poniewa¿ zostan¹ one zgrupowane, oszczêdzaj¹c ca³kowity rozmiar gry. Zaleca siê u¿ycie edytora map kafelków, takiego jak [Tiled](https://www.mapeditor.org/), aby zapewniæ zgodnoœæ t³a z siatk¹ pikseli.
+Obraz moÅ¼e zawieraÄ‡ jednoczeÅ›nie nie wiÄ™cej niÅ¼ ** 192 ** unikalnych kafelkÃ³w `8px` x `8px` ze wzglÄ™du na ograniczenia pamiÄ™ci. Oznacza to, Å¼e nawet przy uÅ¼yciu najmniejszego moÅ¼liwego rozmiaru tÅ‚a musisz powtÃ³rzyÄ‡ okoÅ‚o poÅ‚owy swoich pÅ‚ytek. Tam, gdzie to moÅ¼liwe, powtarzaj kafelki miÄ™dzy obrazami, poniewaÅ¼ zostanÄ… one zgrupowane, oszczÄ™dzajÄ…c caÅ‚kowity rozmiar gry. Zaleca siÄ™ uÅ¼ycie edytora map kafelkÃ³w, takiego jak [Tiled](https://www.mapeditor.org/), aby zapewniÄ‡ zgodnoÅ›Ä‡ tÅ‚a z siatkÄ… pikseli.

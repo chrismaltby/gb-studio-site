@@ -5,20 +5,20 @@ next: "/docs/player"
 nextTitle: "Gracz"
 ---
 
-Scena to pojedynczy ekran twojej gry (mo¿na powiedzieæ plansza, albo mapa wyœwietlana na ekranie), która mo¿e sk³adaæ siê z wielu [aktorów](/docs/actors) jak i [rozruchów](/docs/triggers). W zasadzie, gra sk³ada siê z uk³adu wielu scen, które s¹ ze sob¹ po³¹czone przy pomocy _rozruchów_ zawieraj¹cymi polecenia zdarzenia _zmieñ scenê (teleport)_.
+Scena to pojedynczy ekran twojej gry (moÅ¼na powiedzieÄ‡ plansza, albo mapa wyÅ›wietlana na ekranie), ktÃ³ra moÅ¼e skÅ‚adaÄ‡ siÄ™ z wielu [aktorÃ³w](/docs/actors) jak i [rozruchÃ³w](/docs/triggers). W zasadzie, gra skÅ‚ada siÄ™ z ukÅ‚adu wielu scen, ktÃ³re sÄ… ze sobÄ… poÅ‚Ä…czone przy pomocy _rozruchÃ³w_ zawierajÄ…cymi polecenia zdarzenia _zmieÅ„ scenÄ™ (teleport)_.
 
 ## Dodanie nowej sceny
 
-Aby dodaæ now¹ scenê do uk³adu scen, to nale¿y nacisn¹æ przycisk _ ** + **_ w _narzêdziach_ a nastêpnie wybranie opcji _Scena_ z menu (mo¿na pos³u¿yæ siê skrótem z klawiatury, przycisk ** S **). W dowolne puste miejsce na _obszarze roboczym projektu_ (_Project Viewport_), nale¿y klikn¹æ aby nowa scena zosta³a wyœwietlona.
+Aby dodaÄ‡ nowÄ… scenÄ™ do ukÅ‚adu scen, to naleÅ¼y nacisnÄ…Ä‡ przycisk _ ** + **_ w _narzÄ™dziach_ a nastÄ™pnie wybranie opcji _Scena_ z menu (moÅ¼na posÅ‚uÅ¼yÄ‡ siÄ™ skrÃ³tem z klawiatury, przycisk ** S **). W dowolne puste miejsce na _obszarze roboczym projektu_ (_Project Viewport_), naleÅ¼y kliknÄ…Ä‡ aby nowa scena zostaÅ‚a wyÅ›wietlona.
 
 <img src="/img/screenshots/add-scene.gif" style="width:300px"/>
 
-W momencie kiedy nowa scena zosta³a dodana, na _bocznym pasku_ (_Editor Sidebar_) mo¿na zmodyfikowaæ informacje, takie jak nazwa, albo jakie t³o z projektu ma zostaæ zastosowane dla wybranej sceny. Wiêcej informacji na temat dodawania obrazów t³a mo¿na znaleŸæ w dokumentacji w temacie [t³a](/docs/backgrounds).
+W momencie kiedy nowa scena zostaÅ‚a dodana, na _bocznym pasku_ (_Editor Sidebar_) moÅ¼na zmodyfikowaÄ‡ informacje, takie jak nazwa, albo jakie tÅ‚o z projektu ma zostaÄ‡ zastosowane dla wybranej sceny. WiÄ™cej informacji na temat dodawania obrazÃ³w tÅ‚a moÅ¼na znaleÅºÄ‡ w dokumentacji w temacie [tÅ‚a](/docs/backgrounds).
 
 ## Skryptowanie
 
-Sceny posiadaj¹ zdarzenia _skrypt (auto start)_, które mog¹ zostaæ u¿yte do uruchamiania zdarzeñ, gdy tylko scena zostanie wyœwietlona na ekranie. Po wybraniu sceny, na _bocznym pasku_ wystarczy zaznaczyæ zak³adkê _skrypt (auto start)_, a nastêpnie wybraæ przycisk _Dodaj polecenie_, aby otworzyæ menu zdarzeñ i rozpocz¹æ tworzenie skryptu.  
+Sceny posiadajÄ… zdarzenia _skrypt (auto start)_, ktÃ³re mogÄ… zostaÄ‡ uÅ¼yte do uruchamiania zdarzeÅ„, gdy tylko scena zostanie wyÅ›wietlona na ekranie. Po wybraniu sceny, na _bocznym pasku_ wystarczy zaznaczyÄ‡ zakÅ‚adkÄ™ _skrypt (auto start)_, a nastÄ™pnie wybraÄ‡ przycisk _Dodaj polecenie_, aby otworzyÄ‡ menu zdarzeÅ„ i rozpoczÄ…Ä‡ tworzenie skryptu.  
 
-Je¿eli jakiekolwiek zdarzenie (Aktor) posiada wprowadzony skrypt _skrypt (auto start)_, to program sugeruje siê zasad¹: Aktorzy posiadaj¹ pierwszeñstwo uruchomienia auto start. Gdy skrypt Aktorów dobiegnie koñca, wtenczas program uruchomi skrypt auto start od sceny. 
+JeÅ¼eli jakiekolwiek zdarzenie (Aktor) posiada wprowadzony skrypt _skrypt (auto start)_, to program sugeruje siÄ™ zasadÄ…: Aktorzy posiadajÄ… pierwszeÅ„stwo uruchomienia auto start. Gdy skrypt AktorÃ³w dobiegnie koÅ„ca, wtenczas program uruchomi skrypt auto start od sceny. 
 
-Po wiêcej informacji zajrzyj do dokumentacji, dzia³u [Skryptowanie (polecenia zdarzenia)](/docs/scripting).
+Po wiÄ™cej informacji zajrzyj do dokumentacji, dziaÅ‚u [Skryptowanie (polecenia zdarzenia)](/docs/scripting).

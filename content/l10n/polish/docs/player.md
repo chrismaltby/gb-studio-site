@@ -7,15 +7,15 @@ nextTitle: "Aktorzy"
 
 ## Pozycja startowa gracza
 
-Pozycja startowa gracza jest widoczna w trybie _Œwiat gry_ za pomoc¹ ikony <img src = "/ img / screenshots / player-start.png" style = "height: 12px" />. 
+Pozycja startowa gracza jest widoczna w trybie _Åšwiat gry_ za pomocÄ… ikony <img src = "/ img / screenshots / player-start.png" style = "height: 12px" />. 
 
-Klikniêcie t³a miêdzy scenami spowoduje wyœwietlenie w _bocznym pasku_ informacji o projekcie, gdzie bêdzie mo¿liwoœæ ustawienia pozycji startowej gracza, obrót jak i grafikê gracza, któr¹ mo¿na wybraæ z arkusza dostêpnych [obiektów](/docs/sprites).
+KlikniÄ™cie tÅ‚a miÄ™dzy scenami spowoduje wyÅ›wietlenie w _bocznym pasku_ informacji o projekcie, gdzie bÄ™dzie moÅ¼liwoÅ›Ä‡ ustawienia pozycji startowej gracza, obrÃ³t jak i grafikÄ™ gracza, ktÃ³rÄ… moÅ¼na wybraÄ‡ z arkusza dostÄ™pnych [obiektÃ³w](/docs/sprites).
 
-Mo¿na zmieniæ pozycjê startow¹ gracza, poprzez z³apanie i przeci¹gniêcie ikony <img src="/img/screenshots/player-start.png" style="height:12px"/> w odpowiednie (nowe) miejsce. Ikonê pozycji startowej gracza mo¿na przeci¹gaæ miêdzy scenami.
+MoÅ¼na zmieniÄ‡ pozycjÄ™ startowÄ… gracza, poprzez zÅ‚apanie i przeciÄ…gniÄ™cie ikony <img src="/img/screenshots/player-start.png" style="height:12px"/> w odpowiednie (nowe) miejsce. IkonÄ™ pozycji startowej gracza moÅ¼na przeciÄ…gaÄ‡ miÄ™dzy scenami.
 
 
 ## Skryptowanie
 
-Wiêkszoœæ skryptów dla zdarzeñ Aktora mog¹ zostaæ zastosowane do gracza. Dodatkowo mo¿na u¿yæ polecenia _zmieñ grafikê gracza_, aby zmieniæ grafikê gracza podczas gry. Za pomoc¹ tej metody, gracz bêdzie posiada³ now¹ grafikê nawet w czasie przechodzenia miêdzy scenami. Je¿eli zmiana grafiki jest tymczasowa, to nale¿y pamiêtaæ o przywróceniu grafiki gracza do pierwotnego wizerunku.
+WiÄ™kszoÅ›Ä‡ skryptÃ³w dla zdarzeÅ„ Aktora mogÄ… zostaÄ‡ zastosowane do gracza. Dodatkowo moÅ¼na uÅ¼yÄ‡ polecenia _zmieÅ„ grafikÄ™ gracza_, aby zmieniÄ‡ grafikÄ™ gracza podczas gry. Za pomocÄ… tej metody, gracz bÄ™dzie posiadaÅ‚ nowÄ… grafikÄ™ nawet w czasie przechodzenia miÄ™dzy scenami. JeÅ¼eli zmiana grafiki jest tymczasowa, to naleÅ¼y pamiÄ™taÄ‡ o przywrÃ³ceniu grafiki gracza do pierwotnego wizerunku.
 
-Podczas prze³¹czania miêdzy scenami gracz zawsze bêdzie widoczny w miejscu rozpoczêcia sceny, niezale¿nie od jego poprzednich opcji widocznoœci. Aby uzyskaæ efekt, gdzie gracz jest ukryty podczas uruchomienia sceny, np. Wyœwietlaj¹c ekran tytu³owy lub przerywnik scenowy, to nale¿y dodaæ polecenie _Schowaj (Aktor: schowaj)_ i wskazaæ na gracza, przy skrypcie _uruchomienia (auto start)_. 
+Podczas przeÅ‚Ä…czania miÄ™dzy scenami gracz zawsze bÄ™dzie widoczny w miejscu rozpoczÄ™cia sceny, niezaleÅ¼nie od jego poprzednich opcji widocznoÅ›ci. Aby uzyskaÄ‡ efekt, gdzie gracz jest ukryty podczas uruchomienia sceny, np. WyÅ›wietlajÄ…c ekran tytuÅ‚owy lub przerywnik scenowy, to naleÅ¼y dodaÄ‡ polecenie _Schowaj (Aktor: schowaj)_ i wskazaÄ‡ na gracza, przy skrypcie _uruchomienia (auto start)_. 

@@ -1,5 +1,5 @@
 ---
-title: "Buduj swoj¹ grê"
+title: "Buduj swojÄ… grÄ™"
 draft: false
 next: "/docs/settings"
 nextTitle: "Ustawienia"
@@ -7,28 +7,28 @@ nextTitle: "Ustawienia"
 
 ## Gra
 
-Po klikniêciu przycisku _Uruchom_ (w prawym górnym rogu okna _edytora projektu_, przycisk play), program rozpocznie komplilacjê gry, a po jej zakoñczeniu otworzy okno, w którym mo¿na graæ w aktualny projekt. Zobacz temat [Klawiatura - skróty klawiszy](/docs/keyboard-shortcuts), aby uzyskaæ szczegó³owe informacje na temat poruszania siê (patrz na dzia³ _sterowanie podczas gry_).
+Po klikniÄ™ciu przycisku _Uruchom_ (w prawym gÃ³rnym rogu okna _edytora projektu_, przycisk play), program rozpocznie komplilacjÄ™ gry, a po jej zakoÅ„czeniu otworzy okno, w ktÃ³rym moÅ¼na graÄ‡ w aktualny projekt. Zobacz temat [Klawiatura - skrÃ³ty klawiszy](/docs/keyboard-shortcuts), aby uzyskaÄ‡ szczegÃ³Å‚owe informacje na temat poruszania siÄ™ (patrz na dziaÅ‚ _sterowanie podczas gry_).
 
 ## Terminal
 
-W _nawigatorze projektu_ przejdŸ do menu _zbuduj i uruchom_, spowoduje to wyœwietlenie _terminalu_, gdzie zostanie wyœwietlony dziennik (log) kompilacji projektu. Mo¿na przejœæ do tego ekranu tak¿e poprzez naciœniêcie _uruchom_ podczas kompilacji. Ten ekran pokazuje, czy w kompilacji wystêpuj¹ b³êdy, które mog¹ pomóc w ich poprawieniu.
+W _nawigatorze projektu_ przejdÅº do menu _zbuduj i uruchom_, spowoduje to wyÅ›wietlenie _terminalu_, gdzie zostanie wyÅ›wietlony dziennik (log) kompilacji projektu. MoÅ¼na przejÅ›Ä‡ do tego ekranu takÅ¼e poprzez naciÅ›niÄ™cie _uruchom_ podczas kompilacji. Ten ekran pokazuje, czy w kompilacji wystÄ™pujÄ… bÅ‚Ä™dy, ktÃ³re mogÄ… pomÃ³c w ich poprawieniu.
 
 ## Eksportuj jako ROM
 
-Klikniêcie w przycisk _eksportuj jako ROM_ i program rozpocznie proces utworzenia pliku ROM w folderze projektu `$ PROJECT_ROOT / build / rom / game.gb`. Plik ROM jest to plik gry, któr¹ mo¿na otworzyæ na dowolnym emulatorze obs³uguj¹cym konsolê Nintendo Gam Boy, takim jak [OpenEMU] (https://openemu.org/) lub [KiGB] (http://kigb.emuunlim.com/downloads.htm). 
+KlikniÄ™cie w przycisk _eksportuj jako ROM_ i program rozpocznie proces utworzenia pliku ROM w folderze projektu `$ PROJECT_ROOT / build / rom / game.gb`. Plik ROM jest to plik gry, ktÃ³rÄ… moÅ¼na otworzyÄ‡ na dowolnym emulatorze obsÅ‚ugujÄ…cym konsolÄ™ Nintendo Gam Boy, takim jak [OpenEMU] (https://openemu.org/) lub [KiGB] (http://kigb.emuunlim.com/downloads.htm). 
 
 ## Eksportuj jako wersja Web
 
-Mo¿esz przes³aæ ten folder na dowolny serwer sieciowy i przejœæ do pliku `index.html`, aby zagraæ w grê w przegl¹darce internetowej. Jeœli korzystasz z przegl¹darki internetowej na telefonie komórkowym lub tablecie, gra bêdzie równie¿ zawieraæ dotykowe elementy steruj¹ce.
+MoÅ¼esz przesÅ‚aÄ‡ ten folder na dowolny serwer sieciowy i przejÅ›Ä‡ do pliku `index.html`, aby zagraÄ‡ w grÄ™ w przeglÄ…darce internetowej. JeÅ›li korzystasz z przeglÄ…darki internetowej na telefonie komÃ³rkowym lub tablecie, gra bÄ™dzie rÃ³wnieÅ¼ zawieraÄ‡ dotykowe elementy sterujÄ…ce.
 
-Jeœli spakujesz folder `build / web`, mo¿esz przes³aæ go do [Itch.io] (https://itch.io) jako gra HTML. W takim przypadku zalecany rozmiar okienka ekranu to `480px` x `432px`.
+JeÅ›li spakujesz folder `build / web`, moÅ¼esz przesÅ‚aÄ‡ go do [Itch.io] (https://itch.io) jako gra HTML. W takim przypadku zalecany rozmiar okienka ekranu to `480px` x `432px`.
 
-## Rozwi¹zywanie problemów
+## RozwiÄ…zywanie problemÃ³w
 
-W systemie macOS, jeœli masz problemy z budowaniem lub uruchomieniem gry, mo¿e byæ równie¿ konieczne zainstalowanie narzêdzi wiersza polecenia Apple, otwieraj¹c `Applications / Terminal.app` i wprowadzaj¹c nastêpuj¹ce polecenie.
+W systemie macOS, jeÅ›li masz problemy z budowaniem lub uruchomieniem gry, moÅ¼e byÄ‡ rÃ³wnieÅ¼ konieczne zainstalowanie narzÄ™dzi wiersza polecenia Apple, otwierajÄ…c `Applications / Terminal.app` i wprowadzajÄ…c nastÄ™pujÄ…ce polecenie.
 
 ```
 xcode-select --install
 ```
 
-W systemie Windows konieczne mo¿e byæ dodanie aplikacji do bia³ej listy/listy zaufanych programów w oprogramowaniu antywirusowym, aby wykonaæ kompilacjê.
+W systemie Windows konieczne moÅ¼e byÄ‡ dodanie aplikacji do biaÅ‚ej listy/listy zaufanych programÃ³w w oprogramowaniu antywirusowym, aby wykonaÄ‡ kompilacjÄ™.

@@ -1,5 +1,5 @@
 ---
-title: "Klawiatura - skróty klawiszy"
+title: "Klawiatura - skrÃ³ty klawiszy"
 date: 2019-03-30T21:12:44Z
 draft: false
 next: "/docs/saving-loading"
@@ -8,38 +8,38 @@ nextTitle: "Zapisywanie i wczytanie"
 
 ## Sterowanie podczas gry
 
-Podczas gry w GB Studio u¿yj nastêpuj¹cych elementów steruj¹cych klawiatury:
+Podczas gry w GB Studio uÅ¼yj nastÄ™pujÄ…cych elementÃ³w sterujÄ…cych klawiatury:
 
-**Góra** - Strza³ka w górê / W  
-**Dó³** - Strza³ka w dó³ / S  
-**Lewo** - Strza³ka w lewo / A  
-**Prawo** - Strza³ka w prawo / D  
+**GÃ³ra** - StrzaÅ‚ka w gÃ³rÄ™ / W  
+**DÃ³Å‚** - StrzaÅ‚ka w dÃ³Å‚ / S  
+**Lewo** - StrzaÅ‚ka w lewo / A  
+**Prawo** - StrzaÅ‚ka w prawo / D  
 **A** - Alt / Z / J  
 **B** - Ctrl / K / X  
 **Start** - Enter  
 **Select** - Shift
 
-<span class="new">Nowoœæ od wer. 1.2.0</span>
+<span class="new">NowoÅ›Ä‡ od wer. 1.2.0</span>
 
-Do sterowania postaci¹ _Podczas gry_ mo¿esz tak¿e u¿yæ joypada. Jeœli twoja przegl¹darka internetowa obs³uguje joypady, to mo¿esz go równie¿ u¿ywaæ podczas uruchamiania kompilacji web.
+Do sterowania postaciÄ… _Podczas gry_ moÅ¼esz takÅ¼e uÅ¼yÄ‡ joypada. JeÅ›li twoja przeglÄ…darka internetowa obsÅ‚uguje joypady, to moÅ¼esz go rÃ³wnieÅ¼ uÅ¼ywaÄ‡ podczas uruchamiania kompilacji web.
 
 ## Nawigacja w menu
 
-Wiele funkcji GB Studio jest dostêpnych za poœrednictwem paska menu, a wiele elementów menu zawiera skróty klawiaturowe. Spróbuj przegl¹dn¹æ menu, aby odkryæ wszystkie skróty, gdy¿ kilka z nich powinno ci siê przydaæ. Takimi skrótami mog¹ byæ:
+Wiele funkcji GB Studio jest dostÄ™pnych za poÅ›rednictwem paska menu, a wiele elementÃ³w menu zawiera skrÃ³ty klawiaturowe. SprÃ³buj przeglÄ…dnÄ…Ä‡ menu, aby odkryÄ‡ wszystkie skrÃ³ty, gdyÅ¼ kilka z nich powinno ci siÄ™ przydaÄ‡. Takimi skrÃ³tami mogÄ… byÄ‡:
 **Zapisz projekt** - Ctrl/Cmd + S  
-**Otwórz projekt** - Ctrl/Cmd + O  
-**Prze³¹czenie widoku** - Ctrl/Cmd + 1-8  
-**Uruchom grê testow¹** - Ctrl/Cmd + B  
+**OtwÃ³rz projekt** - Ctrl/Cmd + O  
+**PrzeÅ‚Ä…czenie widoku** - Ctrl/Cmd + 1-8  
+**Uruchom grÄ™ testowÄ…** - Ctrl/Cmd + B  
 **Eksportuje do pliku ROM** - Ctrl/Cmd + Shift + B
 
-## Nawigacja w ''Œwiat gry''
+## Nawigacja w ''Åšwiat gry''
 
-Podczas edycji projektu, w trybie œwiat gry mo¿esz u¿yæ nastêpuj¹cych skrótów, aby szybko poruszaæ siê miêdzy scenami.
+Podczas edycji projektu, w trybie Å›wiat gry moÅ¼esz uÅ¼yÄ‡ nastÄ™pujÄ…cych skrÃ³tÃ³w, aby szybko poruszaÄ‡ siÄ™ miÄ™dzy scenami.
 
 **Zaznacz** - V  
 **Dodaj aktora** - A  
 **Dodaj rozruch** - T  
-**Dodaj scenê** - S  
+**Dodaj scenÄ™** - S  
 **Usuwanie** - E  
 **Kolizja** - C  
-**Ustaw start gracza** - P (podczas najechania kursorem na wybran¹ lokalizacjê)
+**Ustaw start gracza** - P (podczas najechania kursorem na wybranÄ… lokalizacjÄ™)

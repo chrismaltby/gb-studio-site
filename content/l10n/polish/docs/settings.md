@@ -3,42 +3,42 @@ title: "Ustawienia"
 draft: false
 ---
 
-<span class="new">Nowoœæ od wer. 1.2.0</span>
+<span class="new">NowoÅ›Ä‡ od wer. 1.2.0</span>
 
-W pasku _nawigacyjnym projektu_ w momencie wybrania menu _ustawienia_ spowoduje przejœcie do listy ustawieñ projektu.
+W pasku _nawigacyjnym projektu_ w momencie wybrania menu _ustawienia_ spowoduje przejÅ›cie do listy ustawieÅ„ projektu.
 
 ## Opcje dla GB Color
 
-GB Studio ma ograniczon¹ obs³ugê GB Color, gdy gra dzia³a na kompatybilnym sprzêcie lub emulatorach. Obecnie dostêpne s¹ dwie opcje:
+GB Studio ma ograniczonÄ… obsÅ‚ugÄ™ GB Color, gdy gra dziaÅ‚a na kompatybilnym sprzÄ™cie lub emulatorach. Obecnie dostÄ™pne sÄ… dwie opcje:
 
-- **Tryb podwójnej prêdkoœci** - Gdy ta opcja jest w³¹czona, silnik gry mo¿e w pe³ni wykorzystaæ zwiêkszon¹ szybkoœæ procesora GB Color. W³¹czenie tej opcji zapobiega przeskakiwaniu muzyki podczas przechodzenia miêdzy scenami.
+- **Tryb podwÃ³jnej prÄ™dkoÅ›ci** - Gdy ta opcja jest wÅ‚Ä…czona, silnik gry moÅ¼e w peÅ‚ni wykorzystaÄ‡ zwiÄ™kszonÄ… szybkoÅ›Ä‡ procesora GB Color. WÅ‚Ä…czenie tej opcji zapobiega przeskakiwaniu muzyki podczas przechodzenia miÄ™dzy scenami.
 
-- **W³asna paleta kolorów** - Po w³¹czeniu tej opcji, mo¿liwe bêdzie zast¹pienie czterech kolorów z palety kolorów gry. Nale¿y wybraæ kolor, który ma zostaæ zast¹piony, a nastêpnie nale¿y wprowadziæ wartoœci dla koloru czerwony, zielony i niebieski lub wprowadŸ wartoœæ koloru heksadecymalnego. Przycisk _zamieñ na heks_ dopasowuje najbli¿szy dostêpny kolor.
+- **WÅ‚asna paleta kolorÃ³w** - Po wÅ‚Ä…czeniu tej opcji, moÅ¼liwe bÄ™dzie zastÄ…pienie czterech kolorÃ³w z palety kolorÃ³w gry. NaleÅ¼y wybraÄ‡ kolor, ktÃ³ry ma zostaÄ‡ zastÄ…piony, a nastÄ™pnie naleÅ¼y wprowadziÄ‡ wartoÅ›ci dla koloru czerwony, zielony i niebieski lub wprowadÅº wartoÅ›Ä‡ koloru heksadecymalnego. Przycisk _zamieÅ„ na heks_ dopasowuje najbliÅ¼szy dostÄ™pny kolor.
 
 <img title="Color Palette" src="/img/screenshots/color-palette.png" width="513">
 
 <img title="Color Palette Edit" src="/img/screenshots/color-palette-edit.png" width="513">
 
-Korzystaj¹c z w³asnej palety kolorów, mo¿na stworzyæ drastycznie inny odcieñ swojej gry! Spróbuj eksperymentowaæ, aby zobaczyæ, jakie ciekawe efekty mo¿esz wykonaæ. Jeœli nie podoba Ci siê ustawiona paleta kolorów, zawsze mo¿esz klikn¹æ przycisk _przywróæ domyœlne_, aby ponownie przywróciæ oryginaln¹ paletê kolorów.
+KorzystajÄ…c z wÅ‚asnej palety kolorÃ³w, moÅ¼na stworzyÄ‡ drastycznie inny odcieÅ„ swojej gry! SprÃ³buj eksperymentowaÄ‡, aby zobaczyÄ‡, jakie ciekawe efekty moÅ¼esz wykonaÄ‡. JeÅ›li nie podoba Ci siÄ™ ustawiona paleta kolorÃ³w, zawsze moÅ¼esz kliknÄ…Ä‡ przycisk _przywrÃ³Ä‡ domyÅ›lne_, aby ponownie przywrÃ³ciÄ‡ oryginalnÄ… paletÄ™ kolorÃ³w.
 
 <img title="Color Game" src="/img/screenshots/color-game.png" width="592">
 
 ## Sterowanie
 
-Sekcja _sterowanie_ pozwala na nadpisanie domyœlnych ustawieñ dotycz¹cych elementów steruj¹cych u¿ywanych podczas gry z kompilacji internetowej i okna _uruchom_.
+Sekcja _sterowanie_ pozwala na nadpisanie domyÅ›lnych ustawieÅ„ dotyczÄ…cych elementÃ³w sterujÄ…cych uÅ¼ywanych podczas gry z kompilacji internetowej i okna _uruchom_.
 
-Aby edytowaæ elementy steruj¹ce przycisku, nale¿y zaznaczyæ pole wprowadzania. W momencie gdy pole jest podœwietlone, nale¿y nacisn¹æ przycisk, który chcesz przypisaæ. Aby usun¹æ wszystkie przypisane klawisze, nale¿y zaznaczyæ pole, a nastêpnie nacisn¹æ klawisz _backspace_ na klawiaturze.
+Aby edytowaÄ‡ elementy sterujÄ…ce przycisku, naleÅ¼y zaznaczyÄ‡ pole wprowadzania. W momencie gdy pole jest podÅ›wietlone, naleÅ¼y nacisnÄ…Ä‡ przycisk, ktÃ³ry chcesz przypisaÄ‡. Aby usunÄ…Ä‡ wszystkie przypisane klawisze, naleÅ¼y zaznaczyÄ‡ pole, a nastÄ™pnie nacisnÄ…Ä‡ klawisz _backspace_ na klawiaturze.
 
-W celu przywrócenia domyœlnych ustawieñ dla sterowania, nale¿y nacisn¹æ przycisk _przywróæ domyœlne_.
+W celu przywrÃ³cenia domyÅ›lnych ustawieÅ„ dla sterowania, naleÅ¼y nacisnÄ…Ä‡ przycisk _przywrÃ³Ä‡ domyÅ›lne_.
 
 <img title="Controls" src="/img/screenshots/controls.png" width="507">
 
-## Rodzaj kardrid¿u
+## Rodzaj kardridÅ¼u
 
-Sekcja _rodzaj kartrid¿u_ pozwala na okreœlenie kontrolera banku pamiêci, którego chcesz u¿yæ i czy bateria zostanie do³¹czona podczas eksportowania gry do fizycznego kardrid¿u (wymaga dodatkowego sprzêtu i oprogramowania).
+Sekcja _rodzaj kartridÅ¼u_ pozwala na okreÅ›lenie kontrolera banku pamiÄ™ci, ktÃ³rego chcesz uÅ¼yÄ‡ i czy bateria zostanie doÅ‚Ä…czona podczas eksportowania gry do fizycznego kardridÅ¼u (wymaga dodatkowego sprzÄ™tu i oprogramowania).
 
-Jeœli nie wiesz, co oznaczaj¹ te ustawienia, to najlepiej pozostaw je jako domyœlne (MBC5 + RAM + BATERIA). Ustawienia domyœlne mo¿na przywróciæ za pomoc¹ przycisku _przywróæ domyœlne_.
+JeÅ›li nie wiesz, co oznaczajÄ… te ustawienia, to najlepiej pozostaw je jako domyÅ›lne (MBC5 + RAM + BATERIA). Ustawienia domyÅ›lne moÅ¼na przywrÃ³ciÄ‡ za pomocÄ… przycisku _przywrÃ³Ä‡ domyÅ›lne_.
 
-## W³asny nag³ówek (Header dla wersji Web)
+## WÅ‚asny nagÅ‚Ã³wek (Header dla wersji Web)
 
-Istnieje mo¿liwoœæ u¿ycia sekcji _w³asny nag³ówek_, aby dodaæ zawartoœæ do HTML `<head>` podczas generowania kompilacji dla wersji Web. Mo¿esz u¿yæ tego, aby dodaæ dowolny niestandardowy CSS lub JavaScript do strony HTML wersji Web twojej gry.
+Istnieje moÅ¼liwoÅ›Ä‡ uÅ¼ycia sekcji _wÅ‚asny nagÅ‚Ã³wek_, aby dodaÄ‡ zawartoÅ›Ä‡ do HTML `<head>` podczas generowania kompilacji dla wersji Web. MoÅ¼esz uÅ¼yÄ‡ tego, aby dodaÄ‡ dowolny niestandardowy CSS lub JavaScript do strony HTML wersji Web twojej gry.

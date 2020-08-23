@@ -1,20 +1,20 @@
 ---
-title: "Rozpoczêcie pracy"
+title: "RozpoczÄ™cie pracy"
 date: 2018-01-28T14:14:44Z
 draft: false
 next: "/docs/keyboard-shortcuts"
-nextTitle: "Klawiatura - skróty klawiszy"
+nextTitle: "Klawiatura - skrÃ³ty klawiszy"
 ---
 
-Kiedy GB Studio zostanie uruchomione, to u¿ytkownik zostaje powitany oknem  _Nowego projektu_ , takie jak poni¿ej. 
+Kiedy GB Studio zostanie uruchomione, to uÅ¼ytkownik zostaje powitany oknem  _Nowego projektu_ , takie jak poniÅ¼ej. 
 <img title="New Project" src="/img/screenshots/new-project.png" width="812">
 
-W oknie tym mo¿na za³o¿yæ nowy projekt, albo otworzyæ ju¿ istniej¹cy projekt. Je¿eli posiadasz ju¿ projekt, to mo¿esz go otworzyæ poprzez klikniêcie w przycisk _Otwórz_, a nastêpnie wskazanie pliku projektu `.gbsproj`.
+W oknie tym moÅ¼na zaÅ‚oÅ¼yÄ‡ nowy projekt, albo otworzyÄ‡ juÅ¼ istniejÄ…cy projekt. JeÅ¼eli posiadasz juÅ¼ projekt, to moÅ¼esz go otworzyÄ‡ poprzez klikniÄ™cie w przycisk _OtwÃ³rz_, a nastÄ™pnie wskazanie pliku projektu `.gbsproj`.
 
 ## Nowy projekt
 
-Rozpocznij swoj¹ pracê od podania _Nazwy projektu_ (spokojnie, nazwê projektu mo¿na zmieniæ w ka¿dej chwili) oraz wybranie _Szablonu_. Je¿eli GB Studio jest dla ciebie nowym silnikiem, to zalecane jest wybranie opcji _Przyk³adowy Projekt_, który zawiera po prostu kilka przyk³adów, grafik, skryptów (taka ma³a mini gierka), aby u¿ytkownikowi by³o ³atwiej zaprzyjaŸniæ siê z programem. Tym samym zauwa¿ysz co i jak mo¿na w programie zrobiæ, co jest mo¿liwe do wykonania. Naciœnij przycisk _Utwórz_, aby przejœæ do edytora projektu.
+Rozpocznij swojÄ… pracÄ™ od podania _Nazwy projektu_ (spokojnie, nazwÄ™ projektu moÅ¼na zmieniÄ‡ w kaÅ¼dej chwili) oraz wybranie _Szablonu_. JeÅ¼eli GB Studio jest dla ciebie nowym silnikiem, to zalecane jest wybranie opcji _PrzykÅ‚adowy Projekt_, ktÃ³ry zawiera po prostu kilka przykÅ‚adÃ³w, grafik, skryptÃ³w (taka maÅ‚a mini gierka), aby uÅ¼ytkownikowi byÅ‚o Å‚atwiej zaprzyjaÅºniÄ‡ siÄ™ z programem. Tym samym zauwaÅ¼ysz co i jak moÅ¼na w programie zrobiÄ‡, co jest moÅ¼liwe do wykonania. NaciÅ›nij przycisk _UtwÃ³rz_, aby przejÅ›Ä‡ do edytora projektu.
 
 <img title="Getting Started" src="/img/screenshots/getting-started.png" width="1258">
 
-Jak tylko projekt zostanie za³adowany do programu, to mo¿esz uruchomiæ grê testow¹ poprzez przycisk _Uruchom_ (play) w prawym górnym rogu okna. Kilka sekund nale¿y poczekaæ, aby program skompilowa³ potrzebne pliki do uruchomienia projektu i bêdzie mo¿na spokojnie graæ. Po zakoñczeniu gry, na spokojnie rozejrzyj siê po programie. Spróbuj poklikaæ w ró¿ne opcje, aby zobaczyæ co do czego jest. Wybierz niektóre postacie, albo tabliczki informacyjne, spróbuj zmodyfikowaæ tekst u¿ywaj¹c panelu po prawej stronie. Zapisz modyfikacje i uruchom projekt ponownie. Zauwa¿, ¿e w³aœnie uda³o siê wykonaæ twoj¹ w³asn¹ wersjê gry! Nie przejmuj siê je¿eli coœ zepsujesz (projekt testowy w³aœnie jest od tego). W ka¿dej chwili mo¿esz stworzyæ nowy projekt z tym samym szablonem. 
+Jak tylko projekt zostanie zaÅ‚adowany do programu, to moÅ¼esz uruchomiÄ‡ grÄ™ testowÄ… poprzez przycisk _Uruchom_ (play) w prawym gÃ³rnym rogu okna. Kilka sekund naleÅ¼y poczekaÄ‡, aby program skompilowaÅ‚ potrzebne pliki do uruchomienia projektu i bÄ™dzie moÅ¼na spokojnie graÄ‡. Po zakoÅ„czeniu gry, na spokojnie rozejrzyj siÄ™ po programie. SprÃ³buj poklikaÄ‡ w rÃ³Å¼ne opcje, aby zobaczyÄ‡ co do czego jest. Wybierz niektÃ³re postacie, albo tabliczki informacyjne, sprÃ³buj zmodyfikowaÄ‡ tekst uÅ¼ywajÄ…c panelu po prawej stronie. Zapisz modyfikacje i uruchom projekt ponownie. ZauwaÅ¼, Å¼e wÅ‚aÅ›nie udaÅ‚o siÄ™ wykonaÄ‡ twojÄ… wÅ‚asnÄ… wersjÄ™ gry! Nie przejmuj siÄ™ jeÅ¼eli coÅ› zepsujesz (projekt testowy wÅ‚aÅ›nie jest od tego). W kaÅ¼dej chwili moÅ¼esz stworzyÄ‡ nowy projekt z tym samym szablonem. 

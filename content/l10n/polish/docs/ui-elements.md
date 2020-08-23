@@ -5,37 +5,37 @@ next: "/docs/music"
 nextTitle: "Muzyka"
 ---
 
-Projekt zawiera wiele plików w folderze `assets/ui` ze sta³ymi nazwami plików, które definiuj¹ czêœci interfejsu u¿ytkownika twojej gry. Edycja tych plików pozwala zmieniæ domyœln¹ czcionkê, ustawiæ ramkê okna i zmodyfikowaæ kursor wyboru.
+Projekt zawiera wiele plikÃ³w w folderze `assets/ui` ze staÅ‚ymi nazwami plikÃ³w, ktÃ³re definiujÄ… czÄ™Å›ci interfejsu uÅ¼ytkownika twojej gry. Edycja tych plikÃ³w pozwala zmieniÄ‡ domyÅ›lnÄ… czcionkÄ™, ustawiÄ‡ ramkÄ™ okna i zmodyfikowaÄ‡ kursor wyboru.
 
-Jeœli usuniesz którykolwiek z plików w folderze interfejsu u¿ytkownika, zostan¹ one zast¹pione domyœlnymi zasobami przy nastêpnym tworzeniu gry, umo¿liwiaj¹c cofniêcie niepo¿¹danych zmian.
+JeÅ›li usuniesz ktÃ³rykolwiek z plikÃ³w w folderze interfejsu uÅ¼ytkownika, zostanÄ… one zastÄ…pione domyÅ›lnymi zasobami przy nastÄ™pnym tworzeniu gry, umoÅ¼liwiajÄ…c cofniÄ™cie niepoÅ¼Ä…danych zmian.
 
 ## ascii.png
 
-Edytuj ten plik, aby zmieniæ czcionkê gry podczas rozmowy z aktorami w grze.
+Edytuj ten plik, aby zmieniÄ‡ czcionkÄ™ gry podczas rozmowy z aktorami w grze.
 
 <img src="/img/ui/ascii.png" class="HelpSprite" style="width:384px; height:auto;"/>
 
 ## frame.png
 
-Silnik gry u¿ywa [9-plasterkowego skalowania / 9-slice scaling] (https://en.wikipedia.org/wiki/9-slice_scaling) poni¿szego obrazu, aby utworzyæ ramkê dla pola tekstowego. Edycja tego obrazu pozwoli na zmianê ramki tekstu lub ustawiæ jednolity kolor dla tekstu.
+Silnik gry uÅ¼ywa [9-plasterkowego skalowania / 9-slice scaling] (https://en.wikipedia.org/wiki/9-slice_scaling) poniÅ¼szego obrazu, aby utworzyÄ‡ ramkÄ™ dla pola tekstowego. Edycja tego obrazu pozwoli na zmianÄ™ ramki tekstu lub ustawiÄ‡ jednolity kolor dla tekstu.
 
 <img src="/img/ui/frame.png" class="HelpSprite" style="width:72px; height:auto;"/>
 
 ## cursor.png
 
-Ten obraz jest u¿ywany jako kursor wyboru podczas pokazywania opcji wielokrotnego wyboru w grze.
+Ten obraz jest uÅ¼ywany jako kursor wyboru podczas pokazywania opcji wielokrotnego wyboru w grze.
 
 <img src="/img/ui/cursor.png" class="HelpSprite" style="width:24px; height:auto;"/>
 
 ## emotes.png
 
-Obraz ten odpowiada za wyœwietlanie emotikonek w chmurce, które zostaj¹ wyœwietlane nad aktorami przy pomocy skryptów. Ka¿da chmurka posiada rozmiar `16px` x `16px` i ka¿da z chmurek reprezentuje nastêpuj¹ce emocje w kolejnoœci od lewej do prawej: _wykrzyknik(!)_, _pytanie(?)_, _serce_, _cisze_, _zdenerwowanie_, _pot_, _nutkê muzyczn¹_, _sen_.
+Obraz ten odpowiada za wyÅ›wietlanie emotikonek w chmurce, ktÃ³re zostajÄ… wyÅ›wietlane nad aktorami przy pomocy skryptÃ³w. KaÅ¼da chmurka posiada rozmiar `16px` x `16px` i kaÅ¼da z chmurek reprezentuje nastÄ™pujÄ…ce emocje w kolejnoÅ›ci od lewej do prawej: _wykrzyknik(!)_, _pytanie(?)_, _serce_, _cisze_, _zdenerwowanie_, _pot_, _nutkÄ™ muzycznÄ…_, _sen_.
 
 <img src="/img/ui/emotes.png" class="HelpSprite" style="width:384px; height:auto;"/>
 
 ## Wymagania
 
-Z wyj¹tkiem pliku `emotes.png`, który spe³nia standardowe wymagania sprite, plik PNG dla interfejsu u¿ytkownika musi zawieraæ tylko nastêpuj¹ce cztery kolory:
+Z wyjÄ…tkiem pliku `emotes.png`, ktÃ³ry speÅ‚nia standardowe wymagania sprite, plik PNG dla interfejsu uÅ¼ytkownika musi zawieraÄ‡ tylko nastÄ™pujÄ…ce cztery kolory:
 
 <div><div class="Swatch" style="background:#071821;"></div><div class="SwatchLabel">#071821</div></div>
 <div><div class="Swatch" style="background:#306850;"></div><div class="SwatchLabel">#306850</div></div>
@@ -43,7 +43,7 @@ Z wyj¹tkiem pliku `emotes.png`, który spe³nia standardowe wymagania sprite, plik
 <div><div class="Swatch" style="background:#e0f8cf;"></div><div class="SwatchLabel">#e0f8cf</div></div>
 
 <div class="InfoBox">
-Pobierz paletê kolorów GB Studio dla:<br />
+Pobierz paletÄ™ kolorÃ³w GB Studio dla:<br />
 <a href="/assets/swatches/gb-studio-photoshop.aco">Adobe Photoshop</a><br />
 <a href="/assets/swatches/gb-studio-aseprite.aseprite">Aseprite</a>
 </div>

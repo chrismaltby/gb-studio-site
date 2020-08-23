@@ -8,8 +8,8 @@ draft: false
 [en](/docs) | [de](/de/docs) | [es](/es/docs) | pl
 
 - [Instalacja](installation)
-- [Rozpoczêcie pracy](getting-started)
-  - [Klawiatura - skróty klawiszy](keyboard-shortcuts)
+- [RozpoczÄ™cie pracy](getting-started)
+  - [Klawiatura - skrÃ³ty klawiszy](keyboard-shortcuts)
 - [Zapisywanie i wczytanie](saving-loading)
   - [Kontrola wersji](saving-loading#version-control)
 - [Edytor projektu](/docs/project-editor)
@@ -18,23 +18,23 @@ draft: false
   - [Aktorzy](/docs/actors)
   - [Rozruch](/docs/triggers)
   - [Skryptowanie (polecenia zdarzenia)](/docs/scripting)
-  - [W³asne zdarzenia](/docs/custom-events)
+  - [WÅ‚asne zdarzenia](/docs/custom-events)
 - [Zasoby](/docs/assets)
   - [Obiekty (sprites)](/docs/sprites)
-  - [T³a](/docs/backgrounds)
+  - [TÅ‚a](/docs/backgrounds)
   - [Elementy interfejsu](/docs/ui-elements)
   - [Muzyka](/docs/music)
-  - [DŸwiêk](/docs/sound-effects)
-- [Buduj swoj¹ grê](/docs/build)
+  - [DÅºwiÄ™k](/docs/sound-effects)
+- [Buduj swojÄ… grÄ™](/docs/build)
   - [Gra](/docs/build#play)
   - [Eksportuj jako ROM](/docs/build#build-as-rom)
   - [Eksportuj jako wersja Web](/docs/build#build-and-deploy-for-web)
 - [Ustawienia](/docs/settings)
   - [Opcje dla GB Color](/docs/settings#gb-color-options)
   - [Sterowanie](/docs/settings#controls)
-  - [Rodzaj kardrid¿u](/docs/settings#cartridge-type)
-  - [W³asny nag³ówek (Header dla wersji Web)](/docs/settings#custom-html-header)
+  - [Rodzaj kardridÅ¼u](/docs/settings#cartridge-type)
+  - [WÅ‚asny nagÅ‚Ã³wek (Header dla wersji Web)](/docs/settings#custom-html-header)
 
-lub, je¿eli preferujesz:
+lub, jeÅ¼eli preferujesz:
 
-[Pe³na dokumentacja gotowa do wydruku](/printable/)
+[PeÅ‚na dokumentacja gotowa do wydruku](/printable/)
