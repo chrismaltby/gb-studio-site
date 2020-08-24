@@ -35,6 +35,7 @@ en | [de](/de/docs) | [es](/es/docs) | [pl](/pl/docs)
   - [Controls](/docs/settings#controls)
   - [Cartridge Type](/docs/settings#cartridge-type)
   - [Custom HTML Header](/docs/settings#custom-html-header)
+- [Engine Eject](/docs/engine-eject)
 
 or, if you prefer:
 
