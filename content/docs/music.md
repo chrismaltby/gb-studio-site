@@ -9,7 +9,7 @@ Music can be played in your game using the [Music: Play](https://www.gbstudio.de
 
 <img src="/img/events/music-play.png" class="event-preview" />
 
-# Requirements
+## Requirements
 
 Add music to your game by including .mod files in your project's `assets/music` folder. GB Studio uses [GBT Player](https://github.com/AntonioND/gbt-player) which is a driver that takes .mod files and converts them to instructions for the Gameboy. GBT Player interprets .mod files differently than the Amiga computers that the .mod format was originally designed for, so every .mod file that GBT Player reads should be composed/arranged to be used with GBT Player.
 
@@ -17,7 +17,7 @@ As an alternative to composing, there is a way to import .midi files to OpenMPT 
 
 To compose GBT-compatible .mod files, you can use software such as [**OpenMPT**](https://openmpt.org/) (for Windows or Linux using Wine), [**MilkyTracker**](https://milkytracker.titandemo.org/) (for Windows, Mac and Linux), [**ProTracker**](https://16-bits.org/pt.php), and [**BassoonTracker**](https://www.stef.be/bassoontracker/) (browser-based) to name a few. Any software that loads and exports .mod files can write files that are compatible with GBT Player.
 
-# Resources
+## Resources
 
 It is recomended you read through your tracker's documentation to learn about your tracker:
 - [OpenMPT's Documentation](https://wiki.openmpt.org/Tutorial:_Getting_Started)
@@ -26,7 +26,7 @@ It is recomended you read through your tracker's documentation to learn about yo
 
 Lastly, the [GB Studio Discord](https://discord.gg/v9xAJCJ) also has a dedicated #music-help channel and a #tutorials channel in case you get stuck.
 
-# Getting Started
+## Getting Started
 
 1. Create a blank GB Studio project, find the file `assets/music/template.mod` and open it with your tracker of choice.
    - **You must edit this file to get an accurate representation of the instruments you can use.**
@@ -52,7 +52,7 @@ This is what comprises of a channel's row. Rows can be empty, or can only be par
 
 Any part in this documentation where you see data that starts with `ModPlug Tracker MOD`, you can copy that entire block into OpenMPT as-is. Any data copied from OpenMPT looks like that when you paste it into any text application.
 
-# GBT Player's Channel Limitations
+## GBT Player's Channel Limitations
 
 .MOD files need to use 4 channels. Loading a copy of template.mod before composing will ensure this is set-up correctly.
 
@@ -70,13 +70,13 @@ Using default settings on OpenMPT and MilkyTracker, C3 to B8 in OpenMPT sounds t
 
 *<sup>2</sup> Effects B, D, and F can be also used on Channel 3 if the same row isn't being used to set a note/instrument.*
 
-# Volume Limitations
+## Volume Limitations
 
 Currently, volume can only be adjusted by using the `Cxx` effect for each channel.
 
 The Gameboy has 16 unique volume settings for Channels 1, 2 and 4. GBT Player will floor (round-down) the values in a `Cxx` volume effect to multiples of 4.
 
-## Unique Volume Settings for Channels 1, 2 and 4:
+### Unique Volume Settings for Channels 1, 2 and 4:
 `00, 04, 08, 0C, 10, 14, 18, 1C, 20, 24, 28, 2C, 30, 34, 38, 3C`
 
 Any number that's not a multiple of 4 will be rounded-down to one of the above numbers.
@@ -87,14 +87,14 @@ Any number that's not a multiple of 4 will be rounded-down to one of the above n
 
 Channel 3 is the exception to this with only 4 unique volume settings.
 
-## Unique Volume Settings for Channel 3:
+### Unique Volume Settings for Channel 3:
 `00, 10, 20, 40`
 
 GBT Player will round `Cxx` effects on Channel 3 to the nearest number listed above.
 
 **Example:** Entering `C30` will round the volume up to `C40`.
 
-# Volume Persistence
+## Volume Persistence
 
 In most trackers, if a note is played without a volume command, the note's volume is reset to the maximum. When a .mod file is converted by GBT Player, notes without a volume effect will play at the same volume as the previous `Cxx` effect that the channel read. For example, take this scenario:
 
@@ -151,7 +151,7 @@ ModPlug Tracker MOD
 |G-511...C40|
 ```
 
-# Instruments
+## Instruments
 *All numbers listed here are in base-10 unless otherwise noted.*
 
 The pulse channels 1 and 2 have four instrument options:
@@ -204,13 +204,14 @@ Pseudorandom Noise:
 
 As of GB Studio 1.2.1 there are no GBT Player-readable instruments beyond 31. (1Fhx)
 
-# Effects
+## Effects
 
 There are two types of effects: Note-effects and Command-effects.
 
 The only restrictions on effects is the Command-effects with Channel 3. It can use them when it's not trying to play a note/set the instrument on the same row.
 
 **Note-effects** (uses bit 3) - All channels can use these effects freely
+
 | Effect  | Name		  | Notes on effect usage																						|
 | ------- | ------------- | ----------------------------------------------------------------------------------------------------------- |
 | **0xy** |   Arpeggio    | Rapidly cycles between 3 notes. `x` and `y` both represent the # of semitones above the note the arpeggio effect is attached to. |
@@ -219,6 +220,7 @@ The only restrictions on effects is the Command-effects with Channel 3. It can u
 | **ECx** |   Note cut    | Cuts the note after `x` frames. Must be below the `Fxx` speed for the cut to be heard. `EC0` will reset the duty cycle instead of cutting the note. |
 
 **Command-effects** (uses bit 4) - Channel 3 can use these effects if it's not trying to play a note/instrument on the same row.
+
 | Effect  | Name		  | Notes on effect usage																						|
 | ------- | ------------- | ----------------------------------------------------------------------------------------------------------- |
 | **Bxx** |     Jump      | Jump to a specific position in the song, `xx`.               |
@@ -227,7 +229,7 @@ The only restrictions on effects is the Command-effects with Channel 3. It can u
 
 For Channel 3 only, the instrument data is too large to allow the 4th bit of a Command effect to occur while it's trying to play a note/set the instrument. Command-effects will ignore new notes on Channel 3 to compensate.
 
-## Speed Table
+### Speed Table
 
 | Fxx Value (in tracker) | BPM (in tracker) | BPM (in game) |
 | ---------------------- | ---------------- | ------------- |
@@ -252,7 +254,7 @@ Because of how GB Studio is set up, a 60hz F05 effect, which would result in 180
 
 **1. Values marked with 1 require an additional F96 effect for the song to sound closer in speed when converted, or setting the song BPM to 150.** This F96 effect can be removed once you're done with your song, there won't be any difference as GBT ignores this -- It's only here to set the BPM to something closer to the in-game version.
 
-# Tricks and Tips
+## Tricks and Tips
 
 ### **1. High Speed**
 
@@ -317,7 +319,7 @@ Are you in a hurry? No problem, this simple trick will create linear envelopes:
 
 You might wonder how's it going to sound in-game; well, it'll sound as close as possible. The volumes it can't play it'll just clamp it to the nearest ones it can play.
 
-# Frequently Asked Questions
+## Frequently Asked Questions
 
 **Q: Can I use mp3/wav files?**
 

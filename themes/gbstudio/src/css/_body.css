@@ -1,6 +1,5 @@
-html,
-body {
-  height: 100%;
+html {
+  scroll-behavior: smooth !important;
 }
 
 body {
@@ -9,12 +8,14 @@ body {
     Helvetica, Arial, "Lucida Grande", sans-serif;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 h1 {
   font-weight: 300;
   color: #c92c61;
   font-size: 2rem;
+  margin-top: 0;
 }
 
 h2 {
@@ -207,14 +208,20 @@ table-horizontal tbody > tr:last-child > td {
   border-bottom-width: 0;
 } */
 
-@media (min-width: 1100px) {
-  body {
+@media (min-width: 900px) {
+  body::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
     border-top: 80px solid #c92c61;
   }
 
   header {
     background: #c92c61c0;
-    position: fixed;
+    position: sticky;
     backdrop-filter: blur(20px);
     z-index: 10;
     top: 0;
