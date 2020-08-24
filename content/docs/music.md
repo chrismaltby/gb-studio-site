@@ -195,6 +195,7 @@ There are two types of effects: Note-effects and Command-effects.
 The only restrictions on effects is the Command-effects with Channel 3. It can use them when it's not trying to play a note/set the instrument on the same row.
 
 **Note-effects** (uses bit 3) - All channels can use these effects freely
+
 | Effect  | Name		  | Notes on effect usage																						|
 | ------- | ------------- | ----------------------------------------------------------------------------------------------------------- |
 | **0xy** |   Arpeggio    | Rapidly cycles between 3 notes. `x` and `y` both represent the # of semitones above the note the arpeggio effect is attached to. |
@@ -203,6 +204,7 @@ The only restrictions on effects is the Command-effects with Channel 3. It can u
 | **ECx** |   Note cut    | Cuts the note after `x` frames. Must be below the `Fxx` speed for the cut to be heard. `EC0` will reset the duty cycle instead of cutting the note. |
 
 **Command-effects** (uses bit 4) - Channel 3 can use these effects if it's not trying to play a note/instrument on the same row.
+
 | Effect  | Name		  | Notes on effect usage																						|
 | ------- | ------------- | ----------------------------------------------------------------------------------------------------------- |
 | **Bxx** |     Jump      | Jump to a specific position in the song, `xx`.               |
