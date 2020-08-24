@@ -3,6 +3,7 @@ footer {
   padding: 50px 20px;
   clear: both;
   color: #24226b;
+  position: relative;
 }
 
 footer .container {

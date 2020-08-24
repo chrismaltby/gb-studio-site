@@ -1,5 +1,14 @@
 {{ partial "header.html" . }}
-<main>
+
+<aside class="docs-nav">
+  {{ .Title }}
+  {{ .TableOfContents }}
+  {{ if .Params.nextTitle }}
+    {{ $.Site.Params.next }}:<br />
+    <a href="{{ .Params.next | urlize | relLangURL }}">{{ .Params.nextTitle }}</a>
+  {{ end }}
+</aside>  
+<main class="docs">
   <article>
     <h1><a href="{{ "/docs" | relLangURL}}">{{ $.Site.Params.docs }}</a> / {{ .Title }}</h1>
     <div>
@@ -12,4 +21,5 @@
     {{ end }}
   </article>
 </main>
+
 {{ partial "footer.html" . }}

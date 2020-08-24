@@ -1,11 +1,11 @@
-nav {
+.main-nav {
   max-height: 80px;
   color: #ffffff;
   overflow: hidden;
   text-align: center;
 }
 
-nav .title {
+.main-nav .title {
   float: left;
   display: block;
   text-align: left;
@@ -17,7 +17,7 @@ nav .title {
   height: 40px;
 }
 
-nav a {
+.main-nav a {
   color: #ffffff;
   text-decoration: none;
 }
@@ -35,26 +35,26 @@ header .title:before {
   margin-right: 10px;
 }
 
-nav #menu_open {
+.main-nav #menu_open {
   display: none;
 }
 
-nav #hamburger {
+.main-nav #hamburger {
   display: none;
 }
 
-nav .container {
+.main-nav .container {
   max-width: 960px;
   padding: 0px 20px;
   box-sizing: border-box;
   margin: 0px auto;
 }
 
-nav .nav_right {
+.main-nav .nav_right {
   float: right;
 }
 
-nav ul {
+.main-nav ul {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
     Helvetica, Arial, "Lucida Grande", sans-serif;
   display: block;
@@ -65,14 +65,14 @@ nav ul {
   vertical-align: top;
 }
 
-nav ul li {
+.main-nav ul li {
   display: inline-block;
   line-height: 80px;
   margin: 0;
   padding: 0;
 }
 
-nav ul li a {
+.main-nav ul li a {
   display: inline-block;
   color: #ffffff;
   text-decoration: none;
@@ -82,27 +82,27 @@ nav ul li a {
   transition: 0.3s ease-in-out;
 }
 
-nav ul li a:hover {
+.main-nav ul li a:hover {
   background: rgba(157, 168, 185, 0.8);
   background: #c92c61;
   background: rgba(255, 255, 255, 0.2);
 }
 
-.build-develop nav {
+.build-develop .main-nav {
   background: #000;
 }
 
-.build-develop nav .title:after {
+.build-develop .main-nav .title:after {
   content: "Beta Docs";
   font-size: 12px;
   padding-left: 3px;
 }
 
-.build-develop nav ul li a:hover {
+.build-develop .main-nav ul li a:hover {
   background: #333333;
 }
 
-.build-develop nav ul li:nth-child(3) {
+.build-develop .main-nav ul li:nth-child(3) {
   display: none;
 }
 
@@ -111,26 +111,26 @@ nav ul li a:hover {
 }
 
 @media (max-width: 1100px) {
-  nav ul li a {
+  .main-nav ul li a {
     padding: 0px 20px;
   }
 }
 
 @media (max-width: 700px) {
-  nav #hamburger {
+  .main-nav #hamburger {
     display: block;
     padding: 21px;
     margin-right: -21px;
     fill: #ffffff;
   }
 
-  nav svg {
+  .main-nav svg {
     display: inline-block;
     width: 30px;
     height: 30px;
   }
 
-  nav #menu_open:checked ~ span .menufade {
+  .main-nav #menu_open:checked ~ span .menufade {
     background-color: rgba(0, 0, 0, 0.5);
     transition: background-color 0.3s linear;
     position: fixed;
@@ -141,7 +141,7 @@ nav ul li a:hover {
     z-index: 999;
   }
 
-  nav #menu_open ~ span ul {
+  .main-nav #menu_open ~ span ul {
     right: -300px;
     opacity: 0;
     position: fixed;
@@ -155,16 +155,16 @@ nav ul li a:hover {
     transition: all 0.3s linear;
   }
 
-  nav #menu_open:checked ~ span ul {
+  .main-nav #menu_open:checked ~ span ul {
     opacity: 1;
     right: 0px;
     width: 300px;
   }
-  nav #menu_open ~ span ul li {
+  .main-nav #menu_open ~ span ul li {
     display: block;
     text-align: left;
   }
-  nav #menu_open ~ span ul li a {
+  .main-nav #menu_open ~ span ul li a {
     display: block;
   }
 }
