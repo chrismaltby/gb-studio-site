@@ -341,11 +341,11 @@ Your game has 512 variables that can be shared across all the scripts in your ga
 ## Music Events
 
 - **Music: Play Track**  
-  Plays a music file, optionally looping the file when finished.  
+  Plays a music .mod file, optionally looping the file when finished. If you play a new song while another song is playing, the old song will stop automatically.  
   <img src="/img/events/music-play.png" class="event-preview" />
 
 - **Music: Stop**  
-  Stops any currently playing music.  
+  Stops any currently playing music. Put this before a Music: Play Track event to restart the same song from the beginning.  
   <img src="/img/events/music-stop.png" class="event-preview" />
 
 ## Sound Events
