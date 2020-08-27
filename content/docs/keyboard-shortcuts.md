@@ -51,29 +51,32 @@ While editing the game world you can use the following keys to quickly manipulat
 
 Drawing mode is automatically enabled in the _Collision tool_ and the _Colorize tool_.
 
+**Draw** - Click on scene  
+**Draw line from last point** - Click to set first point, hold shift, click to set next point  
+**Lock brush to axis** - Hold Shift + Hold Click  
 **8px Brush** - 8  
 **16px Brush** - 9  
 **Fill** - 0  
-**Hide Triggers/Actors** - -  
+**Hide Triggers/Actors** - -
 
 ## Collision Types
 
 These are only availible when using the _Collision tool_.
 
+Each tile can hold a maximum of 1 ladder and 3 collision sides. Ladders will not replace existing collision when placed on top of other colliders.
+
+**Select multiple collision types** - Shift + Click  
+**Erase collision tile** - Click on a collision tile  
 **Solid** - 1  
 **Collision Top** - 2  
 **Collision Bottom** - 3  
 **Collision Left** - 4  
 **Collision Right** - 5  
-**Ladder (Platformer only)** - 6  
+**Ladder (Platformer only)** - 6
 
 ## Colorize Palettes
 
 These are only availible when using the _Colorize tool_.
 
-**Use Palette 1** - 1  
-**Use Palette 2** - 2  
-**Use Palette 3** - 3  
-**Use Palette 4** - 4  
-**Use Palette 5** - 5  
-**Use Palette 6** - 6  
+**Change Brush Palette** - 1-6  
+**Change Palettes** - Hold click on existing palette
