@@ -17,15 +17,15 @@ To look at project properties again from the _Editor Sidebar_, click on any empt
 
 ## Editor Tools
 
-_Select tool:_ Clicking any scenes, actors, or triggers will update the _Editor Sidebar_ to show the properties and scripts for the item you selected. You can switch back to the Project's properties by clicking outside of a scene.
+**Select tool:** Clicking any scenes, actors, or triggers will update the _Editor Sidebar_ to show the properties and scripts for the item you selected. You can switch back to the Project's properties by clicking outside of a scene.
 
-_Add tool:_ You are given the choice of adding a new Actor, Trigger or Scene. After clicking any of the 3 options, your mouse cursor will be loaded with a new item. You can place the new item by clicking inside the Project Editor, and cancel the action by pressing Escape or selecting another tool from _Editor Tools_.
+**Add tool:** You are given the choice of adding a new Actor, Trigger or Scene. After clicking any of the 3 options, your mouse cursor will be loaded with a new item. You can place the new item by clicking inside the Project Editor, and cancel the action by pressing Escape or selecting another tool from _Editor Tools_.
 
-_Erase tool:_ All collisions, actors, and triggers will be removed when clicked. Scenes are not affected by _Erase mode_. To delete a scene, use _Select mode_ and click the scene's background. In the _Editor Sidebar_ click the down arrow at the top to reveal the "Delete Scene" button. All erase actions can be undone by pressing Control Z.
+**Erase tool:** All collisions, actors, and triggers will be removed when clicked. Scenes are not affected by _Erase mode_. To delete a scene, use _Select mode_ and click the scene's background. In the _Editor Sidebar_ click the down arrow at the top to reveal the "Delete Scene" button. All erase actions can be undone by pressing Control Z.
 
-_Collision tool:_ Allows you to add collisions to any type of scene using GB Studio's _Drawing mode_.
+**Collision tool:** Allows you to add collisions to any type of scene using GB Studio's _Drawing mode_.
 
-_Colorize tool:_ Allows each tile to be given a different palette to use in place of GB Studio's default palette. The _Colorize tool_ also uses GB Studio's _Drawing mode_. The palettes used here are determined in the _Palette_ tab in the _Project Editor_. Clicking this for the first time will prompt if you want to enable color for your project. Enabling color to your game will not break compatability with regular GB systems/emulators.
+**Colorize tool:** Allows each tile to be given a different palette to use in place of GB Studio's default palette. The _Colorize tool_ also uses GB Studio's _Drawing mode_. The palettes used here are determined in the _Palette_ tab in the _Project Editor_.
 
 See the documentation on [Keyboard Shortcuts](/docs/keyboard-shortcuts) for editor tool shortcuts.
 
@@ -35,7 +35,9 @@ You can search and preview all the assets in your game by using the _Project Nav
 
 <img title="The Asset Viewer" src="/img/screenshots/asset-viewer.png" width="1258">
 
-The _?_ button will bring up the documentation page for that type of asset. The searchbar beside it can narrow down the list of assets to a specific file. Pressing _Edit_ will open the selected file using your system's default app setting.
+The **?** button will bring up the documentation page for that type of asset.  
+The searchbar will narrow down the list of assets to a specific file.  
+Pressing _Edit_ will open the selected file using your system's default app setting.  
 
 As with any window in GB Studio, your project assets folder can be opened with the folder button on the top right.
 
