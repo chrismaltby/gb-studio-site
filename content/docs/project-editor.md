@@ -5,18 +5,62 @@ next: "/docs/scenes"
 nextTitle: "Scenes"
 ---
 
-The default view for the _Project Editor_, as shown below, is the _Game World_. This is where you can create your game by combining scenes, adding actors and triggers then building scripting events to add interactions.
+The default view for the _Project Editor_ as shown below is the _Game World_. This is where you can create your game by combining scenes, adding actors and triggers then building scripting events to add interactions.
 
 <img title="The Project Editor" src="/img/screenshots/project-editor.png" width="1258">
 
-Use the _Editor Tools_ to switch between Select, Add, Erase and Collision Drawing modes.
+Use the _Editor Tools_ to switch between Select, Add, Erase, Collision, and Color Drawing modes.
 
-In the _Select mode_ clicking scenes, actors or triggers causes the _Editor Sidebar_ to show editable fields specific to whatever was selected. Clicking in the background between scenes switches the sidebar back to the _Project Editor_ where you can set the project name and choose the starting scene and position.
+By default, your project's properties are shown in the _Editor Sidebar_ on the right. Here you can set the project name and choose the starting scene. This project view is also where initial values for the Player actor are set. See the page on [The Player](/docs/player) for more information on the Player.
+
+## Editor Tools
+
+_Select tool:_ Clicking any scenes, actors, or triggers will update the _Editor Sidebar_ to show the properties and scripts for the item you selected. You can switch back to the Project's properties by clicking outside of a scene.
+
+_Add tool:_ You are given the choice of adding a new Actor, Trigger or Scene. After clicking any of the 3 options, your mouse cursor will be loaded with a new item. You can place the new item by clicking inside the Project Editor, and cancel the action by pressing Escape or selecting another tool from _Editor Tools_.
+
+_Erase tool:_ All collisions, actors, and triggers will be removed when clicked. Scenes are not affected by _Erase mode_. To delete a scene, use _Select mode_ and click the scene's background. In the _Editor Sidebar_ click the down arrow at the top to reveal the "Delete Scene" button. All erase actions can be undone by pressing Control Z.
+
+_Collision tool:_ Allows you to add collisions to any type of scene using GB Studio's _Drawing mode_.
+
+_Colorize tool:_ Allows each tile to be given a different palette to use in place of GB Studio's default palette. The _Colorize tool_ also uses GB Studio's _Drawing mode_. The palettes used here are determined in the _Palette_ tab in the _Project Editor_. Clicking this for the first time will prompt if you want to enable color for your project. Enabling color to your game will not break compatability with regular GB systems/emulators.
+
+To look at project properties again from the _Editor Sidebar_, click on any empty space between scenes.
 
 ## The Asset Viewer
 
-Using the _Project Navigator_ you can switch between the available views for your project. If you select _Sprites_, _Backgrounds_, _UI Elements_ or _Music_ you will be taken to the asset viewer where you can search and preview the assets available in your game.
+You can search and preview all the assets in your game by using the _Project Navigator_'s drop-down list. Selecting _Sprites_, _Backgrounds_, _UI Elements_ or _Music_ will bring up the asset viewer for each type of asset.
 
 <img title="The Asset Viewer" src="/img/screenshots/asset-viewer.png" width="1258">
 
-See the documentation on [Assets](/docs/assets) for more information on how to add new assets and the different requirements needed.
+The _?_ button will bring up the documentation page for that type of asset. The searchbar beside it can narrow down the list of assets to a specific file. Pressing _Edit_ will open the selected file using your system's default app setting.
+
+As with any window in GB Studio, your project assets folder can be opened with the folder button on the top right.
+
+See the documentation on [Assets](/docs/assets) for more information on how to add new assets.
+
+## Drawing mode Hotkeys
+
+Drawing mode is automatically enabled in _Collision mode_ and _Colorize mode_. Each hotkey can be previewed by hovering your mouse over the tool, collision-type or palette you want to use.
+
+**Tools**  
+- 8px Brush: 8
+- 16px Brush: 9
+- Fill: 0
+- Hide Triggers/Actors: -
+
+**Collision Types**  
+- Solid: 1
+- Collision Top: 2
+- Collision Bottom: 3
+- Collision Left: 4
+- Collision Right: 5
+- Ladder (Platformer only): 6
+
+**Colorize Palettes**  
+- Use Palette 1: 1
+- Use Palette 2: 2
+- Use Palette 3: 3
+- Use Palette 4: 4
+- Use Palette 5: 5
+- Use Palette 6: 6
