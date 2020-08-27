@@ -44,3 +44,37 @@ While editing the game world you can use the following keys to quickly manipulat
 **Eraser Mode** - E  
 **Collisions Mode** - C  
 **Set Player Start Position** - P (while hovering over desired location)
+
+## Drawing mode
+
+<span class="new">New in 2.0.0</span>
+
+Drawing mode is automatically enabled in the _Collision tool_ and the _Colorize tool_.
+
+**Drawing tools**  
+**8px Brush** - 8  
+**16px Brush** - 9  
+**Fill:** - 0  
+**Hide Triggers/Actors:** - -  
+
+## Collision types
+
+These are only availible when using the _Collision tool_.
+
+**Solid** - 1  
+**Collision Top** - 2  
+**Collision Bottom** - 3  
+**Collision Left** - 4  
+**Collision Right** - 5  
+**Ladder (Platformer only)** - 6  
+
+## Colorize palettes
+
+These are only availible when using the _Colorize tool_.
+
+**Use Palette 1** - 1  
+**Use Palette 2** - 2  
+**Use Palette 3** - 3  
+**Use Palette 4** - 4  
+**Use Palette 5** - 5  
+**Use Palette 6** - 6  
