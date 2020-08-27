@@ -1,6 +1,8 @@
 ---
 title: "Settings"
 draft: false
+next: "/docs/engine-eject"
+nextTitle: "Engine Eject"
 ---
 
 <span class="new">New in 1.2.0</span>
