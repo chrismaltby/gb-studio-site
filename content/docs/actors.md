@@ -15,6 +15,10 @@ To add an actor to a scene click the _**+** button_ in the _Editor Tools_ and se
 
 The _Editor Sidebar_ will switch to show the actor settings where you can give the actor a name for easier navigation later, reposition the actor (which you can also do with drag and drop), set the [sprite sheet](/docs/sprites), initial direction, the movement type and create a script that will play when the player interacts with the actor.
 
+## Collision Groups
+
+Actors can be given a collision group in the _Editor Sidebar_. When enabled, the option to run scripts based on collisions will appear in the _Editor Sidebar_. To learn more about On Hit scripts, see the documentation for [Scripting](/docs/scripting).
+
 ## Movement Type
 
 There are a few different movement types available to choose, the one you should use will depend on how you want the actor to behave as the player is walking around the scene and interacting with it.
@@ -38,12 +42,4 @@ Due to hardware limitations only **25 unique frames** of animation can be alloca
 
 ## Scripting
 
-Actors can have two scripts attached to them, _On Interact_ and _On Init_, you can toggle between which script is being edited by using the tabs in the _Editor Sidebar_ while the actor is selected.
-
-The _On Interact_ script will be run any time a player stands next to the actor and presses the _A_ button.
-
-The _On Init_ script can be used to have events run as soon as the scene is loaded, they will execute before any events in the scene's _On Init_ script.
-
-When the actor is selected click the _Add Event button_ in the _Editor Sidebar_ to open the event menu and start building a script.
-
-For more information see the documentation for [Scripting](/docs/scripting).
+To learn about how to script your Actor, see the documentation for [Scripting](/docs/scripting).
