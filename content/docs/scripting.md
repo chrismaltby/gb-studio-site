@@ -5,23 +5,67 @@ next: "/docs/custom-events"
 nextTitle: "Custom Events"
 ---
 
-Scripting events allow you to dynamically control parts of your game based on interactions from the player. Use them to connect scenes together, to give dialogue to your characters or to create cutscenes.
+Scripting events allow you to control parts of your game based on interactions from the player. They can be used to connect scenes together, change variables, give dialogue to characters, and more.
 
-When either a scene, an actor or a trigger is selected in the _World Editor_, the _Editor Sidebar_ will contain an _Add Event_ button at the bottom right corner, click this to add new events. If any events have already been defined they will be listed here with the topmost event being the first that will be run.
+Scripts can be added to scenes, actors, or triggers. Selecting one of these objects will update the _World Editor_ to show the script of the selected object in the _Editor Sidebar_. 
 
-When adding events to actors they will run when the player stands next to that actor and presses the interact button. Events on triggers run when the player stands on top of the trigger which is useful for creating doorways between scenes. Events on scenes run as soon as that scene is loaded which is useful for configuring the scene based on values of variables or to kick off a cutscene.
+To start building a script, select an object and click the _Add Event button_ in the _Editor Sidebar_ to open the event menu. Select an event to add it to the script. The topmost event is the first event to be run for that script.
 
-## Add Events
+# Adding Events
 
-After clicking the _Add Event_ button a menu will appear to choose the event to add. If you start typing you can filter this list or you can scroll through it to find what you're looking for. Click an event or press the _Enter_ key to add the highlighted event to your script.
+After clicking the _Add Event_ button, a menu will appear to choose the event to add. If you start typing you can filter this list or you can scroll through it to find what you're looking for. Click an event or press the _Enter_ key to add the highlighted event to your script.
 
-## Copy / Paste
+To copy an event, click the down arrow next to an event. All scripts have this same down arrow for copying/pasting. Clicking the down arrow on another event allows you to paste the clipboard event either before or after the selected one. You also have the option to paste the values from the first event into the second.
 
-Clicking the down arrow next to an event name in a script shows a dropdown menu where you can copy an event to your clipboard. Clicking this on another event allows you to paste the clipboard event either before or after the selected one or to just paste the values from the first event into the second.
+As a shortcut for pasting, you can press the _Alt_ key to turn all _Add Event_ buttons into _Paste Event_ buttons.
 
-<span class="new">New in 1.2.0</span>
+# Types of Scripts
 
-You can also hold the _Alt_ key to turn all _Add Event_ buttons into _Paste Event_ buttons allowing you to easily paste events into control flow branches.
+There are multiple script tabs to choose from the _Editor Sidebar_ depending on which object you have currently selected.
+
+
+
+## Scene Scripts
+
+These scripts can be accessed in the _Editor Sidebar_ by selecting a scene in your project.
+
+### On Init
+
+This script will run once at the beginning of the Scene. The Scene On Init script is always run after the On Init script for Actors in the Scene.
+
+### On Player Hit
+
+This script runs when the player is hit by an actor belonging to a collision group.
+
+## Actor Scripts
+
+These scripts can be accessed in the _Editor Sidebar_ by clicking an Actor in your project or using the Navigation list in each scene.
+
+### On Init
+
+This script will run once at the beginning of the Scene. Actors in a Scene will always run their On Init script before their Scene's On Init script.
+
+### On Interact
+
+Standing the Player next to an Actor and pressing the **A** button will cause the Player to "interact" with the Actor. Interacting with an Actor will begin this script. In Shoot 'Em Up scenes, interacting can additionally be done by colliding with the Actor.
+
+This script is often used for dialogue, using the "Text: Display Dialogue" event.
+
+Enabling a collision group for an actor will convert this script to _On Hit: Player_, which looks for Player collision rather than Player interaction. This behaviour is identical to _On Interact_ in Shoot 'Em Up scenes.
+
+### On Hit
+
+This script runs when the Actor is hit by another Actor or Projectile belonging to a collision group.
+
+### On Update
+
+This script is run once every frame, and can only be added to non-player Actors.
+
+## Trigger Scripts
+
+Trigger scripts only have an "On Trigger" script. The player must be inside the trigger to start this script. This is often used for creating doorways between scenes.
+
+# Event Glossary
 
 ## Text Events
 
@@ -42,7 +86,7 @@ You can also hold the _Alt_ key to turn all _Add Event_ buttons into _Paste Even
   <img src="/img/events/display-multiple-choice.png" class="event-preview" />
   <img src="/img/events/display-multiple-choice-preview.png" class="event-preview" />
 
-- **Text: Display Menu** <span class="new">New in 1.2.0</span>  
+- **Text: Display Menu**  
   Display a menu of multiple options and set the specified variable to the value of the chosen option. Each menu item has a maximum length of `6` characters.  
   Multiple layouts are provided, `Menu` (shown below) displays as a single column on the right hand side of the game screen and `Dialogue` displays a full width dialogue box with two columns. You can optionally set the `B` button to close the menu setting the variable to `0` and can also make the last menu item return `0` when selected.  
   <img src="/img/events/menu.png" class="event-preview" />
@@ -104,15 +148,15 @@ Your game has 512 variables that can be shared across all the scripts in your ga
   _Note:_ Variables have max values of 255 and will wrap if increased above 255 or below 0.  
   <img src="/img/events/variable-math.png" class="event-preview" />
 
-- **Variable: Set Flags** <span class="new">New in 1.2.0</span>  
+- **Variable: Set Flags**  
   Set the value of a variable by enabling individual bits of the 8-bit number. Allows 8 true/false values to be stored within a single variable. Setting the flags will replace the previous value of the variable.  
   <img src="/img/events/variable-flags-set.png" class="event-preview" />
 
-- **Variable: Add Flags** <span class="new">New in 1.2.0</span>  
+- **Variable: Add Flags**  
   Set selected flags to true on a variable. All unselected flags will keep their previous value.
   <img src="/img/events/variable-flags-add.png" class="event-preview" />
 
-- **Variable: Clear Flags** <span class="new">New in 1.2.0</span>  
+- **Variable: Clear Flags**  
   Set selected flags to false on a variable. All unselected flags will keep their previous value.
   <img src="/img/events/variable-flags-clear.png" class="event-preview" />
 
@@ -138,7 +182,7 @@ Your game has 512 variables that can be shared across all the scripts in your ga
   Conditionally execute part of the script if the specified variable matches a rule, such as "Equal To", "Greater Than" or "Less Than" against a second variable.  
   <img src="/img/events/if-variable-variable.png" class="event-preview" />
 
-- **If Variable Has Flag** <span class="new">New in 1.2.0</span>  
+- **If Variable Has Flag**  
   Conditionally execute part of the script if the specified variable has the chosen flag set as true.  
   <img src="/img/events/if-variable-flag.png" class="event-preview" />
 
@@ -158,7 +202,7 @@ Your game has 512 variables that can be shared across all the scripts in your ga
   Conditionally execute part of the script if there is a saved game available.  
   <img src="/img/events/if-game-saved.png" class="event-preview" />
 
-- **Switch** <span class="new">New in 1.2.0</span>  
+- **Switch**  
   Conditionally execute from multiple options depending on the value of the specified variable. First choose how many options you want to compare the variable against, then set the values to compare and what scripts to execute when the value is matched.  
   <img src="/img/events/switch.png" class="event-preview" />
 
@@ -166,7 +210,7 @@ Your game has 512 variables that can be shared across all the scripts in your ga
   Execute part of the script in a loop forever. Remember to break out of the loop otherwise the player will become stuck at this point. You can use a _Stop Script_ or _Change Scene_ event to stop the loop.  
   <img src="/img/events/loop.png" class="event-preview" />
 
-- **Label: Define / Label: Goto** <span class="new">New in 1.2.0</span>  
+- **Label: Define / Label: Goto**  
   Define markers in your script using _Label: Define_ giving the label a name and jump to markers using _Label: Goto_.  
   _Note:_ The name must be identical for the define/goto event pair to work. **Use with care!**
   <img src="/img/events/label-goto.png" class="event-preview" />
@@ -179,7 +223,7 @@ Your game has 512 variables that can be shared across all the scripts in your ga
   Stops the current script from running.  
   <img src="/img/events/script-stop.png" class="event-preview" />
 
-- **Disable Else** <span class="new">New in 1.2.0</span>  
+- **Disable Else**  
   If you don't require an _Else_ branch in any of your control flow events you can now disable it by selecting _Disable Else_ from the event dropdown menu. The same menu can be used to restore an _Else_ branch if needed at a later time.
   <img src="/img/events/disable-else.png" class="event-preview" />
 
@@ -214,7 +258,7 @@ Your game has 512 variables that can be shared across all the scripts in your ga
   <img src="/img/events/actor-set-direction.png" class="event-preview" />
   <img src="/img/events/actor-set-direction-preview.png" class="event-preview" />
 
-- **Actor: Set Direction Using Variable** <span class="new">New in 1.2.0</span>  
+- **Actor: Set Direction Using Variable**  
   Set the facing direction of the specified actor from the value of a variable.  
   <img src="/img/events/actor-direction-variables.png" class="event-preview" />
 
@@ -246,7 +290,7 @@ Your game has 512 variables that can be shared across all the scripts in your ga
   Store the current position of an actor into two variables.  
   <img src="/img/events/actor-store-position.png" class="event-preview" />
 
-- **Actor: Store Direction In Variable** <span class="new">New in 1.2.0</span>  
+- **Actor: Store Direction In Variable**  
   Store the current direction of an actor into a variable.  
   <img src="/img/events/actor-store-direction.png" class="event-preview" />
 
@@ -263,7 +307,7 @@ Your game has 512 variables that can be shared across all the scripts in your ga
   Set the current animation frame of the specified actor.  
   <img src="/img/events/actor-set-frame.png" class="event-preview" />
 
-- **Actor: Set Animation Frame Using Variable** <span class="new">New in 1.2.0</span>  
+- **Actor: Set Animation Frame Using Variable**  
   Set the current animation frame of the specified actor to the value of a variable.  
   <img src="/img/events/actor-set-frame-variable.png" class="event-preview" />
 
@@ -279,12 +323,12 @@ Your game has 512 variables that can be shared across all the scripts in your ga
   Change the player sprite sheet from the default defined in the _Project Editor_. Changes to the player sprite sheet will persist between scene transitions so make sure to change it back if the change was supposed to be temporary.  
   <img src="/img/events/actor-player-spritesheet.png" class="event-preview" />
 
-- **Actor: Collisions Disable** <span class="new">New in 1.2.0</span>  
+- **Actor: Collisions Disable**  
   Prevent collisions from affecting the selected actor. If a scene actor is selected then the player will be able to walk through them, if the player is selected then you will be able to walk through all actors and collisions in the scene.  
   _Note:_ While collisions are disabled it is still posible to interact with the actor.  
   <img src="/img/events/actor-collisions-disable.png" class="event-preview" />
 
-- **Actor: Collisions Enable** <span class="new">New in 1.2.0</span>  
+- **Actor: Collisions Enable**  
   Reenable collisions on the selected actor.  
   <img src="/img/events/actor-collisions-enable.png" class="event-preview" />
 
@@ -350,7 +394,7 @@ Your game has 512 variables that can be shared across all the scripts in your ga
 
 ## Sound Events
 
-- **Sound: Play Effect** <span class="new">New in 1.2.0</span>  
+- **Sound: Play Effect**  
   Play a sound effect, choose from playing a beep with a given pitch, a tone with a given frequency or cymbal crash. Using [Custom Events](/docs/custom-events) you can combine multiple effects into a single reusable event to make jingles.  
   <img src="/img/events/sound-tone.png" class="event-preview" />
   <img src="/img/events/sound-beep.png" class="event-preview" />
@@ -362,15 +406,15 @@ Your game has 512 variables that can be shared across all the scripts in your ga
   Pause script for up to 10 seconds.  
   <img src="/img/events/wait.png" class="event-preview" />
 
-- **Timer: Set Timer Script** <span class="new">New in 1.2.0</span>  
+- **Timer: Set Timer Script**  
   Execute the specified script repeatedly after a time interval. The script will keep running in the background until a _Disable Timer Script_ event is called or the scene is changed using a _Change Scene_ event.
   <img src="/img/events/timer-set.png" class="event-preview" />
 
-- **Timer: Restart Timer** <span class="new">New in 1.2.0</span>  
+- **Timer: Restart Timer**  
   Reset the countdown timer back to zero. The script will call again after the time specified originally.  
   <img src="/img/events/timer-restart.png" class="event-preview" />
 
-- **Timer: Disable Timer Script** <span class="new">New in 1.2.0</span>  
+- **Timer: Disable Timer Script**  
   Remove the timer script so it will no longer be called.  
   <img src="/img/events/timer-disable.png" class="event-preview" />
 
@@ -390,8 +434,8 @@ Your game has 512 variables that can be shared across all the scripts in your ga
 
 ## Miscellaneous Events
 
-- **Comment** <span class="new">New in 1.2.0</span>  
-  Provides no functionality in game but allows you to leave notes within your scripts. The text you type automatically gets set in the event title so you can collapse the comment and still read its content.
+- **Comment**
+  Allows you to leave notes within your scripts. Provides no functionality in-game. The text you type automatically gets set in the event title, so you can collapse the comment and still read its content.
   <img src="/img/events/comment.png" class="event-preview" />  
   You can also use the event dropdown menu to disable and reenable any event.  
   Disabled events will be skipped when run in game.  
