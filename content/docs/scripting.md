@@ -260,6 +260,14 @@ Your game has 512 variables that can be shared across all the scripts in your ga
 
 - **Actor: Set Direction Using Variable**  
   Set the facing direction of the specified actor from the value of a variable.  
+  
+  | Direction |	Number |
+  | --------- |	------ |
+  | Down      | 1 |
+  | Right     | 2 |
+  | Up        | 3 |
+  | Left      | 4 |
+  
   <img src="/img/events/actor-direction-variables.png" class="event-preview" />
 
 - **Actor: Set Position**  
@@ -299,6 +307,8 @@ Your game has 512 variables that can be shared across all the scripts in your ga
   | Right     | 2 |
   | Up        | 3 |
   | Left      | 4 |
+  
+  
   <img src="/img/events/actor-store-direction.png" class="event-preview" />
 
 - **Actor: Push Away From Player**  
