@@ -261,15 +261,15 @@ Your game has 512 variables that can be shared across all the scripts in your ga
 - **Actor: Set Direction Using Variable**  
   Set the facing direction of the specified actor from the value of a variable.  
   
-  | Direction |	Number |
-  | --------- |	------ |
+  <img src="/img/events/actor-direction-variables.png" class="event-preview" />  
+  
+  | Direction |	Value |
+  | --------- |	----- |
   | Down      | 1 |
   | Right     | 2 |
   | Up        | 3 |
   | Left      | 4 |
   
-  <img src="/img/events/actor-direction-variables.png" class="event-preview" />
-
 - **Actor: Set Position**  
   Set the position in the scene of the specified actor.  
   <img src="/img/events/actor-position.png" class="event-preview" />
@@ -301,16 +301,15 @@ Your game has 512 variables that can be shared across all the scripts in your ga
 - **Actor: Store Direction In Variable**  
   Store the current direction of an actor into a variable.  
   
-  | Direction |	Number |
-  | --------- |	------ |
+  <img src="/img/events/actor-store-direction.png" class="event-preview" />  
+  
+  | Direction |	Value |
+  | --------- |	----- |
   | Down      | 1 |
   | Right     | 2 |
   | Up        | 3 |
   | Left      | 4 |
   
-  
-  <img src="/img/events/actor-store-direction.png" class="event-preview" />
-
 - **Actor: Push Away From Player**  
   Push an actor in the direction the player is currently facing. By default pushes by one tile, but can optionally slide until a collision occurs.  
   <img src="/img/events/actor-push.png" class="event-preview" />
