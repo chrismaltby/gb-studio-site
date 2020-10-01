@@ -52,11 +52,11 @@ Each scene can have a maxmimum of 30 actors, 25 unique actor sprite frames, and 
 - ``T:`` represents the number of triggers that the scene isusing.
 
 ### Actor Limits
-Each scene can have a maximum of 30 actors. Ideally, there should never be more than 10 actors within a ``160px x 144px`` boundary. Clustering more than 10 actors together in a scene will cause some actors to become invisible in-game. GB Studio will warn you if it thinks this will be the case for a scene:  
+Each scene can have a maximum of 30 actors. Ideally, there should never be more than 10 actors within a 20 x 18 tile boundary, equivalent to ``160px x 144px``. Clustering more than 10 actors together in a scene will cause some actors to become invisible in-game. GB Studio will warn you if it thinks this will be the case for a scene:  
 
 <img src ="https://user-images.githubusercontent.com/16776042/94731004-03c44100-035c-11eb-917f-c0589052e604.png" style="width:300px"/>  
 
-You can address this message by moving or deleting actors so no more than 10 will be seen in a ``160px x 144px`` boundary. You can use the [Eraser Tool](/docs/keyboard-shortcuts/#Game-World) to delete actors. Actors will still become invisible if more than 10 actors move into the screenspace after the scene starts.
+You can address this message by moving or deleting actors so no more than 10 will be seen in a 20 x 18 tile boundary. You can use the [Eraser Tool](/docs/keyboard-shortcuts/#Game-World) to delete actors. Actors will still become invisible if more than 10 actors move into the screenspace after the scene starts.
 
 ### Frame Limits
 Each scene can have a maximum of 25 unique sprite frames. Read more about frame limits on the [Actors](/docs/actors/#Frame-Limits) page.
