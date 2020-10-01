@@ -292,6 +292,13 @@ Your game has 512 variables that can be shared across all the scripts in your ga
 
 - **Actor: Store Direction In Variable**  
   Store the current direction of an actor into a variable.  
+  
+  | Direction |	Number |
+  | --------- |	------ |
+  | Down      | 1 |
+  | Right     | 2 |
+  | Up        | 3 |
+  | Left      | 4 |
   <img src="/img/events/actor-store-direction.png" class="event-preview" />
 
 - **Actor: Push Away From Player**  
