@@ -160,6 +160,10 @@ table {
   empty-cells: show;
   border: 1px solid #cbcbcb;
   overflow-x: auto;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+  Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 16px;
+  line-height: normal;
 }
 table caption {
   color: #000;
@@ -174,7 +178,7 @@ table th {
   font-size: inherit;
   margin: 0;
   overflow: visible;
-  padding: 0.5em 1em;
+  padding: 5px 10px;
 }
 table td:first-child,
 table th:first-child {
