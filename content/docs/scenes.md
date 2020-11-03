@@ -31,10 +31,12 @@ For more information see the documentation for [Scripting](/docs/scripting).
 ## Adding Collision to a Scene
 Select the _Collision Tool_ from the _Editor Tools_. There are 6 collision types that can be added.
 
-**Solid** Collision stops colliding actors from entering the tile on any side.  
-**Top/Bottom/Left/Right** collision stops colliding actors from entering the tile from that specific side. This is useful for one-way collision and semi-solid platforms.
+- **Solid** collision stops colliding actors from entering a tile on all sides.  
+- **Top/Bottom/Left/Right** collision stops colliding actors from entering a tile from a specific side, useful for one-way collision and semi-solid platforms.
 
 Each tile can hold a maximum of 1 ladder and 3 collision sides. Adding 4 collision sides will replace the sides with a single solid block. Ladders will not replace existing collision when placed on top of other collision.
+
+**Warning:** Changing the background of a scene to a differently-sized background will remove all collisions from a scene.
 
 ## Colorizing a Scene
 Select the _Colorizer Tool_ from the _Editor Tools_. There are 6 palettes types that can be added to a scene with Color Mode enabled. Palettes can be adjusted in Settings.
