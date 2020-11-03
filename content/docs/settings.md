@@ -11,19 +11,11 @@ Clicking the _Project Navigator_ and selecting _Settings_ will take you to a lis
 
 ## GB Color Options
 
-GB Studio has some limited support for GB Color when your game is run on compatible hardware or emulators. There are two options currently available:
+GB Studio has some support for GB Color features when your game is run on compatible hardware or emulators. There are two options currently available:
 
 - **Use Double Speed Mode** - When enabled allows the game engine to make full use of the GB Color's increased CPU speed. Enabling this option helps prevent music skipping when transitioning between scenes.
 
-- **Use Custom Color Palette** - When enabled allows the four colors in your game's color palette to be replaced. Click on the color you wish to replace then choose the red, green and blue values to use or enter a hex color value and click _Convert Hex_ to match the closest available color.
-
-<img title="Color Palette" src="/img/screenshots/color-palette.png" width="513">
-
-<img title="Color Palette Edit" src="/img/screenshots/color-palette-edit.png" width="513">
-
-Using a custom color palette you can create a drastically different tone for your game! Try experimenting to see what you can come up with. If you don't like your color palette you can always click _Restore Default_ to the get the original palette back again.
-
-<img title="Color Game" src="/img/screenshots/color-game.png" width="592">
+- **Use Custom Color Palette** - When enabled allows the four colors in your game's color palette to be replaced. Read [palettes](/docs/palettes) for more information.
 
 ## Controls
 

@@ -1,8 +1,8 @@
 ---
 title: "UI Elements"
 draft: false
-next: "/docs/music"
-nextTitle: "Music"
+next: "/docs/palettes"
+nextTitle: "Palettes"
 ---
 
 Your project contains a number of files in `assets/ui` with fixed file names that define parts of your game's user interface. Editing these files allows you to change the default font, set the window frame and modify the selection cursor.
