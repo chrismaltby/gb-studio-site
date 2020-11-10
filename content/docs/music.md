@@ -11,20 +11,27 @@ Music can be played in your game using the [Music: Play](https://www.gbstudio.de
 
 ## Requirements
 
-Add music to your game by including .mod files in your project's `assets/music` folder. GB Studio uses [GBT Player](https://github.com/AntonioND/gbt-player) which is a driver that takes .mod files and converts them to instructions for the Gameboy. GBT Player interprets .mod files differently than the Amiga computers that the .mod format was originally designed for, so every .mod file that GBT Player reads should be composed/arranged to be used with GBT Player.
+Add music to your game by including GBT-ready .mod files in your project's `assets/music` folder. Most publicly available .mod files are not GBT-ready. GB Studio uses [GBT Player](https://github.com/AntonioND/gbt-player) which is a driver that takes .mod files and converts them to instructions for the Gameboy. GBT Player interprets .mod files differently than most .mod players, so every .mod file that GBT Player reads should be composed/arranged to be used with GBT Player. This is currently the only driver that GB Studio uses to play music in games.
 
-As an alternative to composing, there is a way to import .midi files to OpenMPT for playback in GBT Player. More information can be found under [Frequently Asked Questions](https://www.gbstudio.dev/docs/music/#frequently-asked-questions). You can also browse the [GB Studio Community Assets](https://github.com/DeerTears/GB-Studio-Community-Assets) to find free, GBT-compatible music under the MIT licence.
+To create GBT-ready .mod files, you can use any program that can export .mod files. Some popular choices are [**OpenMPT**](https://openmpt.org/) (for Windows or Linux using Wine), [**MilkyTracker**](https://milkytracker.org/) (for Windows, Mac and Linux), and [**BassoonTracker**](https://www.stef.be/bassoontracker/) (browser-based) to name a few.
 
-To compose GBT-compatible .mod files, you can use software such as [**OpenMPT**](https://openmpt.org/) (for Windows or Linux using Wine), [**MilkyTracker**](https://milkytracker.titandemo.org/) (for Windows, Mac and Linux), [**ProTracker**](https://16-bits.org/pt.php), and [**BassoonTracker**](https://www.stef.be/bassoontracker/) (browser-based) to name a few. Any software that loads and exports .mod files can write files that are compatible with GBT Player.
+## Alternatives to Composing
 
-## Resources
+You can browse the [GB Studio Community Assets](https://github.com/DeerTears/GB-Studio-Community-Assets) to find free, original, GBT-ready .mod files in the `/music` folder.
 
-It is recomended you read through your tracker's documentation to learn about your tracker:
+There are a few ways to convert existing tracker songs and .midi compositions to GBT-ready .mod files. The following list contains resources for converting songs into GBT-ready .mod files:
+- [Goodnight Girl's Midi to Mod video](https://youtu.be/4AxZqK9_jKE)
+- [James Park's Ft2Mod tool](http://ft2mod.jamespark.ninja/) converts Famitracker text data into GBT-ready .mod files. This tool is a work in progress.
+- [James Park's Midi2Mod tool](http://midi2mod.jamespark.ninja/) converts Midi files into GBT-ready .mod files. This tool is a work in progress.
+
+## Resources for Tracker-Use
+
+If you are learning how to use a tracker, it is recomended you read through your tracker's documentation. Here are the official documentation pages provided by OpenMPT, MilkyTracker and BassoonTracker:
 - [OpenMPT's Documentation](https://wiki.openmpt.org/Tutorial:_Getting_Started)
 - [MilkyTracker's Documentation](https://milkytracker.org/docs/MilkyTracker.html#shortcuts)
 - [BassoonTracker's Documentation](https://www.stef.be/bassoontracker/docs/#about)
 
-Lastly, the [GB Studio Discord](https://discord.gg/v9xAJCJ) also has a dedicated #music-help channel and a #tutorials channel in case you get stuck.
+Lastly, the [GB Studio Discord](https://discord.gg/v9xAJCJ) has a #tutorials-and-resources channel where you can find links to video tutorials on some of the most popular trackers. The Discord also has a #music-help channel where you can ask for help with composing and converting songs for GBT Player.
 
 ## Getting Started
 
@@ -96,7 +103,7 @@ GBT Player will round `Cxx` effects on Channel 3 to the nearest number listed ab
 
 ## Volume Persistence
 
-In most trackers, if a note is played without a volume command, the note's volume is reset to the maximum. When a .mod file is converted by GBT Player, notes without a volume effect will play at the same volume as the previous `Cxx` effect that the channel read. For example, take this scenario:
+In most trackers, if a note is played without a volume command, the note's volume is reset to the maximum. When a .mod file is converted by GBT Player, notes without a volume effect will play at the same volume as the previous `Cxx` effect that the channel read. For example:
 
 ```
 ModPlug Tracker MOD
@@ -152,9 +159,16 @@ ModPlug Tracker MOD
 ```
 
 ## Instruments
+
 *All numbers listed here are in base-10 unless otherwise noted.*
 
-The pulse channels 1 and 2 have four instrument options:
+There are 4 channels on the Gameboy, and each channel is designed to produce different pre-determined waveforms. Channels 1 and 2 can only produce pulse waves (including square waves). Channel 3 has access to eight custom waveforms, but these are not yet officially customizable. Channel 4 can only produce noise.
+
+GBT Player reads the instrument column of a .mod file to determine which waveform should be used on a channel. Unlike most .mod players, GBT Player does not read the sample data of these instruments, and this is why loading **template.mod** is crucial when creating GBT-ready .mod files. Refer to [Getting Started](/docs/music#getting-started) to learn how to load template.mod with these instruments.
+
+What follows is a rundown of all the instruments found in template.mod:
+
+Channels 1 and 2 have four instrument options:
 
 1. 25% pulse
 2. 50% pulse (square wave)
@@ -165,8 +179,8 @@ Instruments 5 through 7 are intentionally left blank.
 
 Channel 3, the wave channel, has 8 instrument options:
 
-8. Buzzy (Source code calls this "random :P")
-9. Ringy (useful for SFX)
+8. (8) Buzzy (Source code calls this "random :P")
+9. (9) Ringy (useful for SFX)
 10. (A) Sync Saw
 11. (B) Ring Saw
 12. (C) Octave Pulse + Triangle
@@ -174,11 +188,9 @@ Channel 3, the wave channel, has 8 instrument options:
 14. (E) Square
 15. (F) Sine
 
-As of GB Studio 1.2.1, GBT Player uses 16 instruments to access pre-determined noise settings - instruments 16 to 32.
+Channel 4 uses 16 instrument options to access pre-determined noise settings.
 
-Instruments 16 to 23 use Periodic (looped) Noise at various pitches, while instruments 24 to 32 use Pseudorandom noise at various pitches.
-
-The nicknames and descriptions next to these instruments are not official for GBT Player, they are intended to help identify these noise presets at a glance.
+The nicknames and descriptions next to these instruments are not official for GBT Player, they are intended to help composers identify these noise presets at a glance.
 
 Periodic Noise:
 
@@ -202,13 +214,15 @@ Pseudorandom Noise:
 30. (1Ehx) "scream" - The same as 29 but faster
 31. (1Fhx) "static" - etc.
 
-As of GB Studio 1.2.1 there are no GBT Player-readable instruments beyond 31. (1Fhx)
+There are no GBT Player-readable instruments beyond 31. (1Fhx)
+
+Instruments 16 to 23 use Periodic (looped) Noise at various pitches, while instruments 24 to 32 use Pseudorandom noise at various pitches.
 
 ## Effects
 
-There are two types of effects: Note-effects and Command-effects.
+There are two types of effects: _Note-effects_ and _Command-effects_.
 
-The only restrictions on effects is the Command-effects with Channel 3. It can use them when it's not trying to play a note/set the instrument on the same row.
+All channels can use all effects, except for Channel 3. Any effects known as _Command-effects_ will only work on Channel 3 if it is not trying to play a note/instrument on the same row as the _Command-effect_.
 
 **Note-effects** (uses bit 3) - All channels can use these effects freely
 
@@ -224,12 +238,30 @@ The only restrictions on effects is the Command-effects with Channel 3. It can u
 | Effect  | Name		  | Notes on effect usage																						|
 | ------- | ------------- | ----------------------------------------------------------------------------------------------------------- |
 | **Bxx** |     Jump      | Jump to a specific position in the song, `xx`.               |
-| **Dxx** | Pattern break | Jumps to the next pattern early, where `xx` is the row it should jump to in the next pattern. Using this on the last pattern will break the song by reading garbage data beyond the song. |
+| **Dxx** | Pattern break | Jumps to the next pattern early, `xx` is the row GBT Player will jump to in the next pattern. Don't use `Dxx` on the last pattern to create a song loop; this will read garbage data in-game instead of looping the song. |
 | **Fxx** |   Set speed   | Sets the song speed to `xx`. Valid values are `01` to `1F`. The value represents how many frames should the song wait before moving on to another row. Setting BPM speed has no effect upon conversion. |
 
-For Channel 3 only, the instrument data is too large to allow the 4th bit of a Command effect to occur while it's trying to play a note/set the instrument. Command-effects will ignore new notes on Channel 3 to compensate.
+The reason that Channel 3 can't use Command-effects at the same time as a note/instrument is because the instrument data is too large. The instrument data can't allow the 4th bit of a Command effect to occur when the instrument data is being called upon at the same time. Channel 3 will play notes without effects (or sometimes effects without notes) to compensate for this.
 
-### Speed Table
+## BPM Table
+
+There is no way to enter a BPM value for a song. Tracker music speed is set by frames-per-row (the `Fxx` effect) to determine how long each row should be played for. `Fxx` ranges from `F01` to `F1F`. There are several rough BPM options that can be chosen by using different numbers of rows-per-beat, alongside the `Fxx` command.
+
+Rows-per-beat refers to how many tracker rows make up one musical measure. This is up to the composer to decide, which is what the Speed Table below was created for.
+
+The following table shows most of the possible BPM values for songs in GB Studio:
+
+<img title="BPM Table for Speeds F01 to F04" src="/img/music_docs/speed_table_f01_to_f04.png" width="1258">`
+
+* Songs that use speed effects F01 to F04 should add `F96` so trackers can emulate these faster speeds accurately.
+
+<img title="BPM Table for Speeds F05 to F08" src="/img/music_docs/speed_table_f05_to_f08.png" width="1258">
+
+* Songs that use speed settings F05 and slower should add `F82` so trackers can emulate these slower speeds accurately.
+
+<img title="BPM Table for Speeds F09 to F0C" src="/img/music_docs/speed_table_f09_to_f0c.png" width="1258">
+
+Here is a fuller version of these charts in Markdown format:
 
 | Fxx Value (in tracker) | BPM (in tracker) | BPM (in game) |
 | ---------------------- | ---------------- | ------------- |
@@ -244,17 +276,28 @@ For Channel 3 only, the instrument data is too large to allow the 4th bit of a C
 | F09                    | 83.33 BPM        | 90 BPM        |
 | F0A                    | 75 BPM           | 81.82 BPM     |
 
-This is not a full table, it's just the top few speeds. It's here to highlight some of the speed discrepancies, albeit small to not be very noticeable, with the exception of the values marked with 1.
-
-You might notice that the value of the F effect, when converted to decimal, is just the speed divisor. For instance, F03 divides the BPM by 3 (`750 / 3 = 250`, or `900 / 3 = 300`).
-
-Because of how GB Studio is set up, a 60hz F05 effect, which would result in 180 BPM in-game, is impossible here.
-
-*While not in GB Studio, GBT has a flag called `-speed` that will handle BPM differently, which would require F96 effects for every speed, as it won't handle any internal conversions to get the speed closer. This is the reason why F01 to F04 require F96 in both modes, there's no equivalent for it in tracker speed.*
 
 **1. Values marked with 1 require an additional F96 effect for the song to sound closer in speed when converted, or setting the song BPM to 150.** This F96 effect can be removed once you're done with your song, there won't be any difference as GBT ignores this -- It's only here to set the BPM to something closer to the in-game version.
 
-## Tricks and Tips
+At 1 row-per-beat, each row counts as a beat. At 1 row-per-beat in 4/4 with speed `F01` will make the song's in-game BPM sound like 900 BPM. This can be halved by using 2 rows-per-beat, to create a 450 BPM song. This process is how the following Speed Table was created.
+
+Because of how GB Studio is set up, a 60hz F05 effect, which would result in 180 BPM in-game, is impossible here.
+
+*For Engine Eject users, GBT Player has the `-speed` flag which handles BPM differently. This would require F96 on every speed setting. Without the speed flag, F96 is helpful for songs using speeds F01 to F04.*
+
+## Time Signatures
+
+Trackers don't use time signatures, but they can be inferred by ending a pattern early. GBT Player and other trackers can skip to the next pattern by using a `Dxx` effect or a `Bxx` effect on the last audible row. Using `Dxx` or `Bxx` on row 48 (30hx) will result in a percieved time signature of 3/4. Patterns cannot be more than 64 rows. Patterns manually shortened to less than 64 rows will be re-expanded to 64 rows in-game.
+
+## Tips
+
+- **Make sure you save frequently and also back-up your files.** This is important in anything that you do and it's worth mentioning here.
+- [**If you're stuck, please ask for help in the Discord server, in `#music-help`.**](https://discord.gg/v9xAJCJ) There's usually a few handful of people who are willing to help out.
+- **Frequently test your music in-game.** Things often won't sound 1 to 1, and the built in preview just plays the .mod file rather than building the music and previewing that.
+- **Keep it simple!** Don't jump into this, trying to emulate what several artists have done with LSDj or whatever other tools, you'll just get stuck.
+- [**Give the GBT Player documentation a read.**](https://github.com/AntonioND/gbt-player) 
+
+## Tricks
 
 ### **1. High Speed**
 
@@ -323,13 +366,7 @@ You might wonder how's it going to sound in-game; well, it'll sound as close as 
 
 **Q: Can I use mp3/wav files?**
 
-A: No, but you can use .midi files. If you're looking for an easy way to add music to your game, you can ask the #collaborations channel of the GB Studio Discord or browse the [GB Studio Community Assets.](https://github.com/DeerTears/GB-Studio-Community-Assets)
-
-This has limited success, and there are easier options to get music in your game, such as the 
-
-**Q: How do I convert a .midi file to .mod?**
-
-A: OpenMPT can open MIDI files and save the result to .mod Some resources on how to do this include a [video tutorial](https://www.youtube.com/watch?v=4AxZqK9_jKE) as well as Kazy's write-up article pinned in the #music-help section of the GB Studio discord.
+A: No. Sample playback on the Gameboy is a hack, and it may someday be possible for GB Studio. Currently there is no way to get sample playback in GB Studio.
 
 **Q: Can I use this .mod file I found online?**
 
@@ -366,17 +403,3 @@ A: Go over to the "General" tab that's under the New File, Open and Save buttons
 **Q: Why does my song start out with garbage noise?**
 
 A: If your song doesn't start using the first two channels, add a note to their first row with a `C00` effect on each.
-
-**Q: Can I play sound effects?**
-
-A: Yes, with limitations. View the next page of the documentation for more information. Playing sound effects will not interrupt the song being played by GBT Player.
-
-## Tips
-
-- **Make sure you save frequently and also back-up your files.** This is important in anything that you do and it's worth mentioning here.
-- [**If you're stuck, please ask for help in the Discord server, in `#music-help`.**](https://discord.gg/v9xAJCJ) There's usually a few handful of people who are willing to help out at most times.
-- **Frequently try out your music in your game.** Things don't sound 1:1, and the built in preview just plays the .mod file rather than building the music and previewing that.
-- **Keep it simple!** Don't jump into this, trying to emulate what several artists have done with LSDj or whatever other tools, you'll just get stuck.
-- **Don't be afraid of failure.** I get this is kind of an unfitting tip, but it's important. Your first song won't be good, and that's okay. You'll fail, sure, but you'll also gain knowledge on what you might've done wrong, or how you want to go on about with your next endeavor.
-- **OpenMPT has a manual to help you get started.** [Here's a link](https://wiki.openmpt.org/Tutorial:_Getting_Started), give it a read if you're stuck (or just ask for help)
-- [**Give the GBT Player documentation a read.**](https://github.com/AntonioND/gbt-player) 
