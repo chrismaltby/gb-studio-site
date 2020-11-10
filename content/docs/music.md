@@ -281,9 +281,7 @@ Here is a fuller version of these charts in Markdown format:
 
 At 1 row-per-beat, each row counts as a beat. At 1 row-per-beat in 4/4 with speed `F01` will make the song's in-game BPM sound like 900 BPM. This can be halved by using 2 rows-per-beat, to create a 450 BPM song. This process is how the following Speed Table was created.
 
-Because of how GB Studio is set up, a 60hz F05 effect, which would result in 180 BPM in-game, is impossible here.
-
-*For Engine Eject users, GBT Player has the `-speed` flag which handles BPM differently. This would require F96 on every speed setting. Without the speed flag, F96 is helpful for songs using speeds F01 to F04.*
+*For Engine Eject users, GBT Player has the `-speed` flag which handles BPM differently. Enabling `-speed` in GB Studio requires F96 is added to songs regardless of speed setting in order to emulate the song speed accurately in a tracker*
 
 ## Time Signatures
 
@@ -301,9 +299,7 @@ Trackers don't use time signatures, but they can be inferred by ending a pattern
 
 ### **1. High Speed**
 
-By using F01 to F04, you can achieve much higher granularity when it comes to changing volumes and creating sounds of sorts. This means that with a high enough speed, you can create more varied bodies for sounds, with sort-of envelopes, or elaborate effects (like 1 channel echos, which I'll cover here in a moment).
-
-This trick means you're going from drums that sound flimsy and primitive to something more impressive.
+By using F01 to F04, you can achieve much higher granularity when it comes to changing volumes and creating sounds.
 
 Here's an example of a Snare Drum, at speed F02, that might sound good for you.
 
@@ -345,7 +341,7 @@ With 1ch Echo (lowercase notes are the echoes)
 
 Notice how each lowercase letter takes the form of it's 3 step behind louder cousin? That's how the trick works. By having shorter notes that, on each step, has another quieter note that's way behind, you get a cool echoing effect.
 
-I can't explain it very well via text, so I recommend you check out this video by **explod2a03** covering how this trick works with a better example and actual audio: https://www.youtube.com/watch?v=6GI9gngTn_Y
+Check out this video by **explod2a03** covering how this trick works with audio: https://www.youtube.com/watch?v=6GI9gngTn_Y
 
 The best way to do this in a tracker is to use a channel you're not using temporarily, copy your note sequence to it, delay it by 3 (or however many you need) rows, then right clicking on the selection and clicking "Amplify...", and setting the amplitude to something lower than 50%.
 
@@ -353,20 +349,19 @@ After that, you should have both channels "alternate". Select the entirety of th
 
 ### 3. Quick volume envelopes
 
-Are you in a hurry? No problem, this simple trick will create linear envelopes:
+To create linear envelopes:
 
 1. Select two volume / C values of two separate notes (within the same channel), and everything in between
 2. Right click and hover over "Interpolate"
 3. Click on "Effect column"
-4. You're done!
 
-You might wonder how's it going to sound in-game; well, it'll sound as close as possible. The volumes it can't play it'll just clamp it to the nearest ones it can play.
+Any unplayable volume values will be clamped to the nearest plyable values. See [Volume Limitations](/docs/music#volume-limitations) for more information.
 
 ## Frequently Asked Questions
 
 **Q: Can I use mp3/wav files?**
 
-A: No. Sample playback on the Gameboy is a hack, and it may someday be possible for GB Studio. Currently there is no way to get sample playback in GB Studio.
+A: No. Sample playback on the Gameboy is a hack. While it may someday be possible for GB Studio, currently there is no implementation of it.
 
 **Q: Can I use this .mod file I found online?**
 
@@ -378,25 +373,17 @@ A: `EC1` will mute a channel's note, `C00` will mute the channel until it reciev
 
 **Q: What do I do if my song sounds completely giltched-out?**
 
-A: It's probably corrupted. It can likely be saved by using OpenMPT and saving it as a different filetype. If you're using **MilkyTracker**, don't press "Save" on a .mod file, always work in a .xm file instead.
-
-**Q: Why is my song speed is faster in-game than it is in the tracker?**
-
-A: If you're using an `Fxx` effect with a value lower than `F05`, add `F96` to the first row of your song. This will not impact your in-game playback speed.
-
-**Q: Can I play back voice clips/sound effects?**
-
-A: Not on GBT Player. Pokemon Yellow's method is unique, and LSDj does not leave much processing power for games to be played while it's running.
+A: The song is likely corrupted. The song can be rescued by opening it and saving it in OpenMPT. You can prevent this from happening again by using Disk op. to switch to the .xm filetype in Milkytracker, and pressing Save As to create .mod files. d file, always work in a .xm file instead.
 
 **Q: Can I use a different tool to write my music?**
 
-A: If the tool can natively export to .mod, try it!
+A: If the tool can natively export to .mod, yes!
 
-**Q: Why is my song playing glitched sounds when it tries to loop?**
+**Q: Why is my song glitching when it tries to loop?**
 
-A: `D00` is a problematic effect, try using `Bxx` instead. If you're already using `Bxx`, make sure the `xx` number does not go above the number of pattern-slots in your song. A song's first pattern is always in slot 00.
+A: `Dxx` will play garbage data if it's used the end of a song, use `Bxx` instead. Read [Effects](/docs/music#effects) to learn more.
 
-**Q: Why do some notes in OpenMPT appear red and sound higher/lower than they're supposed to sound?**
+**Q: Why do some notes in OpenMPT appear red?**
 
 A: Go over to the "General" tab that's under the New File, Open and Save buttons. Click the big button next to the "Name" field that says "MOD (ProTracker), 4 channels". Once there, disable both **ProTracker 1/2 Mode (MOD)** and **Amiga Frequency Limits.** This is a thing because the format here is meant to be used with the Amiga line of computers (that's where it was made), which has frequency limits.
 
