@@ -6,7 +6,7 @@ draft: false
 
 # Documentation
 
-[en](/docs) | [de](/de/docs) | es | [pl](/pl/docs)
+[en](/docs) | [de](/de/docs) | es | [pl](/pl/docs) | [fr](/fr/docs)
 
 - [Installation](installation)
 - [Getting Started](getting-started)
