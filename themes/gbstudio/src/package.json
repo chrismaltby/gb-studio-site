@@ -18,6 +18,6 @@
     "tachyons": "^4.7.0"
   },
   "dependencies": {
-    "swiper": "5.4.5"
+    "swiper": "6.5.1"
   }
 }
