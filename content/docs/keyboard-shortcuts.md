@@ -19,7 +19,7 @@ When playing your game inside GB Studio use the following keyboard controls:
 **Start** - Enter  
 **Select** - Shift
 
-<span class="new">New in 1.2.0</span>
+These controls can be modified at any time by going to the _Settings View_ under the _Controls_ section.
 
 You can also control the _Play Window_ using a supported gamepad. If your web browser has gamepad support you can also use it when running a web build.
 
@@ -47,8 +47,6 @@ While editing the game world you can use the following keys to quickly manipulat
 
 ## Drawing Mode
 
-<span class="new">New in 2.0.0</span>
-
 Drawing mode is automatically enabled in the _Collision tool_ and the _Colorize tool_.
 
 **Draw** - Click on scene  
@@ -61,7 +59,7 @@ Drawing mode is automatically enabled in the _Collision tool_ and the _Colorize 
 
 ## Collision Types
 
-These are only availible when using the _Collision tool_.
+These are only available when using the _Collision tool_.
 
 Each tile can hold a maximum of 1 ladder and 3 collision sides. Ladders will not replace existing collision when placed on top of other colliders.
 
@@ -76,7 +74,13 @@ Each tile can hold a maximum of 1 ladder and 3 collision sides. Ladders will not
 
 ## Colorize Palettes
 
-These are only availible when using the _Colorize tool_.
+These are only available when using the _Colorize tool_.
 
 **Change Brush Palette** - 1-6  
 **Change Palettes** - Hold click on existing palette
+
+## Music Editor
+
+These are only available when using the _Music Editor_.
+
+**Change Instrument** - 1-9  
