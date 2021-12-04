@@ -15,7 +15,7 @@ Con el modo _Select mode_ puedes hacer clic en escenas, actores o triggers y la 
 
 ## El Visualizador de Assets
 
-Desde el _Project Navigator_ puedes acceder a las diferentes vistas de un proyecto. Si seleccionas _Sprites_, _Backgrounds_, _UI Elements_ o _Music_ irás a un visualizador de assets donde puedes buscar y visualizar los recursos de tu juego.
+Desde el _Project View Button_ puedes acceder a las diferentes vistas de un proyecto. Si seleccionas _Sprites_, _Backgrounds_, _UI Elements_ o _Music_ irás a un visualizador de assets donde puedes buscar y visualizar los recursos de tu juego.
 
 <img title="The Asset Viewer" src="/img/screenshots/asset-viewer.png" width="1258">
 

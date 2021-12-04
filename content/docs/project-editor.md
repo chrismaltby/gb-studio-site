@@ -31,7 +31,7 @@ See the documentation on [Keyboard Shortcuts](/docs/keyboard-shortcuts) for edit
 
 ## The Asset Viewer
 
-You can search and preview all the assets in your game by using the _Project Navigator_'s drop-down list. Selecting _Sprites_, _Backgrounds_, _UI Elements_ or _Music_ will bring up the asset viewer for each type of asset.
+You can search and preview all the assets in your game by using the _Project View Button_'s drop-down list. Selecting _Sprites_, _Backgrounds_, _UI Elements_ or _Music_ will bring up the asset viewer for each type of asset.
 
 <img title="The Asset Viewer" src="/img/screenshots/asset-viewer.png" width="1258">
 

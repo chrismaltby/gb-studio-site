@@ -11,7 +11,7 @@ Al hacer clic en _Play button_ en la parte superior derecha del _Project Editor_
 
 ## Compilar desde Terminal
 
-Al hacer clic en _Project Navigator_ y seleccionar _Build & Run_ te llevará al _Build Terminal_ donde puodrás ver un log de la compilación del proyecto. También puedes ver esta pantalla haciendo clic en el botón _Play_ button mientras se compila. En esta pantalla podrás ver si hay algún error y así poder corregirlo.
+Al hacer clic en _Project View Button_ y seleccionar _Build & Run_ te llevará al _Build Terminal_ donde puodrás ver un log de la compilación del proyecto. También puedes ver esta pantalla haciendo clic en el botón _Play_ button mientras se compila. En esta pantalla podrás ver si hay algún error y así poder corregirlo.
 
 ## Compilar como ROM
 

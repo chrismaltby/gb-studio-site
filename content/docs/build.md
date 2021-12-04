@@ -11,7 +11,7 @@ Clicking the _Play button_ in the top right of the _Project Editor_ window will 
 
 ## Build Terminal
 
-Clicking the _Project Navigator_ and selecting _Build & Run_ will take you to the _Build Terminal_ where you can see a log of the project build. You also get to this screen by clicking the _Play_ button while a build is taking place. This screen will show you if there's any errors in your build to help you correct them.
+Clicking the _Project View Button_ and selecting _Build & Run_ will take you to the _Build Terminal_ where you can see a log of the project build. You also get to this screen by clicking the _Play_ button while a build is taking place. This screen will show you if there's any errors in your build to help you correct them.
 
 ## Build as ROM
 

@@ -5,7 +5,7 @@ draft: false
 
 <span class="new">Novedad en la versión 1.2.0</span>
 
-Si haces clic en el _Project Navigator_ seleccionas _Settings_ podrás ver una lista de configuraciones para tu proyecto.
+Si haces clic en el _Project View Button_ seleccionas _Settings_ podrás ver una lista de configuraciones para tu proyecto.
 
 ## Opciones para GB Color
 

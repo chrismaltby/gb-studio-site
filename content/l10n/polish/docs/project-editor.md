@@ -15,7 +15,7 @@ Przy pomocy narzędzia _zaznacza_ poprzez klikanie w sceny, aktorów czy rozruch
 
 ## Wyświetlenie zasobów
 
-Dzięki _Nawigatorze projektu_ (_Project Navigator_) można przechodzić między trybami projektu. Jeżeli zostanie wybrany tryb _Obiekty_ (_Sprites_), _Tła_, _Elementy interfejsu_ lub _Muzyka_, to zostanie wyświetlona _Przeglądarka zasobów_ gdzie można wyszukiwać i przeglądać zasoby dostępne w aktualnej grze.
+Dzięki _Nawigatorze projektu_ (_Project View Button_) można przechodzić między trybami projektu. Jeżeli zostanie wybrany tryb _Obiekty_ (_Sprites_), _Tła_, _Elementy interfejsu_ lub _Muzyka_, to zostanie wyświetlona _Przeglądarka zasobów_ gdzie można wyszukiwać i przeglądać zasoby dostępne w aktualnej grze.
 <img title="The Asset Viewer" src="/img/screenshots/asset-viewer.png" width="1258">
 
 Dla bardziej szczegółowych informacji na temat zasobów, przejdź do odpowiedniego tematu w dokumentacji. Dział [Zasoby](/docs/assets) zawiera informacje o tym jak dodać nowe zasoby oraz o różnicach między nimi.  

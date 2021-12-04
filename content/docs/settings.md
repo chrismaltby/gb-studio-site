@@ -7,7 +7,7 @@ nextTitle: "Engine Eject"
 
 <span class="new">New in 1.2.0</span>
 
-Clicking the _Project Navigator_ and selecting _Settings_ will take you to a list of your project's settings.
+Clicking the _Project View Button_ and selecting _Settings_ will take you to a list of your project's settings.
 
 ## GB Color Options
 
