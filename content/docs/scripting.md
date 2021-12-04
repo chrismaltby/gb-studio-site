@@ -2,7 +2,7 @@
 title: "Scripting Events"
 draft: false
 next: "/docs/custom-events"
-nextTitle: "Custom Events"
+nextTitle: "Custom Scripts"
 ---
 
 Scripting events allow you to control parts of your game based on interactions from the player. They can be used to connect scenes together, change variables, give dialogue to characters, and more.
@@ -411,7 +411,7 @@ Your game has 512 variables that can be shared across all the scripts in your ga
 ## Sound Events
 
 - **Sound: Play Effect**  
-  Play a sound effect, choose from playing a beep with a given pitch, a tone with a given frequency or cymbal crash. Using [Custom Events](/docs/custom-events) you can combine multiple effects into a single reusable event to make jingles.  
+  Play a sound effect, choose from playing a beep with a given pitch, a tone with a given frequency or cymbal crash. Using [Custom Scripts](/docs/custom-scripts) you can combine multiple effects into a single reusable event to make jingles.  
   <img src="/img/events/sound-tone.png" class="event-preview" />
   <img src="/img/events/sound-beep.png" class="event-preview" />
   <img src="/img/events/sound-crash.png" class="event-preview" />
