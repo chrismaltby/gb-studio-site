@@ -33,7 +33,7 @@ To edit the controls for a button click on the input box and while the input is 
 
 To reset to the original controls you can use the _Restore Default_ button.
 
-<img title="Controls" src="/img/screenshots/controls.png" width="507">
+<img title="Controls" src="/img/screenshots/controls-v3.png" width="650" class="drop-shadow">
 
 ## Cartridge Type
 
