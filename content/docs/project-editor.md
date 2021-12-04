@@ -7,7 +7,7 @@ nextTitle: "Scenes"
 
 The default view for the _Project Editor_ as shown below is the _Game World_. This is where you can create your game by combining scenes, adding actors and triggers then building scripting events to add interactions.
 
-<img title="The Project Editor" src="/img/screenshots/project-editor.png" width="1258">
+<img title="The Project Editor" src="/img/screenshots/project-editor-v3.png" width="1258">
 
 Use the _Editor Tools_ to switch between Select, Add, Erase, Collision, and Color Drawing modes.
 
@@ -29,16 +29,17 @@ To look at project properties again from the _Editor Sidebar_, click on any empt
 
 See the documentation on [Keyboard Shortcuts](/docs/keyboard-shortcuts) for editor tool shortcuts.
 
-## The Asset Viewer
+## Project Views
 
-You can search and preview all the assets in your game by using the _Project View Button_'s drop-down list. Selecting _Sprites_, _Backgrounds_, _UI Elements_ or _Music_ will bring up the asset viewer for each type of asset.
+Using the _Project View Button_ you can switch between different views of your project and its assets. 
 
-<img title="The Asset Viewer" src="/img/screenshots/asset-viewer.png" width="1258">
-
-The **?** button will bring up the documentation page for that type of asset.  
-The searchbar will narrow down the list of assets to a specific file.  
-Pressing _Edit_ will open the selected file using your system's default app setting.  
-
-As with any window in GB Studio, your project assets folder can be opened with the folder button on the top right.
+**Game World:** Create your game by combining scenes, actors and triggers.  
+**Sprites:** Edit your sprites and create animations.  
+**Backgrounds:** Preview your background assets.  
+**Music:** Preview and edit (hUGEDriver only) your music files.  
+**Palettes:** Edit your palettes for GBC games.  
+**Dialogue Review:** Preview and edit all the text in your game.  
+**Build and Run:** View logs of progress while building your game.  
+**Settings:** Change your project's settings such as default sprites, color palettes and keyboard controls.  
 
 See the documentation on [Assets](/docs/assets) for more information on how to add new assets.
