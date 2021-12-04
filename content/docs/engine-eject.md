@@ -3,9 +3,7 @@ title: "Engine Eject"
 draft: false
 ---
 
-<span class="new">New in 2.0.0</span>
-
-Engine Eject copies the GBDK code that GB Studio uses into a folder in your project, named `assets/engine`. You can edit these source files to your liking using an IDE to have more control over how your GB Studio game is built. This feature is only recomended for developers familiar with GBDK.
+Engine Eject copies the [GBVM game engine](https://github.com/chrismaltby/gbvm) that GB Studio uses into a folder in your project, named `assets/engine`. You can edit these source files to your liking using an IDE to have more control over how your GB Studio game is built. This feature is only recomended for developers familiar with GBDK.
 
 To use Engine Eject, click on _Game_ at the top of the GB Studio window and navigate to the _Advanced_ tab to show the _Engine Eject_ button.
 
@@ -17,11 +15,15 @@ To revert any GBDK file back to its GB Studio default, delete it from the `asset
 
 ## Compile Errors
 
-If you have bugged or incompatible files in the `/engine` folder, GB Studio will not build your game. Error messages can be found in the _Build & Run_ window.
+If you have bugged or incompatible files in the `/engine` folder, GB Studio will not be able to build your game. Error messages can be found in the _Build & Run_ window.
 
-Errors for problematic files will claim that the compiler couldn't find a file that was meant to be included:
- 
- `..\_gbstools\gbdk\bin\lcc: can't find 'C:/.../_gbsbuild/obj/Platform.o'`  
- `..\_gbstools\gbdk\bin\lcc: can't find 'C:/.../_gbsbuild/obj/TopDown.o'`  
+The error message will often explain which files have problems and point you to the line number where the problem was found, for example this error is showing that line 77 of `src/core/actor.c` is using a variable that has not yet been defined:
 
-These errors will not be caused by missing files. GB Studio refers to its GBDK defaults in place of any missing `assets/engine` files. Fixing or removing the files that caused the error will allow your game to build and run again.
+```
+Compiling: src/core/actor.c
+src/core/actor.c:77: error 20: Undefined identifier 'emote_offsets'
+src/core/actor.c:77: error 22: Array or pointer required for '[]' operation 
+src/core/actor.c:77: error 47: indirections to different types assignment   
+```
+
+These errors will not be caused by missing files. GB Studio refers to its default engine in place of any missing `assets/engine` files. Fixing or removing the files that caused the error will allow your game to build and run again.
