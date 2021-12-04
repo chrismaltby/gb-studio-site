@@ -43,7 +43,8 @@ While editing the game world you can use the following keys to quickly manipulat
 **Add Scene** - S  
 **Eraser Mode** - E  
 **Collisions Mode** - C  
-**Set Player Start Position** - P (while hovering over desired location)
+**Set Player Start Position** - P (while hovering over desired location)  
+**Pan View** - Hold Space (while clicking and dragging on _Game World_)
 
 ## Drawing Mode
 
