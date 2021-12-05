@@ -54,7 +54,6 @@ By default fonts use an ASCII mapping with character code 32 (Space) mapping to 
     "ィ": 168
   }
 }
-
 ```
 In this example using a `ヲ` character will now display character 166 from your `.png`.
 
