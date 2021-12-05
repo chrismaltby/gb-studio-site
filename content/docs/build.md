@@ -27,7 +27,11 @@ If you zip the `build/web` folder you can upload it to [Itch.io](https://itch.io
 
 Clicking the _Export button_ and selecting _Export Pocket_ will build your game as a `.pocket` file for use on [Analogue Pocket](https://www.analogue.co/pocket) devices.
 
-To play your `.pocket` game, copy it to a MicroSD card into a folder named `GB Studio` then insert the MicroSD card into your Pocket device. From the Pocket menu choose `Tools` / `GB Studio` / `Play Creations` and select your file from the list.
+To play your `.pocket` game:
+- Create a folder at the root of a MicroSD card called `GB Studio`.
+- Copy the `.pocket` file into the `GB Studio` folder
+- Insert the MicroSD card into your Pocket device.
+- From the Pocket menu choose `Tools` / `GB Studio` / `Play Creations` and select your file from the list.
 
 ## Troubleshooting
 
