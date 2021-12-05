@@ -5,25 +5,32 @@ next: "/docs/engine-eject"
 nextTitle: "Engine Eject"
 ---
 
-<span class="new">New in 1.2.0</span>
-
 Clicking the _Project View Button_ and selecting _Settings_ will take you to a list of your project's settings.
 
 ## GB Color Options
 
-GB Studio has some limited support for GB Color when your game is run on compatible hardware or emulators. There are two options currently available:
+GB Studio has support for GB Color when your game is run on compatible hardware or emulators. Click the `Enable Color Mode` checkbox to enable.
 
-- **Use Double Speed Mode** - When enabled allows the game engine to make full use of the GB Color's increased CPU speed. Enabling this option helps prevent music skipping when transitioning between scenes.
+<img title="Color" src="/img/screenshots/color-palette-v3.png" width="650" class="drop-shadow">
 
-- **Use Custom Color Palette** - When enabled allows the four colors in your game's color palette to be replaced. Click on the color you wish to replace then choose the red, green and blue values to use or enter a hex color value and click _Convert Hex_ to match the closest available color.
+Once color mode is enabled you can select up to 8 Default Background Palettes and 8 Default Sprite Palettes, these are the palettes that every new scene in your game will use unless you specifically override them. See [Colorizing a Scene](/docs/scenes/#colorizing-a-scene) for how to use background palettes.
 
-<img title="Color Palette" src="/img/screenshots/color-palette.png" width="513">
+## Super GB Options
 
-<img title="Color Palette Edit" src="/img/screenshots/color-palette-edit.png" width="513">
+To enable support for Super GB click the `Enable Super GB Mode` checkbox.
 
-Using a custom color palette you can create a drastically different tone for your game! Try experimenting to see what you can come up with. If you don't like your color palette you can always click _Restore Default_ to the get the original palette back again.
+<img title="SGB" src="/img/screenshots/sgb-mode.png" width="650" class="drop-shadow">
 
-<img title="Color Game" src="/img/screenshots/color-game.png" width="592">
+This mode will allow you to set a custom `256px × 224px` border image and color palette to use when your game is run on compatible hardware or emulators.
+
+The first time you build your game after enabling this mode a default border image will be copied to your project in `assets/sgb/border.png`, edit this image to replace the border with your own.
+
+## Default Player Sprites
+
+Each _Scene Type_ can have a different player sprite sheet, use this section to replace the default spritesheet that will be used for each type. You can override the sprite sheet used for individual scenes by editing the scene's properties or by using scripts, see [The Player](http://localhost:1313/docs/player/#default-sprite-sheet).
+
+<img title="Default Player Sprites" src="/img/screenshots/default-sprites.png" width="650" class="drop-shadow">
+
 
 ## Controls
 
@@ -37,9 +44,9 @@ To reset to the original controls you can use the _Restore Default_ button.
 
 ## Cartridge Type
 
-The _Cartridge Type_ section allows you to choose which Memory Bank Controller you want to use and if a battery will be included when exporting your game to a physical cartridge (requires additional hardware and software).
+The _Cartridge Type_ section allows you to choose which Memory Bank Controller you want to use and if you want to enable Batteryless Saving for compatible Flash Carts.
 
-If you don't know what these settings mean it's best to keep this as the default of MBC5+RAM+BATTERY which you can do by using the _Restore Default_ button.
+If you don't know what these settings mean it's best to keep this as the default of MBC5, with Batteryless disabled which you can do by using the _Restore Default_ button.
 
 ## Custom HTML Header
 
