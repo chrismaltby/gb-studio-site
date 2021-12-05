@@ -9,8 +9,8 @@ Sound effects can be added to your game using the [Sound: Play Effect](/docs/scr
 
 You can choose from playing a beep with a given pitch, a tone with a given frequency or cymbal crash.
 
-<img src="/img/events/sound-beep.png" class="event-preview" />
+<img src="/img/events/sound-beep-v3.png" class="event-preview" />
 
 Using [Custom Scripts](/docs/custom-scripts) you can combine multiple effects into a single reusable event to make jingles.
 
-<img src="/img/screenshots/custom-event-jingle.png" class="event-preview" />
+<img src="/img/screenshots/custom-event-jingle-v3.png" class="event-preview" />
