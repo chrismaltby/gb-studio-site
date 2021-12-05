@@ -118,12 +118,4 @@ _Navigation_ will show you the scene that your actor belongs to.
 _Scripting_ lets you make your actor respond to interactions with scripted events. To learn about how to script your actor, see the documentation for [Scripting](/docs/scripting).
 
 # Limits
-There are limits to how actors and their sprites can be used in GB Studio. These limits are to make sure your game appears as intended, as well as to keep your actor logic running smoothly.
-
-## Actor Limits
-A maximum of 30 actors can be added to a scene. However, there can only be 10 actors visible on-screen at once. The screen space is defined as a ``20 x 18`` tile boundary, equivalent to ``160px x 144px``. Read more about Actor Limits on the [Scenes](/docs/scenes/#Actor-Limits) page.
-
-## Frame Limits
-Due to hardware limitations only **25 unique frames** of animation can be allocated to actors in each scene. The limit on unique sprite frames is shared between all actors. When a scene has actors that use more than 25 unique sprite frames, some actors and UI elements may appear glitchy.
-
-To stay under the 25 unique frame limit, use static or non animated sprite sheets when possible. You can also reuse the same sprite for multiple actors in the scene - reusing the same sprite sheet will not count towards the scene frame total.
+There are limits to how actors and their sprites can be used in GB Studio. These limits are to make sure your game appears as intended, as well as to keep your actor logic running smoothly. The exact limits depend on the complexity of the background image used in your scene, see [Scenes](/docs/scenes/#actor-limits) for more information.
