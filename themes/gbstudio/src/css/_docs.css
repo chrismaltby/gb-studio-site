@@ -18,6 +18,11 @@
   padding-top: 100px;
 }
 
+.docs img ~ h2,
+.docs img ~ h3 {
+  margin-top: -50px;
+}
+
 .docs-nav {
   display: none;
 }
