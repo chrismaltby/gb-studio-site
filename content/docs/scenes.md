@@ -55,13 +55,13 @@ For more information about the drawing mode used for the _Colorize Tool_ and the
 ## Scene Limits
 There are several limits that GB Studio has put in place to keep game performance consistent, and to minimize visual issues.
 
-Each scene can have a maxmimum of 30 actors, and 30 triggers, and between 96 and 64 sprite tiles depending on the complexity of the background used. You can check this information by selecting a scene and looking for the gray bar under your scene that reads: ``A: 0/30 S: 0/96 T: 0/30``. The letters on this bar represent the following:
+Each scene can have a maxmimum of 20 actors, and 30 triggers, and between 96 and 64 sprite tiles depending on the complexity of the background used. You can check this information by selecting a scene and looking for the gray bar under your scene that reads: ``A: 0/20 S: 0/96 T: 0/30``. The letters on this bar represent the following:
 - ``A:`` represents the number of actors that the scene is using.
 - ``S:`` represents the number of unique sprite tiles that each actor is using in their sprite sheet.
 - ``T:`` represents the number of triggers that the scene is using.
 
 ### Actor Limits
-Each scene can have a maximum of 30 actors. Ideally, there should never be more than 10 actors within a 20 x 18 tile boundary, equivalent to ``160px x 144px``. Clustering more than 10 actors together in a scene will cause some actors to become invisible in-game. GB Studio will warn you if it thinks this will be the case for a scene:  
+Each scene can have a maximum of 20 actors. Ideally, there should never be more than 10 actors within a 20 x 18 tile boundary, equivalent to ``160px x 144px``. Clustering more than 10 actors together in a scene will cause some actors to become invisible in-game. GB Studio will warn you if it thinks this will be the case for a scene:  
 
 <img src ="https://user-images.githubusercontent.com/16776042/94731004-03c44100-035c-11eb-917f-c0589052e604.png" style="width:300px"/>  
 
