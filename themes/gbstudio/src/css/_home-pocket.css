@@ -1,9 +1,11 @@
 section.homepage-pocket {
-  background-color: #9be197;
+  background-color: #000;
+  background-size: contain;
+  background-position: bottom center;
+  background-repeat: no-repeat;
   padding: 20px 0px;
   clear: both;
-  color: #333;
-  height: 700px;
+  color: #fff;
   overflow: hidden;
   flex-shrink: 0;
 }
@@ -16,10 +18,11 @@ section.homepage-pocket .container {
 
 .homepage-pocket__copy {
   width: 100%;
+  max-width: 60%;
 }
 
 .homepage-pocket__copy h2 {
-  color: #000;
+  color: #fff;
   font-size: 2rem;
   font-weight: bold;
   margin-top: 0;
@@ -27,14 +30,14 @@ section.homepage-pocket .container {
 }
 
 .homepage-pocket__copy h3 {
-  color: #000;
+  color: #fff;
   font-size: 1.5rem;
   margin-top: 0;
   margin-bottom: 40px;
 }
 
 .homepage-pocket__copy a {
-  color: #000;
+  color: #fff;
   font-size: 1.5rem;
 }
 
@@ -52,7 +55,6 @@ section.homepage-pocket .container {
 
   section.homepage-pocket .container {
     display: flex;
-    flex-direction: row-reverse;
     align-items: flex-start;
   }
 
@@ -72,7 +74,7 @@ section.homepage-pocket .container {
   }
 
   .homepage-pocket__copy h2 {
-    color: #000;
+    color: #fff;
     font-size: 2rem;
     font-weight: bold;
     margin-top: 0;
@@ -80,14 +82,14 @@ section.homepage-pocket .container {
   }
 
   .homepage-pocket__copy h3 {
-    color: #000;
+    color: #fff;
     font-size: 1.5rem;
     margin-top: 0;
     margin-bottom: 40px;
   }
 
   .homepage-pocket__copy a {
-    color: #000;
+    color: #fff;
     font-size: 1.5rem;
   }
 }
@@ -100,7 +102,6 @@ section.homepage-pocket .container {
 
   section.homepage-pocket .container {
     display: flex;
-    flex-direction: row-reverse;
     align-items: flex-start;
   }
 
@@ -120,7 +121,7 @@ section.homepage-pocket .container {
   }
 
   .homepage-pocket__copy h2 {
-    color: #000;
+    color: #fff;
     font-size: 2.5rem;
     font-weight: bold;
     margin-top: 0;
@@ -128,14 +129,14 @@ section.homepage-pocket .container {
   }
 
   .homepage-pocket__copy h3 {
-    color: #000;
+    color: #fff;
     font-size: 2rem;
     margin-top: 0;
     margin-bottom: 40px;
   }
 
   .homepage-pocket__copy a {
-    color: #000;
+    color: #fff;
     font-size: 2rem;
   }
 }

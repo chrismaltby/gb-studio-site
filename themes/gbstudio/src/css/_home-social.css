@@ -1,17 +1,17 @@
 .homepage-social {
-  background-color: #f1f1f3;
+  background-color: #bc295a;
   padding: 30px 0px;
   clear: both;
-  color: #24226b;
+  color: #ffffff;
 }
 
 .homepage-social a {
-  color: #24226b;
+  color: #ffffff;
   font-weight: 600;
 }
 
 .homepage-social svg {
-  fill: #24226b;
+  fill: #ffffff;
   vertical-align: middle;
   margin-top: -2px;
   flex-shrink: 0;
@@ -54,7 +54,7 @@
   }
 
   .homepage-social a {
-    color: #24226b;
+    color: #ffffff;
     font-weight: 600;
   }
 
