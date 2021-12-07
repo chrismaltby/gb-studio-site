@@ -1,5 +1,5 @@
 section.homepage-video {
-  background-color: #f1f1f3;
+  background-color: #ffffff;
   padding: 40px 0px;
   clear: both;
   color: #24226b;
@@ -11,6 +11,7 @@ section.homepage-video {
   background-color: #f1f1f1;
   text-align: center;
   margin: 0px auto;
+  box-shadow: 1px 1px 40px rgba(0,0,0,.2);
 }
 
 .Content {
