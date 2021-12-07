@@ -368,13 +368,16 @@ Allows you to perform various maths functions on a variable to add/subtract/mult
 ## Music and Sound Effect Events
 
 #### Play Music Track
+Plays a music .mod file, optionally looping the file when finished. If you play a new song while another song is playing, the old song will stop automatically.  
+<img src="/img/events/music-play-v3.png" class="event-preview" />
 
 #### Play Sound Effect
-
-#### Set Music Routine
+Play a sound effect, choose from playing a beep with a given pitch, a tone with a given frequency or cymbal crash. Using [Custom Scripts](/docs/custom-scripts) you can combine multiple effects into a single reusable event to make jingles.  
+<img src="/img/events/sound-effect-play-v3.png" class="event-preview" />
 
 #### Stop Music
-
+Stops any currently playing music. Put this before a Music: Play Track event to restart the same song from the beginning.  
+<img src="/img/events/music-stop-v3.png" class="event-preview" />
 
 ## Save Data Events
 
@@ -385,6 +388,8 @@ Allows you to perform various maths functions on a variable to add/subtract/mult
 #### Game Data Save
 
 #### If Game Data Saved
+Conditionally execute part of the script if game data has been saved into the selected slot.  
+<img src="/img/events/if-saved-v3.png" class="event-preview" />
 
 #### Store Variable From Game Data In Variable
 
@@ -449,33 +454,6 @@ Allows you to perform various maths functions on a variable to add/subtract/mult
 
 
 ## Text Events
-
-- **Text: Display Dialogue**  
-  Show a dialogue box with up to three lines of text, 18 characters per line (and a total of 52 characters), at the bottom of the game screen. This will likely be the most used script command for interacting with actors in your game.  
-  When text is shown the dialogue box will slide up from the bottom of the screen and will slide down after it has been shown.  
-  <img src="/img/events/display-dialogue.png" class="event-preview" />
-  <img src="/img/events/display-dialogue-preview.png" class="event-preview" />
-  <br />
-
-  - Using the _+_ button you can create a dialogue sequence which will only close after the last message has been displayed.  
-    <span class="new">New in 1.2.0</span>
-  - You can display the value of any variables in a text box by using the variable's identifier shown in the variable selector (e.g. `$L0$` for local variable 0 and `$182$` for global variable 182).
-  - You can optionally display an avatar image on the left hand side of the dialogue box by clicking _Add Avatar_ and selecting an image to use. You are able to pick any sprite within your game that contains only a single frame (`16px` x `16px`). Setting an avatar will reduce the amount of characters per line available to 16 on all lines.
-
-- **Text: Display Multiple Choice**  
-  Present two options to player allowing them to make a choice, will set the specified variable to _true_ if the first option is chosen and to _false_ if the second option is chosen.  
-  <img src="/img/events/display-multiple-choice.png" class="event-preview" />
-  <img src="/img/events/display-multiple-choice-preview.png" class="event-preview" />
-
-- **Text: Display Menu**  
-  Display a menu of multiple options and set the specified variable to the value of the chosen option. Each menu item has a maximum length of `6` characters.  
-  Multiple layouts are provided, `Menu` (shown below) displays as a single column on the right hand side of the game screen and `Dialogue` displays a full width dialogue box with two columns. You can optionally set the `B` button to close the menu setting the variable to `0` and can also make the last menu item return `0` when selected.  
-  <img src="/img/events/menu.png" class="event-preview" />
-  <img src="/img/events/menu-preview.png" class="event-preview" />
-
-* **Text: Set Animation Speed**  
-  Set the speed that dialogue boxes appear and disappear and how fast text appears within the box.
-  <img src="/img/events/text-animation-speed.png" class="event-preview" />
 
 ## Scene Events
 
@@ -545,69 +523,6 @@ Your game has 512 variables that can be shared across all the scripts in your ga
   Reset all variables used by your project back to _false_.  
   <img src="/img/events/variable-reset-all.png" class="event-preview" />
 
-## Control Flow Events
-
-- **If Variable Is 'True'**  
-  Conditionally execute part of the script if the specified variable is set to _true_.  
-  <img src="/img/events/if-true.png" class="event-preview" />
-
-- **If Variable Is 'False'**  
-  Conditionally execute part of the script if the specified variable is _false_.  
-  <img src="/img/events/if-false.png" class="event-preview" />
-
-- **If Variable Compare With Value**  
-  Conditionally execute part of the script if the specified variable matches a rule, such as "Equal To", "Greater Than" or "Less Than" against a value.  
-  <img src="/img/events/if-variable-value.png" class="event-preview" />
-
-- **If Variable Compare With Variable**  
-  Conditionally execute part of the script if the specified variable matches a rule, such as "Equal To", "Greater Than" or "Less Than" against a second variable.  
-  <img src="/img/events/if-variable-variable.png" class="event-preview" />
-
-- **If Variable Has Flag**  
-  Conditionally execute part of the script if the specified variable has the chosen flag set as true.  
-  <img src="/img/events/if-variable-flag.png" class="event-preview" />
-
-- **If Joypad Input Pressed**  
-  Conditionally execute part of the script if the specified joypad input is currently pressed. Will not wait for user input so use directly after a _Joypad Input: Pause Script Until Pressed_ event if waiting is required. Event will only execute once, if you wish to run a script every time a button is pressed use _Joypad Input: Attach Script To Button_ instead.
-  <img src="/img/events/if-joypad-input.png" class="event-preview" />
-
-- **If Actor At Position**  
-  Conditionally execute part of the script if the specified actor is at a certain position in the scene.  
-  <img src="/img/events/if-actor-position.png" class="event-preview" />
-
-- **If Actor Facing Direction**  
-  Conditionally execute part of the script if the specified actor is facing a certain direction.  
-  <img src="/img/events/if-actor-direction.png" class="event-preview" />
-
-- **If Game Data Saved**  
-  Conditionally execute part of the script if there is a saved game available.  
-  <img src="/img/events/if-game-saved.png" class="event-preview" />
-
-- **Switch**  
-  Conditionally execute from multiple options depending on the value of the specified variable. First choose how many options you want to compare the variable against, then set the values to compare and what scripts to execute when the value is matched.  
-  <img src="/img/events/switch.png" class="event-preview" />
-
-- **Loop Forever**  
-  Execute part of the script in a loop forever. Remember to break out of the loop otherwise the player will become stuck at this point. You can use a _Stop Script_ or _Change Scene_ event to stop the loop.  
-  <img src="/img/events/loop.png" class="event-preview" />
-
-- **Label: Define / Label: Goto**  
-  Define markers in your script using _Label: Define_ giving the label a name and jump to markers using _Label: Goto_.  
-  _Note:_ The name must be identical for the define/goto event pair to work. **Use with care!**
-  <img src="/img/events/label-goto.png" class="event-preview" />
-
-- **Event Group**  
-  Provides no in game functionality but allows you to group a sequence of events together and give them a label (using the _Rename Event_ option on the event menu) and collapse the events into a single block.  
-  <img src="/img/events/event-group.png" class="event-preview" />
-
-- **Script: Stop**  
-  Stops the current script from running.  
-  <img src="/img/events/script-stop.png" class="event-preview" />
-
-- **Disable Else**  
-  If you don't require an _Else_ branch in any of your control flow events you can now disable it by selecting _Disable Else_ from the event dropdown menu. The same menu can be used to restore an _Else_ branch if needed at a later time.
-  <img src="/img/events/disable-else.png" class="event-preview" />
-
 ## Camera Events
 
 - **Camera: Move To**  
@@ -632,125 +547,6 @@ Your game has 512 variables that can be shared across all the scripts in your ga
   Fade the scene in from a white screen.  
   <img src="/img/events/screen-fade-out.png" class="event-preview" />
 
-## Actor Events
-
-- **Actor: Set Direction**  
-  Set the facing direction of the specified actor.  
-  <img src="/img/events/actor-set-direction.png" class="event-preview" />
-  <img src="/img/events/actor-set-direction-preview.png" class="event-preview" />
-
-- **Actor: Set Direction Using Variable**  
-  Set the facing direction of the specified actor from the value of a variable.  
-  
-  <img src="/img/events/actor-direction-variables.png" class="event-preview" />  
-  
-  | Direction |	Value |
-  | --------- |	----- |
-  | Down      | 1 |
-  | Right     | 2 |
-  | Up        | 3 |
-  | Left      | 4 |
-  
-- **Actor: Set Position**  
-  Set the position in the scene of the specified actor.  
-  <img src="/img/events/actor-position.png" class="event-preview" />
-
-- **Actor: Set Position Using Variables**  
-  Set the position in the scene of the specified actor from the values of two variables.  
-  <img src="/img/events/actor-position-variables.png" class="event-preview" />
-
-- **Actor: Set Relative Position**  
-  Set the position in the scene of the specified actor relative to their current position.  
-  <img src="/img/events/actor-relative-position.png" class="event-preview" />
-
-- **Actor: Move To**  
-  Make the actor walk to a specified position in the scene. Actor will ignore all collisions along path so combine multiple of these events if you need to specify an exact path avoiding obstacles in the scene.  
-  <img src="/img/events/actor-move-to.png" class="event-preview" />
-
-- **Actor: Move Relative**  
-  Make the actor walk to a position relative to their current position.  
-  <img src="/img/events/actor-relative-move.png" class="event-preview" />
-
-- **Actor: Move To Using Variables**  
-  Make the actor walk to a position from the values of two variables.  
-  <img src="/img/events/actor-move-to-variables.png" class="event-preview" />
-
-- **Actor: Store Position In Variables**  
-  Store the current position of an actor into two variables.  
-  <img src="/img/events/actor-store-position.png" class="event-preview" />
-
-- **Actor: Store Direction In Variable**  
-  Store the current direction of an actor into a variable.  
-  
-  <img src="/img/events/actor-store-direction.png" class="event-preview" />  
-  
-  | Direction |	Value |
-  | --------- |	----- |
-  | Down      | 1 |
-  | Right     | 2 |
-  | Up        | 3 |
-  | Left      | 4 |
-  
-- **Actor: Push Away From Player**  
-  Push an actor in the direction the player is currently facing. By default pushes by one tile, but can optionally slide until a collision occurs.  
-  <img src="/img/events/actor-push.png" class="event-preview" />
-
-- **Actor: Emote Bubble**  
-  Display an emote bubble above the specified actor from one of _Shock_, _Question_, _Love_, _Pause_, _Anger_, _Sweat_, _Music_ and _Sleep_. You can change the graphics used for these bubbles by editing the [UI Elements](/docs/ui-elements#emotes-png) of your game.  
-  <img src="/img/events/actor-emote.png" class="event-preview" />
-  <img src="/img/events/actor-emote-preview.png" class="event-preview" />
-
-- **Actor: Set Animation Frame**  
-  Set the current animation frame of the specified actor.  
-  <img src="/img/events/actor-set-frame.png" class="event-preview" />
-
-- **Actor: Set Animation Frame Using Variable**  
-  Set the current animation frame of the specified actor to the value of a variable.  
-  <img src="/img/events/actor-set-frame-variable.png" class="event-preview" />
-
-- **Actor: Set Animation Speed**  
-  Set the animation speed of the specified actor.  
-  <img src="/img/events/actor-animation-speed.png" class="event-preview" />
-
-- **Actor: Set Movement Speed**  
-  Set the movement speed of the specified actor.  
-  <img src="/img/events/actor-movement-speed.png" class="event-preview" />
-
-- **Actor: Set Player Sprite Sheet**  
-  Change the player sprite sheet from the default defined in the _Project Editor_. Changes to the player sprite sheet will persist between scene transitions so make sure to change it back if the change was supposed to be temporary.  
-  <img src="/img/events/actor-player-spritesheet.png" class="event-preview" />
-
-- **Actor: Collisions Disable**  
-  Prevent collisions from affecting the selected actor. If a scene actor is selected then the player will be able to walk through them, if the player is selected then you will be able to walk through all actors and collisions in the scene.  
-  _Note:_ While collisions are disabled it is still posible to interact with the actor.  
-  <img src="/img/events/actor-collisions-disable.png" class="event-preview" />
-
-- **Actor: Collisions Enable**  
-  Reenable collisions on the selected actor.  
-  <img src="/img/events/actor-collisions-enable.png" class="event-preview" />
-
-- **Actor: Invoke Script**  
-  Call the script on another actor in the scene as if the player had interacted with that actor.  
-  <img src="/img/events/actor-invoke.png" class="event-preview" />
-
-- **Actor: Hide**  
-  Hide an actor so it is no longer visible. Hidden actors will no longer cause collisions and will not be able to be interacted with. You can hide the player on a Scene Start Script to make menu and title screens.  
-  <img src="/img/events/actor-hide.png" class="event-preview" />
-
-- **Actor: Show**  
-  Unhide a previously hidden actor.  
-  <img src="/img/events/actor-show.png" class="event-preview" />
-
-## Sprite Events
-
-- **Sprites: Hide All**  
-  Hide all sprites in scene. Can be useful to create cutscenes where the player should not be visible by adding to a scene's starting script.  
-  <img src="/img/events/sprites-hide.png" class="event-preview" />
-
-- **Sprites: Show All**  
-  Show all sprites that were previously hidden.  
-  <img src="/img/events/sprites-show.png" class="event-preview" />
-
 ## Overlay Events
 
 - **Overlay: Show**  
@@ -764,38 +560,6 @@ Your game has 512 variables that can be shared across all the scripts in your ga
 - **Overlay: Move To**  
   Moves the overlay to a new position on the screen.  
   <img src="/img/events/overlay-move-to.png" class="event-preview" />
-
-## Input Events
-
-- **Joypad Input: Pause Script Until Pressed**  
-  Pauses the script until one of the specified joypad inputs are pressed.  
-  <img src="/img/events/joypad-pause.png" class="event-preview" />
-
-- **Joypad Input: Attach Script To Button**  
-  Execute the specified script any time a joypad input button is pressed. If you attach scripts to a direction button or the _A_ button the scripts will override the default game actions.  
-  <img src="/img/events/joypad-attach.png" class="event-preview" />
-
-- **Joypad Input: Remove Attached Script**  
-  Remove an attached script from a joypad input button restoring the default functionality of the button.  
-  <img src="/img/events/joypad-attach.png" class="event-preview" />
-
-## Music Events
-
-- **Music: Play Track**  
-  Plays a music .mod file, optionally looping the file when finished. If you play a new song while another song is playing, the old song will stop automatically.  
-  <img src="/img/events/music-play.png" class="event-preview" />
-
-- **Music: Stop**  
-  Stops any currently playing music. Put this before a Music: Play Track event to restart the same song from the beginning.  
-  <img src="/img/events/music-stop.png" class="event-preview" />
-
-## Sound Events
-
-- **Sound: Play Effect**  
-  Play a sound effect, choose from playing a beep with a given pitch, a tone with a given frequency or cymbal crash. Using [Custom Scripts](/docs/custom-scripts) you can combine multiple effects into a single reusable event to make jingles.  
-  <img src="/img/events/sound-tone.png" class="event-preview" />
-  <img src="/img/events/sound-beep.png" class="event-preview" />
-  <img src="/img/events/sound-crash.png" class="event-preview" />
 
 ## Timing Events
 
