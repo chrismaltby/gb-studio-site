@@ -404,31 +404,66 @@ Read a saved value from a selected save slot and store it in a variable.
 ## Scene Events
 
 #### Change Scene
-
-#### Remove All From Scene Stack
-
-#### Restore First From Scene Stack
-
-#### Restore Previous From Scene Stack
+Transition to a new scene with player at a specified position and direction. A connection line will be drawn between the source of the event and the destination scene with a <img src="/img/screenshots/destination-end.png" style="height:12px"/> icon appearing at the destination position. It's possible to drag this icon around and between scenes to modify the event.  
+<img src="/img/events/scene-change-v3.png" class="event-preview" /><img src="/img/events/switch-scene-preview.png" class="event-preview" />
 
 #### Store Current On Scene Stack
+Store the current scene and player state on to the scene stack, this allows you to return to this exact location later using the _Scene Restore_ events. A common use of this event would be to include in a script just before a _Change Scene_ event to open a menu scene, in the menu scene you could wait for the player to press a close button and then use the _Restore Previous From Stack_ event to return to where the player opened the menu.  
+<img src="/img/events/scene-stack-push-v3.png" class="event-preview" />
 
+#### Restore Previous From Scene Stack
+Transition to the last stored scene from the scene stack using the specified fade speed. The previous scene will then be removed from the stack so the next time this event is used it will transition to the scene before that.  
+<img src="/img/events/scene-stack-pop-v3.png" class="event-preview" />
 
+#### Restore First From Scene Stack
+Transition to the very first scene stored on the stack, for instance if you had multiple levels of menu scenes you could use this to imediately return to the game scene. This event will cause the scene stack to become empty.  
+<img src="/img/events/scene-stack-pop-all-v3.png" class="event-preview" />
 
-## Screen
+#### Remove All From Scene Stack
+Remove all scenes from the scene stack without leaving the current scene.
+<img src="/img/events/scene-stack-clear-v3.png" class="event-preview" />
+
+## Screen Events
 
 #### Fade Screen In
-#### Fade Screen Out
-#### Hide Overlay
-#### Overlay Move To
-#### Show Overlay
+Fade the scene from a blank screen.  
+<img src="/img/events/fade-in-v3.png" class="event-preview" />
 
-## Timer
+#### Fade Screen Out
+Fade the scene to a blank screen.  
+<img src="/img/events/fade-out-v3.png" class="event-preview" />
+
+#### Show Overlay
+Show either a black or white window over the top of the current game screen. Can be used to obscure and then reveal parts of the scene background for example on the sample project logo screen.  
+<img src="/img/events/overlay-show-v3.png" class="event-preview" />
+
+#### Overlay Move To
+Moves the overlay to a new position on the screen.  
+<img src="/img/events/overlay-move-v3.png" class="event-preview" />
+
+#### Hide Overlay
+Hides the screen overlay.  
+<img src="/img/events/overlay-hide-v3.png" class="event-preview" />
+
+
+## Timer Events
+
+#### Wait
+Pause script for up to 10 seconds.  
+<img src="/img/events/wait-v3.png" class="event-preview" />
 
 #### Attach Timer Script
-#### Remove Timer Script
+Execute the specified script repeatedly after a time interval. The script will keep running in the background until a _Remove Timer Script_ event is called or the scene is changed using a _Change Scene_ event.
+<img src="/img/events/timer-start-v3.png" class="event-preview" />
+
 #### Restart Timer
-#### Wait
+Reset the countdown timer back to zero. The script will call again after the time specified originally.  
+<img src="/img/events/timer-restart-v3.png" class="event-preview" />
+
+#### Remove Timer Script
+Remove the timer script so it will no longer be called.  
+<img src="/img/events/timer-remove-v3.png" class="event-preview" />
+
 
 ## Variables
 
@@ -457,34 +492,6 @@ Read a saved value from a selected save slot and store it in a variable.
 
 
 
-
-
-
-
-## Text Events
-
-## Scene Events
-
-- **Scene: Change Scene**  
-  Transition to a new scene with player at a specified position and direction. A connection line will be drawn between the source of the event and the destination scene with a <img src="/img/screenshots/destination-end.png" style="height:12px"/> icon appearing at the destination position. It's possible to drag this icon around and between scenes to modify the event.  
-  <img src="/img/events/switch-scene.png" class="event-preview" />
-  <img src="/img/events/switch-scene-preview.png" class="event-preview" />
-
-- **Scene: Store Current On Stack**  
-  Store the current scene and player state on to the scene stack, this allows you to return to this exact location later using the _Scene Restore_ events. A common use of this event would be to include in a script just before a _Change Scene_ event to open a menu scene, in the menu scene you could wait for the player to press a close button and then use the _Restore Previous From Stack_ event to return to where the player opened the menu.  
-  <img src="/img/events/scene-stack-push.png" class="event-preview" />
-
-- **Scene: Restore Previous From Stack**  
-  Transition to the last stored scene from the scene stack using the specified fade speed. The previous scene will then be removed from the stack so the next time this event is used it will transition to the scene before that.  
-  <img src="/img/events/scene-stack-pop.png" class="event-preview" />
-
-- **Scene: Restore First From Stack**  
-  Transition the very first scene stored on the stack, for instance if you had multiple levels of menu scenes you could use this to imediately return to the game scene. This event will cause the scene stack to become empty.  
-  <img src="/img/events/scene-stack-pop-all.png" class="event-preview" />
-
-- **Scene: Empty Scene Stack**  
-  Clears the scene stack so that no previous scenes can be restored.  
-  <img src="/img/events/scene-stack-clear.png" class="event-preview" />
 
 ## Variable Events
 
@@ -531,30 +538,6 @@ Your game has 512 variables that can be shared across all the scripts in your ga
   Reset all variables used by your project back to _false_.  
   <img src="/img/events/variable-reset-all.png" class="event-preview" />
 
-## Camera Events
-
-- **Camera: Move To**  
-  Move the camera to a specifed position in the scene.  
-  <img src="/img/events/camera-move-to.png" class="event-preview" />
-
-- **Camera: Lock To Player**  
-  Move the camera back to focusing on the player, locking into position when the player moves.  
-  <img src="/img/events/camera-lock-to-player.png" class="event-preview" />
-
-- **Camera: Shake**  
-  Shake camera effect for up to 10 seconds.  
-  <img src="/img/events/camera-shake.png" class="event-preview" />
-
-## Screen Events
-
-- **Screen: Fade In**  
-  Fade the scene to a white screen.  
-  <img src="/img/events/screen-fade-in.png" class="event-preview" />
-
-- **Screen: Fade Out**  
-  Fade the scene in from a white screen.  
-  <img src="/img/events/screen-fade-out.png" class="event-preview" />
-
 ## Overlay Events
 
 - **Overlay: Show**  
@@ -586,20 +569,6 @@ Your game has 512 variables that can be shared across all the scripts in your ga
 - **Timer: Disable Timer Script**  
   Remove the timer script so it will no longer be called.  
   <img src="/img/events/timer-disable.png" class="event-preview" />
-
-## Game Data Events
-
-- **Game Data: Save**  
-  Save the current game data.  
-  <img src="/img/events/data-save.png" class="event-preview" />
-
-- **Game Data: Load**  
-  Load the previously saved game data.  
-  <img src="/img/events/data-load.png" class="event-preview" />
-
-- **Game Data: Clear**  
-  Remove any previously saved game data.  
-  <img src="/img/events/data-clear.png" class="event-preview" />
 
 ## Miscellaneous Events
 
