@@ -40,7 +40,7 @@ These scripts can be accessed in the _Editor Sidebar_ by selecting a scene in yo
 
 ### Actor Scripts
 
-These scripts can be accessed in the _Editor Sidebar_ by clicking an Actor in your project or using the Navigation list in each scene.
+These scripts can be accessed in the _Editor Sidebar_ by clicking an Actor in your project.
 
 - **On Init:** This script will run once at the beginning of the Scene. Actors in a Scene will always run their On Init script before their Scene's On Init script.
 - **On Interact:** Standing the Player next to an Actor and pressing the **A** button will cause the Player to "interact" with the Actor. Interacting with an Actor will begin this script. In Shoot 'Em Up scenes, interacting can additionally be done by colliding with the Actor.
@@ -55,4 +55,8 @@ These scripts can be accessed in the _Editor Sidebar_ by clicking an Actor in yo
 
 ### Trigger Scripts
 
-Trigger scripts only have an "On Trigger" script. The player must be inside the trigger to start this script. This is often used for creating doorways between scenes.
+These scripts can be accessed in the _Editor Sidebar_ by clicking a Trigger in your project.
+
+- **On Enter:** This script runs when the player collides with the trigger.
+
+- **On Leave:** This script runs when a player that was previously colliding leaves the trigger.
