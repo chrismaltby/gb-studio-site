@@ -7,17 +7,20 @@ nextTitle: "Custom Scripts"
 
 ## Actor Events
 
-#### Actor Move Relative
-Make the actor walk to a position relative to their current position.  
-<img src="/img/events/actor-move-relative-v3.png" class="event-preview" />
-
 #### Actor Move To
 Make the actor walk to a specified position in the scene.  
 <img src="/img/events/actor-move-v3.png" class="event-preview" />
 
+
+#### Actor Move Relative
+Make the actor walk to a position relative to their current position.  
+<img src="/img/events/actor-move-relative-v3.png" class="event-preview" />
+
+
 #### Hide Actor
 Hide the actor  
 <img src="/img/events/actor-hide-v3.png" class="event-preview" />
+
 
 #### Hide All Sprites
 Hide all sprites in scene.
@@ -25,17 +28,21 @@ Hide all sprites in scene.
 Can be useful to create cutscenes where the player should not be visible by adding to a scene's starting script.  
 <img src="/img/events/sprites-hide-v3.png" class="event-preview" />
 
+
 #### If Actor At Position
 Conditionally execute part of the script if the specified actor is at a certain position in the scene.  
 <img src="/img/events/if-actor-at-position-v3.png" class="event-preview" />
+
 
 #### If Actor Facing Direction
 Conditionally execute part of the script if the specified actor is facing a certain direction.
 <img src="/img/events/if-actor-facing-direction-v3.png" class="event-preview" />
 
+
 #### If Actor Relative To Actor
 Conditionally execute part of the script depending on how an actor is positioned relative to a second actor.
 <img src="/img/events/if-actor-relative-v3.png" class="event-preview" />
+
 
 #### Launch Projectile
 Launch a projectile from an actor.  
@@ -130,100 +137,232 @@ Store the current position of an actor into two variables.
 ## Camera Events
 
 #### Camera Move To
+Move the camera to a specifed position in the scene.  
+<img src="/img/events/camera-move-to-v3.png" class="event-preview" />
+
+#### Camera Lock To Player
+Move the camera back to focusing on the player, locking into position when the player moves.
+
+Optionally allows locking to follow player in only horizontal or vertical axis.
+  <img src="/img/events/camera-lock-v3.png" class="event-preview" />
 
 #### Camera Shake
+Shake camera effect for up to 10 seconds.  
+<img src="/img/events/camera-shake-v3.png" class="event-preview" />
 
 #### Fade Screen In
+Fade the scene from a blank screen.  
+<img src="/img/events/fade-in-v3.png" class="event-preview" />
 
 #### Fade Screen Out
+Fade the scene to a blank screen.  
+<img src="/img/events/fade-out-v3.png" class="event-preview" />
 
 
 ## Color Events
 
 #### If Device Supports Color
+Conditionally execute part of the script if the game is being played on a device or emulator that supports color games.  
+<img src="/img/events/if-color-v3.png" class="event-preview" />
 
 #### Set Background Palettes
-
-#### Set Emote Palette
+Replace some or all of the current scene's background palettes.  
+<img src="/img/events/set-background-palettes-v3.png" class="event-preview" />
 
 #### Set Sprite Palettes
+Replace some or all of the current scene's sprite palettes.  
+<img src="/img/events/set-sprite-palettes-v3.png" class="event-preview" />
+
+#### Set Emote Palette
+Replace the palette used for emotes (sprite palette #8).  
+<img src="/img/events/set-emote-palette-v3.png" class="event-preview" />
 
 #### Set UI Palette
+Replace the palette used for the UI (background palette #8).  
+<img src="/img/events/set-ui-palette-v3.png" class="event-preview" />
 
 
 ## Control Flow Events
 
 #### Call Script
+Call one of your [Custom Scripts](/docs/custom-scripts/). Once you have chosen a script you will be able to hook up any parameters required.  
+<img src="/img/events/call-script-v3.png" class="event-preview" />
 
 #### If Actor At Position
+Conditionally execute part of the script if the specified actor is at a certain position in the scene.  
+<img src="/img/events/if-actor-at-position-v3.png" class="event-preview" />
+
 
 #### If Actor Facing Direction
+Conditionally execute part of the script if the specified actor is facing a certain direction.
+<img src="/img/events/if-actor-facing-direction-v3.png" class="event-preview" />
+
 
 #### If Actor Relative To Actor
+Conditionally execute part of the script depending on how an actor is positioned relative to a second actor.
+<img src="/img/events/if-actor-relative-v3.png" class="event-preview" />
 
 #### If Device Supports Color
+Conditionally execute part of the script if the game is being played on a device or emulator that supports color games.  
+<img src="/img/events/if-color-v3.png" class="event-preview" />
 
 #### If Game Data Saved
+Conditionally execute part of the script if game data has been saved into the selected slot.  
+<img src="/img/events/if-saved-v3.png" class="event-preview" />
 
 #### If Joypad Input Held
+Conditionally execute part of the script if the specified joypad input is currently pressed. Will not wait for user input and will only execute once, if you wish to run a script every time a button is pressed use [Attach Script To Button](/docs/script-glossary#attach-script-to-button) instead.  
+<img src="/img/events/if-joypad-held-v3.png" class="event-preview" />
 
 #### If Math Expression
+Conditionally execute part of the script if the specified math expression evaluates to true.
+
+Expressions allow you to use many mathematical operations such as: 
+-  `+` add
+-  `-` subtract
+-  `*` multiply
+-  `/` divide
+- `==` Equal to
+- `!=` Not equal to
+- `>=` Greater than or equal to
+
+You are also able to use the following functions 
+- `min(a, b)` return the minimum of two values a and b
+- `max(a, b)` return the maximum of two values a and b
+- `abs(a)` return the absolute value of a
+
+You can use variables in expressions by typing `$` and searching for the variable's name.
+
+<img src="/img/events/if-expression-v3.png" class="event-preview" />
 
 #### If Variable Compare With Value
+Conditionally execute part of the script if the specified variable matches a rule, such as "Equal To", "Greater Than" or "Less Than" against a value.  
+<img src="/img/events/if-variable-value-v3.png" class="event-preview" />
 
 #### If Variable Compare With Variable
+Conditionally execute part of the script if the specified variable matches a rule, such as "Equal To", "Greater Than" or "Less Than" against a second variable.  
+<img src="/img/events/if-variable-variable-v3.png" class="event-preview" />
 
 #### If Variable Has Flag
+Conditionally execute part of the script if the specified variable has the chosen flag set as true.  
+<img src="/img/events/if-flag-v3.png" class="event-preview" />
 
 #### If Variable Is "False"
+Conditionally execute part of the script if the specified variable is _false_.  
+<img src="/img/events/if-false-v3.png" class="event-preview" />
 
 #### If Variable Is "True"
+Conditionally execute part of the script if the specified variable is set to _true_.  
+<img src="/img/events/if-true-v3.png" class="event-preview" />
 
 #### Loop
+Execute part of the script in a loop forever. Remember to break out of the loop otherwise the player will become stuck at this point. You can use a _Stop Script_ or _Change Scene_ event to stop the loop.  
+<img src="/img/events/loop-v3.png" class="event-preview" />
 
 #### Stop Script
+Stops the current script from running.  
+<img src="/img/events/stop-script-v3.png" class="event-preview" />
 
 #### Switch
-
+Conditionally execute from multiple options depending on the value of the specified variable. First choose how many options you want to compare the variable against, then set the values to compare and what scripts to execute when the value is matched.  
+<img src="/img/events/switch-v3.png" class="event-preview" />
 
 
 
 ## Dialogue and Menu Events
 
 #### Display Dialogue
+Show a dialogue box at the bottom of the game screen.
+
+When text is shown the dialogue box will slide up from the bottom of the screen and will slide down after it has been shown.  
+<img src="/img/events/display-dialogue-v3.png" class="event-preview" />
+<img src="/img/events/display-dialogue-preview.png" class="event-preview" />
+<br />
+
+- Using the _+_ button you can create a dialogue sequence which will only close after the last message has been displayed.  
+- You can display the numerical value of any variables in a text box by typing `$` followed by the name of the variable and selecting the variable from the drop down list that appears.
+- You can change the font used in a text field dynamically by typing `!f` and selecting from the menu.
+- You can change the text speed dynamically by typing `!s` and selecting from the menu.
+- You can optionally display an avatar image on the left hand side of the dialogue box by clicking _Add Avatar_ and selecting an image to use. 
+  
+  Avatars are created as `16px` x `16px` `.png` images in the `/assets/avatars` folder. See the [UI Elements](/docs/ui-elements/#avatars) documentation for my information.  
 
 #### Display Menu
+Display a menu of multiple options and set the specified variable to the value of the chosen option. 
+Multiple layouts are provided, `Menu` (shown below) displays as a single column on the right hand side of the game screen and `Dialogue` displays a full width dialogue box with two columns. You can optionally set the `B` button to close the menu setting the variable to `0` and can also make the last menu item return `0` when selected.  
+<img src="/img/events/menu-v3.png" class="event-preview" />
+<img src="/img/events/menu-preview.png" class="event-preview" />
 
 #### Display Multiple Choice
+Present two options to player allowing them to make a choice, will set the specified variable to _true_ if the first option is chosen and to _false_ if the second option is chosen.  
+<img src="/img/events/display-multiple-choice-v3.png" class="event-preview" />
 
 #### Set Text Animation Speed
+Set the speed that dialogue boxes appear and disappear and how fast text appears within the box.  
+<img src="/img/events/text-speed-v3.png" class="event-preview" />
 
 
 ## Engine Field Events
 
 #### Engine Field Update
+Change the value of an [Engine Field](/docs/settings/#engine-settings).  
+<img src="/img/events/engine-field-update-v3.png" class="event-preview" />
 
 #### Store Engine Field In Variable
+Store the value of an [Engine Field](/docs/settings/#engine-settings) in a variable.  
+<img src="/img/events/engine-field-store-v3.png" class="event-preview" />
 
 
 ## Input Events
 
 #### Attach Script To Button
+Execute the specified script any time a joypad input button is pressed. If you attach scripts to a direction button or the _A_ button the scripts will override the default game actions.  
+<img src="/img/events/input-attach-v3.png" class="event-preview" />
 
 #### If Joypad Input Held
+Conditionally execute part of the script if the specified joypad input is currently pressed. Will not wait for user input and will only execute once, if you wish to run a script every time a button is pressed use [Attach Script To Button](/docs/script-glossary#attach-script-to-button) instead.  
+<img src="/img/events/if-joypad-held-v3.png" class="event-preview" />
 
 #### Pause Script Until Input Pressed
+Pauses the script until one of the specified joypad inputs are pressed.  
+<img src="/img/events/input-pause-v3.png" class="event-preview" />
 
 #### Remove Button Script
-
+Remove an attached script from a joypad input button restoring the default functionality of the button.  
+<img src="/img/events/input-remove-v3.png" class="event-preview" />
 
 ## Math Events
 
+#### If Math Expression
+Conditionally execute part of the script if the specified math expression evaluates to true.
+
+Expressions allow you to use many mathematical operations such as: 
+-  `+` add
+-  `-` subtract
+-  `*` multiply
+-  `/` divide
+- `==` Equal to
+- `!=` Not equal to
+- `>=` Greater than or equal to
+
+You are also able to use the following functions 
+- `min(a, b)` return the minimum of two values a and b
+- `max(a, b)` return the maximum of two values a and b
+- `abs(a)` return the absolute value of a
+
+You can use variables in expressions by typing `$` and searching for the variable's name.
+
+<img src="/img/events/if-expression-v3.png" class="event-preview" />
+
 #### Evaluate Math Expression
 
-#### If Math Expression
+Store the result of a math expression in a variable.  
+<img src="/img/events/expression-v3.png" class="event-preview" />
+
 
 #### Math Functions
+Allows you to perform various maths functions on a variable to add/subtract/multiply/divide/modulus a value/variable/random number.  
+<img src="/img/events/variable-math-v3.png" class="event-preview" />
 
 
 ## Music and Sound Effect Events
@@ -265,7 +404,6 @@ Store the current position of an actor into two variables.
 
 ## Screen
 
-#### Camera Lock To Player
 #### Fade Screen In
 #### Fade Screen Out
 #### Hide Overlay

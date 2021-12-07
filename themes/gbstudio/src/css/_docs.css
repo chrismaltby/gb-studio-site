@@ -8,18 +8,14 @@
   padding: 0;
 }
 
-.docs h2 {
-  margin-top: -80px;
-  padding-top: 100px;
-}
-
-.docs h3 {
+.docs h2, .docs h3, .docs h4 {
   margin-top: -80px;
   padding-top: 100px;
 }
 
 .docs img ~ h2,
-.docs img ~ h3 {
+.docs img ~ h3,
+.docs img ~ h4 {
   margin-top: -50px;
 }
 
