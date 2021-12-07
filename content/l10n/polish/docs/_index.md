@@ -7,6 +7,8 @@ draft: false
 # Dokumentacja
 [en](/docs) | [de](/de/docs) | [es](/es/docs) | pl
 
+> This documentation is out of date, if you'd like to help please contribute a translation on [GitHub](https://github.com/chrismaltby/gb-studio-site). Thanks!
+
 - [Instalacja](installation)
 - [Rozpoczęcie pracy](getting-started)
   - [Klawiatura - skróty klawiszy](keyboard-shortcuts)
