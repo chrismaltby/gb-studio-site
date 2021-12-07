@@ -381,17 +381,25 @@ Stops any currently playing music. Put this before a Music: Play Track event to 
 
 ## Save Data Events
 
+#### Game Data Save
+Save the current game data into the selected slot.  
+<img src="/img/events/data-save-v3.png" class="event-preview" />
+
 #### Game Data Load
+Load the saved game data from the selected slot.  
+<img src="/img/events/data-load-v3.png" class="event-preview" />
 
 #### Game Data Remove
-
-#### Game Data Save
+Remove any previously saved game data in the selected slot.  
+<img src="/img/events/data-remove-v3.png" class="event-preview" />
 
 #### If Game Data Saved
 Conditionally execute part of the script if game data has been saved into the selected slot.  
 <img src="/img/events/if-saved-v3.png" class="event-preview" />
 
 #### Store Variable From Game Data In Variable
+Read a saved value from a selected save slot and store it in a variable.
+<img src="/img/events/data-extract-v3.png" class="event-preview" />
 
 ## Scene Events
 
