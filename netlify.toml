@@ -23,6 +23,13 @@
   HUGO_VERSION = "0.60.1"
   BUILD_CONTEXT = "develop"
 
+[context.v3]
+  command = "hugo -b $DEPLOY_URL"
+  
+[context.v3.environment]
+  HUGO_VERSION = "0.60.1"
+  BUILD_CONTEXT = "v3"
+
 [[redirects]]
   from = "/download"
   to = "https://chrismaltby.itch.io/gb-studio"
