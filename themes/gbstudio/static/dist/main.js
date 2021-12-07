@@ -10,7 +10,7 @@ var e=document.getElementById("cart"),t=document.getElementById("cube"),n=docume
 
 },{}],"Goi2":[function(require,module,exports) {
 
-},{"./../../static/img/icon.png":[["icon.1c3fded9.png","zIB8"],"zIB8"],"./../../static/img/icon_beta.png":[["icon_beta.ebf52f52.png","Zosu"],"Zosu"]}],"ugsx":[function(require,module,exports) {
+},{"./../../static/img/icon.png":[["icon.39d1dc36.png","zIB8"],"zIB8"],"./../../static/img/icon_beta.png":[["icon_beta.ebf52f52.png","Zosu"],"Zosu"]}],"ugsx":[function(require,module,exports) {
 
 },{"./../../static/img/cart-front.jpg":[["cart-front.cfcdb335.jpg","GcPB"],"GcPB"],"./../../static/img/cart-bottom.jpg":[["cart-bottom.d344f6b9.jpg","TPJ0"],"TPJ0"]}],"a3t0":[function(require,module,exports) {
 
