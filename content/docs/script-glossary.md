@@ -20,7 +20,9 @@ Hide the actor
 <img src="/img/events/actor-hide-v3.png" class="event-preview" />
 
 #### Hide All Sprites
-Hide all sprites in scene. Can be useful to create cutscenes where the player should not be visible by adding to a scene's starting script.  
+Hide all sprites in scene.
+
+Can be useful to create cutscenes where the player should not be visible by adding to a scene's starting script.  
 <img src="/img/events/sprites-hide-v3.png" class="event-preview" />
 
 #### If Actor At Position
@@ -40,7 +42,9 @@ Launch a projectile from an actor.
 <img src="/img/events/launch-projectile-v3.png" class="event-preview" />
 
 #### Push Actor Away From Player
-Push an actor in the direction the player is currently facing. By default pushes by one tile, but can optionally slide until a collision occurs. Useful for creating block puzzles.  
+Push an actor in the direction the player is currently facing.
+
+By default pushes by one tile, but can optionally slide until a collision occurs. Useful for creating block puzzles.  
 <img src="/img/events/actor-push-v3.png" class="event-preview" />
 
 #### Set Actor Animation Frame
@@ -56,7 +60,9 @@ Sets the animation state of the specified actor, create animation states using t
 <img src="/img/events/actor-set-anim-state-v3.png" class="event-preview" />
 
 #### Set Actor Collisions Disable
-Prevent collisions from affecting the selected actor. If a scene actor is selected then the player will be able to walk through them, if the player is selected then you will be able to walk through all actors and collisions in the scene.  
+Prevent collisions from affecting the selected actor.
+
+If a scene actor is selected then the player will be able to walk through them, if the player is selected then you will be able to walk through all actors and collisions in the scene.  
 <img src="/img/events/actor-collisions-disable-v3.png" class="event-preview" />
 
 #### Set Actor Collisions Enable
@@ -64,24 +70,36 @@ Reenable collisions on the selected actor.
 <img src="/img/events/actor-collisions-enable-v3.png" class="event-preview" />
 
 #### Set Actor Direction
+Set the facing direction of the specified actor.  
 <img src="/img/events/actor-set-direction-v3.png" class="event-preview" />
+<img src="/img/events/actor-set-direction-preview.png" class="event-preview" />
 
 #### Set Actor Movement Speed
+Set the movement speed of the specified actor.  
 <img src="/img/events/actor-set-move-speed-v3.png" class="event-preview" />
 
 #### Set Actor Position
+Set the position in the scene of the specified actor.  
 <img src="/img/events/actor-set-position-v3.png" class="event-preview" />
 
 #### Set Actor Relative Position
+Set the position in the scene of the specified actor relative to their current position. 
 <img src="/img/events/actor-set-position-relative-v3.png" class="event-preview" />
 
 #### Set Actor Sprite Sheet
+Change the actor sprite sheet from the scene default.
+
+When dynamically changing an actor's sprite sheet memory will be reserved for that actor based on the largest sprite assigned.  
 <img src="/img/events/actor-set-spritesheet-v3.png" class="event-preview" />
 
 #### Set Player Sprite Sheet
+Change the player sprite sheet from the scene default.
+
+You can optionally choose to persist the change between all scenes of the current type (as long as the other scene doesn't define a specific override).  
 <img src="/img/events/player-set-spritesheet-v3.png" class="event-preview" />
 
 #### Show Actor
+Unhide a previously hidden actor.  
 <img src="/img/events/actor-show-v3.png" class="event-preview" />
 
 #### Show All Sprites
@@ -89,15 +107,23 @@ Show all sprites that were previously hidden.
 <img src="/img/events/sprites-show-v3.png" class="event-preview" />
 
 #### Show Emote Bubble
+Display an emote bubble above the specified actor.
+
+Emotes are created as `16px` x `16px` `.png` images in the `/assets/emotes` folder. See the [UI Elements](/docs/ui-elements/#emotes) documentation for my information.  
 <img src="/img/events/actor-emote-v3.png" class="event-preview" />
 
 #### Stop Actor's "On Update" Script
+Causes the _On Update_ script for the specified actor to be immediately stopped, preventing it from looping again.
+
+This is useful for adding to enemy actors while playing a destroy animation to stop them moving around or firing.  
 <img src="/img/events/actor-stop-update-v3.png" class="event-preview" />
 
 #### Store Actor Direction In Variable
+Store the current direction of an actor into a variable.  
 <img src="/img/events/actor-store-direction-v3.png" class="event-preview" />
 
 #### Store Actor Position In Variables
+Store the current position of an actor into two variables.  
 <img src="/img/events/actor-store-position-v3.png" class="event-preview" />
 
 
