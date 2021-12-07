@@ -227,6 +227,10 @@ blockquote {
   padding: 10px 20px;
 }
 
+.nomobile {
+  display: none;
+}
+
 @media (min-width: 900px) {
   body::before {
     content: "";
@@ -246,5 +250,9 @@ blockquote {
     top: 0;
     left: 0;
     right: 0;
+  }
+
+  .nomobile {
+    display: block;
   }
 }
