@@ -1,8 +1,8 @@
 ---
 title: "Saving and Loading"
 draft: false
-next: "/docs/project-editor"
-nextTitle: "The Project Editor"
+next: "/docs/migrate"
+nextTitle: "Migration Guide"
 ---
 
 ## Saving
