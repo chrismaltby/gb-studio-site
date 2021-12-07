@@ -5,22 +5,19 @@ next: "/docs/custom-scripts"
 nextTitle: "Custom Scripts"
 ---
 
-## Actor Events
+## Actor
 
 #### Actor Move To
 Make the actor walk to a specified position in the scene.  
 <img src="/img/events/actor-move-v3.png" class="event-preview" />
 
-
 #### Actor Move Relative
 Make the actor walk to a position relative to their current position.  
 <img src="/img/events/actor-move-relative-v3.png" class="event-preview" />
 
-
 #### Hide Actor
 Hide the actor  
 <img src="/img/events/actor-hide-v3.png" class="event-preview" />
-
 
 #### Hide All Sprites
 Hide all sprites in scene.
@@ -28,21 +25,17 @@ Hide all sprites in scene.
 Can be useful to create cutscenes where the player should not be visible by adding to a scene's starting script.  
 <img src="/img/events/sprites-hide-v3.png" class="event-preview" />
 
-
 #### If Actor At Position
 Conditionally execute part of the script if the specified actor is at a certain position in the scene.  
 <img src="/img/events/if-actor-at-position-v3.png" class="event-preview" />
-
 
 #### If Actor Facing Direction
 Conditionally execute part of the script if the specified actor is facing a certain direction.
 <img src="/img/events/if-actor-facing-direction-v3.png" class="event-preview" />
 
-
 #### If Actor Relative To Actor
 Conditionally execute part of the script depending on how an actor is positioned relative to a second actor.
 <img src="/img/events/if-actor-relative-v3.png" class="event-preview" />
-
 
 #### Launch Projectile
 Launch a projectile from an actor.  
@@ -134,7 +127,7 @@ Store the current position of an actor into two variables.
 <img src="/img/events/actor-store-position-v3.png" class="event-preview" />
 
 
-## Camera Events
+## Camera
 
 #### Camera Move To
 Move the camera to a specifed position in the scene.  
@@ -143,7 +136,7 @@ Move the camera to a specifed position in the scene.
 #### Camera Lock To Player
 Move the camera back to focusing on the player, locking into position when the player moves.
 
-Optionally allows locking to follow player in only horizontal or vertical axis.
+Optionally allows locking to follow player in only horizontal or vertical axis.  
   <img src="/img/events/camera-lock-v3.png" class="event-preview" />
 
 #### Camera Shake
@@ -159,7 +152,7 @@ Fade the scene to a blank screen.
 <img src="/img/events/fade-out-v3.png" class="event-preview" />
 
 
-## Color Events
+## Color
 
 #### If Device Supports Color
 Conditionally execute part of the script if the game is being played on a device or emulator that supports color games.  
@@ -182,7 +175,7 @@ Replace the palette used for the UI (background palette #8).
 <img src="/img/events/set-ui-palette-v3.png" class="event-preview" />
 
 
-## Control Flow Events
+## Control Flow
 
 #### Call Script
 Call one of your [Custom Scripts](/docs/custom-scripts/). Once you have chosen a script you will be able to hook up any parameters required.  
@@ -269,7 +262,7 @@ Conditionally execute from multiple options depending on the value of the specif
 
 
 
-## Dialogue and Menu Events
+## Dialogue and Menus
 
 #### Display Dialogue
 Show a dialogue box at the bottom of the game screen.
@@ -302,7 +295,7 @@ Set the speed that dialogue boxes appear and disappear and how fast text appears
 <img src="/img/events/text-speed-v3.png" class="event-preview" />
 
 
-## Engine Field Events
+## Engine Fields
 
 #### Engine Field Update
 Change the value of an [Engine Field](/docs/settings/#engine-settings).  
@@ -313,7 +306,7 @@ Store the value of an [Engine Field](/docs/settings/#engine-settings) in a varia
 <img src="/img/events/engine-field-store-v3.png" class="event-preview" />
 
 
-## Input Events
+## Input
 
 #### Attach Script To Button
 Execute the specified script any time a joypad input button is pressed. If you attach scripts to a direction button or the _A_ button the scripts will override the default game actions.  
@@ -331,7 +324,7 @@ Pauses the script until one of the specified joypad inputs are pressed.
 Remove an attached script from a joypad input button restoring the default functionality of the button.  
 <img src="/img/events/input-remove-v3.png" class="event-preview" />
 
-## Math Events
+## Math
 
 #### If Math Expression
 Conditionally execute part of the script if the specified math expression evaluates to true.
@@ -359,13 +352,12 @@ You can use variables in expressions by typing `$` and searching for the variabl
 Store the result of a math expression in a variable.  
 <img src="/img/events/expression-v3.png" class="event-preview" />
 
-
 #### Math Functions
 Allows you to perform various maths functions on a variable to add/subtract/multiply/divide/modulus a value/variable/random number.  
 <img src="/img/events/variable-math-v3.png" class="event-preview" />
 
 
-## Music and Sound Effect Events
+## Music and Sound Effects
 
 #### Play Music Track
 Plays a music .mod file, optionally looping the file when finished. If you play a new song while another song is playing, the old song will stop automatically.  
@@ -379,7 +371,7 @@ Play a sound effect, choose from playing a beep with a given pitch, a tone with 
 Stops any currently playing music. Put this before a Music: Play Track event to restart the same song from the beginning.  
 <img src="/img/events/music-stop-v3.png" class="event-preview" />
 
-## Save Data Events
+## Save Data
 
 #### Game Data Save
 Save the current game data into the selected slot.  
@@ -398,10 +390,10 @@ Conditionally execute part of the script if game data has been saved into the se
 <img src="/img/events/if-saved-v3.png" class="event-preview" />
 
 #### Store Variable From Game Data In Variable
-Read a saved value from a selected save slot and store it in a variable.
+Read a saved value from a selected save slot and store it in a variable.  
 <img src="/img/events/data-extract-v3.png" class="event-preview" />
 
-## Scene Events
+## Scene
 
 #### Change Scene
 Transition to a new scene with player at a specified position and direction. A connection line will be drawn between the source of the event and the destination scene with a <img src="/img/screenshots/destination-end.png" style="height:12px"/> icon appearing at the destination position. It's possible to drag this icon around and between scenes to modify the event.  
@@ -420,10 +412,10 @@ Transition to the very first scene stored on the stack, for instance if you had 
 <img src="/img/events/scene-stack-pop-all-v3.png" class="event-preview" />
 
 #### Remove All From Scene Stack
-Remove all scenes from the scene stack without leaving the current scene.
+Remove all scenes from the scene stack without leaving the current scene.  
 <img src="/img/events/scene-stack-clear-v3.png" class="event-preview" />
 
-## Screen Events
+## Screen
 
 #### Fade Screen In
 Fade the scene from a blank screen.  
@@ -446,7 +438,7 @@ Hides the screen overlay.
 <img src="/img/events/overlay-hide-v3.png" class="event-preview" />
 
 
-## Timer Events
+## Timer
 
 #### Wait
 Pause script for up to 10 seconds.  
@@ -467,115 +459,81 @@ Remove the timer script so it will no longer be called.
 
 ## Variables
 
+Your game has 512 variables that can be shared across all the scripts in your game. Additionally every _Actor_, _Trigger_ and _Scene_ has 6 local variables that can only be accessed by that specific entity. Local variables are useful for keeping track of state specific to an entity such as how many times you have spoken to a character or if a treasure chest is open or closed.
+
 #### Evaluate Math Expression
+
+Store the result of a math expression in a variable.  
+<img src="/img/events/expression-v3.png" class="event-preview" />
+
 #### If Variable Compare With Value
+Conditionally execute part of the script if the specified variable matches a rule, such as "Equal To", "Greater Than" or "Less Than" against a value.  
+<img src="/img/events/if-variable-value-v3.png" class="event-preview" />
+
 #### If Variable Compare With Variable
+Conditionally execute part of the script if the specified variable matches a rule, such as "Equal To", "Greater Than" or "Less Than" against a second variable.  
+<img src="/img/events/if-variable-variable-v3.png" class="event-preview" />
+
 #### Math Functions
-#### Reset All Variables To "False"
+Allows you to perform various maths functions on a variable to add/subtract/multiply/divide/modulus a value/variable/random number.  
+<img src="/img/events/variable-math-v3.png" class="event-preview" />
+
 #### Store Actor Position In Variables
+Store the current position of an actor into two variables.  
+<img src="/img/events/actor-store-position-v3.png" class="event-preview" />
+
 #### Store Engine Field In Variable
+Store the value of an [Engine Field](/docs/settings/#engine-settings) in a variable.  
+<img src="/img/events/engine-field-store-v3.png" class="event-preview" />
+
 #### Store Variable From Game Data In Variable
-#### Variable Decrement By 1
-#### Variable Flags Add
-#### Variable Flags Clear
-#### Variable Flags Set
+Read a saved value from a selected save slot and store it in a variable.  
+<img src="/img/events/data-extract-v3.png" class="event-preview" />
+
 #### Variable Increment By 1
-#### Variable Set To "False"
-#### Variable Set To "True"
-#### Variable Set To Value
+Increase the value of the specified value by one, up to a maximum of _255_. If the value was previously _false_ it will now be _1_ (and also _true_), if it was previously _true_ it will now be _2_.  
+<img src="/img/events/variable-inc-v3.png" class="event-preview" />
 
+#### Variable Decrement By 1
+Decrease the value of the specified value by one, down to a minimum of _0_. If the value was previously _true_ it will now be _0_ (and also _false_).  
+<img src="/img/events/variable-dec-v3.png" class="event-preview" />
 
-
-
--- 
-
-
-
-
-
-## Variable Events
-
-Your game has 512 variables that can be shared across all the scripts in your game. <span class="new">New in 1.2.0</span> Additionally every _Actor_, _Trigger_ and _Scene_ has 4 local variables that can only be accessed by that specific entity. Local variables are useful for keeping track of state specific to an entity such as how many times you have spoken to a character or if a treasure chest is open or closed.
-
-- **Variable: Set To 'True'**  
-  Set the value of the specified variable to _true_.  
-  <img src="/img/events/variable-true.png" class="event-preview" />
-
-- **Variable: Set To 'False'**  
-  Set the value of the specified variable to _false_.  
-  <img src="/img/events/variable-false.png" class="event-preview" />
-
-- **Variable: Set To Value**  
-  Set the specified variable to a defined value.  
-  <img src="/img/events/variable-value.png" class="event-preview" />
-
-- **Variable: Increment By 1**  
-  Increase the value of the specified value by one, up to a maximum of _255_. If the value was previously _false_ it will now be _1_ (and also _true_), if it was previously _true_ it will now be _2_.  
-  <img src="/img/events/variable-increment.png" class="event-preview" />
-
-- **Variable: Decrement By 1**  
-  Decrease the value of the specified value by one, down to a minimum of _0_. If the value was previously _true_ it will now be _0_ (and also _false_).  
-  <img src="/img/events/variable-decrement.png" class="event-preview" />
-
-- **Variable: Math Functions**  
-  Allows you to perform various maths functions on a variable to add/subtract/multiply/divide/modulus a value/variable/random number.  
-  _Note:_ Variables have max values of 255 and will wrap if increased above 255 or below 0.  
-  <img src="/img/events/variable-math.png" class="event-preview" />
-
-- **Variable: Set Flags**  
+#### Variable Flags Set
   Set the value of a variable by enabling individual bits of the 8-bit number. Allows 8 true/false values to be stored within a single variable. Setting the flags will replace the previous value of the variable.  
-  <img src="/img/events/variable-flags-set.png" class="event-preview" />
+  <img src="/img/events/variable-flags-set-v3.png" class="event-preview" />
 
-- **Variable: Add Flags**  
+#### Variable Flags Add
   Set selected flags to true on a variable. All unselected flags will keep their previous value.
-  <img src="/img/events/variable-flags-add.png" class="event-preview" />
+  <img src="/img/events/variable-flags-add-v3.png" class="event-preview" />
 
-- **Variable: Clear Flags**  
+#### Variable Flags Clear
   Set selected flags to false on a variable. All unselected flags will keep their previous value.
-  <img src="/img/events/variable-flags-clear.png" class="event-preview" />
+  <img src="/img/events/variable-flags-clear-v3.png" class="event-preview" />
 
-- **Variable: Reset All Variables To 'False'**  
-  Reset all variables used by your project back to _false_.  
-  <img src="/img/events/variable-reset-all.png" class="event-preview" />
+#### Variable Set To "True"
+  Set the value of the specified variable to _true_.  
+  <img src="/img/events/variable-true-v3.png" class="event-preview" />
 
-## Overlay Events
 
-- **Overlay: Show**  
-  Show either a black or white window over the top of the current game screen. Can be used to obscure and then reveal parts of the scene background for example on the sample project logo screen.  
-  <img src="/img/events/overlay-show.png" class="event-preview" />
+#### Variable Set To "False"
+  Set the value of the specified variable to _false_.  
+  <img src="/img/events/variable-false-v3.png" class="event-preview" />
 
-- **Overlay: Hide**  
-  Hides the screen overlay.  
-  <img src="/img/events/overlay-hide.png" class="event-preview" />
 
-- **Overlay: Move To**  
-  Moves the overlay to a new position on the screen.  
-  <img src="/img/events/overlay-move-to.png" class="event-preview" />
+#### Variable Set To Value
+Set the specified variable to a defined value.  
+<img src="/img/events/variable-value-v3.png" class="event-preview" />
 
-## Timing Events
+#### Reset All Variables To "False"
+Reset all variables used by your project back to _false_.  
+<img src="/img/events/variable-reset-v3.png" class="event-preview" />
 
-- **Wait**  
-  Pause script for up to 10 seconds.  
-  <img src="/img/events/wait.png" class="event-preview" />
+## Miscellaneous
 
-- **Timer: Set Timer Script**  
-  Execute the specified script repeatedly after a time interval. The script will keep running in the background until a _Disable Timer Script_ event is called or the scene is changed using a _Change Scene_ event.
-  <img src="/img/events/timer-set.png" class="event-preview" />
-
-- **Timer: Restart Timer**  
-  Reset the countdown timer back to zero. The script will call again after the time specified originally.  
-  <img src="/img/events/timer-restart.png" class="event-preview" />
-
-- **Timer: Disable Timer Script**  
-  Remove the timer script so it will no longer be called.  
-  <img src="/img/events/timer-disable.png" class="event-preview" />
-
-## Miscellaneous Events
-
-- **Comment**
-  Allows you to leave notes within your scripts. Provides no functionality in-game. The text you type automatically gets set in the event title, so you can collapse the comment and still read its content.
-  <img src="/img/events/comment.png" class="event-preview" />  
-  You can also use the event dropdown menu to disable and reenable any event.  
-  Disabled events will be skipped when run in game.  
-  <img src="/img/events/event-disable-menu.png" class="event-preview" />
-  <img src="/img/events/event-disabled.png" class="event-preview" />
+#### Comment
+Allows you to leave notes within your scripts. Provides no functionality in-game. The text you type automatically gets set in the event title, so you can collapse the comment and still read its content.
+<img src="/img/events/comment.png" class="event-preview" />  
+You can also use the event dropdown menu to disable and reenable any event.  
+Disabled events will be skipped when run in game.  
+<img src="/img/events/event-disable-menu.png" class="event-preview" />
+<img src="/img/events/event-disabled.png" class="event-preview" />
