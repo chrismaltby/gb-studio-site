@@ -27,10 +27,10 @@ const appScreenshot4 = document.getElementById("app-screenshot-4");
 if (appScreenshot1 && appScreenshot2 && appScreenshot3) {
   switch (OSName) {
     case "Windows":
-      appScreenshot1.src = "/img/screenshot_mac_1_v3.png";
-      appScreenshot2.src = "/img/screenshot_mac_2_v3.png";
-      appScreenshot3.src = "/img/screenshot_mac_3_v3.png";
-      appScreenshot4.src = "/img/screenshot_mac_4_v3.png";
+      appScreenshot1.src = "/img/screenshot_win_1_v3.png";
+      appScreenshot2.src = "/img/screenshot_win_2_v3.png";
+      appScreenshot3.src = "/img/screenshot_win_3_v3.png";
+      appScreenshot4.src = "/img/screenshot_win_4_v3.png";
       break;
     case "MacOS":
       appScreenshot1.src = "/img/screenshot_mac_1_v3.png";
