@@ -27,7 +27,7 @@ The first time you build your game after enabling this mode a default border ima
 
 ## Default Player Sprites
 
-Each _Scene Type_ can have a different player sprite sheet, use this section to replace the default spritesheet that will be used for each type. You can override the sprite sheet used for individual scenes by editing the scene's properties or by using scripts, see [The Player](http://localhost:1313/docs/player/#default-sprite-sheet).
+Each _Scene Type_ can have a different player sprite sheet, use this section to replace the default spritesheet that will be used for each type. You can override the sprite sheet used for individual scenes by editing the scene's properties or by using scripts, see [The Player](/docs/player/#default-sprite-sheet).
 
 <img title="Default Player Sprites" src="/img/screenshots/default-sprites.png" width="650" class="drop-shadow">
 
