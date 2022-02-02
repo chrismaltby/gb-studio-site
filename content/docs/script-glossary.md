@@ -15,6 +15,10 @@ Make the actor walk to a specified position in the scene.
 Make the actor walk to a position relative to their current position.  
 <img src="/img/events/actor-move-relative-v3.png" class="event-preview" />
 
+#### Actor Move Cancel
+Make the actor stop walking.   
+<img src="/img/events/actor-move-cancel.png" class="event-preview" />
+
 #### Hide Actor
 Hide the actor  
 <img src="/img/events/actor-hide-v3.png" class="event-preview" />
