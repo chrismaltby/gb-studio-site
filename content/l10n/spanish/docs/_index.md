@@ -6,7 +6,9 @@ draft: false
 
 # Documentation
 
-[en](/docs) | [de](/de/docs) | es
+[en](/docs) | [de](/de/docs) | es | [pl](/pl/docs)
+
+> This documentation is out of date, if you'd like to help please contribute a translation on [GitHub](https://github.com/chrismaltby/gb-studio-site). Thanks!
 
 - [Installation](installation)
 - [Getting Started](getting-started)

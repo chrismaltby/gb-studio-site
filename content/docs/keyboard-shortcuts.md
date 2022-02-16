@@ -19,7 +19,7 @@ When playing your game inside GB Studio use the following keyboard controls:
 **Start** - Enter  
 **Select** - Shift
 
-<span class="new">New in 1.2.0</span>
+These controls can be modified at any time by going to the _Settings View_ under the _Controls_ section.
 
 You can also control the _Play Window_ using a supported gamepad. If your web browser has gamepad support you can also use it when running a web build.
 
@@ -43,4 +43,45 @@ While editing the game world you can use the following keys to quickly manipulat
 **Add Scene** - S  
 **Eraser Mode** - E  
 **Collisions Mode** - C  
-**Set Player Start Position** - P (while hovering over desired location)
+**Set Player Start Position** - P (while hovering over desired location)  
+**Pan View** - Hold Space (while clicking and dragging on _Game World_)
+
+## Drawing Mode
+
+Drawing mode is automatically enabled in the _Collision tool_ and the _Colorize tool_.
+
+**Draw** - Click on scene  
+**Draw line from last point** - Click to set first point, hold shift, click to set next point  
+**Lock brush to axis** - Hold Shift + Hold Click  
+**8px Brush** - 8  
+**16px Brush** - 9  
+**Fill** - 0  
+**Hide Triggers/Actors** - -
+
+## Collision Types
+
+These are only available when using the _Collision tool_.
+
+Each tile can hold a maximum of 1 ladder and 3 collision sides. Ladders will not replace existing collision when placed on top of other colliders.
+
+**Select multiple collision types** - Shift + Click  
+**Erase collision tile** - Click on a collision tile  
+**Solid** - 1  
+**Collision Top** - 2  
+**Collision Bottom** - 3  
+**Collision Left** - 4  
+**Collision Right** - 5  
+**Ladder (Platformer only)** - 6
+
+## Colorize Palettes
+
+These are only available when using the _Colorize tool_.
+
+**Change Brush Palette** - 1-6  
+**Change Palettes** - Hold click on existing palette
+
+## Music Editor
+
+These are only available when using the _Music Editor_.
+
+**Change Instrument** - 1-9  

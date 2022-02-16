@@ -1,8 +1,23 @@
 	<footer>
 		<div class="container">
 
-      <div class="copyright">
-        &copy; 2019 <a href="https://www.chrismaltby.com">Chris Maltby</a>
+      <div>
+        <span class="copyright">
+          GB Studio &copy; 2021 <a href="https://www.chrismaltby.com">Chris Maltby</a>
+        </span>
+
+      {{ if ne (getenv "BUILD_CONTEXT") "develop" }}
+        <span class="dash">—</span>
+          
+        <a class="press-kit" href="https://drive.google.com/drive/folders/1gP7yfN7oc_jKIn1n9s3Tq4evRjsigcag?usp=sharing">Download Press Kit</a>
+        
+        <br />
+
+        <span class="copyright-thirdparty">
+          Pocket &copy; 2021 Analogue
+        </span>
+      {{ end }}
+      
       </div>
 
       <div class="spacer"></div>

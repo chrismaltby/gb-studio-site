@@ -1,8 +1,8 @@
 ---
 title: "Saving and Loading"
 draft: false
-next: "/docs/project-editor"
-nextTitle: "The Project Editor"
+next: "/docs/migrate"
+nextTitle: "Migration Guide"
 ---
 
 ## Saving
@@ -12,6 +12,8 @@ To save your project select `File > Save` from the menu or press Ctrl/Cmd + S. I
 ## Loading
 
 To load your project again, either use the _Open_ button on the _New Project_ window or select `File > Open` from the menu and navigate to your project's folder then select the `.gbsproj` file.
+
+You can also return to the _Recent_Projects_ window by selecting `File > Switch Project` from the menu.
 
 ## Version Control
 

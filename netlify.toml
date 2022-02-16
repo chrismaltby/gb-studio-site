@@ -14,13 +14,21 @@
   command = "hugo -b $DEPLOY_URL"
   
 [context.branch-deploy.environment]
-  HUGO_VERSION = "0.54.0" # if older, use format: 0.53 (no trailing zero)
+  HUGO_VERSION = "0.60.1" # if older, use format: 0.53 (no trailing zero)
 
 [context.develop]
   command = "hugo -b $DEPLOY_URL"
   
 [context.develop.environment]
+  HUGO_VERSION = "0.60.1"
   BUILD_CONTEXT = "develop"
+
+[context.v3]
+  command = "hugo -b $DEPLOY_URL"
+  
+[context.v3.environment]
+  HUGO_VERSION = "0.60.1"
+  BUILD_CONTEXT = "v3"
 
 [[redirects]]
   from = "/download"

@@ -8,42 +8,40 @@ nextTitle: "Triggers"
 Actors are the characters and objects in your scene that you can interact with.
 
 ## Adding an Actor
-
 To add an actor to a scene click the _**+** button_ in the _Editor Tools_ and select _Actor_ from the menu (alternatively press the **A** key), then click on the scene and position where you wish to place the actor.
 
 <img src="/img/screenshots/add-actor.gif" style="width:300px"/>
 
-The _Editor Sidebar_ will switch to show the actor settings where you can give the actor a name for easier navigation later, reposition the actor (which you can also do with drag and drop), set the [sprite sheet](/docs/sprites), initial direction, the movement type and create a script that will play when the player interacts with the actor.
+## Actor Properties
+- **Name** - Names your actor. Giving your actors a *name* helps organize them in your project. An actor's name will be visible in any drop-down menu that asks you to pick an actor, such as the *Actor: Hide* event.
+- **Position** - Sets the X and Y position where the actor will be positioned in a scene. You can also change this by dragging the actor around the the _Game World_.
+- **Pin to Screen** - Using the _Pin Button_ next to the actor position you can choose to pin the actor to the screen which cause it to not move as the game screen scrolls.
+- **Sprite Sheet** - Choose which sprite graphics should be used to display the actor.
+- **Movement Speed** - Choose how fast the actor should move when scripting events are used.
+- **Animation Speed** - Choose how fast the actor animations should play.
+- **Collision Group** - Choose if scripts should play automatically when colliding with this actor.
 
-## Movement Type
+### Pin to Screen
+When an actor is pinned, the actor will not move without a script, and does not create collisions with other actors in your scene.
 
-There are a few different movement types available to choose, the one you should use will depend on how you want the actor to behave as the player is walking around the scene and interacting with it.
+Enabling this property will temporarily change your scene to be blacked-out, with a ``160px x 144px`` boundary in the top-left corner showing part of your original scene. Use your mouse to drag the actor to where you want it to be pinned to the screen. 
 
-- **Static** - The actor will display a single frame from the selected spritesheet.  
-  If the sprite sheet contains more than one frame you will be given the option to choose which frame to display, this can be modified later using an _Actor: Set Animation Frame_ event. Sprite sheets with multiple frames also enable the ability to optionally animate the actor by cycling through each of the frames at a specified speed, the speed can also be modified with an _Actor: Set Animation Speed_ event.\
-  \
-  The actor will only ever face in the initial direction (unless the direction is modified later using a script). If the player interacts with this actor it will not change direction. Useful for things like signposts or other stationary objects.
+Select a different actor, the scene, or the project to return the blacked-out view of your scene to normal.
 
-- **Face Interaction** - The actor will start facing in the initial direction but when the player interacts with the actor it will turn to face the player before it's script plays. Useful for simple characters to make them more responsive to the player's actions.
-
-- **Random Rotation** - The actor will start in the initial direction but will randomly change direction at set intervals. Useful to show characters who are looking around their surroundings.
-
-- **Random Movement** - The actor will randomly change direction and move around the scene at set intervals. Useful for characters who are searching an area. Actors can block the player's movement so be careful not to use this movement type around tight spaces where the player might get stuck waiting for the actor to move out of the way.
-
-_Note_ If the actor uses a static sprite sheet (i.e. containing only a single frame of animation) then the only movement type available will be static and the inputs for choosing the movement type and initial direction won't appear.
-
-## Frame Limits
-
-Due to hardware limitations only **25 unique frames** of animation can be allocated to actors in each scene. Where possible use static or non animated sprite sheets to decrease the number of frames used. Another way to reduce the frame count is to reuse the same sprite for multiple actors in the scene, reusing the same sprite sheet will not count towards the scene frame total.
+### Collision Groups
+Actors can be given a collision group in the _Editor Sidebar_. When enabled, the option to run scripts based on collisions will appear in the _Editor Sidebar_. To learn more about On Hit scripts, see the documentation for [Scripting](/docs/scripting).
 
 ## Scripting
+Actors can contain multiple scripts that will be called a different points in your game.
 
-Actors can have two scripts attached to them, _On Interact_ and _On Init_, you can toggle between which script is being edited by using the tabs in the _Editor Sidebar_ while the actor is selected.
+- **On Interact:** This is called if the player stands in front of this actor and presses the _Interact_ button.
+- **On Hit:** (only if collision group is set) This is called when this actor collides with either the player or a projectile with a specified collision group
+- **On Init:** Called as soon as the scene is loaded in game.
+- **On Update:** Repeatedly called while the actor is on screen, and once the script finishes it will repeat. You can use this to create movement scripts
 
-The _On Interact_ script will be run any time a player stands next to the actor and presses the _A_ button.
-
-The _On Init_ script can be used to have events run as soon as the scene is loaded, they will execute before any events in the scene's _On Init_ script.
-
-When the actor is selected click the _Add Event button_ in the _Editor Sidebar_ to open the event menu and start building a script.
+To start building a script, select an actor, click the script type you want to edit and click the _Add Event button_ in the _Editor Sidebar_ to open the event menu. Select an event to add it to the script.
 
 For more information see the documentation for [Scripting](/docs/scripting).
+
+## Limits
+There are limits to how actors and their sprites can be used in GB Studio. These limits are to make sure your game appears as intended, as well as to keep your actor logic running smoothly. The exact limits depend on the complexity of the background image used in your scene, see [Scenes](/docs/scenes/#actor-limits) for more information.

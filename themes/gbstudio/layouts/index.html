@@ -1,11 +1,18 @@
 {{ partial "header.html" . }}
 
-{{ partial "home/hero.html" . }}
-{{ partial "home/social.html" . }}
-{{ partial "home/keypoints.html" . }}
-{{ partial "home/highlights.html" . }}
-{{ partial "home/video.html" . }}
-{{ partial "home/tldw.html" . }}
+{{ if eq (getenv "BUILD_CONTEXT") "develop" }}
+    {{ partial "home/social.html" . }}
+    {{ partial "home/beta.html" . }}
+{{ else }}
+    {{ partial "home/hero.html" . }}
+    {{ partial "home/social.html" . }}
+    {{ partial "home/video.html" . }}
+    {{ partial "home/pocket.html" . }}
+    {{ partial "home/keypoints.html" . }}
+    {{ partial "home/highlights.html" . }}
+    {{ partial "home/tldw.html" . }}
+{{ end }}
 
 {{ partial "site-scripts.html" . }}
+
 {{ partial "footer.html" . }}

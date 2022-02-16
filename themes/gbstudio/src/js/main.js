@@ -22,38 +22,43 @@ let swiperEffect = "fade";
 const appScreenshot1 = document.getElementById("app-screenshot-1");
 const appScreenshot2 = document.getElementById("app-screenshot-2");
 const appScreenshot3 = document.getElementById("app-screenshot-3");
+const appScreenshot4 = document.getElementById("app-screenshot-4");
 
 if (appScreenshot1 && appScreenshot2 && appScreenshot3) {
   switch (OSName) {
     case "Windows":
-      appScreenshot1.src = "/img/screenshot_win_1.png";
-      appScreenshot2.src = "/img/screenshot_win_2.png";
-      appScreenshot3.src = "/img/screenshot_win_3.png";
+      appScreenshot1.src = "/img/screenshot_win_1_v3.png";
+      appScreenshot2.src = "/img/screenshot_win_2_v3.png";
+      appScreenshot3.src = "/img/screenshot_win_3_v3.png";
+      appScreenshot4.src = "/img/screenshot_win_4_v3.png";
       break;
     case "MacOS":
-      appScreenshot1.src = "/img/screenshot_mac_1.png";
-      appScreenshot2.src = "/img/screenshot_mac_2.png";
-      appScreenshot3.src = "/img/screenshot_mac_3.png";
+      appScreenshot1.src = "/img/screenshot_mac_1_v3.png";
+      appScreenshot2.src = "/img/screenshot_mac_2_v3.png";
+      appScreenshot3.src = "/img/screenshot_mac_3_v3.png";
+      appScreenshot4.src = "/img/screenshot_mac_4_v3.png";
       break;
     case "Linux":
-      appScreenshot1.src = "/img/screenshot_mac_1.png";
-      appScreenshot2.src = "/img/screenshot_mac_2.png";
-      appScreenshot3.src = "/img/screenshot_mac_3.png";
+      appScreenshot1.src = "/img/screenshot_mac_1_v3.png";
+      appScreenshot2.src = "/img/screenshot_mac_2_v3.png";
+      appScreenshot3.src = "/img/screenshot_mac_3_v3.png";
+      appScreenshot4.src = "/img/screenshot_mac_4_v3.png";
       break;
     default:
-      appScreenshot1.src = "/img/screenshot_mac_1.png";
-      appScreenshot2.src = "/img/screenshot_mac_2.png";
-      appScreenshot3.src = "/img/screenshot_mac_3.png";
+      appScreenshot1.src = "/img/screenshot_mac_1_v3.png";
+      appScreenshot2.src = "/img/screenshot_mac_2_v3.png";
+      appScreenshot3.src = "/img/screenshot_mac_3_v3.png";
+      appScreenshot4.src = "/img/screenshot_mac_4_v3.png";
   }
 
   initSwiper();
   window.addEventListener("resize", () => {
     initSwiper();
-  })
+  });
 }
 
 function initSwiper() {
-  const screenWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+  const screenWidth = window.innerWidth > 0 ? window.innerWidth : screen.width;
   const newEffect = screenWidth >= 1100 ? "fade" : "coverflow";
   if (!mySwiper || swiperEffect !== newEffect) {
     if (mySwiper) {
@@ -66,20 +71,20 @@ function initSwiper() {
       effect: swiperEffect,
       speed: 800,
       fadeEffect: {
-        crossFade: true
+        crossFade: true,
       },
       coverflowEffect: {
         rotate: 30,
         slideShadows: false,
       },
       autoplay: {
-        delay: 3200
+        delay: 8000,
       },
       pagination: {
         el: ".swiper-pagination",
         type: "bullets",
-        clickable: true
-      }
+        clickable: true,
+      },
     });
   }
 }
