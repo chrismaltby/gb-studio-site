@@ -122,6 +122,14 @@ This is useful for adding to enemy actors while playing a destroy animation to s
 Store the current direction of an actor into a variable.  
 <img src="/img/events/actor-store-direction-v3.png" class="event-preview" />
 
+| Direction | Value |
+| --------- | ----- |
+| Down      | 1     |
+| Right     | 2     |
+| Up        | 3     |
+| Left      | 4     |
+
+
 #### Store Actor Position In Variables
 Store the current position of an actor into two variables.  
 <img src="/img/events/actor-store-position-v3.png" class="event-preview" />
