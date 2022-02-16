@@ -360,17 +360,27 @@ Allows you to perform various maths functions on a variable to add/subtract/mult
 ## Music and Sound Effects
 
 #### Play Music Track
-Plays a music .mod file, optionally looping the file when finished. If you play a new song while another song is playing, the old song will stop automatically.  
+Plays either a .uge music file or a GBT-Ready .mod file, depending on the [Music Driver](/docs/settings/#music-driver) set. If you play a new song while another song is playing, the old song will stop automatically. Songs that use pattern-jump effects (`Bxx` and `Dxx`) to return to an earlier pattern will always loop, regardless of this event's Loop setting.
 <img src="/img/events/music-play-v3.png" class="event-preview" />
 
 #### Play Sound Effect
-Play a sound effect, choose from playing a beep with a given pitch, a tone with a given frequency or cymbal crash. Using [Custom Scripts](/docs/custom-scripts) you can combine multiple effects into a single reusable event to make jingles.  
+Play a sound effect without interrupting the music track. Choose from playing a beep with a given pitch, a tone with a given frequency, or a cymbal crash. Using [Custom Scripts](/docs/custom-scripts) you can combine multiple effects into a single reusable event to make jingles.
 <img src="/img/events/sound-effect-play-v3.png" class="event-preview" />
+
+Tone plays a 25% pulse wave on channel 1. Beep and Crash play noise on channel 4.
+
+If a sound effect and music track play on the same channel at the same time, they'll interrupt eachother. Any new notes or sounds will take priority over old ones. Keep this in mind when composing songs for games with sound effects.
 
 #### Stop Music
 Stops any currently playing music. Put this before a Music: Play Track event to restart the same song from the beginning.  
 <img src="/img/events/music-stop-v3.png" class="event-preview" />
 
+#### Set Music Routine
+Only available with the UGE [Music Driver](/docs/settings/#music-driver). When the current music track is playing, if it reads effect `600` on any channel, it triggers the contents of this script.
+<img src="/img/events/music-routine-v3.png" class="event-preview" />
+
+There are only 5 routines total, `600` to `604`.
+ 
 ## Save Data
 
 #### Game Data Save
