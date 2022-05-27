@@ -215,137 +215,26 @@ Tick speed relies on the Gameboy's framerate. When setting tick speed with `Fxx`
 
 <sup>1</sup> Values marked with 1 require an additional `F96` effect to set the tracker's BPM. This will make the tracker speed closer to the in-game speed. GBT ignores `Fxx` effects higher than 0x1F.
 
-You might notice that the value of the F effect, when converted to decimal, is just the speed divisor. For instance, F03 divides the BPM by 3 (`750 / 3 = 250`, or `900 / 3 = 300`).
+## Converting other formats to GBT-compatible .mod
 
-Because of how GB Studio is set up, a 60hz F05 effect, which would result in 180 BPM in-game, is impossible here.
+It's common practice to try converting other audio formats into .mod for playback on the Gameboy. At its core, the final result will never sound identical to the original, but it can be a helpful way to get started.
 
-*While not in GB Studio, GBT has a flag called `-speed` that will handle BPM differently, which would require F96 effects for every speed, as it won't handle any internal conversions to get the speed closer. This is the reason why F01 to F04 require F96 in both modes, there's no equivalent for it in tracker speed.*
+### Audio files
 
-**1. Values marked with 1 require an additional F96 effect for the song to sound closer in speed when converted, or setting the song BPM to 150.** This F96 effect can be removed once you're done with your song, there won't be any difference as GBT ignores this -- It's only here to set the BPM to something closer to the in-game version.
+You cannot automatically convert an audio file to GBT-compatible .mod without the result being indistinguishable. You will always get a better result by transcribing what you hear into a GBT-compatible .mod or one of the below filetypes.
 
-## Tricks and Tips
+In GB Studio 3.1, you can play back audio files with a bit-depth of 4. See [Sound Effects](https://gbstudio.dev/docs/sound-effects/) for more information.
 
-### **1. High Speed**
+### Amiga .mod files
 
-By using F01 to F04, you can achieve much higher granularity when it comes to changing volumes and creating sounds of sorts. This means that with a high enough speed, you can create more varied bodies for sounds, with sort-of envelopes, or elaborate effects (like 1 channel echos, which I'll cover here in a moment).
+You can copy the note data and paste it into template.mod. Not all effects will be supported, and any pitch adjustments on the sample or instrument data will not be carried over, so notes may need to be transposed.
 
-This trick means you're going from drums that sound flimsy and primitive to something more impressive.
+### Famitracker / Famistudio
 
-Here's an example of a Snare Drum, at speed F02, that might sound good for you.
+This requires [OpenMPT](https://openmpt.org/). By exporting a song as _Famitracker Text_, you can use [ft2mod.jamespark.ninja/](http://ft2mod.jamespark.ninja/) to get OpenMPT paste data. Noise and PCM sample data is not supported.
 
-```
-ModPlug Tracker MOD
-|C-526...C40
-|C-527...C28
-|........C20
-|........C18
-|........C10
-|........C08
-|........C04
-|........C..
-(this is on the noise channel)
-```
+### MIDI
 
-If this is longer than what you need, simply crop it starting from the bottom.
+This requires [OpenMPT](https://openmpt.org/). OpenMPT has its own import menu for .midi to .mod. There are a few tutorials on this import menu, such as [GBStudio .mod format explained in 10 minutes | OpenMPT](https://www.youtube.com/watch?v=Qz7z7yWn_5w) and [.midi to .mod | GB Studio Music Tutorial](https://youtu.be/4AxZqK9_jKE).
 
-You can also use this for tones and stuff, like short staccato notes or flutes that fade in.
-
-**If you do this, keep in mind the GB Sound hardware has an annoying bug that resets the phase of each waveform on a volume set, meaning you can get scratchy noise in a few emulators and also the real GB.**
-
-### **2. One channel echoes**
-
-This works on most speeds. This is useful for when you need a melody on top of some sort of echoing ostinato, or phrase, or whatever. 
-
-To illustrate it, I'm going to try illustrating it like this, instead of a tracker layout:
-
-```
-A _ B _ C _ E _ G _ E _ C _ B _ 
-Without 1ch Echo
-
-    +-----+ +-----+ +-----+
-A _ B a C b E c G e E g C e B c 
-+-----+ +-----+ +-----+ +-----+
-     
-With 1ch Echo (lowercase notes are the echoes)
-```
-
-Notice how each lowercase letter takes the form of it's 3 step behind louder cousin? That's how the trick works. By having shorter notes that, on each step, has another quieter note that's way behind, you get a cool echoing effect.
-
-I can't explain it very well via text, so I recommend you check out this video by **explod2a03** covering how this trick works with a better example and actual audio: https://www.youtube.com/watch?v=6GI9gngTn_Y
-
-The best way to do this in a tracker is to use a channel you're not using temporarily, copy your note sequence to it, delay it by 3 (or however many you need) rows, then right clicking on the selection and clicking "Amplify...", and setting the amplitude to something lower than 50%.
-
-After that, you should have both channels "alternate". Select the entirety of the channel with the echoes (from top to bottom), go to the channel you want to merge the echoes with, right click, go to "Paste special", then click "Mix paste" (This should have a shortcut, might want to learn it as it can be fairly useful).
-
-### 3. Quick volume envelopes
-
-Are you in a hurry? No problem, this simple trick will create linear envelopes:
-
-1. Select two volume / C values of two separate notes (within the same channel), and everything in between
-2. Right click and hover over "Interpolate"
-3. Click on "Effect column"
-4. You're done!
-
-You might wonder how's it going to sound in-game; well, it'll sound as close as possible. The volumes it can't play it'll just clamp it to the nearest ones it can play.
-
-## Frequently Asked Questions
-
-**Q: Can I use mp3/wav files?**
-
-A: No, but you can use .midi files. If you're looking for an easy way to add music to your game, you can ask the #collaborations channel of the GB Studio Discord or browse the [GB Studio Community Assets.](https://github.com/DeerTears/GB-Studio-Community-Assets)
-
-This has limited success, and there are easier options to get music in your game, such as the 
-
-**Q: How do I convert a .midi file to .mod?**
-
-A: OpenMPT can open MIDI files and save the result to .mod Some resources on how to do this include a [video tutorial](https://www.youtube.com/watch?v=4AxZqK9_jKE) as well as Kazy's write-up article pinned in the #music-help section of the GB Studio discord.
-
-**Q: Can I use this .mod file I found online?**
-
-A: It won't sound as intended, but it can be made to sound good-enough with some adjustments. Any `===` notes need to be replaced with the `EC1` effect. All instrument restrictions should apply, and no melodic instruments should be using Channel 4. You may also need to transpose the notes of a channel to account for differently-tuned samples, which you can learn more about in your tracker's documentation.
-
-**Q: How do I stop a note from playing?**
-
-A: `EC1` will mute a channel's note, `C00` will mute the channel until it recieves another `Cxx` effect.
-
-**Q: What do I do if my song sounds completely giltched-out?**
-
-A: It's probably corrupted. It can likely be saved by using OpenMPT and saving it as a different filetype. If you're using **MilkyTracker**, don't press "Save" on a .mod file, always work in a .xm file instead.
-
-**Q: Why is my song speed is faster in-game than it is in the tracker?**
-
-A: If you're using an `Fxx` effect with a value lower than `F05`, add `F96` to the first row of your song. This will not impact your in-game playback speed.
-
-**Q: Can I play back voice clips/sound effects?**
-
-A: Not on GBT Player. Pokemon Yellow's method is unique, and LSDj does not leave much processing power for games to be played while it's running.
-
-**Q: Can I use a different tool to write my music?**
-
-A: If the tool can natively export to .mod, try it!
-
-**Q: Why is my song playing glitched sounds when it tries to loop?**
-
-A: `D00` is a problematic effect, try using `Bxx` instead. If you're already using `Bxx`, make sure the `xx` number does not go above the number of pattern-slots in your song. A song's first pattern is always in slot 00.
-
-**Q: Why do some notes in OpenMPT appear red and sound higher/lower than they're supposed to sound?**
-
-A: Go over to the "General" tab that's under the New File, Open and Save buttons. Click the big button next to the "Name" field that says "MOD (ProTracker), 4 channels". Once there, disable both **ProTracker 1/2 Mode (MOD)** and **Amiga Frequency Limits.** This is a thing because the format here is meant to be used with the Amiga line of computers (that's where it was made), which has frequency limits.
-
-**Q: Why does my song start out with garbage noise?**
-
-A: If your song doesn't start using the first two channels, add a note to their first row with a `C00` effect on each.
-
-**Q: Can I play sound effects?**
-
-A: Yes, with limitations. View the next page of the documentation for more information. Playing sound effects will not interrupt the song being played by GBT Player.
-
-## Tips
-
-- **Make sure you save frequently and also back-up your files.** This is important in anything that you do and it's worth mentioning here.
-- [**If you're stuck, please ask for help in the Discord server, in `#music-help`.**](https://discord.gg/v9xAJCJ) There's usually a few handful of people who are willing to help out at most times.
-- **Frequently try out your music in your game.** Things don't sound 1:1, and the built in preview just plays the .mod file rather than building the music and previewing that.
-- **Keep it simple!** Don't jump into this, trying to emulate what several artists have done with LSDj or whatever other tools, you'll just get stuck.
-- **Don't be afraid of failure.** I get this is kind of an unfitting tip, but it's important. Your first song won't be good, and that's okay. You'll fail, sure, but you'll also gain knowledge on what you might've done wrong, or how you want to go on about with your next endeavor.
-- **OpenMPT has a manual to help you get started.** [Here's a link](https://wiki.openmpt.org/Tutorial:_Getting_Started), give it a read if you're stuck (or just ask for help)
-- [**Give the GBT Player documentation a read.**](https://github.com/AntonioND/gbt-player) 
+There is also [midi2mod.jamespark.ninja/](http://midi2mod.jamespark.ninja/) which parses a midi file and returns OpenMPT paste data.
