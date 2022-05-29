@@ -29,7 +29,7 @@ Or by finding tutorials on your tracker:
 
 The [GB Studio Discord](https://discord.gg/v9xAJCJ) has a dedicated _#music-help_ channel to help you with the above tracker programs.
 
-You can download free MIT-licensed songs from the [GB Studio Community Assets](https://github.com/DeerTears/GB-Studio-Community-Assets), or use the .mod files included with the Sample Project as an alternative to composing.
+You can also download free MIT-licensed songs from the [GB Studio Community Assets](https://github.com/DeerTears/GB-Studio-Community-Assets), or use the .mod files included with the Sample Project as an alternative to composing.
 
 ## GBT Player's Channel Limitations
 
@@ -164,7 +164,7 @@ GBT Player will round `Cxx` effects on Channel 3 toward the nearest number liste
 
 ## Effect Persistence
 
-Channel-wide effects persist until a new one is set. This applies to `Cxx`, `9ve`, and `E8x`.
+Channel-wide effects persist until a new one is set. This applies to `Cxx` (volume), `9ve` (envelopes), and `E8x` (panning).
 
 In most trackers, if a note is played without a volume command, the note's volume is reset to the maximum. When a .mod file is converted by GBT Player, notes without a volume effect will play at the same volume as the previous `Cxx` effect. As an example:
 
@@ -198,7 +198,7 @@ You can use `EC0` as an alternative to `C00` to cut notes, while preserving the 
 
 ## Speed Table
 
-Tick speed relies on the Gameboy's framerate. When setting tick speed with `Fxx`, you can use this table to find a BPM that is closest to what you want to achieve. This assumes a 4/4 meter with one beat on every row.
+When setting tick speed with `Fxx`, you can use this table to find a BPM that is closest to what you want to achieve. This assumes a 4/4 meter with one beat on every row, and the default 50/60hz speed conversion on every song. 
 
 | Fxx Value (in tracker) | BPM (in tracker) | BPM (in game) |
 | ---------------------- | ---------------- | ------------- |
@@ -213,7 +213,9 @@ Tick speed relies on the Gameboy's framerate. When setting tick speed with `Fxx`
 | F09                    | 83.33 BPM        | 90 BPM        |
 | F0A                    | 75 BPM           | 81.82 BPM     |
 
-<sup>1</sup> Values marked with 1 require an additional `F96` effect to set the tracker's BPM. This will make the tracker speed closer to the in-game speed. GBT ignores `Fxx` effects higher than 0x1F.
+On the _Music_ tab, each .mod has the option to disable the 50/60hz speed conversion. When the checkbox is checked, the 50/60hz conversion is disabled, and the playback of speeds F05-F1F increase by 20%. Speeds F01-F04 remain the same regardless of this setting.
+
+<sup>1</sup> Values marked with 1 require an additional `F96` effect to set the tracker's tickrate. This will make the tracker speed closer to the in-game speed. Any `Fxx` effects higher than 0x1F will be ignored in-game.
 
 ## Converting other formats to GBT-compatible .mod
 
@@ -221,7 +223,7 @@ It's common practice to try converting other audio formats into .mod for playbac
 
 ### Audio files
 
-You cannot automatically convert an audio file to GBT-compatible .mod without the result being indistinguishable. You will always get a better result by transcribing what you hear into a GBT-compatible .mod or one of the below filetypes.
+If you convert an audio file to note data, it will be hard to hear how it represents the original, and it may not contain the notes or rhythms you intended to convert. However, you can guarantee better results by transcribing what you hear into a GBT-compatible .mod or one of the below filetypes.
 
 In GB Studio 3.1, you can play back audio files with a bit-depth of 4. See [Sound Effects](https://gbstudio.dev/docs/sound-effects/) for more information.
 
